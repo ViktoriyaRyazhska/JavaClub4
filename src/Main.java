@@ -15,6 +15,5 @@ public class Main {
         Task3 task3 = new Task3();
         task3.execute(5, 5, 5);
 
-
     }
 }
