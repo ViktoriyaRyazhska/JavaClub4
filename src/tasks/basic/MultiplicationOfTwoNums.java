@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task2 {
+public class MultiplicationOfTwoNums {
 
     public void execute(int num1, int num2) {
 

@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task1 {
+public class DoubleInteger {
 
     public void execute(int num) {
         System.out.println(doubleInteger(num));

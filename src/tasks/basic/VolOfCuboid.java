@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task3 {
+public class VolOfCuboid {
 
     public void execute(double length, double width, double height ){
 
