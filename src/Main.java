@@ -1,8 +1,7 @@
-import tasks.Task1;
-import tasks.Task2;
-import tasks.Task3;
-
 import java.util.Scanner;
+import tasks.basic.Task1;
+import tasks.basic.Task2;
+import tasks.basic.Task3;
 
 public class Main {
 
@@ -22,7 +21,7 @@ public class Main {
             case 1 -> {
                 System.out.println("Please enter number to double it: ");
                 int numToDouble = scanner.nextInt();
-                Task1 task1 = new Task1();
+               Task1 task1 = new Task1();
                 task1.execute(numToDouble);
             }
             case 2 -> {
@@ -40,6 +39,7 @@ public class Main {
                 Task3 task3 = new Task3();
                 task3.execute(length, width, height);
             }
+
         }
 
 
