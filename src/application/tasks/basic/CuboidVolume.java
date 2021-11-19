@@ -13,6 +13,11 @@ public class CuboidVolume {
         int length = in.nextInt();
         int height = in.nextInt();
         int width = in.nextInt();
-        System.out.println("Result: " + volume(length, height, width));
+        if (length <= 0 || height <= 0 || width <= 0) {
+            System.out.println("Error.. invalid input");
+            task();
+        } else {
+            System.out.println("Result: " + volume(length, height, width));
+        }
     }
 }
