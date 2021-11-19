@@ -1,5 +1,6 @@
 package application;
 
+import application.tasks.basic.AgeRange;
 import application.tasks.basic.CuboidVolume;
 import application.tasks.basic.MultiplyNumbers;
 import application.tasks.basic.UnderPressure;
@@ -30,6 +31,10 @@ public class Main {
                 CuboidVolume.task();
                 choice();
                 break;
+            case 4:
+                AgeRange.task();
+                choice();
+                break;
         }
     }
     private static String listOfOptions() {
@@ -37,7 +42,8 @@ public class Main {
                 "0. Exit\n" +
                 "1. Double your number\n" +
                 "2. Multiply your two numbers\n" +
-                "3. Calculate volume of cuboid";
+                "3. Calculate volume of cuboid\n" +
+                "4. Age of your love";
 
         return listOfOptions;
     }
