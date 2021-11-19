@@ -1,5 +1,6 @@
 package application;
 
+import application.tasks.basic.CuboidVolume;
 import application.tasks.basic.MultiplyNumbers;
 import application.tasks.basic.UnderPressure;
 
@@ -25,14 +26,18 @@ public class Main {
                 MultiplyNumbers.task();
                 choice();
                 break;
-
+            case 3:
+                CuboidVolume.task();
+                choice();
+                break;
         }
     }
     private static String listOfOptions() {
         String listOfOptions =
                 "0. Exit\n" +
                 "1. Double your number\n" +
-                "2. Multiply your two numbers";
+                "2. Multiply your two numbers\n" +
+                "3. Calculate volume of cuboid";
 
         return listOfOptions;
     }
