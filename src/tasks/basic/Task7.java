@@ -1,9 +1,9 @@
-public class task7{
-public static int execute(int h, int m, int s) {
+package tasks.basic;
 
-    int r;
-    r = h * 3600000 + m * 60000 + s * 1000;
-    return r;
+public class Task7 {
+public static void execute(int h, int m, int s) {
 
- }
+    int r = h * 3600000 + m * 60000 + s * 1000;
+
+}
 }

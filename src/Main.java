@@ -2,6 +2,7 @@ import java.util.Scanner;
 import tasks.basic.Task1;
 import tasks.basic.Task2;
 import tasks.basic.Task3;
+import tasks.basic.Task7;
 
 public class Main {
 
@@ -46,7 +47,7 @@ public class Main {
                 int m = scanner.nextInt();
                 int s = scanner.nextInt();
                 Task7 task7 = new Task7();
-                task7.execute(h, m, s);
+                Task7.execute(h, m, s);
             }
         }
 
