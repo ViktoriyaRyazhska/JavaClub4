@@ -1,5 +1,6 @@
 package application;
 
+import application.tasks.basic.MultiplyNumbers;
 import application.tasks.basic.UnderPressure;
 
 import java.util.Scanner;
@@ -20,6 +21,10 @@ public class Main {
                 UnderPressure.task();
                 choice();
                 break;
+            case 2:
+                MultiplyNumbers.task();
+                choice();
+                break;
 
         }
     }
@@ -27,7 +32,7 @@ public class Main {
         String listOfOptions =
                 "0. Exit\n" +
                 "1. Double your number\n" +
-                "";
+                "2. Multiply your two numbers";
 
         return listOfOptions;
     }
