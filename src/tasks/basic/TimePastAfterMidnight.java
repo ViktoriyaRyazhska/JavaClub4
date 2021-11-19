@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task7 {
+public class TimePastAfterMidnight {
     public void execute(int h, int m, int s) {
 
         System.out.println(timePastAfterMidnight(h, m, s));
