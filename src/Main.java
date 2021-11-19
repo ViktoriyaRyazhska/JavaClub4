@@ -2,7 +2,7 @@ import java.util.Scanner;
 import tasks.basic.Task1;
 import tasks.basic.Task2;
 import tasks.basic.Task3;
-import static org.junit.Assert.assertEquals;
+
 public class Main {
 
     public static void main(String[] args){
@@ -46,7 +46,7 @@ public class Main {
                 int m = scanner.nextInt();
                 int s = scanner.nextInt();
                 Task7 task7 = new Task7();
-                assertEquals(task7.execute(h, m, s));
+                task7.execute(h, m, s);
             }
         }
 
