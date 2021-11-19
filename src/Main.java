@@ -76,8 +76,8 @@ public class Main {
             case 2 -> {
                 System.out.println("You selected CLASS part: ");
                 System.out.println("Please enter a number of task you want to run:");
-                System.out.println("1 ---- Double-Integer");
-                System.out.println("2 ---- Multiplying-Two-Numbers");
+                System.out.println("1 ---- Encapsulation Test");
+                System.out.println("2 ---- Addition of a 100 number to yours");
                 System.out.println("3 ---- Volume-Of-Cuboid");
                 System.out.println("7 ---- Time-After-Midnight");
                 System.out.println("====================================");
@@ -88,7 +88,9 @@ public class Main {
                 switch (numOfTaskClassPart) {
 
                     case 1 -> {
-                        // TODO: 20.11.2021
+                        System.out.println("Run! It is just encapsulation test... Result must be zero: ");
+                        Encapsulation encapsulation = new Encapsulation();
+                        encapsulation.execute();
                     }
 
                     case 2 -> {

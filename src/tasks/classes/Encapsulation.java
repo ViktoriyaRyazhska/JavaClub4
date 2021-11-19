@@ -1,18 +1,18 @@
 package tasks.classes;
 
-public class Task1 {
+public class Encapsulation {
 
     private int number;
     private String stringValue;
     private Object anObject;
 
-    public Task1(int number, String stringValue, Object anObject) {
+    public Encapsulation(int number, String stringValue, Object anObject) {
         this.number = number;
         this.stringValue = stringValue;
         this.anObject = anObject;
     }
 
-    public Task1(){}
+    public Encapsulation(){}
 
     public int getNumber() {
         return number;
@@ -36,5 +36,10 @@ public class Task1 {
 
     public void setAnObject(Object anObject) {
         this.anObject = anObject;
+    }
+
+    public void execute(){
+        Encapsulation encapsulation = new Encapsulation();
+        System.out.println(encapsulation.getNumber());
     }
 }
