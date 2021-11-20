@@ -1,5 +1,6 @@
 package application;
 
+import application.tasks.basic.BeginnerSeries;
 import application.tasks.basic.UnderPressure;
 
 import java.util.Scanner;
@@ -35,5 +36,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(listOfOptions());
         choice();
+
     }
 }
