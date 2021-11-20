@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task5 {
+public class Greet {
     public void execute (String name ){
 
         System.out.println(greet(name));

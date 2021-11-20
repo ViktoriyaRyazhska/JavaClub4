@@ -1,6 +1,6 @@
 package tasks.basic;
 
-public class Task4 {
+public class IsDivisible {
 
     public void execute (int wallLength, int pixelSize ){
         System.out.println(isDivisible(wallLength,pixelSize));

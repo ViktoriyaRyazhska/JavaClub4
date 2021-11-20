@@ -106,12 +106,25 @@ public class Main {
             }
 
             case 4 -> {
+                System.out.println("Please enter wallLength and pixel size to know if wallLength is divisible: ");
+                int wallLength = scanner.nextInt();
+                int pixelSize = scanner.nextInt();
+                IsDivisible isDivisible = new IsDivisible();
+                isDivisible.execute(wallLength, pixelSize);
             }
 
             case 5 -> {
+                System.out.println("Please enter your name: ");
+                String name = scanner.next();
+                Greet greet = new Greet();
+                greet.execute(name);
             }
 
             case 6 -> {
+                System.out.println("Please enter number to convert to binary format: ");
+                int number = scanner.nextInt();
+                IntegerToBinary integerToBinary = new IntegerToBinary();
+                integerToBinary.execute(number);
             }
 
             case 7 -> {
