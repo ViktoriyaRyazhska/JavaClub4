@@ -9,6 +9,8 @@ public class Fraction implements Comparable<Fraction> {
         bottom = denominator;
     }
 
+
+
     @Override
     public int hashCode() {
         return 17 * Long.hashCode(top) + Long.hashCode(bottom);
@@ -24,12 +26,11 @@ public class Fraction implements Comparable<Fraction> {
         return Long.compare(top * f2.bottom, f2.top * bottom);
     }
 
-    Fraction f1 = new Fraction(3, 4);
 
     //Add two fractions
     public Fraction add(Fraction f2) {
 
-        return f1.add(f2);
+        return null;
     }
 
     //...and make this class string representable

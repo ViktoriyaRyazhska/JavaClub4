@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import tasks.basic.*;
 import tasks.classes.*;
+import tasks.conditions.IsDivisibleByTwoNums;
 import tasks.conditions.OppositeNumber;
 
 
@@ -167,6 +168,8 @@ public class Main {
             }
 
             case 3 -> {
+
+                // TODO: 20.11.2021  
             }
 
             case 4 -> {
@@ -233,7 +236,7 @@ public class Main {
         System.out.println("You selected CONDITION part: ");
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Opposite-Number");
-        System.out.println("2 ---- Multiplying-Two-Numbers");
+        System.out.println("2 ---- Is-Divisible-By-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("7 ---- Time-After-Midnight");
         System.out.println("====================================");
@@ -251,10 +254,12 @@ public class Main {
             }
 
             case 2 -> {
-                System.out.println("Please enter a number to add 100 to it: ");
-                int num = scanner.nextInt();
-                AdditionOf100ToNum additionOf100ToNum = new AdditionOf100ToNum();
-                additionOf100ToNum.execute(num);
+                System.out.println("Please enter n, x and y to check if n can be divided by x and y: ");
+                int n = scanner.nextInt();
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                IsDivisibleByTwoNums isDivisibleByTwoNums = new IsDivisibleByTwoNums();
+                isDivisibleByTwoNums.execute(n, x, y);
             }
 
             case 3 -> {
