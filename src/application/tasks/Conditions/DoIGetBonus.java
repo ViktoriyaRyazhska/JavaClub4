@@ -2,11 +2,12 @@ package application.tasks.Conditions;
 
 public class DoIGetBonus {
     public static String bonusTime(final int salary, final boolean bonus) {
-        // show me the code!w
+        // show me the code!
+        String result;
         if(bonus == true)
             System.out.println(salary * 10);
         else
             System.out.println(salary);
-
+        return "";
     }
 }
