@@ -1,4 +1,4 @@
-package tasks.basic;
+package application.tasks.basic;
 
 public class UnderPressure {
     public void one() {
