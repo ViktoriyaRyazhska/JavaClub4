@@ -32,7 +32,8 @@ public class Main {
     private static String listOfLists() {
         String lists =
                 "1. Basic\n" +
-                "2. Conditions";
+                "2. Conditions\n" +
+                "3. Classes";
 
         return lists;
     }
