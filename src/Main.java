@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
-import tasks.basic.DoubleInteger;
-import tasks.basic.MultiplicationOfTwoNums;
-import tasks.basic.VolOfCuboid;
+import tasks.basic.*;
 import tasks.classes.*;
+import tasks.conditions.OppositeNumber;
 
 
 public class Main {
@@ -233,7 +232,7 @@ public class Main {
 
         System.out.println("You selected CONDITION part: ");
         System.out.println("Please enter a number of task you want to run:");
-        System.out.println("1 ---- Double-Integer");
+        System.out.println("1 ---- Opposite-Number");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("7 ---- Time-After-Midnight");
@@ -245,7 +244,10 @@ public class Main {
         switch (numOfTaskConditionPart) {
 
             case 1 -> {
-                // TODO: 20.11.2021
+                System.out.println("Please enter a number to see opposite of it: ");
+                int num = scanner.nextInt();
+                OppositeNumber oppositeNumber = new OppositeNumber();
+                oppositeNumber.execute(num);
             }
 
             case 2 -> {

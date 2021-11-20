@@ -1,4 +1,4 @@
-package ackage tasks;
+package tasks.basic;
 
 public class IntegerToBinary{
 
