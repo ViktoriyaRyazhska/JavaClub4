@@ -235,7 +235,7 @@ public class Main {
         System.out.println("1 ---- Opposite-Number");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("4 ---- Get bonus");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -261,6 +261,11 @@ public class Main {
             }
 
             case 4 -> {
+                System.out.println("Please enter your salary and true or false: ");
+                int salary = scanner.nextInt();
+                String bool = scanner.next();
+                GetBonus getBonus = new GetBonus();
+                getBonus.execute(salary, bool);
             }
 
             case 5 -> {
