@@ -1,6 +1,7 @@
 package application.tasks.basic;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class ConvertToBinary {
     public static int convertToBinary(int n) {
@@ -25,5 +26,11 @@ public class ConvertToBinary {
             stringBuilder.append(temp);
         }
       return Integer.valueOf(stringBuilder.toString());
+    }
+    public static void task() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a non-negative integer:\n> ");
+        int number = in.nextInt();
+        System.out.println("Number " +number + " in a binary format is " + convertToBinary(number));
     }
 }
