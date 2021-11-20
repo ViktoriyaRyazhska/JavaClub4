@@ -1,7 +1,5 @@
 package application.tasks.basic;
-
 import java.util.Scanner;
-
 public class UnderPressure {
     private static int doubleInteger(int number) {
         return number * 2;
