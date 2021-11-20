@@ -9,7 +9,7 @@ public class UnderPressure {
 
     public static void task() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the number to double: ");
+        System.out.print("Enter the number to double:\n> ");
         int number = in.nextInt();
         System.out.println("Result: " + doubleInteger(number));
     }

@@ -9,7 +9,7 @@ public class CuboidVolume {
 
     public static void task() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the length, height and width of cuboid: ");
+        System.out.print("Enter the length, height and width of cuboid:\n> ");
         int length = in.nextInt();
         int height = in.nextInt();
         int width = in.nextInt();

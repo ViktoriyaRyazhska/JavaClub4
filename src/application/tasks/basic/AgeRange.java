@@ -35,7 +35,7 @@ public class AgeRange {
 
     public static void task() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter your age: ");
+        System.out.print("Enter your age:\n> ");
         int age = in.nextInt();
         if (minAge(age) == -1 || maxAge(age) == -1) {
             System.out.println("Error.. invalid input");

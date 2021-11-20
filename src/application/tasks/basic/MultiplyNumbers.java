@@ -9,7 +9,7 @@ public class MultiplyNumbers {
 
     public static void task() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter two numbers to multiply: ");
+        System.out.print("Enter two numbers to multiply:\n> ");
         int number1 = in.nextInt();
         int number2 = in.nextInt();
         System.out.println("Result: " + multiply(number1, number2));
