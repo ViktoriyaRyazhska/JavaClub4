@@ -1,6 +1,5 @@
 package application;
 
-import application.tasks.basic.BeginnerSeries;
 import application.tasks.basic.UnderPressure;
 
 import java.util.Scanner;
@@ -24,11 +23,12 @@ public class Main {
 
         }
     }
+
     private static String listOfOptions() {
         String listOfOptions =
                 "0. Exit\n" +
-                "1. Double your number\n" +
-                "";
+                        "1. Double your number\n" +
+                        "";
 
         return listOfOptions;
     }
@@ -37,6 +37,6 @@ public class Main {
         System.out.println(listOfOptions());
         choice();
 
-
     }
 }
+
