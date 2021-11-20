@@ -73,6 +73,9 @@ public class Main {
         System.out.println("1 ---- Double-Integer");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
+        System.out.println("4 ---- Is wallLength divisible");
+        System.out.println("5 ---- Greet");
+        System.out.println("6 ---- Number in a binary format");
         System.out.println("7 ---- Time-After-Midnight");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
