@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 import tasks.basic.*;
 import tasks.classes.*;
+import tasks.conditions.BooleanToString;
+import tasks.conditions.GetBonus;
 import tasks.conditions.IsDivisibleByTwoNums;
 import tasks.conditions.OppositeNumber;
 
@@ -169,7 +171,7 @@ public class Main {
 
             case 3 -> {
 
-                // TODO: 20.11.2021  
+                // TODO: 20.11.2021
             }
 
             case 4 -> {
@@ -237,8 +239,8 @@ public class Main {
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Opposite-Number");
         System.out.println("2 ---- Is-Divisible-By-Two-Numbers");
-        System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("4 ---- Get bonus");
+        System.out.println("3 ---- Boolean-To-String");
+        System.out.println("4 ---- Get-Bonus");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -263,12 +265,16 @@ public class Main {
             }
 
             case 3 -> {
+                System.out.println("Please enter true or false to check boolean: ");
+                boolean b = scanner.nextBoolean();
+                BooleanToString booleanToString = new BooleanToString();
+                booleanToString.execute(b);
             }
 
             case 4 -> {
                 System.out.println("Please enter your salary and true or false: ");
                 int salary = scanner.nextInt();
-                String bool = scanner.next();
+                boolean bool = scanner.nextBoolean();
                 GetBonus getBonus = new GetBonus();
                 getBonus.execute(salary, bool);
             }
