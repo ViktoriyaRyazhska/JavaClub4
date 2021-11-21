@@ -2,10 +2,7 @@ import java.util.Scanner;
 
 import tasks.basic.*;
 import tasks.classes.*;
-import tasks.conditions.BooleanToString;
-import tasks.conditions.GetBonus;
-import tasks.conditions.IsDivisibleByTwoNums;
-import tasks.conditions.OppositeNumber;
+import tasks.conditions.*;
 
 
 public class Main {
@@ -241,6 +238,7 @@ public class Main {
         System.out.println("2 ---- Is-Divisible-By-Two-Numbers");
         System.out.println("3 ---- Boolean-To-String");
         System.out.println("4 ---- Get-Bonus");
+        System.out.println("5 ---- Year-Of-Birth");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -280,6 +278,11 @@ public class Main {
             }
 
             case 5 -> {
+                System.out.println("Please enter your year of birth and year you want to know you were: ");
+                int birth = scanner.nextInt();
+                int yearTo = scanner.nextInt();
+                YearOfBirth yearOfBirth = new YearOfBirth();
+                yearOfBirth.execute(birth, yearTo);
             }
 
             case 6 -> {
