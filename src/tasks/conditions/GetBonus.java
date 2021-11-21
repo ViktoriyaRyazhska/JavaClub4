@@ -5,7 +5,7 @@ public class GetBonus {
         System.out.println(bonusTime( salary, bonus));
     }
 
-    public static String bonusTime(final int salary, final boolean bonus) {
+    private static String bonusTime(final int salary, final boolean bonus) {
         if (bonus) {
             return "\u00A3" + salary * 10;
         } else {

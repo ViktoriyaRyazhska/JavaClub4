@@ -310,7 +310,7 @@ public class Main {
             case 9 -> {
                 System.out.println("Please enter true or false to convert boolean:");
                 boolean b = scanner.nextBoolean();
-                YesOrNo yesOrNo = new YesOrNo();
+                YesOrNo yesOrNo  = new YesOrNo();
                 yesOrNo.execute(b);
             }
         }

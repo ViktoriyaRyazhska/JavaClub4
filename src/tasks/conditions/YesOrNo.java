@@ -1,7 +1,7 @@
 package tasks.conditions;
-class YesOrNo
+public class YesOrNo
 {
-    public static String boolToWord(boolean b)
+    private static String boolToWord(boolean b)
     {
         return b ? "Yes": "No";
     }

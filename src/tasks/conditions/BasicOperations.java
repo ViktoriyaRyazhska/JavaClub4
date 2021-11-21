@@ -1,7 +1,7 @@
 package tasks.conditions;
 
 public class BasicOperations{
-    public static Integer basicMath(String op, int v1, int v2){
+    private static Integer basicMath(String op, int v1, int v2){
         int rezult = 0;
         switch (op) {
             case ("+"):
