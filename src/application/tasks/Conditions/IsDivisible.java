@@ -13,7 +13,11 @@ public class IsDivisible {
         long n = in.nextLong();
         long dividerFirst = in.nextLong();
         long dividerSecond = in.nextLong();
-
-        System.out.println("Result: " + isDivisible(n, dividerFirst, dividerSecond) );
+        if (n <= 0 || dividerFirst <= 0 || dividerSecond <= 0) {
+            System.out.println("Error.. invalid input");
+            task();
+        } else {
+            System.out.println("Result: " + isDivisible(n, dividerFirst, dividerSecond));
+        }
     }
 }
