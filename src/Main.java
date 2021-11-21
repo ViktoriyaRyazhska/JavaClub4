@@ -290,6 +290,12 @@ public class Main {
             }
 
             case 7 -> {
+                System.out.println("Please enter operation and two numbers: ");
+                String op = scanner.next();
+                int v1 = scanner.nextInt();
+                int v2 = scanner.nextInt();
+                BasicOperations basicOperations = new BasicOperations();
+                basicOperations.execute(op, v1, v2);
             }
         }
     }
