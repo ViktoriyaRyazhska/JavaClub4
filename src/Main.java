@@ -324,6 +324,7 @@ public class Main {
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("4 ---- Beginner - Lost Without a Map");
+        System.out.println("5 ---- Counting sheep...");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -365,6 +366,16 @@ public class Main {
             }
 
             case 5 -> {
+                System.out.print("Enter the number of elements you want to store: ");
+                num=scanner.nextInt();
+                boolean[] array = new boolean[num];
+                System.out.println("Enter true or false for all elements of array: ");
+                for(int i=0; i<num; i++)
+                {
+                    array[i]=scanner.nextBoolean();
+                    }
+                Counter counter = new Counter();
+                counter.execute(array);
             }
 
             case 6 -> {
