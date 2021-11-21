@@ -3,6 +3,7 @@ import java.util.Scanner;
 import tasks.basic.*;
 import tasks.classes.*;
 import tasks.conditions.*;
+import tasks.loops.StringRepeat;
 
 
 public class Main {
@@ -297,7 +298,7 @@ public class Main {
 
         System.out.println("You selected LOOP part: ");
         System.out.println("Please enter a number of task you want to run:");
-        System.out.println("1 ---- Double-Integer");
+        System.out.println("1 ---- Repeat-String");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("7 ---- Time-After-Midnight");
@@ -309,7 +310,11 @@ public class Main {
         switch (numOfTaskLoopPart) {
 
             case 1 -> {
-                // TODO: 20.11.2021
+                System.out.println("Please enter a number to of time to repeat and a string to repeat it: ");
+                int repeat = scanner.nextInt();
+                String s = scanner.next();
+                StringRepeat stringRepeat = new StringRepeat();
+                stringRepeat.execute(repeat, s);
             }
 
             case 2 -> {
