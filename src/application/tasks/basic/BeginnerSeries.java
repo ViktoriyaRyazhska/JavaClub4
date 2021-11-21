@@ -2,7 +2,7 @@ package application.tasks.basic;
 import java.util.Scanner;
 
     public class BeginnerSeries {
-        public static void task() {
+        private static void task() {
             int result;
             Scanner h = new Scanner(System.in);
             System.out.println("Enter hour");

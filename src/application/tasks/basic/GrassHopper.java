@@ -1,5 +1,7 @@
 package application.tasks.basic;
 
+import java.util.Scanner;
+
 public class GrassHopper {
     public static String weatherInfo(int temp) {
         double c = convertToCelsius(temp);
@@ -10,7 +12,14 @@ public class GrassHopper {
     }
 
     public static double convertToCelsius(int temperature) {
-        double celsius = (temperature - 32) * 5/9.0;
+        double celsius = (temperature - 32) * 5 / 9.0;
         return celsius;
+    }
+
+    public static void task() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter temperature in the fahrenheit:\n> ");
+        int temp = in.nextInt();
+        System.out.println(weatherInfo(temp));
     }
 }
