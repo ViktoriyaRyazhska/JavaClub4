@@ -240,6 +240,8 @@ public class Main {
         System.out.println("3 ---- Boolean-To-String");
         System.out.println("4 ---- Get-Bonus");
         System.out.println("5 ---- Year-Of-Birth");
+        System.out.println("7 ---- Basic-mathematical-operations");
+        System.out.println("8 ---- Opposites-attract");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -296,6 +298,13 @@ public class Main {
                 int v2 = scanner.nextInt();
                 BasicOperations basicOperations = new BasicOperations();
                 basicOperations.execute(op, v1, v2);
+            }
+            case 8 -> {
+                System.out.println("Please enter two numbers: ");
+                int flower1 = scanner.nextInt();
+                int flower2 = scanner.nextInt();
+                OppositesAttract oppositesAttract = new OppositesAttract();
+                oppositesAttract.execute(flower1, flower2);
             }
         }
     }
