@@ -325,6 +325,7 @@ public class Main {
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
+        System.out.println("6 ---- Reversed sequence");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -379,6 +380,10 @@ public class Main {
             }
 
             case 6 -> {
+                System.out.println("Please enter a number : ");
+                int num = scanner.nextInt();
+                Sequence sequence = new Sequence();
+                s.execute(num);
             }
 
             case 7 -> {
