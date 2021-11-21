@@ -352,6 +352,16 @@ public class Main {
             }
 
             case 4 -> {
+                System.out.print("Enter the number of elements you want to store: ");
+                num=scanner.nextInt();
+                int[] array = new int[num];
+                System.out.println("Enter the elements of the array: ");
+                for(int i=0; i<num; i++)
+                {
+                    array[i]=scanner.nextInt();
+                }
+                Maps maps = new Maps();
+                maps.execute(array);
             }
 
             case 5 -> {
