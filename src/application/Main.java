@@ -4,7 +4,7 @@ import application.tasks.basic.AgeRange;
 import application.tasks.basic.CuboidVolume;
 import application.tasks.basic.MultiplyNumbers;
 import application.tasks.basic.UnderPressure;
-import application.tasks.conditions.OppositeNumber;
+import application.tasks.Conditions.OppositeNumber;
 
 import java.util.Scanner;
 

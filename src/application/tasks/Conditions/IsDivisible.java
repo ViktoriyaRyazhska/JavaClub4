@@ -1,4 +1,4 @@
-package application.tasks.conditions;
+package application.tasks.Conditions;
 
 import java.util.Scanner;
 
