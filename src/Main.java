@@ -242,6 +242,7 @@ public class Main {
         System.out.println("5 ---- Year-Of-Birth");
         System.out.println("7 ---- Basic-mathematical-operations");
         System.out.println("8 ---- Opposites-attract");
+        System.out.println("9 ---- YesOrNo");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -305,6 +306,12 @@ public class Main {
                 int flower2 = scanner.nextInt();
                 OppositesAttract oppositesAttract = new OppositesAttract();
                 oppositesAttract.execute(flower1, flower2);
+            }
+            case 9 -> {
+                System.out.println("Please enter true or false to convert boolean:");
+                boolean b = scanner.nextBoolean();
+                YesOrNo yesOrNo = new YesOrNo();
+                yesOrNo.execute(b);
             }
         }
     }
