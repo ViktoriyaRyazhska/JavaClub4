@@ -323,7 +323,7 @@ public class Main {
         System.out.println("1 ---- Repeat-String");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
