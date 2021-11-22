@@ -28,6 +28,11 @@ public class NearestSquare {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the number to find nearest square number:\n> ");
         int n = in.nextInt();
-        System.out.println("Result: " + findSquareNumber(n));
+        if (n <= 0) {
+            System.out.println("Error.. invalid input");
+            task();
+        } else {
+            System.out.println("Result: " + findSquareNumber(n));
+        }
     }
 }
