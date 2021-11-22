@@ -3,9 +3,7 @@ package application.tasks.basic;
 import java.util.Scanner;
 
 public class PixelArtPlanning {
-
     public static boolean isDivisible(int wallLength, int pixelSize) {
-
         int result = wallLength % pixelSize;
 
         if (result == 0)
@@ -13,6 +11,7 @@ public class PixelArtPlanning {
         else
             return false;
     }
+
     public static void task() {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter the size of the wall in millimeters:\n> ");
@@ -20,7 +19,7 @@ public class PixelArtPlanning {
         System.out.print("Enter the size of a pixel in millimeters:\n> ");
         int pixelSize = in.nextInt();
 
-        if(isDivisible(wallLength,pixelSize) ==  true)
+        if (isDivisible(wallLength, pixelSize) == true)
             System.out.println("You can fit an exact number of pixels on the given wall");
         else
             System.out.println("You can't fit an exact number of pixels on the given wall");

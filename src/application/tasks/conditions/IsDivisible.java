@@ -3,7 +3,8 @@ package application.tasks.conditions;
 import java.util.Scanner;
 
 public class IsDivisible {
-    private static boolean isDivisible(long n, long x, long y) {return (n % x == 0) && (n % y == 0);
+    private static boolean isDivisible(long n, long x, long y) {
+        return (n % x == 0) && (n % y == 0);
     }
 
     public static void task() {
