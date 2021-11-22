@@ -43,10 +43,13 @@ public class MathematicalOperations {
         return var1 / var2;
     }
 
-    private static double getNumber(){
+    private static double getNumber() {
         Scanner num = new Scanner(System.in);
         System.out.println("Enter your number");
-        return getNumber();
+        if (num.hasNextDouble()) {
+            return num.nextDouble();
+        } else
+            return getNumber();
     }
     private static double solving(double var1, double var2, char operation){
         switch(operation){
