@@ -1,7 +1,7 @@
 package String.IntFromChar;
 
 import java.util.Scanner;
-//NOT DONE
+//
 //public class Main {
 //    public static void main(final String[] args) {
 //        final Scanner scanner = new Scanner(System.in);
