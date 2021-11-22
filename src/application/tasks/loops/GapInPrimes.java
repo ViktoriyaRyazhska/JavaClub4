@@ -38,11 +38,16 @@ public class GapInPrimes {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter from-number ( >= 2 )\n> ");
         int from = in.nextInt();
-        System.out.print("Enter to-number ( >= m)\n> ");
+        System.out.print("Enter to-number ( >= from-number )\n> ");
         int to = in.nextInt();
         System.out.print("Enter the gap ( >= 2)\n> ");
         int gap = in.nextInt();
-        System.out.println("List of prime numbers: " + primes(from, to));
-        System.out.println("Result: " + findGap(gap, primes(from, to)));
+        if (from < 2 || to < from || gap < 2) {
+            System.out.println("Error.. invalid input");
+            task();
+        } else {
+            System.out.println("List of prime numbers: " + primes(from, to));
+            System.out.println("Result: " + findGap(gap, primes(from, to)));
+        }
     }
 }
