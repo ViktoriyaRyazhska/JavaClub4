@@ -3,6 +3,9 @@ import java.util.Scanner;
 import tasks.basic.*;
 import tasks.classes.*;
 import tasks.conditions.*;
+import tasks.loops.Counter;
+import tasks.loops.Maps;
+import tasks.loops.Sequence;
 import tasks.loops.StringRepeat;
 
 
@@ -331,6 +334,7 @@ public class Main {
 
         int numOfTaskLoopPart = scanner.nextInt();
 
+
         switch (numOfTaskLoopPart) {
 
             case 1 -> {
@@ -355,7 +359,7 @@ public class Main {
 
             case 4 -> {
                 System.out.print("Enter the number of elements you want to store: ");
-                num=scanner.nextInt();
+                int num=scanner.nextInt();
                 int[] array = new int[num];
                 System.out.println("Enter the elements of the array: ");
                 for(int i=0; i<num; i++)
@@ -368,7 +372,7 @@ public class Main {
 
             case 5 -> {
                 System.out.print("Enter the number of elements you want to store: ");
-                num=scanner.nextInt();
+                int num=scanner.nextInt();
                 boolean[] array = new boolean[num];
                 System.out.println("Enter true or false for all elements of array: ");
                 for(int i=0; i<num; i++)
@@ -383,7 +387,7 @@ public class Main {
                 System.out.println("Please enter a number : ");
                 int num = scanner.nextInt();
                 Sequence sequence = new Sequence();
-                s.execute(num);
+                sequence.execute(num);
             }
 
             case 7 -> {
