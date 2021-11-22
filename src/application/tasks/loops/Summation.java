@@ -16,6 +16,11 @@ public class Summation {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter amount of number to sum:\n> ");
         int n = in.nextInt();
-        System.out.println("Result: " + summation(n));
+        if (n <= 0) {
+            System.out.println("Error.. invalid input");
+            task();
+        } else {
+            System.out.println("Result: " + summation(n));
+        }
     }
 }
