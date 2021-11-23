@@ -1,8 +1,7 @@
 package tasks.string;
-public class Kata {
+public class RemoveStringSpaces{
     private static String noSpace(final String x) {
-        String rez = x.replaceAll(" ","");
-        return rez;
+        return x.replaceAll(" ","");
     }
     public void execute(String x){
         System.out.println(noSpace(x));
