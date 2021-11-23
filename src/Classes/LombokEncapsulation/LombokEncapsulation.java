@@ -1,4 +1,4 @@
-package Classes;
+package Classes.LombokEncapsulation;
 /* We have to do the following modifications to properly encapsulate info:
 
         make fields private
