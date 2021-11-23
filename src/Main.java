@@ -453,7 +453,7 @@ public class Main {
         System.out.println("1 ---- Double-Integer");
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("5 ---- Replace all dots");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -481,6 +481,10 @@ public class Main {
             }
 
             case 5 -> {
+                System.out.println("Please enter a text for replace all the dots: ");
+                String str= scanner.nextLine();
+                Dinglemouse dinglemouse = new Dinglemouse();
+                dinglemouse.execute(str);
             }
 
             case 6 -> {
