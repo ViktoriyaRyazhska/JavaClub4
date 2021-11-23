@@ -6,6 +6,7 @@ import tasks.conditions.*;
 import tasks.loops.*;
 import tasks.oop.AdamAndEve;
 import tasks.string.*;
+import tasks.сollections.UnfinishedLoop;
 
 
 public class Main {
@@ -193,7 +194,7 @@ public class Main {
         System.out.println("You selected COLLECTION part: ");
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Double-Integer");
-        System.out.println("2 ---- Multiplying-Two-Numbers");
+        System.out.println("2 ---- Unfinished Loop");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("7 ---- Time-After-Midnight");
         System.out.println("====================================");
@@ -208,10 +209,10 @@ public class Main {
             }
 
             case 2 -> {
-                System.out.println("Please enter a number to add 100 to it: ");
+                System.out.println("Please enter a number : ");
                 int num = scanner.nextInt();
-                AdditionOf100ToNum additionOf100ToNum = new AdditionOf100ToNum();
-                additionOf100ToNum.execute(num);
+                UnfinishedLoop unfinishedLoop = new UnfinishedLoop();
+                unfinishedLoop.execute(num);
 
 
             }
