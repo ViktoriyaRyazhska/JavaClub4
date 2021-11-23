@@ -5,6 +5,9 @@ import tasks.classes.*;
 import tasks.conditions.*;
 import tasks.loops.*;
 import tasks.oop.AdamAndEve;
+import tasks.string.Dinglemouse;
+import tasks.string.NumToString;
+import tasks.string.StringReverse;
 
 
 public class Main {
@@ -450,8 +453,8 @@ public class Main {
 
         System.out.println("You selected STRING part: ");
         System.out.println("Please enter a number of task you want to run:");
-        System.out.println("1 ---- Double-Integer");
-        System.out.println("2 ---- Multiplying-Two-Numbers");
+        System.out.println("1 ---- Number-To-String");
+        System.out.println("2 ---- String-Reverse");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("5 ---- Replace all dots");
         System.out.println("6 ---- Are You Playing Banjo?");
@@ -463,15 +466,17 @@ public class Main {
         switch (numOfTaskStringPart) {
 
             case 1 -> {
-                // TODO: 20.11.2021
+                System.out.println("Please enter a number you want to convert to string: ");
+                int num = scanner.nextInt();
+                NumToString numToString = new NumToString();
+                numToString.execute(num);
             }
 
             case 2 -> {
-                System.out.println("Please enter a number to add 100 to it: ");
-                int num = scanner.nextInt();
-                AdditionOf100ToNum additionOf100ToNum = new AdditionOf100ToNum();
-                additionOf100ToNum.execute(num);
-
+                System.out.println("Please enter a string to see reversed: ");
+                String str = scanner.next();
+                StringReverse stringReverse = new StringReverse();
+                stringReverse.execute(str);
 
             }
 
