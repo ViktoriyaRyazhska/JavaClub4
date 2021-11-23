@@ -3,10 +3,7 @@ import java.util.Scanner;
 import tasks.basic.*;
 import tasks.classes.*;
 import tasks.conditions.*;
-import tasks.loops.Counter;
-import tasks.loops.Maps;
-import tasks.loops.Sequence;
-import tasks.loops.StringRepeat;
+import tasks.loops.*;
 
 
 public class Main {
@@ -324,7 +321,7 @@ public class Main {
         System.out.println("You selected LOOP part: ");
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Repeat-String");
-        System.out.println("2 ---- Multiplying-Two-Numbers");
+        System.out.println("2 ---- Cat-Dog-Years");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
@@ -346,10 +343,10 @@ public class Main {
             }
 
             case 2 -> {
-                System.out.println("Please enter a number to add 100 to it: ");
+                System.out.println("Please enter a number of human years to know how old are cat or dog: ");
                 int num = scanner.nextInt();
-                AdditionOf100ToNum additionOf100ToNum = new AdditionOf100ToNum();
-                additionOf100ToNum.execute(num);
+                CatDogYears catDogYears = new CatDogYears();
+                catDogYears.execute(num);
 
 
             }
