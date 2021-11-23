@@ -310,7 +310,7 @@ public class Main {
             case 9 -> {
                 System.out.println("Please enter true or false to convert boolean:");
                 boolean b = scanner.nextBoolean();
-                YesOrNo yesOrNo  = new YesOrNo();
+                YesOrNo yesOrNo = new YesOrNo();
                 yesOrNo.execute(b);
             }
         }
@@ -322,7 +322,7 @@ public class Main {
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Repeat-String");
         System.out.println("2 ---- Cat-Dog-Years");
-        System.out.println("3 ---- Volume-Of-Cuboid");
+        System.out.println("3 ---- Average-Marks");
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
         System.out.println("6 ---- Reversed sequence");
@@ -347,21 +347,29 @@ public class Main {
                 int num = scanner.nextInt();
                 CatDogYears catDogYears = new CatDogYears();
                 catDogYears.execute(num);
-
-
             }
 
             case 3 -> {
+                System.out.println("Please enter an array of marks to know it avg: ");
+                System.out.println("Please enter how much elements array will contain: ");
+                int num = scanner.nextInt();
+                int[] array = new int[num];
+                System.out.println("Enter the elements of the array: ");
+                for (int i = 0; i < num; i++){
+                    array[i] = scanner.nextInt();
+                }
+                AverageMarks averageMarks = new AverageMarks();
+                averageMarks.execute(array);
+
             }
 
             case 4 -> {
                 System.out.print("Enter the number of elements you want to store: ");
-                int num=scanner.nextInt();
+                int num = scanner.nextInt();
                 int[] array = new int[num];
                 System.out.println("Enter the elements of the array: ");
-                for(int i=0; i<num; i++)
-                {
-                    array[i]=scanner.nextInt();
+                for (int i = 0; i < num; i++) {
+                    array[i] = scanner.nextInt();
                 }
                 Maps maps = new Maps();
                 maps.execute(array);
@@ -369,13 +377,12 @@ public class Main {
 
             case 5 -> {
                 System.out.print("Enter the number of elements you want to store: ");
-                int num=scanner.nextInt();
+                int num = scanner.nextInt();
                 boolean[] array = new boolean[num];
                 System.out.println("Enter true or false for all elements of array: ");
-                for(int i=0; i<num; i++)
-                {
-                    array[i]=scanner.nextBoolean();
-                    }
+                for (int i = 0; i < num; i++) {
+                    array[i] = scanner.nextBoolean();
+                }
                 Counter counter = new Counter();
                 counter.execute(array);
             }
