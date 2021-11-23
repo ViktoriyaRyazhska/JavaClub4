@@ -1,4 +1,10 @@
 package Classes;
+/* We have to do the following modifications to properly encapsulate info:
+
+        make fields private
+provide accessors to the internal fields ( setters/getters )
+        provide an empty constructor to support Java Beans specification
+        Add a constructor that can receive parameters for all of the fields */
 
 public class LombokEncapsulation {
     private int number;
