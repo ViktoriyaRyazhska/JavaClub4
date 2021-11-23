@@ -454,6 +454,7 @@ public class Main {
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("5 ---- Replace all dots");
+        System.out.println("6 ---- Are You Playing Banjo?");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -488,6 +489,10 @@ public class Main {
             }
 
             case 6 -> {
+                System.out.println("Please enter your name: ");
+                String str= scanner.nextLine();
+                Banjo banjo = new Banjo();
+                banjo.execute(str);
             }
 
             case 7 -> {
