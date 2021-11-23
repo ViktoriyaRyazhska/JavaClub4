@@ -65,8 +65,4 @@ public class SticksGame {
         System.out.println("You can take 1, 2 or 3 sticks. The last who take stick(s) win");
         game();
     }
-
-    public static void main(String[] args) {
-        task();
-    }
 }

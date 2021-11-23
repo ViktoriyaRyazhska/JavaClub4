@@ -14,4 +14,8 @@ public class FixMe {
     public int plus100(int n) {
         return value + n;
     }
+
+    public static void task() {
+        System.out.println("Done");
+    }
 }
