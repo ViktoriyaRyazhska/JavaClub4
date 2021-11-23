@@ -1,4 +1,4 @@
-package Classes;
+package Classes.BuildingBlocks;
 
 /* The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
 
@@ -14,14 +14,14 @@ Define these methods:
 
 `get_surface_area()` return the surface area of the `Block` */
 
-public class BuldingBlocks {
+public class BuildingBlocks {
     private int width;
     private int length;
     private int height;
     private int volume;
     private int surface_area;
 
-    public BuldingBlocks(int width, int length, int height) {
+    public BuildingBlocks(int width, int length, int height) {
         this.width = width;
         this.length = length;
         this.height = height;
@@ -60,7 +60,7 @@ public class BuldingBlocks {
     }
 
     public static void main(String[] args) {
-        BuldingBlocks buldingBlocks = new BuldingBlocks(2,3,4);
+        BuildingBlocks buldingBlocks = new BuildingBlocks(2,3,4);
         System.out.println(buldingBlocks.getVolume());
         System.out.println(buldingBlocks.getSurface_area());
     }

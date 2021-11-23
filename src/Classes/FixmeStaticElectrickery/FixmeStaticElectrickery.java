@@ -1,4 +1,4 @@
-package Classes;
+package Classes.FixmeStaticElectrickery;
 
 public class FixmeStaticElectrickery {
     public static final FixmeStaticElectrickery INST = new FixmeStaticElectrickery();
