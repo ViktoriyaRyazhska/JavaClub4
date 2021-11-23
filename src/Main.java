@@ -5,6 +5,7 @@ import tasks.classes.*;
 import tasks.conditions.*;
 import tasks.loops.*;
 import tasks.oop.AdamAndEve;
+import tasks.string.Banjo;
 import tasks.string.Dinglemouse;
 import tasks.string.NumToString;
 import tasks.string.StringReverse;
