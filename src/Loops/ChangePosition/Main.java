@@ -37,16 +37,4 @@ public class Main {
         }
         return value;
     }
-//NOT DONE
-//    public static String[] sorting(final String[] array) {
-//        for (int i = 0; i < array.length; i++) {
-//            if (!(array[0].equals("head"))) {
-//                for (int j = i; j < array.length; j++) {
-//                    String tmp = array[0];
-//                    if()
-//                    array[0] =
-//                }
-//            }
-//        }
-//    }
 }
