@@ -39,15 +39,14 @@ public class TwiceAsOld {
         return result;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter dad`s age:\n> ");
-        int dadAge = in.nextInt();
+        int dadAge = scanner.nextInt();
         System.out.print("Enter son`s age:\n> ");
-        int sonAge = in.nextInt();
+        int sonAge = scanner.nextInt();
         if (dadAge <= 0 || dadAge < sonAge || sonAge < 0) {
             System.out.println("Error.. invalid input");
-            task();
+            task(scanner);
         } else {
             System.out.println("Result: " + output(onHowYears(dadAge, sonAge)));
         }

@@ -14,13 +14,12 @@ public class TheModuloSequence {
         return sequence[n - 1];
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter the index of number to find:\n> ");
-        int n = in.nextInt();
+        int n = scanner.nextInt();
         if (n < 1) {
             System.out.println("Error.. invalid input");
-            task();
+            task(scanner);
         } else {
             System.out.println("Result: " + findNth(n));
         }

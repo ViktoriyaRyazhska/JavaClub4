@@ -5,16 +5,12 @@ import application.tasks.loops.*;
 import java.util.Scanner;
 
 public class ChoiceLoops extends Constants {
-    public static void choiceLoops() {
-        Scanner in = new Scanner(System.in);
+    private static void choiceLoops(Scanner scanner) {
         System.out.println(listOfLoops());
         System.out.print("Select an option:\n> ");
-        int option = in.nextInt();
-
-        switch (option) {
+        switch (scanner.nextInt()) {
             default:
                 System.out.println("Sorry.. this option don`t exist");
-                ChoiceLoops.choiceLoops();
                 break;
             case EXIT:
                 break;
@@ -22,24 +18,24 @@ public class ChoiceLoops extends Constants {
                 ChoiceList.choiceList();
                 break;
             case 1:
-                GapInPrimes.task();
-                ChoiceLoops.choiceLoops();
+                GapInPrimes.task(scanner);
+                ChoiceLoops.choiceLoops(scanner);
                 break;
             case 2:
-                NearestSquare.task();
-                ChoiceLoops.choiceLoops();
+                NearestSquare.task(scanner);
+                ChoiceLoops.choiceLoops(scanner);
                 break;
             case 3:
-                SticksGame.task();
-                ChoiceLoops.choiceLoops();
+                SticksGame.task(scanner);
+                ChoiceLoops.choiceLoops(scanner);
                 break;
             case 4:
-                Summation.task();
-                ChoiceLoops.choiceLoops();
+                Summation.task(scanner);
+                ChoiceLoops.choiceLoops(scanner);
                 break;
             case 5:
-                TwiceAsOld.task();
-                ChoiceLoops.choiceLoops();
+                TwiceAsOld.task(scanner);
+                ChoiceLoops.choiceLoops(scanner);
                 break;
         }
     }

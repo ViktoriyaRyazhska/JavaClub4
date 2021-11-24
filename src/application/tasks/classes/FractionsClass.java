@@ -31,4 +31,8 @@ public class FractionsClass implements Comparable<FractionsClass> {
         return null;
     }
     //...and make this class string representable
+
+    public static void task() {
+        System.out.println("Done");
+    }
 }

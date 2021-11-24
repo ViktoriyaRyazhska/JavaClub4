@@ -24,13 +24,12 @@ public class NearestSquare {
         return expectedNumber;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter the number to find nearest square number:\n> ");
-        int n = in.nextInt();
+        int n = scanner.nextInt();
         if (n <= 0) {
             System.out.println("Error.. invalid input");
-            task();
+            task(scanner);
         } else {
             System.out.println("Result: " + findSquareNumber(n));
         }

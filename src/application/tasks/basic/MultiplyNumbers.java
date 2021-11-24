@@ -7,11 +7,10 @@ public class MultiplyNumbers {
         return number1 * number2;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter two numbers to multiply:\n> ");
-        int number1 = in.nextInt();
-        int number2 = in.nextInt();
+        int number1 = scanner.nextInt();
+        int number2 = scanner.nextInt();
         System.out.println("Result: " + multiply(number1, number2));
     }
 }
