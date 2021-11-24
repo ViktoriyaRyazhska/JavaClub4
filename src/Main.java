@@ -298,6 +298,7 @@ public class Main {
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
         System.out.println("6 ---- Reversed sequence");
+        System.out.println("13 ---- Grasshopper - Summation");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -367,6 +368,12 @@ public class Main {
             }
 
             case 7 -> {
+            }
+            case 13 -> {
+                System.out.println("Please enter a number : ");
+                int num = scanner.nextInt();
+                GrassHopper grassHopper = new GrassHopper();
+                grassHopper.execute(num);
             }
         }
     }
