@@ -14,7 +14,7 @@ public class ChoiceList {
                 System.out.println("Sorry.. this option don`t exist");
             case Constants.EXIT:
                 break;
-            case Constants.BACK:
+            case 1:
                 ChoiceBasic.choiceBasic();
                 break;
             case 2:

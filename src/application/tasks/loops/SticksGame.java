@@ -30,20 +30,19 @@ public class SticksGame {
         }
     }
 
-    private static void playerMove(SticksGame game) {
-        Scanner in = new Scanner(System.in);
+    private static void playerMove(SticksGame game, Scanner scanner) {
         System.out.print("Take some stick:\n> ");
-        int n = in.nextInt();
+        int n = scanner.nextInt();
         if (n > 0 && n <= 3) {
             makeMove(game, n);
         } else {
             System.out.println("Error.. don`t cheat!!!");
-            playerMove(game);
+            playerMove(game, scanner);
         }
     }
 
 
-    private static void game() {
+    private static void game(Scanner scanner) {
         SticksGame game = new SticksGame();
         System.out.println("Sticks left: " + game.getAmountOfSticks());
         while(game.getAmountOfSticks() > 0) {
@@ -53,7 +52,7 @@ public class SticksGame {
                 System.out.println("You lose((");
                 break;
             }
-            playerMove(game);
+            playerMove(game, scanner);
             System.out.println("Sticks left: " + game.getAmountOfSticks());
             if (game.getAmountOfSticks() <= 0) {
                 System.out.println("You win!!!");
@@ -61,12 +60,8 @@ public class SticksGame {
             }
         }
     }
-    public static void task() {
+    public static void task(Scanner scanner) {
         System.out.println("You can take 1, 2 or 3 sticks. The last who take stick(s) win");
-        game();
-    }
-
-    public static void main(String[] args) {
-        task();
+        game(scanner);
     }
 }

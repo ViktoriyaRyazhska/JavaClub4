@@ -20,17 +20,16 @@ public class WillBeEnoughSpace {
         return result;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter amount of people the bus can hold:\n> ");
-        int canHold = in.nextInt();
+        int canHold = scanner.nextInt();
         System.out.print("Enter amount of people on the bus:\n> ");
-        int onTheBus = in.nextInt();
+        int onTheBus = scanner.nextInt();
         System.out.print("Enter amount of waiting people:\n> ");
-        int waiting = in.nextInt();
+        int waiting = scanner.nextInt();
         if (canHold <= 1 || onTheBus < 0 || waiting < 0) {
             System.out.println("Error.. invalid input");
-            task();
+            task(scanner);
         } else {
             System.out.println("Result: " + output(waiting, enough(canHold, onTheBus, waiting)));
         }

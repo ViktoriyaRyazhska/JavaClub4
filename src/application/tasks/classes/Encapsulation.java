@@ -35,4 +35,8 @@ public class Encapsulation {
     public void setAnObject(Object anObject) {
         this.anObject = anObject;
     }
+
+    public static void task() {
+        System.out.println("Done");
+    }
 }
