@@ -7,10 +7,9 @@ public class OppositeNumber {
         return 0 - number;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Enter the number to make opposite:\n> ");
-        int number = in.nextInt();
+        int number = scanner.nextInt();
         System.out.println("Result: " + opposite(number));
     }
 }
