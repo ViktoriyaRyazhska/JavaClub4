@@ -1,5 +1,6 @@
 package main;
 
+import basic_program.Basic_Program_Task_4;
 import string.String_Task_4;
 
 import java.util.Scanner;
@@ -20,18 +21,7 @@ public class Main {
         int num = scanner.nextInt();
         switch (num) {
             case 4:
-                System.out.println("Task 4");
-
-                System.out.println("Введіть значення для методу");
-
-                int value = scanner.nextInt();
-
-                System.out.println("Результат:");
-                System.out.println("-----------");
-                System.out.println(String_Task_4.opposite(value));
-
-                System.out.println("-----------");
-
+                Basic_Program_Task_4.solveTask();
                 break;
 
             case 8:

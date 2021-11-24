@@ -1,5 +1,7 @@
 package conditions;
 
+import java.util.Scanner;
+
 public class Conditions_task_8 {
     public static boolean isLove(final int flower1, final int flower2) {
         boolean flag = false;
@@ -15,6 +17,19 @@ public class Conditions_task_8 {
 
     public static void main(String[] args) {
         System.out.println(isLove(2, 2));
+    }
+
+    public static void solveTask(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter count flower1:");
+        int value1 = scanner.nextInt();
+        System.out.println("Enter count flower2:");
+        int value2 = scanner.nextInt();
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(isLove(value1, value2));
+        System.out.println("-----------");
 
     }
 }
