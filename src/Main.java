@@ -147,7 +147,7 @@ public class Main {
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Encapsulation Test");
         System.out.println("2 ---- Addition of a 100 number to yours");
-        System.out.println("3 ---- Volume-Of-Cuboid");
+        System.out.println("3 ---- Add-Two-Fractions");
         System.out.println("7 ---- Time-After-Midnight");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
@@ -173,8 +173,14 @@ public class Main {
             }
 
             case 3 -> {
-
-                // TODO: 20.11.2021
+                System.out.println("Please enter two fracions to add them: ");
+                long top1 = scanner.nextInt();
+                long bot1 = scanner.nextInt();
+                long top2 = scanner.nextInt();
+                long bot2 = scanner.nextInt();
+                Fraction fraction = new Fraction(top1, bot1);
+                Fraction fraction2 = new Fraction(top2, bot2);
+                fraction.execute(fraction, fraction2);
             }
 
             case 4 -> {
@@ -315,7 +321,7 @@ public class Main {
                 int num = scanner.nextInt();
                 int[] array = new int[num];
                 System.out.println("Enter the elements of the array: ");
-                for (int i = 0; i < num; i++){
+                for (int i = 0; i < num; i++) {
                     array[i] = scanner.nextInt();
                 }
                 AverageMarks averageMarks = new AverageMarks();
@@ -461,31 +467,31 @@ public class Main {
 
             case 5 -> {
                 System.out.println("Please enter a text for replace all the dots: ");
-                String str= scanner.nextLine();
+                String str = scanner.nextLine();
                 Dinglemouse dinglemouse = new Dinglemouse();
                 dinglemouse.execute(str);
             }
 
             case 6 -> {
                 System.out.println("Please enter your name: ");
-                String str= scanner.nextLine();
+                String str = scanner.nextLine();
                 Banjo banjo = new Banjo();
                 banjo.execute(str);
             }
 
             case 7 -> {
                 System.out.println("Please enter your text for remove the spaces: ");
-                String str= scanner.nextLine();
+                String str = scanner.nextLine();
                 RemoveStringSpaces removeStringSpaces = new RemoveStringSpaces();
                 removeStringSpaces.execute(str);
             }
             case 8 -> {
                 System.out.println("Please enter three strings: ");
-                String one= scanner.nextLine();
-                String two= scanner.nextLine();
-                String three= scanner.nextLine();
+                String one = scanner.nextLine();
+                String two = scanner.nextLine();
+                String three = scanner.nextLine();
                 TripleTrouble tripleTrouble = new TripleTrouble();
-                tripleTrouble.execute(one,two,three);
+                tripleTrouble.execute(one, two, three);
             }
         }
     }
