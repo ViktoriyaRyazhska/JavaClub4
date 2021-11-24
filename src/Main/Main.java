@@ -8,7 +8,7 @@ public class Main {
         //final Summation sum = new Summation(5);
         //System.out.println(sum.summation());
 
-        final Hello hello = new Hello("Maksym Danyliuk", "Lanchyn", "Ivano-Frankivsk");
+        final Hello hello = new Hello("Nazar Spodar", "Lanchyn", "Ivano-Frankivsk");
         System.out.println(hello.sayHello());
     }
 }
