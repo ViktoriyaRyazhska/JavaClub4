@@ -21,7 +21,7 @@ public class HowGoodAreYou {
             return false;
     }
 
-    private static void task(Scanner in) {
+    public static void task(Scanner in) {
         System.out.print("Array size?: ");
         int arraySize = in.nextInt();
         int array[] = new int[arraySize];
