@@ -142,48 +142,48 @@ public class Canvas {
 
     public static void task() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Width of the canvas:\n > ");
+        System.out.print("Width of the canvas:\n> ");
         int width = in.nextInt();
-        System.out.print("Height of the canvas:\n > ");
+        System.out.print("Height of the canvas:\n> ");
         int height = in.nextInt();
 
         Canvas canvas = new Canvas(width, height);
 
-        System.out.print("For Lines press 1 and rectangle press any digit:\n > ");
+        System.out.print("For Lines press 1 and rectangle press any digit:\n> ");
         int choice = in.nextInt();
         if (choice == 1) {
-            System.out.println("Coordinates of line 1 :\n > ");
-            System.out.println("X1:\n > ");
+            System.out.print("Coordinates of line 1 :\n ");
+            System.out.print("X1:\n> ");
             int x1 = in.nextInt();
-            System.out.println("Y1:\n > ");
+            System.out.print("Y1:\n> ");
             int y1 = in.nextInt();
-            System.out.println("X2\n > ");
+            System.out.print("X2\n> ");
             int x2 = in.nextInt();
-            System.out.println("Y2:\n > ");
+            System.out.print("Y2:\n> ");
             int y2 = in.nextInt();
 
             canvas.fillCanvas();
             canvas.draw(x1, y1, x2, y2);
 
-            System.out.print("Coordinates of line 2 :\n > ");
-            System.out.print("X1:\n > ");
+            System.out.print("Coordinates of line 2 :\n");
+            System.out.print("X1:\n> ");
             int x1l2 = in.nextInt();
-            System.out.print("Y1:\n > ");
+            System.out.print("Y1:\n> ");
             int y1l2 = in.nextInt();
-            System.out.print("X2\n > ");
+            System.out.print("X2\n> ");
             int x2l2 = in.nextInt();
-            System.out.print("Y2:\n > ");
+            System.out.print("Y2:\n> ");
             int y2l2 = in.nextInt();
             canvas.draw(x1l2, y1l2, x2l2, y2l2);
         } else {
-            System.out.print("Coordinates of the rectangle(1 point - top left corner of the rectangle, 2 point - bottom right corner of the rectangle:\n > ");
-            System.out.print("X1:\n > ");
+            System.out.print("Coordinates of the rectangle(1 point - top left corner of the rectangle, 2 point - bottom right corner of the rectangle:\n ");
+            System.out.print("X1:\n> ");
             int x1 = in.nextInt();
-            System.out.print("Y1:\n > ");
+            System.out.print("Y1:\n> ");
             int y1 = in.nextInt();
-            System.out.print("X2\n > ");
+            System.out.print("X2\n> ");
             int x2 = in.nextInt();
-            System.out.print("Y2:\n > ");
+            System.out.print("Y2:\n> ");
             int y2 = in.nextInt();
 
             canvas.fillCanvas();
