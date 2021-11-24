@@ -1,6 +1,6 @@
 package oop;
 
-public class Oop_task_4 {
+public class OOP_Task_4 {
 
     public static void main(String[] args) {
 

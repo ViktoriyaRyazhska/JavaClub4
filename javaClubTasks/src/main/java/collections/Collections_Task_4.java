@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Dictionary {
+public class Collections_Task_4 {
 
     Map<String, String> mapValue1;
     Map<String, String> mapValue2;
 
-    public Dictionary() {
+    public Collections_Task_4() {
         if (mapValue1 == null && mapValue2 == null) {
             mapValue1 = new HashMap<String, String>();
             mapValue2 = new HashMap<String, String>();
@@ -50,7 +50,7 @@ public class Dictionary {
 
 
     public static void main(String[] args) {
-        Dictionary dictionary = new Dictionary();
+        Collections_Task_4 dictionary = new Collections_Task_4();
         dictionary.newEntry("Apple", "Im fruit");
         dictionary.newEntry("Soccer", "A sport");
         dictionary.newEntry("soccer", "a sport");

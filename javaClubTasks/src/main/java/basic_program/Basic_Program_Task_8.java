@@ -1,6 +1,6 @@
 package basic_program;
 
-public class Task_8 {
+public class Basic_Program_Task_8 {
     public static boolean isDivisible(int wallLength, int pixelSize) {
         int result = wallLength % pixelSize;
 

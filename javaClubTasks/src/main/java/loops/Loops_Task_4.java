@@ -1,6 +1,6 @@
 package loops;
 
-public class Maps {
+public class Loops_Task_4 {
     public static int[] map(int[] arr) {
 
         int[] result = new int[arr.length];

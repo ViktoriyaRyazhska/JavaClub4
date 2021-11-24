@@ -1,6 +1,6 @@
 package basic_program;
 
-public class Task_4 {
+public class Basic_Program_Task_4 {
     public static int century(int year) {
         int century;
         int result = year % 100;
