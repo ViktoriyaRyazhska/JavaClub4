@@ -51,9 +51,4 @@ public class ChoiceLoops extends Constants {
 
         return loops;
     }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        choiceLoops(scanner);
-    }
 }
