@@ -206,6 +206,7 @@ public class Main {
         System.out.println("3 ---- Boolean-To-String");
         System.out.println("4 ---- Get-Bonus");
         System.out.println("5 ---- Year-Of-Birth");
+        System.out.println("6 ---- Rock-Paper-Scissors");
         System.out.println("7 ---- Basic-mathematical-operations");
         System.out.println("8 ---- Opposites-attract");
         System.out.println("9 ---- YesOrNo");
@@ -256,6 +257,11 @@ public class Main {
             }
 
             case 6 -> {
+                System.out.println("Please enter string values of player 1 and player 2 to plays rock paper scissors game: ");
+                String player1 = scanner.next();
+                String player2 = scanner.next();
+                RockPaperScissors rockPaperScissors = new RockPaperScissors();
+                rockPaperScissors.execute(player1, player2);
             }
 
             case 7 -> {
