@@ -3,9 +3,11 @@ import java.util.Scanner;
 import tasks.basic.*;
 import tasks.classes.*;
 import tasks.conditions.*;
+import tasks.conditions.OppositeNumber;
 import tasks.loops.*;
 import tasks.oop.AdamAndEve;
 import tasks.string.*;
+import tasks.сollections.PushObjectIntoArray;
 import tasks.сollections.UnfinishedLoop;
 
 
@@ -173,51 +175,6 @@ public class Main {
             case 3 -> {
 
                 // TODO: 20.11.2021
-            }
-
-            case 4 -> {
-            }
-
-            case 5 -> {
-            }
-
-            case 6 -> {
-            }
-
-            case 7 -> {
-            }
-        }
-    }
-
-    private void runCollectionPart() {
-
-        System.out.println("You selected COLLECTION part: ");
-        System.out.println("Please enter a number of task you want to run:");
-        System.out.println("1 ---- Double-Integer");
-        System.out.println("2 ---- Unfinished Loop");
-        System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("7 ---- Time-After-Midnight");
-        System.out.println("====================================");
-        System.out.println("Please select number of task: ");
-
-        int numOfTaskCollectionPart = scanner.nextInt();
-
-        switch (numOfTaskCollectionPart) {
-
-            case 1 -> {
-                // TODO: 20.11.2021
-            }
-
-            case 2 -> {
-                System.out.println("Please enter a number : ");
-                int num = scanner.nextInt();
-                UnfinishedLoop unfinishedLoop = new UnfinishedLoop();
-                unfinishedLoop.execute(num);
-
-
-            }
-
-            case 3 -> {
             }
 
             case 4 -> {
@@ -496,6 +453,10 @@ public class Main {
             }
 
             case 4 -> {
+                System.out.println("Please enter a number to see opposite of it: ");
+                int num = scanner.nextInt();
+                OppositeNumber oppositeNumber = new OppositeNumber();
+                oppositeNumber.execute(num);
             }
 
             case 5 -> {
@@ -525,6 +486,45 @@ public class Main {
                 String three= scanner.nextLine();
                 TripleTrouble tripleTrouble = new TripleTrouble();
                 tripleTrouble.execute(one,two,three);
+            }
+        }
+    }
+
+    private void runCollectionPart() {
+
+        System.out.println("You selected COLLECTION part: ");
+        System.out.println("Please enter a number of task you want to run:");
+        System.out.println("1 ---- Push-Object-Into-List");
+        System.out.println("2 ---- Unfinished Loop");
+        System.out.println("3 ---- Volume-Of-Cuboid");
+        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("====================================");
+        System.out.println("Please select number of task: ");
+
+        int numOfTaskCollectionPart = scanner.nextInt();
+
+        switch (numOfTaskCollectionPart) {
+
+            case 1 -> {
+                System.out.println("Please enter a string to add it into List: ");
+                String str = scanner.next();
+                PushObjectIntoArray pushObjectIntoArray = new PushObjectIntoArray();
+                pushObjectIntoArray.execute(str);
+            }
+
+            case 2 -> {
+                System.out.println("Please enter a number : ");
+                int num = scanner.nextInt();
+                UnfinishedLoop unfinishedLoop = new UnfinishedLoop();
+                unfinishedLoop.execute(num);
+
+
+            }
+
+            case 3 -> {
+            }
+
+            case 4 -> {
             }
         }
     }
