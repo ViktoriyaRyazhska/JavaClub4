@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="javaClubTasks" target="6" />
+      <module name="javaClubTasks" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
