@@ -1,7 +1,5 @@
 package application.utility;
 
-import application.tasks.conditions.OppositeNumber;
-
 import java.util.Scanner;
 
 public class ChoiceConditions {
