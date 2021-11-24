@@ -454,7 +454,7 @@ public class Main {
         System.out.println("Please enter a number of task you want to run:");
         System.out.println("1 ---- Number-To-String");
         System.out.println("2 ---- String-Reverse");
-        System.out.println("3 ---- Volume-Of-Cuboid");
+        System.out.println("3 ---- Welcome-To-The-City");
         System.out.println("5 ---- Replace all dots");
         System.out.println("6 ---- Are You Playing Banjo?");
         System.out.println("7 ---- Remove String Spaces");
@@ -482,6 +482,17 @@ public class Main {
             }
 
             case 3 -> {
+                System.out.println("Please enter name, city and state to see a greeting: ");
+                System.out.println("Enter how many names you like to add: ");
+                int numOfNames = scanner.nextInt();
+                String[] names = new String[numOfNames];
+                for (int i = 0; i < numOfNames; i++) {
+                    names[i] = scanner.next();
+                }
+                String city = scanner.next();
+                String state = scanner.next();
+                WelcomeToCity welcomeToCity = new WelcomeToCity();
+                welcomeToCity.execute(names, city, state);
             }
 
             case 4 -> {
