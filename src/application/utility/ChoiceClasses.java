@@ -52,9 +52,4 @@ public class ChoiceClasses extends Constants{
 
         return classes;
     }
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        choiceClasses(in);
-    }
 }
