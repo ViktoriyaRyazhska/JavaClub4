@@ -11,12 +11,12 @@ public class BooleanToString {
         return result;
     }
 
-    private static boolean input(int option) {
+    private static boolean input(int option, Scanner scanner) {
         boolean flag = false;
         switch (option) {
             default:
                 System.out.println("Error.. invalid input");
-                task();
+                task(scanner);
                 break;
             case 1:
                 flag = true;
@@ -29,10 +29,9 @@ public class BooleanToString {
         return flag;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner scanner) {
         System.out.print("Select an option:\n1. True\n2. False\n> ");
-        int option = in.nextInt();
-        System.out.println("Result: " + convert(input(option)));
+        int option = scanner.nextInt();
+        System.out.println("Result: " + convert(input(option, scanner)));
     }
 }
