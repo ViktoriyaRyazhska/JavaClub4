@@ -50,6 +50,10 @@ public class Collections_Task_4 {
 
 
     public static void main(String[] args) {
+
+    }
+
+    public static void solveTask(){
         Collections_Task_4 dictionary = new Collections_Task_4();
         dictionary.newEntry("Apple", "Im fruit");
         dictionary.newEntry("Soccer", "A sport");
@@ -59,6 +63,7 @@ public class Collections_Task_4 {
         System.out.println(dictionary.look("Soccer"));
         System.out.println(dictionary.look("soccer"));
         System.out.println(dictionary.look("Hi"));
+
     }
 
 

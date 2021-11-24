@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Scanner;
+
 public class String_Task_17 {
 
     public static String toAlternativeString(String string) {
@@ -21,5 +23,17 @@ public class String_Task_17 {
 
     public static void main(String[] args) {
         toAlternativeString("StringUtils.toAlternatingCase");
+    }
+
+    public static void solveTask(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter expression:");
+        String value1 = scanner.nextLine();
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(toAlternativeString(value1));
+        System.out.println("-----------");
+
     }
 }

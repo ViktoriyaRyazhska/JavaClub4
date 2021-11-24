@@ -17,9 +17,17 @@ public class Loops_Task_8 {
         return curentNumber;
     }
 
-    public static void main(String[] args) {
+
+    public static void solveTask(){
         int[] res = {4,1,1,1,4};
+        System.out.println("Array = {4,1,1,1,4}");
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
         System.out.println(grow(res));
+        System.out.println("-----------");
+
+
     }
 }
 

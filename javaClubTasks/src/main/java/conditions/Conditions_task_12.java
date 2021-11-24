@@ -1,5 +1,7 @@
 package conditions;
 
+import java.util.Scanner;
+
 public class Conditions_task_12 {
     public static String switchItUp(int number) {
         String result = "";
@@ -42,5 +44,18 @@ public class Conditions_task_12 {
 
     public static void main(String[] args) {
         System.out.println(switchItUp(5));
+    }
+
+
+    public static void solveTask(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int value1 = scanner.nextInt();
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(switchItUp(value1));
+        System.out.println("-----------");
+
     }
 }

@@ -1,5 +1,7 @@
 package loops;
 
+import java.util.Scanner;
+
 public class Loops_Task_4 {
     public static int[] map(int[] arr) {
 
@@ -19,5 +21,18 @@ public class Loops_Task_4 {
     public static void main(String[] args) {
         int[] result = {1, 2, 3};
         map(result);
+    }
+
+
+    public static void solveTask(){
+        int[] result = {1, 2, 3};
+        System.out.println("Array = {1,2,3}");
+
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(map(result));
+        System.out.println("-----------");
+
     }
 }

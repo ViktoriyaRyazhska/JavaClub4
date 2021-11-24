@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Scanner;
+
 public class String_Task_12 {
 
     public static String weatherInfo(double temp) {
@@ -18,6 +20,18 @@ public class String_Task_12 {
     public static void main(String[] args) {
         System.out.println(weatherInfo(23));
         System.out.println(weatherInfo(50));
+    }
+
+    public static void solveTask(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter temperature:");
+        double value1 = scanner.nextInt();
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(weatherInfo(value1));
+        System.out.println("-----------");
+
     }
 
 }
