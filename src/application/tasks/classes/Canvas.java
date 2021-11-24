@@ -111,20 +111,18 @@ public class Canvas {
     }
 
     private String drawCanvas() {
-        // upper border
+            // upper border
         System.out.print(" - ");
         for (int i = 0; i < canvas.length; i++) {
             System.out.print("- ");
         }
         System.out.println();
-
-        //drawing canvas
+            //drawing canvas
         for (String[] row : canvas) {
             //separating each cell
             System.out.println("| " + Arrays.stream(row).collect(Collectors.joining(" ")) + " |");
         }
-
-        // lower border
+            // lower border
         System.out.print(" - ");
         for (int i = 0; i < canvas.length; i++) {
             System.out.print("- ");
