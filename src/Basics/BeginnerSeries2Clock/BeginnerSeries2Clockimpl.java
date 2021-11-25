@@ -5,8 +5,9 @@ package Basics.BeginnerSeries2Clock;
  * Your task is to write a function which returns the time since midnight in milliseconds.
  */
 
-public class BeginnerSeries2Clock {
+public class BeginnerSeries2Clockimpl {
     public static int Past(int h, int m, int s) {
         return h * 36000000 + m * 60000 + s * 1000;
     }
+
 }
