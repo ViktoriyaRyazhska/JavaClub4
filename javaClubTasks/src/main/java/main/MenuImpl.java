@@ -1,7 +1,10 @@
 package main;
 
-import basic_program.Basic_Program_Task_4;
-import basic_program.Basic_Program_Task_8;
+import basic_program.*;
+import classes.Classes_Task_1;
+import classes.Classes_Task_5;
+import classes.Classes_Task_5_Game;
+import collections.Collections_Task_1;
 import collections.Collections_Task_4;
 import conditions.Conditions_task_12;
 import conditions.Conditions_task_14;
@@ -53,21 +56,39 @@ public class MenuImpl {
                 System.out.println("********************************************");
                 System.out.println("*  You are in the package 'Basic Program'  *");
                 System.out.println("*  Choose a task:                          *");
+                System.out.println("*  1 : Task 1                              *");
                 System.out.println("*  4 : Task 4                              *");
+                System.out.println("*  5 : Task 5                              *");
                 System.out.println("*  8 : Task 8                              *");
+                System.out.println("*  9 : Task 9                              *");
                 System.out.println("*  0 : Return to Main Menu                 *");
                 System.out.println("********************************************");
 
                 String basic_program_value = scanner.next();
 
                 switch (isNumeric(basic_program_value)) {
+                    case 1: {
+                        Basic_Program_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         Basic_Program_Task_4.solveTask();
                         chooseMenu();
                         break;
                     }
+                    case 5: {
+                        Basic_Program_Task_5.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 8: {
                         Basic_Program_Task_8.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 9: {
+                        Basic_Program_Task_9.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -88,15 +109,27 @@ public class MenuImpl {
                 System.out.println("**************************************");
                 System.out.println("*  You are in the package 'Classes'  *");
                 System.out.println("*  Choose a task:                    *");
+                System.out.println("*  1 : Task 1                        *");
                 System.out.println("*  4 : Task 4                        *");
+                System.out.println("*  5 : Task 5                        *");
                 System.out.println("*  0 : Return to Main Menu           *");
                 System.out.println("**************************************");
 
                 String classes_value = scanner.next();
 
                 switch (isNumeric(classes_value)) {
+                    case 1: {
+                        Classes_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         System.out.println("доробити тут метод");
+                        chooseMenu();
+                        break;
+                    }
+                    case 5: {
+                        Classes_Task_5_Game.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -117,6 +150,7 @@ public class MenuImpl {
                 System.out.println("******************************************");
                 System.out.println("*  You are in the package 'Сollections'  *");
                 System.out.println("*  Choose a task:                        *");
+                System.out.println("*  1 : Task 1                            *");
                 System.out.println("*  4 : Task 4                            *");
                 System.out.println("*  0 : Return to Main Menu               *");
                 System.out.println("******************************************");
@@ -124,6 +158,11 @@ public class MenuImpl {
                 String collections_value = scanner.next();
 
                 switch (isNumeric(collections_value)) {
+                    case 1: {
+                        Collections_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         System.out.println("Result: ");
                         Collections_Task_4.solveTask();
