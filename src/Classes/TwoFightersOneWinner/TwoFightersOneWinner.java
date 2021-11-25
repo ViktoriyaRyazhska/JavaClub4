@@ -1,45 +1,55 @@
 package Classes.TwoFightersOneWinner;
 
+import java.util.Scanner;
+
 public class TwoFightersOneWinner {
+    private String name;
+    private int health;
+    private int damagePerAttack;
 
-    public String name;
-    public int health;
-    public int damagePerAttack;
-
-    public TwoFightersOneWinner(String name, int health, int damagePerAttack) {
-        this.name = name;
-        this.health = health;
-        this.damagePerAttack = damagePerAttack;
+    public TwoFightersOneWinner(final Scanner scanner) {
+        setName(scanner.nextLine());
+        setHealth(scanner.nextInt());
+        setDamagePerAttack(scanner.nextInt());
     }
 
-    public static class Fight {
+    public String getName() {
+        return name;
+    }
 
-        public static String declareWinner(TwoFightersOneWinner fighter1, TwoFightersOneWinner fighter2, String firstAttacker) {
-
-            if (firstAttacker.equals(fighter2.name)) {
-
-                while (fighter1.health > 0 && fighter2.health > 0) {
-                    fighter1.health = fighter1.health - fighter2.damagePerAttack;
-                    if (fighter1.health <= 0) return fighter2.name;
-                    fighter2.health = fighter2.health - fighter1.damagePerAttack;
-                    if (fighter2.health <= 0) return fighter1.name;
-                }
-            } else {
-                while (fighter1.health > 0 && fighter2.health > 0) {
-                    fighter2.health = fighter2.health - fighter1.damagePerAttack;
-                    if (fighter2.health <= 0) return fighter1.name;
-                    fighter1.health = fighter1.health - fighter2.damagePerAttack;
-                    if (fighter1.health <= 0) return fighter2.name;
-                }
-            }
-            return "";
-        }
-
-        public static void main(String[] args) {
-            TwoFightersOneWinner fighter1 = new TwoFightersOneWinner("Cossack", 8, 5);
-            TwoFightersOneWinner fighter2 = new TwoFightersOneWinner("Viking", 10, 3);
-            System.out.println(declareWinner(fighter1, fighter2, fighter1.name));
+    public void setName(final String name) {
+        if(!name.isEmpty() && name.matches("\\b([A-Z][a-z]*)\\b")) {
+            this.name = name;
+        } else {
+            this.name = "Viking";
         }
     }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(final int health) {
+        if(health >= 10 && health <= 1000){
+            this.health = health;
+        }else{
+            this.health = (int) ((Math.random() * (10000 - 10)) + 10);
+        }
+    }
+
+    public int getDamagePerAttack() {
+        return damagePerAttack;
+    }
+
+    public void setDamagePerAttack(final int damagePerAttack) {
+       this.damagePerAttack = damagePerAttack;
+    }
+
+//    public static void main(String[] args) {
+//            TwoFightersOneWinner fighter1 = new TwoFightersOneWinner("Cossack", 8, 5);
+//            TwoFightersOneWinner fighter2 = new TwoFightersOneWinner("Viking", 10, 3);
+//            System.out.println(declareWinner(fighter1, fighter2, fighter1.name));
+//        }
+//    }
 }
 

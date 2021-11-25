@@ -14,7 +14,7 @@ public class LombokEncapsulation {
     public LombokEncapsulation() {
     }
 
-    public LombokEncapsulation(int number, String stringValue, Object anObject) {
+    public LombokEncapsulation(final int number, final String stringValue, final Object anObject) {
         this.number = number;
         this.stringValue = stringValue;
         this.anObject = anObject;
@@ -24,7 +24,7 @@ public class LombokEncapsulation {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(final int number) {
         this.number = number;
     }
 
@@ -32,7 +32,7 @@ public class LombokEncapsulation {
         return stringValue;
     }
 
-    public void setStringValue(String stringValue) {
+    public void setStringValue(final String stringValue) {
         this.stringValue = stringValue;
     }
 
@@ -40,12 +40,7 @@ public class LombokEncapsulation {
         return anObject;
     }
 
-    public void setAnObject(Object anObject) {
+    public void setAnObject(final Object anObject) {
         this.anObject = anObject;
-    }
-
-    public void execute(){
-        LombokEncapsulation lombokEncapsulation = new LombokEncapsulation();
-        System.out.println(lombokEncapsulation.getNumber());
     }
 }
