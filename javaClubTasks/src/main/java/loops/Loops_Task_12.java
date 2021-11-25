@@ -15,7 +15,8 @@ public class Loops_Task_12 {
 
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method find the nearest square number, nearest_sq(n), of a positive integer n.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number:");
         int value1 = scanner.nextInt();

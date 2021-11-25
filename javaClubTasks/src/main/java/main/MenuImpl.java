@@ -2,12 +2,14 @@ package main;
 
 import basic_program.Basic_Program_Task_4;
 import basic_program.Basic_Program_Task_8;
+import classes.Classes_Task_4;
 import collections.Collections_Task_4;
 import conditions.Conditions_task_12;
 import conditions.Conditions_task_14;
 import conditions.Conditions_task_4;
 import conditions.Conditions_task_8;
 import loops.Loops_Task_12;
+import loops.Loops_Task_14;
 import loops.Loops_Task_4;
 import loops.Loops_Task_8;
 import oop.OOP_Task_4;
@@ -96,7 +98,8 @@ public class MenuImpl {
 
                 switch (isNumeric(classes_value)) {
                     case 4: {
-                        System.out.println("доробити тут метод");
+                        System.out.println("Result: ");
+                        Classes_Task_4.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -220,7 +223,7 @@ public class MenuImpl {
                         break;
                     }
                     case 14: {
-                        System.out.println("доробити метод");
+                        Loops_Task_14.solveTask();
                         chooseMenu();
                         break;
                     }

@@ -25,7 +25,8 @@ public class String_Task_17 {
         toAlternativeString("StringUtils.toAlternatingCase");
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method convert text 'altERnaTIng cAsE <=> ALTerNAtiNG CaSe' ");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter expression:");
         String value1 = scanner.nextLine();

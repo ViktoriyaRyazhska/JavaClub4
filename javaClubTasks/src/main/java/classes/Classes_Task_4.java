@@ -1,9 +1,15 @@
 package classes;
 
-class Classes_Task_4 {
+import java.util.Scanner;
+
+public class Classes_Task_4 {
     private int width;
     private int height;
     private char[][] cav;
+
+    public Classes_Task_4() {
+
+    }
 
     public Classes_Task_4(int width, int height) {
         if (width < 0 || height < 0) {
@@ -105,4 +111,18 @@ class Classes_Task_4 {
 
         return res.toString();
     }
+
+    public static void solveTask() {
+        System.out.println("This method implement the drawCanvas method to return the string contains the entire canvas surrounded by borders with - and |." +
+                "Draw the line with 'x' which connects the given points.\n" +
+                "If the points are diagonal, a rectangle instead of diagonal line should be drawn");
+        Classes_Task_4 classes_task_4 = new Classes_Task_4(12, 8);
+        classes_task_4.drawHorizonLine(3, 4, 2);
+        classes_task_4.drawVerticalLine(4, 5, 3);
+        classes_task_4.drawRectangle(7, 2, 5, 3);
+        classes_task_4.draw(4, 6, 5, 4);
+        classes_task_4.fillRecursive(4, 5, 'x');
+        System.out.println(classes_task_4.drawCanvas());
+    }
+
 }

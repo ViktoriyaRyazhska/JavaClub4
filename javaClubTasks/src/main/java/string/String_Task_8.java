@@ -18,7 +18,7 @@ public class String_Task_8 {
         return result;
     }
 
-    public void info(){
+    public void info() {
         System.out.println("task 2");
     }
 
@@ -26,7 +26,9 @@ public class String_Task_8 {
         System.out.println(tripleTrouble("aa", "bb", "cc"));
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method will return a string that combines all of the letters of the three inputed strings in groups. \n " +
+                "Taking the first letter of all of the inputs and grouping them next to each other");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first word:");
         String value1 = scanner.next();

@@ -20,7 +20,10 @@ public class Conditions_task_4 {
 
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method takes in two arguments (salary, bonus). Salary will be an integer, and bonus a boolean.\n" +
+                "If bonus is true, the salary should be multiplied by 10. If bonus is false, \n" +
+                "the fatcat did not make enough money and must receive only his stated salary.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter salary:");
         int value1 = scanner.nextInt();
@@ -30,9 +33,9 @@ public class Conditions_task_4 {
         int value2 = scanner.nextInt();
 
         boolean flag;
-        if(value2 == 1){
+        if (value2 == 1) {
             flag = true;
-        } else if(value2 == 2){
+        } else if (value2 == 2) {
             flag = false;
         } else {
             flag = false;

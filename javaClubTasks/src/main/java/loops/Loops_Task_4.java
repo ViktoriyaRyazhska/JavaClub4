@@ -24,8 +24,9 @@ public class Loops_Task_4 {
     }
 
 
-    public static void solveTask(){
+    public static void solveTask() {
         int[] result = {1, 2, 3};
+        System.out.println("Given an array of integers, return a new array with each value doubled.");
         System.out.println("Array = {1,2,3}");
 
 
