@@ -6,4 +6,6 @@ public class Basic_Program_Task_6 {
         return Integer.parseInt(str);
 
     }
+
+
 }
