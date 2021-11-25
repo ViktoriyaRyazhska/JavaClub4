@@ -5,7 +5,7 @@ package Basics.AgeRangeCompatibilityEquation;
  * (including myself).
  * It's the 'recommended' age range in which to date someone.
  */
-public class AgeRangeCompatibilityEquation {
+public class AgeRangeCompatibilityEquationImpl  {
     public static String datingRange(int age) {
         int min, max;
         if (age <= 14) {
@@ -16,5 +16,7 @@ public class AgeRangeCompatibilityEquation {
             max = (int) (age - 7) * 2;
         }
         return min + "-" + max;
+
     }
+
 }
