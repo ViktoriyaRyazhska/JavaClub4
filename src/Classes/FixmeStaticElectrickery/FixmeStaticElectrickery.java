@@ -3,7 +3,7 @@ package Classes.FixmeStaticElectrickery;
 public class FixmeStaticElectrickery {
     public static final FixmeStaticElectrickery INST = new FixmeStaticElectrickery();
 
-    private  int ONE_HUNDRED = 100;
+    private int ONE_HUNDRED = 100;
 
     private static int value;
 
