@@ -1,10 +1,12 @@
 package Loops.Summation;
 
+import java.util.Scanner;
+
 public class SummationImpl implements Summation {
     private int n;
 
-    public SummationImpl(final int n) {
-        this.n = n;
+    public SummationImpl(final Scanner scanner) {
+        setN(scanner.nextInt());
     }
 
     public int getN() {

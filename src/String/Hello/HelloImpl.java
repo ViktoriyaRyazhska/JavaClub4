@@ -6,9 +6,9 @@ public class HelloImpl implements Hello {
     private String state;
 
     public HelloImpl(final String name, final String city, final String state) {
-        this.name = name;
-        this.city = city;
-        this.state = state;
+        setName(name);
+        setCity(city);
+        setState(state);
     }
 
     public String getName() {
