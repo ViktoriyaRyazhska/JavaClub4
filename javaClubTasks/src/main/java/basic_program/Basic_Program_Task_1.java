@@ -21,4 +21,5 @@ public class Basic_Program_Task_1 {
         System.out.println("-----------");
 
     }
+
 }
