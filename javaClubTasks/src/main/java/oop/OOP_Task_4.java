@@ -17,7 +17,8 @@ public class OOP_Task_4 {
 
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("Define the different shapes: `Square`, `Rectangle`, `Circle` and `Triangle`");
         Calculator sut = new Calculator();
         System.out.println("getTotalArea: Circle: ");
         System.out.println(sut.getTotalArea(new Circle(3)));

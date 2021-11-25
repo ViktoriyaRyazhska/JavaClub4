@@ -22,7 +22,8 @@ public class Basic_Program_Task_4 {
         System.out.println(century(1705));
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method takes a year and returns a century");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the year:");
         int value = scanner.nextInt();

@@ -47,7 +47,8 @@ public class Conditions_task_12 {
     }
 
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("When provided with a number between 0-9, return it in words.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number:");
         int value1 = scanner.nextInt();

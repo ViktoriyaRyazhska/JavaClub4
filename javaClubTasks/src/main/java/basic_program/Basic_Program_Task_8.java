@@ -1,5 +1,6 @@
 package basic_program;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Basic_Program_Task_8 {
@@ -18,7 +19,9 @@ public class Basic_Program_Task_8 {
 
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("This method should take two arguments: the size of the wall in millimeters and the size of a pixel in millimeters. \n " +
+                "It should return True if you can fit an exact number of pixels on the wall, otherwise it should return False");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the wallLength:");
         int value1 = scanner.nextInt();

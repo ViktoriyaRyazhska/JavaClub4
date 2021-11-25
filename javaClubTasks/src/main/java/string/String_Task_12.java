@@ -13,7 +13,7 @@ public class String_Task_12 {
     }
 
     public static double convertToCelsius(double temperature) {
-        double celsius = (temperature - 32) * 5/9;
+        double celsius = (temperature - 32) * 5 / 9;
         return celsius;
     }
 
@@ -22,7 +22,10 @@ public class String_Task_12 {
         System.out.println(weatherInfo(50));
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("Find the errors in the code to get the celsius converter working properly.\n" +
+                "\n" +
+                "To convert fahrenheit to celsius");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter temperature:");
         double value1 = scanner.nextInt();

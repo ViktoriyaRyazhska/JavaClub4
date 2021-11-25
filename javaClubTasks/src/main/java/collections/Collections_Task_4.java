@@ -53,7 +53,11 @@ public class Collections_Task_4 {
 
     }
 
-    public static void solveTask(){
+    public static void solveTask() {
+        System.out.println("In this method, your job is to create a class Dictionary which you can add words to and their entries.");
+        System.out.println("Data:  1. Apple, Im fruit " +
+                "2. Soccer, A sport"
+                + "3. soccer, a sport");
         Collections_Task_4 dictionary = new Collections_Task_4();
         dictionary.newEntry("Apple", "Im fruit");
         dictionary.newEntry("Soccer", "A sport");

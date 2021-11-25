@@ -10,7 +10,7 @@ public class Loops_Task_8 {
             curentNumber = x[i];
         }
 
-        for (int j = 0; j < x.length-1; j++) {
+        for (int j = 0; j < x.length - 1; j++) {
             curentNumber = curentNumber * x[j];
         }
 
@@ -18,8 +18,9 @@ public class Loops_Task_8 {
     }
 
 
-    public static void solveTask(){
-        int[] res = {4,1,1,1,4};
+    public static void solveTask() {
+        int[] res = {4, 1, 1, 1, 4};
+        System.out.println("Given a non-empty array of integers, return the result of multiplying the values together in order.");
         System.out.println("Array = {4,1,1,1,4}");
 
         System.out.println("Result: ");
