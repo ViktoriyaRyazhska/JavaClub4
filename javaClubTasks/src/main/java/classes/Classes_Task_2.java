@@ -1,5 +1,7 @@
 package classes;
 
+import java.util.Scanner;
+
 public class Classes_Task_2 {
         private int arr [];
         private int width;
@@ -29,4 +31,27 @@ public class Classes_Task_2 {
             int surfaceArea = 2*(width * length + width * height + length * height);
             return surfaceArea;
         }
+    public static void solveTask(){
+        System.out.println("This program takes three parameters (width, length, height)\n" +
+                "and returns surface area and volume\n");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter width:");
+        int value1 = scanner.nextInt();
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Enter length:");
+        int value2 = scanner1.nextInt();
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Enter height:");
+        int value3 = scanner2.nextInt();
+        int [] arr = {value1,value2,value3};
+        Classes_Task_2 n = new Classes_Task_2(arr);
+
+
+        System.out.println("So, now it will return surface area and volume\nResult: ");
+        System.out.println("-----------");
+        System.out.println("Volume : " + n.getVolume());
+        System.out.println("Surface area : " + n.getSurfaceArea());
+        System.out.println("-----------");
+
+    }
 }
