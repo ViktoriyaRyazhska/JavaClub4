@@ -1,5 +1,7 @@
 package loops;
 
+import java.util.Scanner;
+
 public class Loops_Task_2 {
     public static int[] humanYearsCatYearsDogYears(final int humanYears) {
         int catYears = 15;
@@ -15,5 +17,20 @@ public class Loops_Task_2 {
             return new int[] {humanYears,catYears + 9,dogYears + 9};
         }
         return new int[]{humanYears,catYears,dogYears};
+    }
+    public static void solveTask(){
+        System.out.println("This program takes one integer parameter(human yers) and\n" +
+                " converts it into the cat years and dog years");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter human years : ");
+        int value1 = scanner.nextInt();
+
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println("Cat years : " + Loops_Task_2.humanYearsCatYearsDogYears(value1)[1]);
+        System.out.println("Dog years : " + Loops_Task_2.humanYearsCatYearsDogYears(value1)[2]);
+        System.out.println("-----------");
+
     }
 }
