@@ -50,7 +50,7 @@ public class ChoiceConditions extends Constants{
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 8:
-                // OppositesAttract.task(scanner);
+                OppositesAttract.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 9:
