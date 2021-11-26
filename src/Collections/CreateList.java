@@ -1,3 +1,4 @@
+/*
 class Kata {
     public static List CreateList(int number) {
         List list = new ArrayList();
@@ -8,3 +9,4 @@ class Kata {
         return list;
     }
 }
+*/

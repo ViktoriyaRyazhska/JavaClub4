@@ -1,3 +1,5 @@
+package JavaClub4.src.Conditions;
+
 public class BooleanToString {
   public static String convert(boolean b){
     if(b == true) {

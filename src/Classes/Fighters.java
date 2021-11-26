@@ -1,4 +1,4 @@
-
+/*
 public class Fighters {
   public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
     if (firstAttacker.equals(fighter1.name)) {
@@ -23,3 +23,4 @@ public class Fighters {
     return "";
   }
 }
+ */
