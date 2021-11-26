@@ -1,6 +1,6 @@
 package oop;
 
-class Square extends Figure{
+public class Square extends Figure{
     private double side;
 
     public Square(double side){

@@ -1,6 +1,6 @@
 package oop;
 
-abstract class Figure{
+public abstract class Figure{
     public abstract double getArea();
 }
 
