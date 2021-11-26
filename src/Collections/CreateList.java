@@ -1,9 +1,11 @@
-/*
-package JavaClub4.src.Collections;
+
+package Collections;
+
+import java.util.*;
 
 class Kata {
-    public static List CreateList(int number) {
-        List list = new ArrayList();
+    public static List<Integer> CreateList(int number) {
+        List<Integer> list = new ArrayList<>();
         for (int count = 1; count <= number;) {
             list.add(count);
             count++;
@@ -11,4 +13,3 @@ class Kata {
         return list;
     }
 }
-*/

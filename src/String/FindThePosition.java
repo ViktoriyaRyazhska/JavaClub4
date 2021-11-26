@@ -1,4 +1,3 @@
-package JavaClub4.src.String;
 
 public class FindThePosition {
     public static String position(char alphabet) {

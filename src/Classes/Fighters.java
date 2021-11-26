@@ -1,5 +1,5 @@
-/*
-package JavaClub4.src.Classes;
+
+package Classes;
 
 public class Fighters {
   public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
@@ -25,4 +25,13 @@ public class Fighters {
     return "";
   }
 }
- */
+
+class Fighter {
+  public String name;
+  public int health, damagePerAttack;
+  public Fighter(String name, int health, int damagePerAttack) {
+    this.name = name;
+    this.health = health;
+    this.damagePerAttack = damagePerAttack;
+  }
+}

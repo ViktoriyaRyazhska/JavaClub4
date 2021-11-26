@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class OppositeNumber {
     public static int opposite(int number) {

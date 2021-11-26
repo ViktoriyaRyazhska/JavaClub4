@@ -1,4 +1,4 @@
-package JavaClub4.src.Classes;
+package Classes;
 
 public class Block {
   int width;

@@ -1,4 +1,4 @@
-package JavaClub4.src.Loops;
+package Loops;
 
 public class School {
     public static int getAverage(int[] marks){

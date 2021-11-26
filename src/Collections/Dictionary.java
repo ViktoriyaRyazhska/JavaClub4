@@ -1,4 +1,4 @@
-package JavaClub4.src.Collections;
+package Collections;
 
 import java.util.*;
 

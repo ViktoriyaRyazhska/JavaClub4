@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class BooleanToString {
   public static String convert(boolean b){

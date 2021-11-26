@@ -1,4 +1,4 @@
-package JavaClub4.src.Loops;
+package Loops;
 
 public class ReduceButGrow {
     public static int grow(int[] x){
