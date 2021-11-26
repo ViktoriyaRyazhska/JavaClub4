@@ -64,6 +64,7 @@ public class Classes_Task_5_Game {
             }
             case 1: {
                 firstAtacker = fighter1.name;
+                break;
             }
         }
 
@@ -80,7 +81,7 @@ public class Classes_Task_5_Game {
         try {
             value = Integer.parseInt(str);
         } catch (NumberFormatException nfe) {
-            System.out.println("Incorrect Data, please enter a task Number!");
+            System.out.println("Please, enter 1 or 0");
         }
         return value;
     }

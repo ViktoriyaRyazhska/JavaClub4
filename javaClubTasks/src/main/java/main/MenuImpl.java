@@ -7,14 +7,9 @@ import collections.Collections_Task_1;
 import classes.Classes_Task_4;
 
 import collections.Collections_Task_4;
-import conditions.Conditions_task_12;
-import conditions.Conditions_task_14;
-import conditions.Conditions_task_4;
-import conditions.Conditions_task_8;
-import loops.Loops_Task_12;
-import loops.Loops_Task_14;
-import loops.Loops_Task_4;
-import loops.Loops_Task_8;
+import conditions.*;
+import loops.*;
+import oop.OOP_Task_1;
 import oop.OOP_Task_4;
 import string.*;
 
@@ -189,8 +184,11 @@ public class MenuImpl {
                 System.out.println("*****************************************");
                 System.out.println("*  You are in the package 'Conditions'  *");
                 System.out.println("*  Choose a task:                       *");
+                System.out.println("*  1 : Task 1                           *");
                 System.out.println("*  4 : Task 4                           *");
+                System.out.println("*  5 : Task 5                           *");
                 System.out.println("*  8 : Task 8                           *");
+                System.out.println("*  9 : Task 9                           *");
                 System.out.println("*  12 : Task 12                         *");
                 System.out.println("*  14 : Task 14                         *");
                 System.out.println("*  0 : Return to Main Menu              *");
@@ -199,13 +197,28 @@ public class MenuImpl {
                 String conditions_value = scanner.next();
 
                 switch (isNumeric(conditions_value)) {
+                    case 1: {
+                        Conditions_task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         Conditions_task_4.solveTask();
                         chooseMenu();
                         break;
                     }
+                    case 5: {
+                        Conditions_task_5.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 8: {
                         Conditions_task_8.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 9: {
+                        Conditions_task_9.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -236,9 +249,13 @@ public class MenuImpl {
                 System.out.println("************************************");
                 System.out.println("*  You are in the package 'Loops'  *");
                 System.out.println("*  Choose a task:                  *");
+                System.out.println("*  1 : Task 1                      *");
                 System.out.println("*  4 : Task 4                      *");
+                System.out.println("*  5 : Task 5                      *");
                 System.out.println("*  8 : Task 8                      *");
+                System.out.println("*  9 : Task 9                      *");
                 System.out.println("*  12 : Task 12                    *");
+                System.out.println("*  13 : Task 13                    *");
                 System.out.println("*  14 : Task 14                    *");
                 System.out.println("*  0 : Return to Main Menu         *");
                 System.out.println("************************************");
@@ -246,8 +263,18 @@ public class MenuImpl {
                 String loops_value = scanner.next();
 
                 switch (isNumeric(loops_value)) {
+                    case 1: {
+                        Loops_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         Loops_Task_4.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 5: {
+                        Loops_Task_5.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -256,8 +283,18 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 9: {
+                        Loops_Task_9.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 12: {
                         Loops_Task_12.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 13: {
+                        Loops_Task_13.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -283,6 +320,7 @@ public class MenuImpl {
                 System.out.println("**********************************");
                 System.out.println("*  You are in the package 'OOP'  *");
                 System.out.println("*  Choose a task:                *");
+                System.out.println("*  1 : Task 1                    *");
                 System.out.println("*  4 : Task 4                    *");
                 System.out.println("*  0 : Return to Main Menu       *");
                 System.out.println("**********************************");
@@ -290,6 +328,11 @@ public class MenuImpl {
                 String oop_value = scanner.next();
 
                 switch (isNumeric(oop_value)) {
+                    case 1: {
+                        OOP_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         System.out.println("Result");
                         OOP_Task_4.solveTask();
@@ -313,9 +356,13 @@ public class MenuImpl {
                 System.out.println("*************************************");
                 System.out.println("*  You are in the package 'String'  *");
                 System.out.println("*  Choose a task:                   *");
+                System.out.println("*  1 : Task 1                       *");
                 System.out.println("*  4 : Task 4                       *");
+                System.out.println("*  5 : Task 5                       *");
                 System.out.println("*  8 : Task 8                       *");
+                System.out.println("*  9 : Task 9                       *");
                 System.out.println("*  12 : Task 12                     *");
+                System.out.println("*  13 : Task 13                     *");
                 System.out.println("*  16 : Task 16                     *");
                 System.out.println("*  17 : Task 17                     *");
                 System.out.println("*  0 : Return to Main Menu          *");
@@ -324,8 +371,18 @@ public class MenuImpl {
                 String loops_value = scanner.next();
 
                 switch (isNumeric(loops_value)) {
+                    case 1: {
+                        String_Task_1.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         String_Task_4.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 5: {
+                        String_Task_5.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -334,8 +391,17 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 9: {
+                        String_Task_9.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 12: {
                         String_Task_12.solveTask();
+                        chooseMenu();
+                        break;
+                    }case 13: {
+                        String_Task_13.solveTask();
                         chooseMenu();
                         break;
                     }
