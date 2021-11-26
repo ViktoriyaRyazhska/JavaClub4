@@ -1,3 +1,5 @@
+package JavaClub4.src.OOP;
+
 public class Calculator {
 
     public double getTotalArea(Triangle t) {

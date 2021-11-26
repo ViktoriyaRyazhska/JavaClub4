@@ -1,3 +1,5 @@
+package JavaClub4.src.Classes;
+
 public class EncapsulationDemo {
   private int number;
   private String stringValue;

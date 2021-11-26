@@ -1,4 +1,6 @@
 /*
+package JavaClub4.src.Collections;
+
 class Kata {
     public static List CreateList(int number) {
         List list = new ArrayList();

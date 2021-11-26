@@ -1,3 +1,5 @@
+package JavaClub4.src.Loops;
+
 public class Solution {
     public static String repeatStr(final int repeat, final String string) {
         StringBuilder result = new StringBuilder();

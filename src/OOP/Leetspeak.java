@@ -41,10 +41,10 @@ public class Leetspeak extends Encoder{
         return eSource.toString();
     }
 
-    public static void main(String[] args) {
-        Leetspeak myEncoder = new Leetspeak();
-        System.out.println(myEncoder.encode("aelmou"));
-    }
+//    public static void main(String[] args) {
+//        Leetspeak myEncoder = new Leetspeak();
+//        System.out.println(myEncoder.encode("aelmou"));
+//    }
 
 }
 

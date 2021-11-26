@@ -1,3 +1,5 @@
+package JavaClub4.src.Collections;
+
 import java.util.*;
 
 public class Dictionary {

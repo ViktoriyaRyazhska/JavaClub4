@@ -1,3 +1,5 @@
+package JavaClub4.src.Classes;
+
 public class Fraction implements Comparable<Fraction>
 {
     private final long top;

@@ -1,3 +1,5 @@
+package JavaClub4.src.String;
+
 public class Kata {
 
     public static String solution(String str) {

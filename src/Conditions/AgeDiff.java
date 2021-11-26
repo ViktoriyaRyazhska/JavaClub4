@@ -1,3 +1,5 @@
+package JavaClub4.src.Conditions;
+
 public class AgeDiff {
     public static String CalculateAge(int birth, int yearTo) {
         if (birth > yearTo) {

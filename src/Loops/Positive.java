@@ -1,3 +1,5 @@
+package JavaClub4.src.Loops;
+
 public class Positive {
     public static int sum(int[] arr){
         int result = 0;

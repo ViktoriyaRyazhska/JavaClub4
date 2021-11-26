@@ -1,3 +1,5 @@
+package JavaClub4.src.String;
+
 public class GrassHopper {
 
     public static String weatherInfo(int temp) {

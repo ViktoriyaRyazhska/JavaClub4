@@ -1,3 +1,5 @@
+package JavaClub4.src.Loops;
+
 public class Sequence{
 
     public static int[] reverse(int n){
