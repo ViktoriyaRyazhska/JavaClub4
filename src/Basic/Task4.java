@@ -1,4 +1,3 @@
-package JavaClub4.src.Basic;
 
 import java.util.Scanner;
 

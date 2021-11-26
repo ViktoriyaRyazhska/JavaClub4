@@ -1,3 +1,4 @@
+package JavaClub4.src.String;
 
 public class FakeBinary {
     public static String fakeBin(String numberString) {
