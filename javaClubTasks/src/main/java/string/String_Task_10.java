@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Scanner;
+
 public class String_Task_10 {
     public static String fakeBin(String numberString) {
         char [] arr = numberString.toCharArray();
@@ -41,5 +43,18 @@ public class String_Task_10 {
             }
         }
         return newstr;
+    }
+    public static void solveTask(){
+        System.out.println("This program replaces any digit below 5 with '0' and any digit 5 and above with '1'.\n " +
+                "Returns the resulting string.");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your string:");
+        String value1 = scanner.nextLine();
+
+
+        System.out.println("Result: ");
+        System.out.println("-----------");
+        System.out.println(fakeBin(value1));
+        System.out.println("-----------");
     }
 }
