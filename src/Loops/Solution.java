@@ -1,4 +1,4 @@
-package JavaClub4.src.Loops;
+package Loops;
 
 public class Solution {
     public static String repeatStr(final int repeat, final String string) {

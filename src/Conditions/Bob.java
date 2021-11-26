@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class Bob {
     public static int enough(int cap, int on, int wait){

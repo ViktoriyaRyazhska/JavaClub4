@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class BasicOperations {
     public static Integer basicMath(String op, int v1, int v2) {

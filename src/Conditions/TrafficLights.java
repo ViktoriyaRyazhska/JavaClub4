@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class TrafficLights {
     public static String updateLight(String current) {

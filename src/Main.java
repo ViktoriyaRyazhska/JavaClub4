@@ -1,7 +1,6 @@
-package JavaClub4.src;
 
-import JavaClub4.src.Basic.MultiplyingTwoNumbers;
-import JavaClub4.src.Basic.VolumeOfACuboid;
+import Basic.MultiplyingTwoNumbers;
+import Basic.VolumeOfACuboid;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package JavaClub4.src.Conditions;
+package Conditions;
 
 public class switchItUp {
     public static String switchItUp(int number)

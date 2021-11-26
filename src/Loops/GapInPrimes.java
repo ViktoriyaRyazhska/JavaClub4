@@ -1,4 +1,4 @@
-package JavaClub4.src.Loops;
+package Loops;
 
 class GapInPrimes {
     public static long[] gap(int g, long m, long n) {

@@ -1,4 +1,4 @@
-package JavaClub4.src.OOP;
+package OOP;
 
 public class God {
     public static Human[] create(){

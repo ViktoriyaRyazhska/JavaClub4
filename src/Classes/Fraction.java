@@ -1,4 +1,4 @@
-package JavaClub4.src.Classes;
+package Classes;
 
 public class Fraction implements Comparable<Fraction>
 {
