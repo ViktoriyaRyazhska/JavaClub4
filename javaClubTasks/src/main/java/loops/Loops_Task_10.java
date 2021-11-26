@@ -8,7 +8,7 @@ public class Loops_Task_10 {
         return new String[] {arr[2], arr[1], arr[0]};
     }
     public static void solveTask(){
-        System.out.println("You will be given an array which will have three values (tail, body, head). This program " +
+        System.out.println("You will be given an array which will have three values (tail, body, head). This program\n " +
                 "re-arranges the array so that the animal is the right way round (head, body, tail).");
         String [] arr = {"tail", "body", "head"};
 
