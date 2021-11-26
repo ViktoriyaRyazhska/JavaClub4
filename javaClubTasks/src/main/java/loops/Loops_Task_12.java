@@ -2,6 +2,8 @@ package loops;
 
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class Loops_Task_12 {
 
     public static int nearestSq(int n) {
@@ -19,12 +21,24 @@ public class Loops_Task_12 {
         System.out.println("This method find the nearest square number, nearest_sq(n), of a positive integer n.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number:");
-        int value1 = scanner.nextInt();
+        String value1 = scanner.next();
+        int valueIsNumers = isNumeric(value1);
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(nearestSq(value1));
+        System.out.println(nearestSq(valueIsNumers));
         System.out.println("-----------");
 
+    }
+
+    public static int isNumeric(String str) {
+        int value = 0;
+        try {
+            value = Integer.parseInt(str);
+        } catch (NumberFormatException nfe) {
+            System.out.println("Incorrect Data, please enter a number!");
+            chooseMenu();
+        }
+        return value;
     }
 }

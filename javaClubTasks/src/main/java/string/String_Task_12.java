@@ -2,6 +2,8 @@ package string;
 
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class String_Task_12 {
 
     public static String weatherInfo(double temp) {
@@ -28,13 +30,26 @@ public class String_Task_12 {
                 "To convert fahrenheit to celsius");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter temperature:");
-        double value1 = scanner.nextInt();
+        String value1 = scanner.next();
+        double valueIsNumers = isNumeric(value1);
+
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(weatherInfo(value1));
+        System.out.println(weatherInfo(valueIsNumers));
         System.out.println("-----------");
 
+    }
+
+    public static double isNumeric(String str) {
+        double value = 0;
+        try {
+            value = Double.parseDouble(str);
+        } catch (NumberFormatException nfe) {
+            System.out.println("Incorrect Data, please enter a number!");
+            chooseMenu();
+        }
+        return value;
     }
 
 }

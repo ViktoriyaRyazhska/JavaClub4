@@ -2,6 +2,8 @@ package conditions;
 
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class Conditions_task_4 {
 
     public static String bonusTime(final int salary, final boolean bonus) {
@@ -26,11 +28,13 @@ public class Conditions_task_4 {
                 "the fatcat did not make enough money and must receive only his stated salary.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter salary:");
-        int value1 = scanner.nextInt();
+        String value1 = scanner.next();
+        int valueIsNumers = isNumeric(value1);
         System.out.println("Enter bonus: 'true' or 'false' :");
         System.out.println("Enter 1 - True");
         System.out.println("Enter 2 - False");
-        int value2 = scanner.nextInt();
+        String valueIsNumers2 = scanner.next();
+        int value2 = isNumeric(valueIsNumers2);
 
         boolean flag;
         if (value2 == 1) {
@@ -44,8 +48,19 @@ public class Conditions_task_4 {
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(bonusTime(value1, flag));
+        System.out.println(bonusTime(valueIsNumers, flag));
         System.out.println("-----------");
 
+    }
+
+    public static int isNumeric(String str) {
+        int value = 0;
+        try {
+            value = Integer.parseInt(str);
+        } catch (NumberFormatException nfe) {
+            System.out.println("Incorrect Data, please enter a number!");
+            chooseMenu();
+        }
+        return value;
     }
 }

@@ -2,6 +2,8 @@ package conditions;
 
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class Conditions_task_14 {
     public static int rentalCarCost(int d) {
         int result = 0;
@@ -32,12 +34,27 @@ public class Conditions_task_14 {
                 + "Alternatively, if you rent the car for 3 or more days, you get $20 off your total.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter count days:");
-        int value1 = scanner.nextInt();
+        String value1 = scanner.next();
+        int valueIsNumers = isNumeric(value1);
+
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(rentalCarCost(value1));
+        System.out.println(rentalCarCost(valueIsNumers));
         System.out.println("-----------");
 
     }
+
+    public static int isNumeric(String str) {
+        int value = 0;
+        try {
+            value = Integer.parseInt(str);
+        } catch (NumberFormatException nfe) {
+            System.out.println("Incorrect Data, please enter a number!");
+            chooseMenu();
+        }
+        return value;
+    }
+
+
 }
