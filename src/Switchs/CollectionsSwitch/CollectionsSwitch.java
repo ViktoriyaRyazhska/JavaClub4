@@ -1,5 +1,6 @@
 package Switchs.CollectionsSwitch;
 
+import Switchs.Switch;
 import Tasks.Collections.FilteringEven.FilteringEven;
 import Tasks.Collections.FilteringEven.FilteringEvenImpl;
 import Tasks.Collections.Interactive.DictionaryBook;
@@ -7,11 +8,14 @@ import Tasks.Collections.Interactive.DictionaryBookImpl;
 
 import java.util.Scanner;
 
-public class CollectionsSwitch {
+public class CollectionsSwitch implements Switch {
+    @Override
     public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
+        scanner.nextLine();
+
         switch (task) {
             case 1 -> {
                 System.out.println("Enter number of elements and fill Array list with int values: ");
@@ -29,6 +33,7 @@ public class CollectionsSwitch {
         }
     }
 
+    @Override
     public String ShowOptions() {
         return """
                 List of options:\040

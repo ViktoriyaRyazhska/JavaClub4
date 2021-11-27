@@ -1,5 +1,6 @@
 package Switchs.StringSwitch;
 
+import Switchs.Switch;
 import Tasks.String.Banjo.Banjo;
 import Tasks.String.Banjo.BanjoImpl;
 import Tasks.String.CountOfOccurrences.Occurrences;
@@ -29,11 +30,14 @@ import Tasks.String.TwoWordName.TwoWordNameImpl;
 
 import java.util.Scanner;
 
-public class StringSwitch {
+public class StringSwitch implements Switch {
+    @Override
     public void ChooseOption(final Scanner scanner){
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
+        scanner.nextLine();
+
         switch (task) {
             case 1 -> {
                 System.out.println("Enter a name: ");
@@ -104,6 +108,7 @@ public class StringSwitch {
         }
     }
 
+    @Override
     public String ShowOptions() {
         return """
                 List of options:\040

@@ -1,5 +1,6 @@
 package Switchs.ClassesSwitch;
 
+import Switchs.Switch;
 import Tasks.Classes.BuildingBlocks.BuildingBlocks;
 import Tasks.Classes.BuildingBlocks.BuildingBlocksImpl;
 import Tasks.Classes.FixStaticElectrickery.FixStaticElectrickery;
@@ -13,11 +14,14 @@ import Tasks.Classes.TwoFightersOneWinner.TwoFightersOneWinner;
 
 import java.util.Scanner;
 
-public class ClassesSwitch {
+public class ClassesSwitch implements Switch {
+    @Override
     public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
+        scanner.nextLine();
+
         switch (task) {
             case 1 -> {
                 System.out.println("Enter width, length and height of block: ");
@@ -61,6 +65,7 @@ public class ClassesSwitch {
         }
     }
 
+    @Override
     public String ShowOptions() {
         return """
                 List of options:\040

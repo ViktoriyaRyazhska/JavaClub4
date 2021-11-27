@@ -1,5 +1,6 @@
 package Switchs.ConditionsSwitch;
 
+import Switchs.Switch;
 import Tasks.Classes.FractionClass.FractionClass;
 import Tasks.Classes.FractionClass.FractionClassImpl;
 import Tasks.Conditions.BasicMathematicalOperations.Calculator;
@@ -13,11 +14,14 @@ import Tasks.Conditions.YesOrNot.YesOrNotImpl;
 
 import java.util.Scanner;
 
-public class ConditionsSwitch {
+public class ConditionsSwitch implements Switch {
+    @Override
     public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
+        scanner.nextLine();
+
         switch (task) {
             case 1 -> {
                 try {
@@ -50,6 +54,7 @@ public class ConditionsSwitch {
         }
     }
 
+    @Override
     public String ShowOptions() {
         return """
                 List of options:\040

@@ -1,5 +1,6 @@
 package Switchs.LoopsSwitch;
 
+import Switchs.Switch;
 import Tasks.Loops.ArrayMean.ArrayMean;
 import Tasks.Loops.ArrayMean.ArrayMeanImpl;
 import Tasks.Loops.BetterThan.BetterThan;
@@ -24,11 +25,14 @@ import Tasks.Loops.TwentyOne.TwentyOneImpl;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LoopsSwitch {
+public class LoopsSwitch implements Switch {
+    @Override
     public void ChooseOption(final Scanner scanner){
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
+        scanner.nextLine();
+
         switch (task) {
             case 1 -> {
                 System.out.println("Enter a size of array and fill it with positive int values: ");
@@ -85,6 +89,7 @@ public class LoopsSwitch {
         }
     }
 
+    @Override
     public String ShowOptions() {
         return """
                 List of options:\040
