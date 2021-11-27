@@ -22,7 +22,7 @@ public class CollectionsSwitch implements Switch {
                 System.out.println("It is an Array list with only odd numbers: " + filteringEven.removeEvenNumbers());
             }
             case 2 -> {
-                System.out.println("Enter a key and value(word and it's explanation: ");
+                System.out.println("Enter a key and value(word and it's explanation): ");
                 final DictionaryBook dictionary = new DictionaryBookImpl(scanner);
                 System.out.println("Adding one more word and it's explanation: ");
                 dictionary.addWord(scanner);
@@ -48,7 +48,7 @@ public class CollectionsSwitch implements Switch {
                 1. FilteringEven
                 2. Interactive
                 0. EXIT
-                 -1. Return to main Menu
+               -1. Return to main Menu
                 """;
     }
 }

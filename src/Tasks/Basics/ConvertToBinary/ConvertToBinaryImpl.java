@@ -18,8 +18,7 @@ public class ConvertToBinaryImpl implements ConvertToBinary {
     }
 
     @Override
-    public int toBinary() {
-        final String binary = Integer.toBinaryString(getN());
-        return Integer.parseInt(binary);
+    public String toBinary() {
+        return  Integer.toBinaryString(getN());
     }
 }

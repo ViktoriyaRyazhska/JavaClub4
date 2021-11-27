@@ -25,17 +25,17 @@ public class DebugCelsiusConverterImpl implements DebugCelsiusConverter {
     public String weatherInfo() {
         final double c = convertToCelsius();
         if (c >= -30 && c <= -10)
-            return c + " is very cold temperature";
+            return c + " is a very cold temperature";
         else if (c > -10 && c <= 10)
-            return c + " is cold temperature";
+            return c + " is a cold temperature";
         else if (c > 10 && c <= 15)
             return c + " is a cool temperature";
         else if (c > 15 && c <= 20)
-            return c + " is warm temperature";
+            return c + " is a warm temperature";
         else if (c > 20 && c <= 30)
             return c + " is a hot temperature";
         else
-            return c + "is very hot temperature";
+            return c + " is a very hot temperature";
     }
 
     @Override

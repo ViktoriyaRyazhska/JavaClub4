@@ -1,6 +1,7 @@
 package Main;
 
-import Main.MainSwitch.*;
+import Main.MainSwitch.MainSwitch;
+import Main.MainSwitch.MainSwitchImpl;
 
 import java.util.Scanner;
 

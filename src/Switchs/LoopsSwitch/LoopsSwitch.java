@@ -104,7 +104,7 @@ public class LoopsSwitch implements Switch {
                 9. SumOfPositive
                 10. TwentyOne
                 0. EXIT
-                -1. Return to main Menu
+               -1. Return to main Menu
                 """;
     }
 }

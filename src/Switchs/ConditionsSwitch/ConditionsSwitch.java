@@ -26,7 +26,7 @@ public class ConditionsSwitch implements Switch {
                     final FractionClass b = new FractionClassImpl(scanner);
                     System.out.println("Enter type of operation(+, -, *, /): ");
                     final Calculator calc = new CalculatorImpl();
-                    System.out.println(calc.calculator(a, scanner.next().charAt(0), b));
+                    calc.calculator(a, scanner.next().charAt(0), b);
                 } catch (final UnsupportedOperationException | ArithmeticException e) {
                     System.err.println(e.getMessage());
                 }
@@ -44,10 +44,9 @@ public class ConditionsSwitch implements Switch {
             case 4 -> {
                 System.out.println("Enter true of false: ");
                 final YesOrNot yesOrNot = new YesOrNotImpl(scanner);
-                System.out.println("It is true?: ");
+                System.out.println("It is true?: " + yesOrNot.boolToWord());
             }
-            case 0 -> {
-            }
+            case 0 -> {}
             case -1 -> {
                 final MainSwitch mainSwitch = new MainSwitchImpl();
                 mainSwitch.ChooseOption(scanner);
@@ -68,7 +67,7 @@ public class ConditionsSwitch implements Switch {
                 3. OppositeNumber
                 4. YesOrNot
                 0. EXIT
-                 -1. Return to main Menu
+               -1. Return to main Menu
                 """;
     }
 }

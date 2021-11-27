@@ -48,7 +48,7 @@ public class BasicsSwitch implements Switch {
             case 5 -> {
                 System.out.println("Enter a temperature in fahrenheit: ");
                 final DebugCelsiusConverter debugCelsiusConverter = new DebugCelsiusConverterImpl(scanner);
-                System.out.println("It is a temperature in celsius: " + debugCelsiusConverter.convertToCelsius());
+                System.out.println("It is a temperature in celsius: " + debugCelsiusConverter.weatherInfo());
             }
             case 6 -> {
                 System.out.println("Enter a name: ");
@@ -78,7 +78,7 @@ public class BasicsSwitch implements Switch {
             case 11 -> {
                 System.out.println("Enter a number: ");
                 final YouCantCode youCantCode = new YouCantCodeImpl(scanner);
-                System.out.println("It is a doubled value of your number: ");
+                System.out.println("It is a doubled value of your number: " + youCantCode.doubleInteger());
             }
             case 0 -> {
             }
@@ -109,7 +109,7 @@ public class BasicsSwitch implements Switch {
                 10. VolumeOfACuboid
                 11. YouCantCode
                 0. EXIT
-                 -1. Return to main Menu
+               -1. Return to main Menu
                 """;
     }
 }

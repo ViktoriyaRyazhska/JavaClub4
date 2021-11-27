@@ -53,12 +53,12 @@ public class ClassesSwitch implements Switch {
             case 5 -> {
                 System.out.println("Enter name, health and damage per attack for both fighters: ");
                 final TwoFightersOneWinner a = new TwoFightersOneWinner(scanner);
+                scanner.nextLine();
                 final TwoFightersOneWinner b = new TwoFightersOneWinner(scanner);
                 final Fight fight = new FightImpl();
                 System.out.println("The winner is: " + fight.declareWinner(a, b));
             }
-            case 0 -> {
-            }
+            case 0 -> {}
             case -1 -> {
                 final MainSwitch mainSwitch = new MainSwitchImpl();
                 mainSwitch.ChooseOption(scanner);
@@ -80,7 +80,7 @@ public class ClassesSwitch implements Switch {
                 4. LombokEncapsulation
                 5. TwoFightersOneWinner
                 0. EXIT
-                 -1. Return to main Menu
+               -1. Return to main Menu
                 """;
     }
 }

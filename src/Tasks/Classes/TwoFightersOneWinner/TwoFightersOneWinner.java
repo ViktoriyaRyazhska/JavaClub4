@@ -42,7 +42,11 @@ public class TwoFightersOneWinner {
     }
 
     public void setDamagePerAttack(final int damagePerAttack) {
-        this.damagePerAttack = damagePerAttack;
+        if(damagePerAttack > 0 && damagePerAttack <= 100){
+            this.damagePerAttack = damagePerAttack;
+        } else{
+            this.damagePerAttack = (int) ((Math.random() * (100 - 1)) + 1);
+        }
     }
 
 }

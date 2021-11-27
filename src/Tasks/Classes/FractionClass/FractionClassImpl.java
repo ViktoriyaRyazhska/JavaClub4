@@ -58,51 +58,51 @@ public class FractionClassImpl implements FractionClass {
 
     @Override
     public FractionClass add(final FractionClass a) {
-        final FractionClass result = new FractionClassImpl();
+        final FractionClassImpl result = new FractionClassImpl();
 
         final double sum = this.toDouble() + a.toDouble();
 
-        setInteger((int) sum);
-        setFraction(sum % 1);
+        result.setInteger((int) sum);
+        result.setFraction(sum % 1);
 
         return result;
     }
 
     @Override
     public FractionClass differ(final FractionClass a) {
-        final FractionClass result = new FractionClassImpl();
+        final FractionClassImpl result = new FractionClassImpl();
 
         final double minus = this.toDouble() - a.toDouble();
 
-        setInteger((int) minus);
-        setFraction(minus % 1);
+        result.setInteger((int) minus);
+        result.setFraction(minus % 1);
 
         return result;
     }
 
     @Override
     public FractionClass multi(final FractionClass a) {
-        final FractionClass result = new FractionClassImpl();
+        final FractionClassImpl result = new FractionClassImpl();
 
         final double product = this.toDouble() * a.toDouble();
 
-        setInteger((int) product);
-        setFraction(product % 1);
+        result.setInteger((int) product);
+        result.setFraction(product % 1);
 
         return result;
     }
 
     @Override
     public FractionClass divide(final FractionClass a) throws ArithmeticException {
-        final FractionClass result = new FractionClassImpl();
+        final FractionClassImpl result = new FractionClassImpl();
 
         if (a.toDouble() == 0) {
             throw new ArithmeticException("You can't divide by zero!");
         }
         final double division = this.toDouble() / a.toDouble();
 
-        setInteger((int) division);
-        setFraction(division % 1);
+        result.setInteger((int) division);
+        result.setFraction(division % 1);
 
         return result;
     }

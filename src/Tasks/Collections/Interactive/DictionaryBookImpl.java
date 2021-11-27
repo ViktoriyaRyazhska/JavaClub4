@@ -50,13 +50,13 @@ public class DictionaryBookImpl implements DictionaryBook {
     public void addWord(final Scanner scanner) {
         setKey(scanner.nextLine());
         setValue(scanner.nextLine());
-        map.put(getKey(), getValue());
+        getMap().put(getKey(), getValue());
     }
 
     @Override
     public String findEntry(final Scanner scanner) {
         final String key = scanner.nextLine();
-        return map.getOrDefault(key, "Cant find entry for " + key);
+        return getMap().getOrDefault(key, "Cant find entry for " + key);
     }
 }
 
