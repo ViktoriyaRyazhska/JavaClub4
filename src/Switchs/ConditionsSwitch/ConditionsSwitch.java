@@ -26,7 +26,7 @@ public class ConditionsSwitch implements Switch {
                     final FractionClass b = new FractionClassImpl(scanner);
                     System.out.println("Enter type of operation(+, -, *, /): ");
                     final Calculator calc = new CalculatorImpl();
-                    calc.calculator(a, scanner.next().charAt(0), b);
+                    System.out.println(calc.calculator(a, scanner.next().charAt(0), b);
                 } catch (final UnsupportedOperationException | ArithmeticException e) {
                     System.err.println(e.getMessage());
                 }
