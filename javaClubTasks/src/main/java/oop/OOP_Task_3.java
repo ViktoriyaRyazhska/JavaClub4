@@ -27,7 +27,7 @@ public class OOP_Task_3 extends Encoder {
         return out.toString();
     }
 
-    public void solveTask() {
+    public static void solveTask() {
 
         System.out.println("This program provides some way to encode a string into its leetspeak version.");
         Scanner scanner1 = new Scanner(System.in);

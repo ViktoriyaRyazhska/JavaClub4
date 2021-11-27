@@ -51,12 +51,15 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                          *");
                 System.out.println("*  1 : Task 1                              *");
                 System.out.println("*  2 : Task 2                              *");
+                System.out.println("*  3 : Task 3                              *");
                 System.out.println("*  4 : Task 4                              *");
                 System.out.println("*  5 : Task 5                              *");
                 System.out.println("*  6 : Task 6                              *");
+                System.out.println("*  7 : Task 7                              *");
                 System.out.println("*  8 : Task 8                              *");
                 System.out.println("*  9 : Task 9                              *");
                 System.out.println("* 10 : Task 10                             *");
+                System.out.println("* 11 : Task 11                             *");
                 System.out.println("*  0 : Return to Main Menu                 *");
                 System.out.println("********************************************");
 
@@ -70,6 +73,11 @@ public class MenuImpl {
                     }
                     case 2: {
                         Basic_Program_Task_2.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        Basic_Program_Task_3.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -88,6 +96,11 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 7: {
+                        Basic_Program_Task_7.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 8: {
                         Basic_Program_Task_8.solveTask();
                         chooseMenu();
@@ -100,6 +113,11 @@ public class MenuImpl {
                     }
                     case 10: {
                         Basic_Program_Task_10.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 11: {
+                        Basic_Program_Task_11.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -122,6 +140,7 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                    *");
                 System.out.println("*  1 : Task 1                        *");
                 System.out.println("*  2 : Task 2                        *");
+                System.out.println("*  3 : Task 3                        *");
                 System.out.println("*  4 : Task 4                        *");
                 System.out.println("*  5 : Task 5                        *");
                 System.out.println("*  6 : Task 6                        *");
@@ -138,6 +157,11 @@ public class MenuImpl {
                     }
                     case 2: {
                         Classes_Task_2.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        Classes_Task_3.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -176,6 +200,7 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                        *");
                 System.out.println("*  1 : Task 1                            *");
                 System.out.println("*  2 : Task 2                            *");
+                System.out.println("*  3 : Task 3                            *");
                 System.out.println("*  4 : Task 4                            *");
                 System.out.println("*  0 : Return to Main Menu               *");
                 System.out.println("******************************************");
@@ -190,6 +215,11 @@ public class MenuImpl {
                     }
                     case 2: {
                         Collections_Task_2.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        Collections_Task_3.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -218,13 +248,17 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                       *");
                 System.out.println("*  1 : Task 1                           *");
                 System.out.println("*  2 : Task 2                           *");
+                System.out.println("*  3 : Task 3                           *");
                 System.out.println("*  4 : Task 4                           *");
                 System.out.println("*  5 : Task 5                           *");
                 System.out.println("*  6 : Task 6                           *");
+                System.out.println("*  7 : Task 7                           *");
                 System.out.println("*  8 : Task 8                           *");
                 System.out.println("*  9 : Task 9                           *");
                 System.out.println("*  10 : Task 10                         *");
+                System.out.println("*  11 : Task 11                         *");
                 System.out.println("*  12 : Task 12                         *");
+                System.out.println("*  13 : Task 13                         *");
                 System.out.println("*  14 : Task 14                         *");
                 System.out.println("*  0 : Return to Main Menu              *");
                 System.out.println("*****************************************");
@@ -240,6 +274,12 @@ public class MenuImpl {
                     }
                     case 2: {
                         Conditions_task_2.solveTask();
+
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        Conditions_Task_3.solveTask();
 
                         chooseMenu();
                         break;
@@ -261,6 +301,12 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 7: {
+                        Conditions_Task_7.solveTask();
+
+                        chooseMenu();
+                        break;
+                    }
                     case 8: {
                         Conditions_task_8.solveTask();
                         chooseMenu();
@@ -276,8 +322,18 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 11: {
+                        Conditions_Task_11.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 12: {
                         Conditions_task_12.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 13: {
+                        Conditions_Task_13.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -305,15 +361,19 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                  *");
                 System.out.println("*  1 : Task 1                      *");
                 System.out.println("*  2 : Task 2                      *");
+                System.out.println("*  3 : Task 3                      *");
                 System.out.println("*  4 : Task 4                      *");
                 System.out.println("*  5 : Task 5                      *");
                 System.out.println("*  6 : Task 6                      *");
+                System.out.println("*  7 : Task 7                      *");
                 System.out.println("*  8 : Task 8                      *");
                 System.out.println("*  9 : Task 9                      *");
                 System.out.println("*  10 : Task 10                    *");
+                System.out.println("*  11 : Task 11                    *");
                 System.out.println("*  12 : Task 12                    *");
                 System.out.println("*  13 : Task 13                    *");
                 System.out.println("*  14 : Task 14                    *");
+                System.out.println("*  15 : Task 15                    *");
                 System.out.println("*  0 : Return to Main Menu         *");
                 System.out.println("************************************");
 
@@ -328,6 +388,12 @@ public class MenuImpl {
                     }
                     case 2: {
                         Loops_Task_2.solveTask();
+
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        Loops_Task_3.solveTask();
 
                         chooseMenu();
                         break;
@@ -347,6 +413,11 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 7: {
+                        Loops_Task_7.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 8: {
                         Loops_Task_8.solveTask();
                         chooseMenu();
@@ -362,6 +433,11 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 11: {
+                        Loops_Task_11.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 12: {
                         Loops_Task_12.solveTask();
                         chooseMenu();
@@ -374,6 +450,11 @@ public class MenuImpl {
                     }
                     case 14: {
                         Loops_Task_14.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 15: {
+                        Loops_Task_15.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -396,6 +477,7 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                *");
                 System.out.println("*  1 : Task 1                    *");
                 System.out.println("*  2 : Task 2                    *");
+                System.out.println("*  3 : Task 3                    *");
                 System.out.println("*  4 : Task 4                    *");
                 System.out.println("*  0 : Return to Main Menu       *");
                 System.out.println("**********************************");
@@ -410,6 +492,11 @@ public class MenuImpl {
                     }
                     case 2: {
                         OOP_Task_2.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 3: {
+                        OOP_Task_3.solveTask();
                         chooseMenu();
                         break;
                     }
@@ -438,15 +525,19 @@ public class MenuImpl {
                 System.out.println("*  Choose a task:                   *");
                 System.out.println("*  1 : Task 1                       *");
                 System.out.println("*  2 : Task 2                       *");
+                System.out.println("*  3 : Task 3                       *");
                 System.out.println("*  4 : Task 4                       *");
                 System.out.println("*  5 : Task 5                       *");
                 System.out.println("*  6 : Task 6                       *");
+                System.out.println("*  7 : Task 7                       *");
                 System.out.println("*  8 : Task 8                       *");
                 System.out.println("*  9 : Task 9                       *");
                 System.out.println("*  10 : Task 10                     *");
+                System.out.println("*  11 : Task 11                     *");
                 System.out.println("*  12 : Task 12                     *");
                 System.out.println("*  13 : Task 13                     *");
                 System.out.println("*  14 : Task 14                     *");
+                System.out.println("*  15 : Task 15                     *");
                 System.out.println("*  16 : Task 16                     *");
                 System.out.println("*  17 : Task 17                     *");
                 System.out.println("*  18 : Task 18                     *");
@@ -468,6 +559,12 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 3: {
+                        String_Task_3.solveTask();
+
+                        chooseMenu();
+                        break;
+                    }
                     case 4: {
                         String_Task_4.solveTask();
                         chooseMenu();
@@ -481,6 +578,12 @@ public class MenuImpl {
                     }
                     case 6: {
                         String_Task_6.solveTask();
+
+                        chooseMenu();
+                        break;
+                    }
+                    case 7: {
+                        String_Task_7.solveTask();
 
                         chooseMenu();
                         break;
@@ -501,6 +604,11 @@ public class MenuImpl {
                         chooseMenu();
                         break;
                     }
+                    case 11: {
+                        String_Task_11.solveTask();
+                        chooseMenu();
+                        break;
+                    }
                     case 12: {
                         String_Task_12.solveTask();
                         chooseMenu();
@@ -512,6 +620,11 @@ public class MenuImpl {
                     }
                     case 14: {
                         String_Task_14.solveTask();
+                        chooseMenu();
+                        break;
+                    }
+                    case 15: {
+                        String_Task_15.solveTask();
                         chooseMenu();
                         break;
                     }

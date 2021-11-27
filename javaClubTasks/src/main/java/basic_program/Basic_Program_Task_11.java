@@ -2,7 +2,7 @@ package basic_program;
 
 import java.util.Scanner;
 
-public class Basic_Task_11 {
+public class Basic_Program_Task_11 {
     public static String weatherInfo(int temp) {
         double c=convertToCelsius(temp);
         if (c < 0)
