@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class JennySecretMessage {
     public static String greet(String name) {
-        if (name.equals("Johnny") || name.equals("johnny"))
+        if (name.toLowerCase().equals("johnny"))
             return "Hello, my love!";
         else
             return String.format("Hello, %s!", name);
