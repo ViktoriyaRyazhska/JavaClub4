@@ -20,7 +20,7 @@ public class ChoiceConditions {
             case Constants.EXIT:
                 break;
             case Constants.BACK:
-                ChoiceList.choiceList();
+              //  ChoiceList.choiceList();
                 break;
             case 1:
 

@@ -2,11 +2,13 @@ package application;
 
 import application.utility.ChoiceList;
 
-public class Main {
+import java.util.Scanner;
 
+public class Main {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         System.out.println(ChoiceList.listOfLists());
-        ChoiceList.choiceList();
+        ChoiceList.choiceList(in);
     }
 }
 

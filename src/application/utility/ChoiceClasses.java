@@ -19,7 +19,7 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case BACK:
-                ChoiceList.choiceList();
+                //ChoiceList.choiceList();
                 break;
             case EXIT:
                 break;

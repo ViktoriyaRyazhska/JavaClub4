@@ -16,8 +16,8 @@ public class GrassHopper {
         return celsius;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
+
         System.out.print("Enter temperature in the fahrenheit:\n> ");
         int temp = in.nextInt();
         System.out.println(weatherInfo(temp));

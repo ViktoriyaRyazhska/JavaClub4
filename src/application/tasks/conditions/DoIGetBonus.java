@@ -10,8 +10,7 @@ public class DoIGetBonus {
             return String.valueOf(salary);
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
         System.out.print("Enter your salary:\n> ");
         int salary = in.nextInt();
         System.out.print("Do you have bonus?(true or false)\n> ");

@@ -5,7 +5,7 @@ import application.tasks.string.*;
 import java.util.Scanner;
 
 public class ChoiceString extends Constants {
-    private static void choiceString(Scanner scanner) {
+    public static void choiceString(Scanner scanner) {
         System.out.println(listOfString());
         System.out.print("Select an option:\n> ");
         switch (scanner.nextInt()) {
@@ -15,7 +15,7 @@ public class ChoiceString extends Constants {
             case EXIT:
                 break;
             case BACK:
-                ChoiceList.choiceList();
+            //    ChoiceList.choiceList();
                 break;
             case 1:
                 Banjo.task(scanner);

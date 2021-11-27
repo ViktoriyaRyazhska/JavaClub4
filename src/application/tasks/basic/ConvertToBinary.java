@@ -27,8 +27,7 @@ public class ConvertToBinary {
         return Integer.valueOf(stringBuilder.toString());
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
         System.out.print("Enter a non-negative integer:\n> ");
         int number = in.nextInt();
         System.out.println("Number " + number + " in a binary format is " + convertToBinary(number));

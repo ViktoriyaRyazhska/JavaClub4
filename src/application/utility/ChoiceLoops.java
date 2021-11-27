@@ -5,7 +5,7 @@ import application.tasks.loops.*;
 import java.util.Scanner;
 
 public class ChoiceLoops extends Constants {
-    private static void choiceLoops(Scanner scanner) {
+    public static void choiceLoops(Scanner scanner) {
         System.out.println(listOfLoops());
         System.out.print("Select an option:\n> ");
         switch (scanner.nextInt()) {
@@ -15,7 +15,7 @@ public class ChoiceLoops extends Constants {
             case EXIT:
                 break;
             case BACK:
-                ChoiceList.choiceList();
+          //      ChoiceList.choiceList();
                 break;
             case 1:
                 GapInPrimes.task(scanner);

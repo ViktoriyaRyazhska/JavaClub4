@@ -17,8 +17,7 @@ public class AgeDiff {
             return "Something went wrong:(";
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
         System.out.print("Enter your date of birth:\n> ");
         int birth = in.nextInt();
         System.out.print("Enter the year to count years in relation to:\n> ");

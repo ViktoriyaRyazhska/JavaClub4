@@ -12,8 +12,8 @@ public class PixelArtPlanning {
             return false;
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
+
         System.out.print("Enter the size of the wall in millimeters:\n> ");
         int wallLength = in.nextInt();
         System.out.print("Enter the size of a pixel in millimeters:\n> ");

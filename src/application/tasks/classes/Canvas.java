@@ -82,7 +82,6 @@ public class Canvas {
                 canvas[i][y] = letter;
             } else {
                 break;
-
             }
         }
         // taking care of to far beginning point
@@ -138,8 +137,7 @@ public class Canvas {
         }
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public static void task(Scanner in) {
         System.out.print("Width of the canvas:\n> ");
         int width = in.nextInt();
         System.out.print("Height of the canvas:\n> ");
@@ -190,9 +188,5 @@ public class Canvas {
         }
 
         canvas.drawCanvas();
-    }
-
-    public static void main(String[] args) {
-        Canvas.task();
     }
 }
