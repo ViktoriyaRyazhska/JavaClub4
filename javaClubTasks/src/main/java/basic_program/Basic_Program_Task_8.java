@@ -37,7 +37,11 @@ public class Basic_Program_Task_8 {
 
             try {
                 valueIsNumers = Integer.parseInt(valueString);
-                flag1 = false;
+                if (valueIsNumers > 0) {
+                    flag1 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
             } catch (NumberFormatException nfe) {
                 System.out.println("Incorrect Data, please enter a number!");
             }
@@ -49,7 +53,11 @@ public class Basic_Program_Task_8 {
 
             try {
                 valueIsNumers2 = Integer.parseInt(valueString);
-                flag2 = false;
+                if (valueIsNumers2 > 0) {
+                    flag2 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
             } catch (NumberFormatException nfe) {
                 System.out.println("Incorrect Data, please enter a number!");
             }

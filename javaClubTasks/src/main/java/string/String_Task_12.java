@@ -24,14 +24,32 @@ public class String_Task_12 {
         System.out.println(weatherInfo(50));
     }
 
+
     public static void solveTask() {
         System.out.println("Find the errors in the code to get the celsius converter working properly.\n" +
                 "\n" +
                 "To convert fahrenheit to celsius");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter temperature:");
-        String value1 = scanner.next();
-        double valueIsNumers = isNumeric(value1);
+
+        double valueIsNumers = 0;
+        boolean flag1 = true;
+
+
+        while (flag1) {
+            System.out.println("Enter temperature:");
+            String valueString = scanner.next();
+
+            try {
+                valueIsNumers = Double.parseDouble(valueString);
+                if (valueIsNumers > 0) {
+                    flag1 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+        }
 
 
         System.out.println("Result: ");
@@ -41,15 +59,5 @@ public class String_Task_12 {
 
     }
 
-    public static double isNumeric(String str) {
-        double value = 0;
-        try {
-            value = Double.parseDouble(str);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Incorrect Data, please enter a number!");
-            chooseMenu();
-        }
-        return value;
-    }
 
 }
