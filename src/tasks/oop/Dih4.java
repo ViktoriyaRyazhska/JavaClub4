@@ -1,5 +1,10 @@
 package tasks.oop;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.TreeMap;
+
 public class Dih4{
     private Transform pictureTransform;
     public Dih4(){}
@@ -30,7 +35,7 @@ public class Dih4{
     }
     public  Boolean is_rotation(){
         boolean flag = false;
-        if(this.getPictureTransform() ==Transform.ROTATE_90_ANTICLOCKWISE ||
+         if(this.getPictureTransform() ==Transform.ROTATE_90_ANTICLOCKWISE ||
                 this.getPictureTransform() ==Transform.ROTATE_180 ||
                 this.getPictureTransform() ==Transform.ROTATE_90_CLOCKWISE){
             flag = true;

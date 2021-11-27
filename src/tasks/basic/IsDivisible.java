@@ -7,11 +7,7 @@ public class IsDivisible {
     }
 
     private static boolean isDivisible(int wallLength, int pixelSize) {
-        if (wallLength % pixelSize ==0){
-            return true;
-        }else{
-            return false;
-        }
+        return wallLength % pixelSize == 0;
 
 
     }

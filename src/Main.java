@@ -82,6 +82,10 @@ public class Main {
         System.out.println("5 ---- Greet");
         System.out.println("6 ---- Number in a binary format");
         System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("8 ---- Century-From-Year");
+        System.out.println("9 ---- Return-Negative");
+        System.out.println("10 ---- Age-Range-Compatibility");
+        System.out.println("11 ---- Grasshopper-Debug");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
         Scanner scanner = new Scanner(System.in);
@@ -136,6 +140,27 @@ public class Main {
             }
 
             case 7 -> {
+            }
+
+            case 8 -> {
+            }
+
+            case 9 -> {
+            }
+
+            case 10 -> {
+
+                System.out.println("Please enter your age to see compatibility: ");
+                int number = scanner.nextInt();
+                AgeRangeCompatibility ageRangeCompatibility = new AgeRangeCompatibility();
+                ageRangeCompatibility.execute(number);
+            }
+
+            case 11 -> {
+                System.out.println("Please enter your temperature in fahrenheit to see in celsius: ");
+                int number = scanner.nextInt();
+                Grasshopper grasshopper = new Grasshopper();
+                grasshopper.execute(number);
             }
         }
 
