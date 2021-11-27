@@ -2,8 +2,7 @@ package application.tasks.basic;
 import java.util.Scanner;
 
 public class CenturyFromYear {
-    private static void task(){
-        Scanner y = new Scanner(System.in);
+    private static void task(Scanner y){
         System.out.println("Enter year");
         int year;
         year = y.nextInt();
