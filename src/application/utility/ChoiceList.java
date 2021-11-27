@@ -18,7 +18,7 @@ public class ChoiceList {
                 ChoiceBasic.choiceBasic();
                 break;
             case 2:
-                ChoiceConditions.choiceConditions();
+               // ChoiceConditions.choiceConditions();
                 break;
         }
     }

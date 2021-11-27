@@ -16,7 +16,7 @@ public class ChoiceString extends Constants {
             case EXIT:
                 break;
             case BACK:
-                ChoiceList.choiceList(scanner);
+              /*  ChoiceList.choiceList(scanner);
                 break;
             case 1:
                 AbbreviateTwoWordName.task(scanner);
@@ -81,7 +81,7 @@ public class ChoiceString extends Constants {
             case 16:
                 TripleTrouble.task(scanner);
                 ChoiceString.choiceString(scanner);
-                break;
+               */ break;
             case 17:
                 Welcome.task(scanner);
                 ChoiceString.choiceString(scanner);

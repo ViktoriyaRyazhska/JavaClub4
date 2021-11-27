@@ -16,7 +16,7 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case BACK:
-                ChoiceList.choiceList(scanner);
+               // ChoiceList.choiceList(scanner);
                 break;
             case EXIT:
                 break;
@@ -29,7 +29,7 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 3:
-                Canvas.task(scanner);
+               // Canvas.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 4:
@@ -37,11 +37,11 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 5:
-                BuildingBlocks.task(scanner);
+                // BuildingBlocks.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 6:
-                TwoFightersOneWinner.task(scanner);
+                //TwoFightersOneWinner.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
         }

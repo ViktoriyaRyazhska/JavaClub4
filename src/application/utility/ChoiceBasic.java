@@ -23,7 +23,7 @@ public class ChoiceBasic {
                 ChoiceList.choiceList();
                 break;
             case 1:
-                AgeRange.task();
+               // AgeRange.task();
                 break;
             case 2:
              //   BeginnerSeries.task();
@@ -35,7 +35,7 @@ public class ChoiceBasic {
                 ConvertToBinary.task();
                 break;
             case 5:
-                CuboidVolume.task();
+              //  CuboidVolume.task();
                 break;
             case 6:
                 GrassHopper.task();
@@ -44,7 +44,7 @@ public class ChoiceBasic {
                 JennySecretMessage.task();
                 break;
             case 8:
-                MultiplyNumbers.task();
+               // MultiplyNumbers.task();
                 break;
             case 9:
                 PixelArtPlanning.task();
@@ -53,7 +53,7 @@ public class ChoiceBasic {
              //   ReturnNegative.task();
                 break;
             case 11:
-                UnderPressure.task();
+               // UnderPressure.task();
                 break;
 
 
