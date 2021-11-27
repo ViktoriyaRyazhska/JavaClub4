@@ -26,15 +26,35 @@ public class Basic_Program_Task_8 {
                 "It should return True if you can fit an exact number of pixels on the wall, otherwise it should return False");
         Scanner scanner = new Scanner(System.in);
 
+        int valueIsNumers = 0;
+        int valueIsNumers2 = 0;
+        boolean flag1 = true;
+        boolean flag2 = true;
 
+        while (flag1) {
+            System.out.println("Enter the wallLength:");
+            String valueString = scanner.next();
 
-        System.out.println("Enter the wallLength:");
-        String value1 = scanner.next();
-        int valueIsNumers = isNumeric(value1);
+            try {
+                valueIsNumers = Integer.parseInt(valueString);
+                flag1 = false;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+        }
 
-        System.out.println("Enter the pixelSize:");
-        String value2 = scanner.next();
-        int valueIsNumers2 = isNumeric(value2);
+        while (flag2) {
+            System.out.println("Enter the pixelSize:");
+            String valueString = scanner.next();
+
+            try {
+                valueIsNumers2 = Integer.parseInt(valueString);
+                flag2 = false;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+
+        }
 
         System.out.println("Result: ");
         System.out.println("-----------");
@@ -43,14 +63,4 @@ public class Basic_Program_Task_8 {
 
     }
 
-    public static int isNumeric(String str) {
-        int value = 0;
-        try {
-            value = Integer.parseInt(str);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Incorrect Data, please enter a number!");
-            chooseMenu();
-        }
-        return value;
-    }
 }

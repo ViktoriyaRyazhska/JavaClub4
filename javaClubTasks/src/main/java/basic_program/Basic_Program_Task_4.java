@@ -27,28 +27,28 @@ public class Basic_Program_Task_4 {
     public static void solveTask() {
         System.out.println("This method takes a year and returns a century");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the year:");
 
-        String value1 = scanner.next();
-        int valueIsNumers = isNumeric(value1);
+        int valueNumber = 0;
+        boolean flag = true;
 
+        while (flag) {
+            System.out.println("Enter the year:");
+            String valueString = scanner.next();
 
+            try {
+                valueNumber = Integer.parseInt(valueString);
+                flag = false;
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+
+        }
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(century(valueIsNumers));
+        System.out.println(century(valueNumber));
         System.out.println("-----------");
 
     }
 
-    public static int isNumeric(String str) {
-        int value = 0;
-        try {
-            value = Integer.parseInt(str);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Incorrect Data, please enter a number!");
-            chooseMenu();
-        }
-        return value;
-    }
 }

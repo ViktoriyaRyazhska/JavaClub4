@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: test_basic_program.Test_Basic_Program_Task_10
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
