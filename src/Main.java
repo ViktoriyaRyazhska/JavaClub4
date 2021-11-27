@@ -102,7 +102,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice){
                     case 1:
-                        System.out.println("Протилежне число " + ConditionsImpl.oppositeNumber());
+                        ConditionsImpl.oppositeNumber();
                         break;
                     case 2:
                         break;
