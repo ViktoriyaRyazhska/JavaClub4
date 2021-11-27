@@ -67,11 +67,12 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice){
                     case 1:
-                        System.out.println("lombok-encapsulation");
+                        ClassesImpl.encapsulation();
                         break;
                     case 2:
                         break;
                     case 3:
+                        ClassesImpl.twoFighters();
                         break;
                     case 4:
                         ClassesImpl.buildingBlocks();

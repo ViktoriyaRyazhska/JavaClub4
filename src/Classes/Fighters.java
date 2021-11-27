@@ -2,6 +2,7 @@
 package Classes;
 
 public class Fighters {
+
   public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
     if (firstAttacker.equals(fighter1.name)) {
       while (fighter1.health > 0 || fighter2.health > 0) {
@@ -23,15 +24,5 @@ public class Fighters {
       }
     }
     return "";
-  }
-}
-
-class Fighter {
-  public String name;
-  public int health, damagePerAttack;
-  public Fighter(String name, int health, int damagePerAttack) {
-    this.name = name;
-    this.health = health;
-    this.damagePerAttack = damagePerAttack;
   }
 }
