@@ -1,16 +1,12 @@
 package Switchs.ClassesSwitch;
 
 import Switchs.Switch;
-import Tasks.Classes.BuildingBlocks.BuildingBlocks;
-import Tasks.Classes.BuildingBlocks.BuildingBlocksImpl;
-import Tasks.Classes.FixStaticElectrickery.FixStaticElectrickery;
-import Tasks.Classes.FixStaticElectrickery.FixStaticElectrickeryImpl;
-import Tasks.Classes.FractionClass.FractionClass;
-import Tasks.Classes.FractionClass.FractionClassImpl;
-import Tasks.Classes.LombokEncapsulation.LombokEncapsulation;
-import Tasks.Classes.TwoFightersOneWinner.Fight;
-import Tasks.Classes.TwoFightersOneWinner.FightImpl;
-import Tasks.Classes.TwoFightersOneWinner.TwoFightersOneWinner;
+import Main.MainSwitch.*;
+import Tasks.Classes.BuildingBlocks.*;
+import Tasks.Classes.FixStaticElectrickery.*;
+import Tasks.Classes.FractionClass.*;
+import Tasks.Classes.LombokEncapsulation.*;
+import Tasks.Classes.TwoFightersOneWinner.*;
 
 import java.util.Scanner;
 
@@ -62,6 +58,10 @@ public class ClassesSwitch implements Switch {
                 System.out.println("The winner is: " + fight.declareWinner(a, b));
             }
             case 0 -> {
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

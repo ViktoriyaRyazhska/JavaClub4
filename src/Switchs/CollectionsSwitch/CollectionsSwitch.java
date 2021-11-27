@@ -1,10 +1,9 @@
 package Switchs.CollectionsSwitch;
 
 import Switchs.Switch;
-import Tasks.Collections.FilteringEven.FilteringEven;
-import Tasks.Collections.FilteringEven.FilteringEvenImpl;
-import Tasks.Collections.Interactive.DictionaryBook;
-import Tasks.Collections.Interactive.DictionaryBookImpl;
+import Main.MainSwitch.*;
+import Tasks.Collections.FilteringEven.*;
+import Tasks.Collections.Interactive.*;
 
 import java.util.Scanner;
 
@@ -30,6 +29,10 @@ public class CollectionsSwitch implements Switch {
                 System.out.println("Looking for input key in dictionary: " + dictionary.findEntry(scanner));
             }
             case 0 -> {
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

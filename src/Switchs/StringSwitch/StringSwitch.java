@@ -1,32 +1,20 @@
 package Switchs.StringSwitch;
 
 import Switchs.Switch;
-import Tasks.String.Banjo.Banjo;
-import Tasks.String.Banjo.BanjoImpl;
-import Tasks.String.CountOfOccurrences.Occurrences;
-import Tasks.String.CountOfOccurrences.OccurrencesImpl;
-import Tasks.String.ExclamationMarks.ExclamationMarks;
-import Tasks.String.ExclamationMarks.ExclamationMarksImpl;
-import Tasks.String.FakeBinary.FakeBinary;
-import Tasks.String.FakeBinary.FakeBinaryImpl;
-import Tasks.String.Hello.Hello;
-import Tasks.String.Hello.HelloImpl;
-import Tasks.String.NumberIntoString.NumberIntoString;
-import Tasks.String.NumberIntoString.NumberIntoStringImpl;
-import Tasks.String.OppositeNumber.OppositeNumber;
-import Tasks.String.OppositeNumber.OppositeNumberImpl;
-import Tasks.String.Position.Position;
-import Tasks.String.Position.PositionImpl;
-import Tasks.String.RemoveSpaces.RemoveSpaces;
-import Tasks.String.RemoveSpaces.RemoveSpacesImpl;
-import Tasks.String.ReplaceDots.ReplaceDots;
-import Tasks.String.ReplaceDots.ReplaceDotsImpl;
-import Tasks.String.ReversedString.ReversedString;
-import Tasks.String.ReversedString.ReversedStringImpl;
-import Tasks.String.TripleTrouble.TripleTrouble;
-import Tasks.String.TripleTrouble.TripleTroubleImpl;
-import Tasks.String.TwoWordName.TwoWordName;
-import Tasks.String.TwoWordName.TwoWordNameImpl;
+import Main.MainSwitch.*;
+import Tasks.String.Banjo.*;
+import Tasks.String.CountOfOccurrences.*;
+import Tasks.String.ExclamationMarks.*;
+import Tasks.String.FakeBinary.*;
+import Tasks.String.Hello.*;
+import Tasks.String.NumberIntoString.*;
+import Tasks.String.OppositeNumber.*;
+import Tasks.String.Position.*;
+import Tasks.String.RemoveSpaces.*;
+import Tasks.String.ReplaceDots.*;
+import Tasks.String.ReversedString.*;
+import Tasks.String.TripleTrouble.*;
+import Tasks.String.TwoWordName.*;
 
 import java.util.Scanner;
 
@@ -105,6 +93,10 @@ public class StringSwitch implements Switch {
                 System.out.println("It is your initials: " + twoWordName.convertNameToInitials());
             }
             case 0 -> {
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

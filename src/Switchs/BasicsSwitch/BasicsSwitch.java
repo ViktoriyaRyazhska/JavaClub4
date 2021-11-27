@@ -1,28 +1,18 @@
 package Switchs.BasicsSwitch;
 
 import Switchs.Switch;
-import Tasks.Basics.AgeRangeCompatibility.AgeRangeCompatibility;
-import Tasks.Basics.AgeRangeCompatibility.AgeRangeCompatibilityImpl;
-import Tasks.Basics.BeginnerSeries2Clock.BegginerSeries2Clock;
-import Tasks.Basics.BeginnerSeries2Clock.BeginnerSeries2ClockImpl;
-import Tasks.Basics.CenturyFromYear.CenturyFromYear;
-import Tasks.Basics.CenturyFromYear.CenturyFromYearImpl;
-import Tasks.Basics.ConvertToBinary.ConvertToBinary;
-import Tasks.Basics.ConvertToBinary.ConvertToBinaryImpl;
-import Tasks.Basics.DebugCelsiusConverter.DebugCelsiusConverter;
-import Tasks.Basics.DebugCelsiusConverter.DebugCelsiusConverterImpl;
-import Tasks.Basics.JennySecretMessage.JennySecretMessage;
-import Tasks.Basics.JennySecretMessage.JennySecretMessageImpl;
-import Tasks.Basics.MultiplyTwoNumbers.MultiplyTwoNumbers;
-import Tasks.Basics.MultiplyTwoNumbers.MultiplyTwoNumbersImpl;
-import Tasks.Basics.ReturnNegative.ReturnNegative;
-import Tasks.Basics.ReturnNegative.ReturnNegativeImpl;
-import Tasks.Basics.ThinkfulNumber.ThinkfulNumber;
-import Tasks.Basics.ThinkfulNumber.ThinkfulNumberImpl;
-import Tasks.Basics.VolumeOfACuboid.VolumeOfACuboid;
-import Tasks.Basics.VolumeOfACuboid.VolumeOfACuboidImpl;
-import Tasks.Basics.YouCantCode.YouCantCode;
-import Tasks.Basics.YouCantCode.YouCantCodeImpl;
+import Main.MainSwitch.*;
+import Tasks.Basics.AgeRangeCompatibility.*;
+import Tasks.Basics.BeginnerSeries2Clock.*;
+import Tasks.Basics.CenturyFromYear.*;
+import Tasks.Basics.ConvertToBinary.*;
+import Tasks.Basics.DebugCelsiusConverter.*;
+import Tasks.Basics.JennySecretMessage.*;
+import Tasks.Basics.MultiplyTwoNumbers.*;
+import Tasks.Basics.ReturnNegative.*;
+import Tasks.Basics.ThinkfulNumber.*;
+import Tasks.Basics.VolumeOfACuboid.*;
+import Tasks.Basics.YouCantCode.*;
 
 import java.util.Scanner;
 
@@ -91,6 +81,10 @@ public class BasicsSwitch implements Switch {
                 System.out.println("It is a doubled value of your number: ");
             }
             case 0 -> {
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

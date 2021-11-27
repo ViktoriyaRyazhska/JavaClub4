@@ -1,26 +1,17 @@
 package Switchs.LoopsSwitch;
 
 import Switchs.Switch;
-import Tasks.Loops.ArrayMean.ArrayMean;
-import Tasks.Loops.ArrayMean.ArrayMeanImpl;
-import Tasks.Loops.BetterThan.BetterThan;
-import Tasks.Loops.BetterThan.BetterThanImpl;
-import Tasks.Loops.ChangePosition.ChangePosition;
-import Tasks.Loops.ChangePosition.ChangePositionImpl;
-import Tasks.Loops.DoubledArray.DoubledArray;
-import Tasks.Loops.DoubledArray.DoubledArrayImpl;
-import Tasks.Loops.ReduceButGrow.ReduceButGrow;
-import Tasks.Loops.ReduceButGrow.ReduceButGrowImpl;
-import Tasks.Loops.ReversedSequence.ReversedSequence;
-import Tasks.Loops.ReversedSequence.ReversedSequenceImpl;
-import Tasks.Loops.StringRepeat.StringRepeat;
-import Tasks.Loops.StringRepeat.StringRepeatImpl;
-import Tasks.Loops.SumOfPositive.SumOfPositive;
-import Tasks.Loops.SumOfPositive.SumOfPositiveImpl;
-import Tasks.Loops.Summation.Summation;
-import Tasks.Loops.Summation.SummationImpl;
-import Tasks.Loops.TwentyOne.TwentyOne;
-import Tasks.Loops.TwentyOne.TwentyOneImpl;
+import Main.MainSwitch.*;
+import Tasks.Loops.ArrayMean.*;
+import Tasks.Loops.BetterThan.*;
+import Tasks.Loops.ChangePosition.*;
+import Tasks.Loops.DoubledArray.*;
+import Tasks.Loops.ReduceButGrow.*;
+import Tasks.Loops.ReversedSequence.*;
+import Tasks.Loops.StringRepeat.*;
+import Tasks.Loops.SumOfPositive.*;
+import Tasks.Loops.Summation.*;
+import Tasks.Loops.TwentyOne.*;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -84,6 +75,10 @@ public class LoopsSwitch implements Switch {
                 System.out.println("Play a Twenty one stick game with AI: ");
                 final TwentyOne twentyOne = new TwentyOneImpl();
                 twentyOne.playGame(scanner);
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

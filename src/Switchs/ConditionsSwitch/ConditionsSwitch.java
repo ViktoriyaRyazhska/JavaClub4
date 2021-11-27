@@ -1,16 +1,12 @@
 package Switchs.ConditionsSwitch;
 
 import Switchs.Switch;
-import Tasks.Classes.FractionClass.FractionClass;
-import Tasks.Classes.FractionClass.FractionClassImpl;
-import Tasks.Conditions.BasicMathematicalOperations.Calculator;
-import Tasks.Conditions.BasicMathematicalOperations.CalculatorImpl;
-import Tasks.Conditions.BooleanToString.BooleanToString;
-import Tasks.Conditions.BooleanToString.BooleanToStringImpl;
-import Tasks.Conditions.OppositeNumber.OppositeNumber;
-import Tasks.Conditions.OppositeNumber.OppositeNumberImpl;
-import Tasks.Conditions.YesOrNot.YesOrNot;
-import Tasks.Conditions.YesOrNot.YesOrNotImpl;
+import Main.MainSwitch.*;
+import Tasks.Classes.FractionClass.*;
+import Tasks.Conditions.BasicMathematicalOperations.*;
+import Tasks.Conditions.BooleanToString.*;
+import Tasks.Conditions.OppositeNumber.*;
+import Tasks.Conditions.YesOrNot.*;
 
 import java.util.Scanner;
 
@@ -51,6 +47,10 @@ public class ConditionsSwitch implements Switch {
                 System.out.println("It is true?: ");
             }
             case 0 -> {
+            }
+            case -1 -> {
+                final MainSwitch mainSwitch = new MainSwitchImpl();
+                mainSwitch.ChooseOption(scanner);
             }
             default -> {
                 System.out.println("There is no " + task + " option! Try again!");

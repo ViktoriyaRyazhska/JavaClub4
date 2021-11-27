@@ -1,7 +1,6 @@
 package Main;
 
-import Main.MainSwitch.MainSwitch;
-import Main.MainSwitch.MainSwitchImpl;
+import Main.MainSwitch.*;
 
 import java.util.Scanner;
 
@@ -11,5 +10,7 @@ public class Main {
 
         final MainSwitch mainSwitch = new MainSwitchImpl();
         mainSwitch.ChooseOption(scanner);
+
+        scanner.close();
     }
 }
