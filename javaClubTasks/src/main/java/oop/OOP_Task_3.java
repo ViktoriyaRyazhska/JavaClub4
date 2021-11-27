@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class OOP_Task_3 extends Encoder {
 
-    public String encode(String source) {
+    public static String encode(String source) {
         if(source == null) {return "";}
         Map<Character, String> dictionary = new HashMap<>();
         dictionary.put('a', "4");
@@ -40,8 +40,10 @@ public class OOP_Task_3 extends Encoder {
     }
 }
 
-abstract class Encoder {
-    public abstract String encode(String source);
+abstract  class Encoder {
+    public static String encode(String source) {
+        return null;
+    }
 
 
 }
