@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -155,12 +144,48 @@
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
