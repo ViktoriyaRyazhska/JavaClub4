@@ -1,3 +1,4 @@
+package Loops;
 
 public class Average {
 	public static boolean betterThanAverage(int[] classPoints, int yourPoints) {

@@ -1,3 +1,5 @@
+package Loops;
+
 import java.util.Arrays;
 
 public class CatDogYears {
