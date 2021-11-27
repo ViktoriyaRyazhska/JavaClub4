@@ -1,7 +1,7 @@
 
 import Basic.MultiplyingTwoNumbers;
 import Basic.VolumeOfACuboid;
-
+import Implementation.*;
 import java.util.Scanner;
 
 public class Main {
@@ -58,7 +58,29 @@ public class Main {
                 break;
             case 2:
                 System.out.println("-Classes-\n");
-                System.out.println("Виберіть задачу");
+                System.out.println("Виберіть задачу\n1.lombok-encapsulation" +
+                    "\n2.fixme-static-electrickery" +
+                    "\n3.two-fighters-one-winner" +
+                    "\n4.building-blocks" +
+                    "\n5.fractions-class" +
+                    "\n6.simple-drawing-board");
+                choice = scanner.nextInt();
+                switch (choice){
+                    case 1:
+                        System.out.println("lombok-encapsulation");
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        ClassesImpl.buildingBlocks();
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                }
                 break;
             case 3:
                 System.out.println("-Conditions-\n");
