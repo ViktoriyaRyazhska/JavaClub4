@@ -123,6 +123,7 @@ public class StringSwitch implements Switch {
                 12. TripleTrouble
                 13. TwoWordName
                 0. EXIT
+                -1. Return to main Menu
                 """;
     }
 }

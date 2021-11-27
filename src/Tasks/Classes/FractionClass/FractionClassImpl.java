@@ -15,6 +15,7 @@ public class FractionClassImpl implements FractionClass {
 
     public FractionClassImpl(final Scanner scanner) {
         setInteger(scanner.nextInt());
+        scanner.nextLine();
         setFraction(scanner.nextDouble());
     }
 

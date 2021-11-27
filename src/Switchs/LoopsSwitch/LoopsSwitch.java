@@ -76,6 +76,8 @@ public class LoopsSwitch implements Switch {
                 final TwentyOne twentyOne = new TwentyOneImpl();
                 twentyOne.playGame(scanner);
             }
+            case 0 -> {
+            }
             case -1 -> {
                 final MainSwitch mainSwitch = new MainSwitchImpl();
                 mainSwitch.ChooseOption(scanner);
@@ -102,6 +104,7 @@ public class LoopsSwitch implements Switch {
                 9. SumOfPositive
                 10. TwentyOne
                 0. EXIT
+                -1. Return to main Menu
                 """;
     }
 }

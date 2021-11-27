@@ -24,9 +24,9 @@ public class ConditionsSwitch implements Switch {
                     System.out.println("Enter integer and fraction part of first and second number: ");
                     final FractionClass a = new FractionClassImpl(scanner);
                     final FractionClass b = new FractionClassImpl(scanner);
-                    System.out.println("Enter type of operation(+, -, *, /");
-                    final Calculator calculator = new CalculatorImpl();
-                    calculator.calculator(a, scanner.next().charAt(0), b);
+                    System.out.println("Enter type of operation(+, -, *, /): ");
+                    final Calculator calc = new CalculatorImpl();
+                    calc.calculator(a, scanner.next().charAt(0), b);
                 } catch (final UnsupportedOperationException | ArithmeticException e) {
                     System.err.println(e.getMessage());
                 }
@@ -68,6 +68,7 @@ public class ConditionsSwitch implements Switch {
                 3. OppositeNumber
                 4. YesOrNot
                 0. EXIT
+                 -1. Return to main Menu
                 """;
     }
 }

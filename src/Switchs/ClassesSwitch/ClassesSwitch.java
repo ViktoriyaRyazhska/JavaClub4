@@ -80,6 +80,7 @@ public class ClassesSwitch implements Switch {
                 4. LombokEncapsulation
                 5. TwoFightersOneWinner
                 0. EXIT
+                 -1. Return to main Menu
                 """;
     }
 }

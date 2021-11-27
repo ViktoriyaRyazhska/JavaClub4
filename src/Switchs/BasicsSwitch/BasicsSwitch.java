@@ -109,6 +109,7 @@ public class BasicsSwitch implements Switch {
                 10. VolumeOfACuboid
                 11. YouCantCode
                 0. EXIT
+                 -1. Return to main Menu
                 """;
     }
 }

@@ -48,6 +48,7 @@ public class CollectionsSwitch implements Switch {
                 1. FilteringEven
                 2. Interactive
                 0. EXIT
+                 -1. Return to main Menu
                 """;
     }
 }
