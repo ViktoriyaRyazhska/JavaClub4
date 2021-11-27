@@ -26,12 +26,4 @@ public class ReversedSequence {
         System.out.println(Arrays.toString(reverse(n)));
     }
 
-    public static void main(String[] args) {
-       int n = (5<<3);
-        System.out.println(n);
-
-
-        int  r = 5/2;
-        System.out.println(r);
-    }
 }
