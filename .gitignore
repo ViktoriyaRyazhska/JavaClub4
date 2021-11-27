@@ -19,7 +19,7 @@
 *.tar.gz
 *.rar
 /out
-/.idea
+*/.idea
 /target
 
 *.classpath
