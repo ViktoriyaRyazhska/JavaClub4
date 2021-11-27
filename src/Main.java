@@ -85,7 +85,52 @@ public class Main {
                 break;
             case 3:
                 System.out.println("-Conditions-\n");
-                System.out.println("Виберіть задачу");
+                System.out.println("Виберіть задачу\n1.opposite-number" +
+                    "\n2.is-n-divisible-by-x-and-y" +
+                    "\n3.convert-a-boolean-to-a-string" +
+                    "\n4.do-i-get-a-bonus" +
+                    "\n5.how-old-will-i-be-in-2099" +
+                    "\n6.rock-paper-scissors" + 
+                    "\n7.basic-mathematical-operations" +
+                    "\n8.opposites-attract" +
+                    "\n9.convert-boolean-values-to-strings-yes-or-no" +
+                    "\n10.will-there-be-enough-space" +
+                    "\n11.the-modulo-3-sequence" +
+                    "\n12.switch-it-up" +
+                    "\n13.thinkful-logic-drills-traffic-light" + 
+                    "\n14.transportation-on-vacation");
+                choice = scanner.nextInt();
+                switch (choice){
+                    case 1:
+                        System.out.println("Протилежне число " + ConditionsImpl.oppositeNumber());
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+                        break;
+                    case 9:
+                        break;
+                    case 10:
+                        break;
+                    case 11:
+                        break;
+                    case 12:
+                        break;
+                    case 13:
+                        break;
+                    case 14:
+                        break;
+                }
                 break;
             case 4:
                 System.out.println("-Loops-\n");
