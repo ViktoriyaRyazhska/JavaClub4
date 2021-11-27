@@ -2,7 +2,7 @@ package Tasks.Conditions.BasicMathematicalOperations;
 
 import Tasks.Classes.FractionClass.FractionClass;
 
-public class CalculatorImpl implements Calculator{
+public class CalculatorImpl implements Calculator {
 
     @Override
     public double calculator(final FractionClass a, final char symbol, final FractionClass b) {

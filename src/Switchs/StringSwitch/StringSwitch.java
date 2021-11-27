@@ -32,7 +32,7 @@ import java.util.Scanner;
 
 public class StringSwitch implements Switch {
     @Override
-    public void ChooseOption(final Scanner scanner){
+    public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
@@ -62,7 +62,7 @@ public class StringSwitch implements Switch {
             case 5 -> {
                 System.out.println("Enter name, city and state: ");
                 final Hello hello = new HelloImpl(scanner);
-                System.out.println("It is a message: " +  hello.sayHello());
+                System.out.println("It is a message: " + hello.sayHello());
             }
             case 6 -> {
                 System.out.println("Enter a number: ");
@@ -104,7 +104,12 @@ public class StringSwitch implements Switch {
                 final TwoWordName twoWordName = new TwoWordNameImpl(scanner);
                 System.out.println("It is your initials: " + twoWordName.convertNameToInitials());
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            case 0 -> {
+            }
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new StringSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -125,6 +130,7 @@ public class StringSwitch implements Switch {
                 11. ReversedString
                 12. TripleTrouble
                 13. TwoWordName
+                0. EXIT
                 """;
     }
 }

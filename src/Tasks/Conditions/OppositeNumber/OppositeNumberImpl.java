@@ -2,7 +2,7 @@ package Tasks.Conditions.OppositeNumber;
 
 import java.util.Scanner;
 
-public class OppositeNumberImpl implements OppositeNumber{
+public class OppositeNumberImpl implements OppositeNumber {
     private int number;
 
     public OppositeNumberImpl(final Scanner scanner) {

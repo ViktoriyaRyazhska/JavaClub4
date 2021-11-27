@@ -2,7 +2,7 @@ package Tasks.Basics.ThinkfulNumber;
 
 import java.util.Scanner;
 
-public class ThinkfulNumberImpl implements ThinkfulNumber{
+public class ThinkfulNumberImpl implements ThinkfulNumber {
     private int wallSize;
     private int pixelSize;
 

@@ -2,8 +2,8 @@ package Tasks.Loops.SumOfPositive;
 
 import java.util.Scanner;
 
-public class SumOfPositiveImpl implements SumOfPositive{
-    private int[] array;
+public class SumOfPositiveImpl implements SumOfPositive {
+    private final int[] array;
     private int n;
 
     public SumOfPositiveImpl(final Scanner scanner) {
@@ -29,8 +29,8 @@ public class SumOfPositiveImpl implements SumOfPositive{
     @Override
     public int sumOfPositive() {
         int sum = 0;
-        for (int i = 0; i < getArray().length; i++){
-            if(getArray()[i] > 0){
+        for (int i = 0; i < getArray().length; i++) {
+            if (getArray()[i] > 0) {
                 sum += getArray()[i];
             }
         }

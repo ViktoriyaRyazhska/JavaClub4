@@ -50,9 +50,9 @@ public class HelloImpl implements Hello {
     }
 
     @Override
-    public String sayHello(){
+    public String sayHello() {
         String hello = "";
-        hello = hello.concat("Hello, " + getName() + "!" + " Welcome to " + getCity() + ", " + getState() + "!");;
+        hello = hello.concat("Hello, " + getName() + "!" + " Welcome to " + getCity() + ", " + getState() + "!");
         return hello;
     }
 }

@@ -16,9 +16,9 @@ public class ExclamationMarksImpl implements ExclamationMarks {
     }
 
     public void setStr(final String str) {
-        if(!str.isEmpty() && str.matches("(.*)!*(.*)")){
+        if (!str.isEmpty() && str.matches("(.*)!*(.*)")) {
             this.str = str;
-        }else{
+        } else {
             this.str = " !!Hi !";
         }
     }
@@ -35,15 +35,15 @@ public class ExclamationMarksImpl implements ExclamationMarks {
     public String removeExclamationMarks() {
         final StringBuilder newStr = new StringBuilder();
         int count = 0;
-        for (int i = 0; i < getStr().length(); i++){
-            if(getStr().charAt(i) == '!'){
+        for (int i = 0; i < getStr().length(); i++) {
+            if (getStr().charAt(i) == '!') {
                 count++;
-                if(count < n){
+                if (count < n) {
                     continue;
-                }else{
+                } else {
                     newStr.append(getStr().charAt(i));
                 }
-            }else{
+            } else {
                 newStr.append(getStr().charAt(i));
             }
         }

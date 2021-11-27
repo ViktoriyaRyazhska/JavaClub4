@@ -19,7 +19,7 @@ public class YesOrNotImpl implements YesOrNot {
 
     @Override
     public String boolToWord() {
-        return isBool() ? "Yes": "No";
+        return isBool() ? "Yes" : "No";
     }
 
 }

@@ -27,7 +27,7 @@ import java.util.Scanner;
 
 public class LoopsSwitch implements Switch {
     @Override
-    public void ChooseOption(final Scanner scanner){
+    public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
@@ -85,7 +85,10 @@ public class LoopsSwitch implements Switch {
                 final TwentyOne twentyOne = new TwentyOneImpl();
                 twentyOne.playGame(scanner);
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new LoopsSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -103,6 +106,7 @@ public class LoopsSwitch implements Switch {
                 8. Summation
                 9. SumOfPositive
                 10. TwentyOne
+                0. EXIT
                 """;
     }
 }

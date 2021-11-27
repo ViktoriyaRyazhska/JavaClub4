@@ -4,5 +4,5 @@ import Tasks.Classes.FractionClass.FractionClass;
 
 public interface Calculator {
 
-     double calculator(FractionClass a, char symbol, FractionClass b);
+    double calculator(FractionClass a, char symbol, FractionClass b);
 }

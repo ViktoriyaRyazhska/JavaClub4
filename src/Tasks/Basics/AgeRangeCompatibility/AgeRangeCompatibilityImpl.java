@@ -14,9 +14,9 @@ public class AgeRangeCompatibilityImpl implements AgeRangeCompatibility {
     }
 
     public void setAge(final int age) {
-        if(age >= 1 & age <= 100){
+        if (age >= 1 & age <= 100) {
             this.age = age;
-        }else{
+        } else {
             this.age = (int) ((Math.random() * (100 - 1)) + 1);
         }
     }

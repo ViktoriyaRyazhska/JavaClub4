@@ -29,7 +29,12 @@ public class CollectionsSwitch implements Switch {
                 dictionary.addWord(scanner);
                 System.out.println("Looking for input key in dictionary: " + dictionary.findEntry(scanner));
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            case 0 -> {
+            }
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new CollectionsSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -39,6 +44,7 @@ public class CollectionsSwitch implements Switch {
                 List of options:\040
                 1. FilteringEven
                 2. Interactive
+                0. EXIT
                 """;
     }
 }

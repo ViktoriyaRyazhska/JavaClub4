@@ -39,9 +39,9 @@ public class TripleTroubleImpl implements TripleTrouble {
 
     @Override
     public String combineTriple() {
-        String tmp, str = "";;
+        String tmp, str = "";
         final int size = Math.max(Math.max(a.length(), b.length()), c.length());
-        for (int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             tmp = i < a.length() ? String.valueOf(a.charAt(i)) : "";
             tmp += i < b.length() ? String.valueOf(b.charAt(i)) : "";
             tmp += i < c.length() ? String.valueOf(c.charAt(i)) : "";

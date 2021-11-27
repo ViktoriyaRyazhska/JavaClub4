@@ -14,9 +14,9 @@ public class FakeBinaryImpl implements FakeBinary {
     }
 
     public void setDigits(final String digits) {
-        if(!digits.isEmpty() && digits.matches("\\b[0-9]*\\b")){
+        if (!digits.isEmpty() && digits.matches("\\b[0-9]*\\b")) {
             this.digits = digits;
-        }else{
+        } else {
             this.digits = "0123456789";
         }
     }

@@ -18,7 +18,7 @@ public class TwoFightersOneWinner {
     }
 
     public void setName(final String name) {
-        if(!name.isEmpty() && name.matches("\\b[A-Z][a-z]*\\b")) {
+        if (!name.isEmpty() && name.matches("\\b[A-Z][a-z]*\\b")) {
             this.name = name;
         } else {
             this.name = "Viking";
@@ -30,9 +30,9 @@ public class TwoFightersOneWinner {
     }
 
     public void setHealth(final int health) {
-        if(health >= 10 && health <= 1000){
+        if (health >= 10 && health <= 1000) {
             this.health = health;
-        }else{
+        } else {
             this.health = (int) ((Math.random() * (10000 - 10)) + 10);
         }
     }
@@ -42,7 +42,7 @@ public class TwoFightersOneWinner {
     }
 
     public void setDamagePerAttack(final int damagePerAttack) {
-       this.damagePerAttack = damagePerAttack;
+        this.damagePerAttack = damagePerAttack;
     }
 
 }

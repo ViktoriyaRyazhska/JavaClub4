@@ -14,9 +14,9 @@ public class RemoveSpacesImpl implements RemoveSpaces {
     }
 
     public void setStr(final String str) {
-        if (!str.isEmpty() && str.matches("\s*")){
+        if (!str.isEmpty() && str.matches("\s*")) {
             this.str = str;
-        }else{
+        } else {
             this.str = "Re mo vi ng";
         }
     }

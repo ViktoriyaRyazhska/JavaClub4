@@ -2,7 +2,7 @@ package Tasks.Classes.BuildingBlocks;
 
 import java.util.Scanner;
 
-public class BuildingBlocksImpl implements BuildingBlocks{
+public class BuildingBlocksImpl implements BuildingBlocks {
     private int width;
     private int length;
     private int height;
@@ -17,7 +17,7 @@ public class BuildingBlocksImpl implements BuildingBlocks{
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(final int width) {
         this.width = Math.max(width, 1);
     }
 
@@ -25,7 +25,7 @@ public class BuildingBlocksImpl implements BuildingBlocks{
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(final int length) {
         this.length = Math.max(length, 2);
     }
 
@@ -33,7 +33,7 @@ public class BuildingBlocksImpl implements BuildingBlocks{
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(final int height) {
         this.height = Math.max(height, 1);
     }
 

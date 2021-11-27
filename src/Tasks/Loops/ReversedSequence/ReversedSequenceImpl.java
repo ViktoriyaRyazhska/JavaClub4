@@ -2,7 +2,7 @@ package Tasks.Loops.ReversedSequence;
 
 import java.util.Scanner;
 
-public class ReversedSequenceImpl implements ReversedSequence{
+public class ReversedSequenceImpl implements ReversedSequence {
     private int n;
 
     public ReversedSequenceImpl(final Scanner scanner) {

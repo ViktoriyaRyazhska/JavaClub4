@@ -2,7 +2,7 @@ package Tasks.Basics.ConvertToBinary;
 
 import java.util.Scanner;
 
-public class ConvertToBinaryImpl implements ConvertToBinary{
+public class ConvertToBinaryImpl implements ConvertToBinary {
     private int n;
 
     public ConvertToBinaryImpl(final Scanner scanner) {

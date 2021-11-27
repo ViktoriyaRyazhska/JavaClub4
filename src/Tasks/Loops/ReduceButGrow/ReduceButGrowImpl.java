@@ -2,7 +2,7 @@ package Tasks.Loops.ReduceButGrow;
 
 import java.util.Scanner;
 
-public class ReduceButGrowImpl implements ReduceButGrow{
+public class ReduceButGrowImpl implements ReduceButGrow {
     private int[] array;
     private int n;
 
@@ -33,7 +33,7 @@ public class ReduceButGrowImpl implements ReduceButGrow{
     @Override
     public int multiplyingValues() {
         int product = 1;
-        for (int i = 0; i < getArray().length; i++){
+        for (int i = 0; i < getArray().length; i++) {
             product *= getArray()[i];
         }
         return product;

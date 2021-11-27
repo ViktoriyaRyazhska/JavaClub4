@@ -2,7 +2,7 @@ package Tasks.Basics.BeginnerSeries2Clock;
 
 import java.util.Scanner;
 
-public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock{
+public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock {
     private int hours;
     private int minutes;
     private int seconds;

@@ -2,7 +2,7 @@ package Tasks.Loops.TwentyOne;
 
 import java.util.Scanner;
 
-public class TwentyOneImpl implements TwentyOne{
+public class TwentyOneImpl implements TwentyOne {
     private int stick = 21;
     private int AI;
     private int player;
@@ -39,19 +39,19 @@ public class TwentyOneImpl implements TwentyOne{
         System.out.println("AI takes " + getAI() + " --> " + getStick() + " sticks left");
 
         while (stick > 0) {
-          setPlayer(scanner.nextInt());
-           setStick(getStick() - getPlayer());
+            setPlayer(scanner.nextInt());
+            setStick(getStick() - getPlayer());
             System.out.println("Player takes " + getPlayer() + " --> " + getStick() + " sticks left");
             if (stick <= 0) {
                 System.out.println("Player loose");
-            } else if(stick >= 5){
+            } else if (stick >= 5) {
                 setAI(5 - getPlayer());
                 setStick(getStick() - getAI());
                 System.out.println("AI takes " + getAI() + " --> " + getStick() + " sticks left");
                 if (stick <= 0) {
                     System.out.println("AI loose");
                 }
-            } else{
+            } else {
                 setAI(getStick());
                 setStick(0);
                 System.out.println("AI takes " + getAI() + " --> " + getStick() + " sticks left");

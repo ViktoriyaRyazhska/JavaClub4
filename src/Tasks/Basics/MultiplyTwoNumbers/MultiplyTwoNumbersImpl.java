@@ -2,7 +2,7 @@ package Tasks.Basics.MultiplyTwoNumbers;
 
 import java.util.Scanner;
 
-public class MultiplyTwoNumbersImpl implements MultiplyTwoNumbers{
+public class MultiplyTwoNumbersImpl implements MultiplyTwoNumbers {
     private int number1;
     private int number2;
 

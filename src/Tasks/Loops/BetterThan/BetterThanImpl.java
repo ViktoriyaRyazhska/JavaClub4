@@ -2,7 +2,7 @@ package Tasks.Loops.BetterThan;
 
 import java.util.Scanner;
 
-public class BetterThanImpl implements BetterThan{
+public class BetterThanImpl implements BetterThan {
     private int[] array;
     private int n;
     private int point;
@@ -16,12 +16,12 @@ public class BetterThanImpl implements BetterThan{
         setPoint(enterValue(scanner));
     }
 
-    public void setArray(final int[] array) {
-        this.array = array;
-    }
-
     public int[] getArray() {
         return array;
+    }
+
+    public void setArray(final int[] array) {
+        this.array = array;
     }
 
     public int getN() {
@@ -53,11 +53,11 @@ public class BetterThanImpl implements BetterThan{
     }
 
     @Override
-    public int enterValue(final Scanner scanner){
+    public int enterValue(final Scanner scanner) {
         final int value = scanner.nextInt();
-        if( value >= 1 && value <= 12){
+        if (value >= 1 && value <= 12) {
             return value;
-        }else{
+        } else {
             return (int) ((Math.random() * (100 - 1)) + 1);
         }
     }

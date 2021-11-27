@@ -16,11 +16,11 @@ public class StringRepeatImpl implements StringRepeat {
     }
 
     public void setStr(final String str) {
-       if(!str.isEmpty() && !str.contains(" ")){
-           this.str = str;
-       }else{
-           this.str = "String";
-       }
+        if (!str.isEmpty() && !str.contains(" ")) {
+            this.str = str;
+        } else {
+            this.str = "String";
+        }
     }
 
     public int getN() {

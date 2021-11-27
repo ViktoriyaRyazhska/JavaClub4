@@ -2,7 +2,7 @@ package Tasks.Basics.YouCantCode;
 
 import java.util.Scanner;
 
-public class YouCantCodeImpl implements YouCantCode{
+public class YouCantCodeImpl implements YouCantCode {
     private int number;
 
     public YouCantCodeImpl(final Scanner scanner) {

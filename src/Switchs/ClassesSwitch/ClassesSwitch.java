@@ -61,7 +61,12 @@ public class ClassesSwitch implements Switch {
                 final Fight fight = new FightImpl();
                 System.out.println("The winner is: " + fight.declareWinner(a, b));
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            case 0 -> {
+            }
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new ClassesSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -74,6 +79,7 @@ public class ClassesSwitch implements Switch {
                 3. FractionsClass
                 4. LombokEncapsulation
                 5. TwoFightersOneWinner
+                0. EXIT
                 """;
     }
 }

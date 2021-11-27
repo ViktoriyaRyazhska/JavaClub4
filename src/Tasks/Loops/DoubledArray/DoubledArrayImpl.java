@@ -2,7 +2,7 @@ package Tasks.Loops.DoubledArray;
 
 import java.util.Scanner;
 
-public class DoubledArrayImpl implements DoubledArray{
+public class DoubledArrayImpl implements DoubledArray {
     private int[] array;
     private int n;
 
@@ -32,7 +32,7 @@ public class DoubledArrayImpl implements DoubledArray{
 
     @Override
     public int[] doubleArray() {
-        for (int i = 0; i < getArray().length; i++){
+        for (int i = 0; i < getArray().length; i++) {
             getArray()[i] *= 2;
         }
         return getArray();

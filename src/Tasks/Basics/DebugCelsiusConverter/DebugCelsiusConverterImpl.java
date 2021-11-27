@@ -2,7 +2,7 @@ package Tasks.Basics.DebugCelsiusConverter;
 
 import java.util.Scanner;
 
-public class DebugCelsiusConverterImpl implements DebugCelsiusConverter{
+public class DebugCelsiusConverterImpl implements DebugCelsiusConverter {
     private double fahrenheit;
 
     public DebugCelsiusConverterImpl(final Scanner scanner) {

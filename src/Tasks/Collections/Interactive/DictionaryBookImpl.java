@@ -29,7 +29,7 @@ public class DictionaryBookImpl implements DictionaryBook {
     public void setKey(final String key) {
         if (!key.isEmpty() && key.matches("\\b([A-Z][a-z]*)\\b")) {
             this.key = key;
-        }else{
+        } else {
             this.key = "Apple";
         }
     }
@@ -41,9 +41,9 @@ public class DictionaryBookImpl implements DictionaryBook {
     public void setValue(final String value) {
         if (!key.isEmpty() && key.matches("(\\b([a-z]*)\\b)*")) {
             this.key = key;
-        }else{
+        } else {
             this.key = "Fruit";
-        };
+        }
     }
 
     @Override

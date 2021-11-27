@@ -22,18 +22,14 @@ public class FractionClassImpl implements FractionClass {
         return integer;
     }
 
-    public double getFraction() {
-        return fraction;
-    }
-
-    public boolean isPositive() {
-        return isPositive;
-    }
-
     public void setInteger(final int integer) {
         this.isPositive = integer >= 0;
 
         this.integer = Math.abs(integer);
+    }
+
+    public double getFraction() {
+        return fraction;
     }
 
     public void setFraction(final double fraction) {
@@ -49,6 +45,10 @@ public class FractionClassImpl implements FractionClass {
         } else {
             this.fraction = Math.abs(fraction);
         }
+    }
+
+    public boolean isPositive() {
+        return isPositive;
     }
 
     public void setIsPositive(final boolean positive) {

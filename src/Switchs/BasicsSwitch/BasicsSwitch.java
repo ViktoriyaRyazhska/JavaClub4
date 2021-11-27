@@ -28,7 +28,7 @@ import java.util.Scanner;
 
 public class BasicsSwitch implements Switch {
     @Override
-    public void ChooseOption(final Scanner scanner){
+    public void ChooseOption(final Scanner scanner) {
         System.out.println(ShowOptions());
         System.out.println("Choose one of options: ");
         final int task = scanner.nextInt();
@@ -90,7 +90,12 @@ public class BasicsSwitch implements Switch {
                 final YouCantCode youCantCode = new YouCantCodeImpl(scanner);
                 System.out.println("It is a doubled value of your number: ");
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            case 0 -> {
+            }
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new BasicsSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -109,6 +114,7 @@ public class BasicsSwitch implements Switch {
                 9. ThinkfulNumber
                 10. VolumeOfACuboid
                 11. YouCantCode
+                0. EXIT
                 """;
     }
 }

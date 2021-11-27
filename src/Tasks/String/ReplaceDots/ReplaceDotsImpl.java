@@ -16,7 +16,7 @@ public class ReplaceDotsImpl implements ReplaceDots {
     public void setStr(final String str) {
         if (!str.isEmpty() && str.matches("\\.*")) {
             this.str = str;
-        } else{
+        } else {
             this.str = "I.t.a.l.y";
         }
     }

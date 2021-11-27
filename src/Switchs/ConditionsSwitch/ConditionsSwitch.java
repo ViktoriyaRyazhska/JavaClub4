@@ -31,7 +31,7 @@ public class ConditionsSwitch implements Switch {
                     System.out.println("Enter type of operation(+, -, *, /");
                     final Calculator calculator = new CalculatorImpl();
                     calculator.calculator(a, scanner.next().charAt(0), b);
-                }catch (final UnsupportedOperationException | ArithmeticException e){
+                } catch (final UnsupportedOperationException | ArithmeticException e) {
                     System.err.println(e.getMessage());
                 }
             }
@@ -50,7 +50,12 @@ public class ConditionsSwitch implements Switch {
                 final YesOrNot yesOrNot = new YesOrNotImpl(scanner);
                 System.out.println("It is true?: ");
             }
-            default -> System.out.println("There is no such option! Please, enter right option: ");
+            case 0 -> {
+            }
+            default -> {
+                System.out.println("There is no " + task + " option! Try again!");
+                new ConditionsSwitch().ChooseOption(scanner);
+            }
         }
     }
 
@@ -62,6 +67,7 @@ public class ConditionsSwitch implements Switch {
                 2. BooleanToString
                 3. OppositeNumber
                 4. YesOrNot
+                0. EXIT
                 """;
     }
 }

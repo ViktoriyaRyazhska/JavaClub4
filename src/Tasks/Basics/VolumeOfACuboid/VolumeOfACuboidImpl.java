@@ -2,7 +2,7 @@ package Tasks.Basics.VolumeOfACuboid;
 
 import java.util.Scanner;
 
-public class VolumeOfACuboidImpl implements VolumeOfACuboid{
+public class VolumeOfACuboidImpl implements VolumeOfACuboid {
     private int length;
     private int width;
     private int height;
@@ -18,7 +18,7 @@ public class VolumeOfACuboidImpl implements VolumeOfACuboid{
     }
 
     public void setLength(final int length) {
-       this.length = Math.max(length, 1);
+        this.length = Math.max(length, 1);
     }
 
     public int getWidth() {
