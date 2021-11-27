@@ -1,9 +1,6 @@
 package application.utility;
 
-import application.tasks.classes.Canvas;
-import application.tasks.classes.Encapsulation;
-import application.tasks.classes.FixMe;
-import application.tasks.classes.FractionsClass;
+import application.tasks.classes.*;
 
 import java.util.Scanner;
 
@@ -19,7 +16,7 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case BACK:
-                //ChoiceList.choiceList();
+                ChoiceList.choiceList(scanner);
                 break;
             case EXIT:
                 break;
@@ -32,11 +29,19 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 3:
-                Canvas.task();
+                Canvas.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 4:
                 FractionsClass.task();
+                ChoiceClasses.choiceClasses(scanner);
+                break;
+            case 5:
+                // BuildingBlocks.task(scanner);
+                ChoiceClasses.choiceClasses(scanner);
+                break;
+            case 6:
+                //TwoFightersOneWinner.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
         }
@@ -48,7 +53,9 @@ public class ChoiceClasses extends Constants{
                 "1. Encapsulation\n" +
                 "2. FixMe\n" +
                 "3. Canvas\n" +
-                "4. Fractions";
+                "4. Fractions\n" +
+                "5. Building Blocks\n" +
+                "6. Two Fighters - one Winner";
 
         return classes;
     }

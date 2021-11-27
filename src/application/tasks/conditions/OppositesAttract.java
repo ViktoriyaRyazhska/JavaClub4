@@ -1,4 +1,4 @@
-package application.tasks.Conditions;
+package application.tasks.conditions;
 
 public class OppositesAttract {
     public static boolean task(final int flower1, final int flower2) {

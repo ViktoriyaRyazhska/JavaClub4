@@ -17,10 +17,10 @@ public class ChoiceList extends Constants {
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 2:
-               // ChoiceConditions.choiceConditions(in);
+                ChoiceClasses.choiceClasses(in);
                 break;
             case 3:
-                ChoiceClasses.choiceClasses(in);
+                ChoiceConditions.choiceConditions(in);
                 break;
             case 4:
                 ChoiceLoops.choiceLoops(in);
@@ -42,8 +42,12 @@ public class ChoiceList extends Constants {
     public static String listOfLists() {
         String lists =
                 "1. Basic\n" +
-                        "2. Conditions\n" +
-                        "3. Classes";
+                        "2. Classes\n" +
+                        "3. Conditions\n" +
+                        "4. Loops\n" +
+                        "5. OOP\n" +
+                        "6. String\n" +
+                        "7. Collections";
 
         return lists;
     }

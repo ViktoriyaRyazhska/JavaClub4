@@ -1,6 +1,8 @@
 package application.utility;
 
 import application.tasks.basic.*;
+import application.tasks.oop.AdamAndEve;
+import application.tasks.oop.tddAreaCalculations;
 
 import java.util.Scanner;
 
@@ -20,57 +22,33 @@ public class ChoiceOOP {
                 ChoiceList.choiceList(in);
                 break;
             case 1:
-                AgeRange.task(in);
+              //  AdamAndEve.task(in);
+                ChoiceOOP.choiceOOP(in);
                 break;
             case 2:
-                //   BeginnerSeries.task(in);
+                //   L3375p34k.task(in);
+                ChoiceOOP.choiceOOP(in);
                 break;
             case 3:
-                //  CenturyFromYear.task(in);
+                //  Rotations.task(in);
+                ChoiceOOP.choiceOOP(in);
                 break;
             case 4:
-                ConvertToBinary.task(in);
-                break;
-            case 5:
-                CuboidVolume.task(in);
-                break;
-            case 6:
-                GrassHopper.task(in);
-                break;
-            case 7:
-                JennySecretMessage.task(in);
-                break;
-            case 8:
-                MultiplyNumbers.task(in);
-                break;
-            case 9:
-                PixelArtPlanning.task(in);
-                break;
-            case 10:
-                //   ReturnNegative.task(in);
-                break;
-            case 11:
-                UnderPressure.task(in);
+                //tddAreaCalculations.task(in);
+                ChoiceOOP.choiceOOP(in);
                 break;
         }
     }
     // список basic
     public static String listOfOOPOptions() {
-        String basicOptions =
+        String oopOptions =
                 "\nList of basic tasks:\n" +
-                        "1. AgeRange\n" +
-                        "2. BooleanToString\n" +
-                        "3. CenturyFromYear\n" +
-                        "4. ConvertToBinary\n" +
-                        "5. CuboidVolume\n" +
-                        "6. GrassHopper\n" +
-                        "7. JennySecretMessage\n" +
-                        "8. MultiplyNumbers\n" +
-                        "9. PixelArtPlanning\n" +
-                        "10. ReturnNegative\n" +
-                        "11. UnderPressure\n" +
+                        "1. AdamAndEve\n" +
+                        "2. L3375p34k\n" +
+                        "3. Rotations\n" +
+                        "4. tddAreaCalculations\n" +
                         "0. Exit\n";
 
-        return basicOptions;
+        return oopOptions;
     }
 }

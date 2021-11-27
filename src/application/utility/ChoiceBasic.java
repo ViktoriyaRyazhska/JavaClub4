@@ -23,39 +23,48 @@ public class ChoiceBasic {
                 break;
             case 1:
                 AgeRange.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 2:
                // BeginnerSeries.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 3:
               //  CenturyFromYear.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 4:
                 ConvertToBinary.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 5:
                 CuboidVolume.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 6:
                 GrassHopper.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 7:
                 JennySecretMessage.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 8:
                 MultiplyNumbers.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 9:
                 PixelArtPlanning.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 10:
-              //  ReturnNegative.task(in);
+               // ReturnNegative.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 11:
                 UnderPressure.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
-
-
         }
     }
     // список basic
