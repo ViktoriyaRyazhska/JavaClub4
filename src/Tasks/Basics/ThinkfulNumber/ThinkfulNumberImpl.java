@@ -2,12 +2,6 @@ package Tasks.Basics.ThinkfulNumber;
 
 import java.util.Scanner;
 
-/**
- * You're laying out a rad pixel art mural to paint on your
- * living room wall in homage to Paul Robertson,
- * your favorite pixel artist.
- */
-
 public class ThinkfulNumberImpl implements ThinkfulNumber{
     private int wallSize;
     private int pixelSize;

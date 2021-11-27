@@ -10,12 +10,16 @@ public class ReduceButGrowImpl implements ReduceButGrow{
         setN(scanner.nextInt());
         array = new int[getN()];
         for (int i = 0; i < array.length; i++) {
-            array[i] = scanner.nextInt();
+            array[i] = Math.max(scanner.nextInt(), 1);
         }
     }
 
     public int[] getArray() {
         return array;
+    }
+
+    public void setArray(final int[] array) {
+        this.array = array;
     }
 
     public int getN() {

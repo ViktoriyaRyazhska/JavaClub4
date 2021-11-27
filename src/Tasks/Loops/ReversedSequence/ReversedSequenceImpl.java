@@ -19,7 +19,7 @@ public class ReversedSequenceImpl implements ReversedSequence{
 
     @Override
     public int[] reversedSequence() {
-        int[] sequence = new int[getN()];
+        final int[] sequence = new int[getN()];
         for (int i = getN(); i > 0; i--) {
             sequence[getN() - i] = i;
         }

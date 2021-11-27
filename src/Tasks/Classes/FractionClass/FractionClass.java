@@ -1,9 +1,9 @@
 package Tasks.Classes.FractionClass;
 
 public interface FractionClass {
-    FractionClassImpl add(FractionClassImpl value);
-    FractionClassImpl differ(FractionClassImpl value);
-    FractionClassImpl multi(FractionClassImpl value);
-    FractionClassImpl divide(FractionClassImpl value);
+    FractionClass add(FractionClass value);
+    FractionClass differ(FractionClass value);
+    FractionClass multi(FractionClass value);
+    FractionClass divide(FractionClass value);
     double toDouble();
 }

@@ -2,11 +2,6 @@ package Tasks.Basics.JennySecretMessage;
 
 import java.util.Scanner;
 
-/**
- * Jenny has written a function that returns a greeting for a user.
- * However, she's in love with Johnny, and would like to greet him slightly different.
- * She added a special case to her function, but she made a mistake.
- */
 public class JennySecretMessageImpl implements JennySecretMessage {
     private String name;
 
@@ -28,7 +23,7 @@ public class JennySecretMessageImpl implements JennySecretMessage {
 
     @Override
     public String toGreet() {
-        return getName().equals("Johnny") ? "Hello, my love!" : "Hello, " + name + "!";
+        return getName().equals("Johnny") ? "Hello, my love!" : "Hello, " + getName() + "!";
     }
 }
 

@@ -2,10 +2,6 @@ package Tasks.Basics.ConvertToBinary;
 
 import java.util.Scanner;
 
-/**
- * Given a non-negative integer n,
- * write a function to_binary/ToBinary which returns that number in a binary format.
- */
 public class ConvertToBinaryImpl implements ConvertToBinary{
     private int n;
 

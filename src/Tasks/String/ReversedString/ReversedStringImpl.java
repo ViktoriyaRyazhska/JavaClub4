@@ -1,10 +1,12 @@
 package Tasks.String.ReversedString;
 
+import java.util.Scanner;
+
 public class ReversedStringImpl implements ReversedString {
     private String str;
 
-    public ReversedStringImpl(final String str) {
-        setStr(str);
+    public ReversedStringImpl(final Scanner scanner) {
+        setStr(scanner.nextLine());
     }
 
     public String getStr() {
@@ -12,7 +14,7 @@ public class ReversedStringImpl implements ReversedString {
     }
 
     public void setStr(final String str) {
-        if (!str.contains(" ") && str.matches("[a-zA-Z0-9]{2,}")) {
+        if (!str.isEmpty() && str.matches("[a-zA-Z0-9]{2,}")) {
             this.str = str;
         } else {
             this.str = "world";

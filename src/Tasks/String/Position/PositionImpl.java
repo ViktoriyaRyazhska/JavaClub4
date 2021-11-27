@@ -1,14 +1,15 @@
 package Tasks.String.Position;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class PositionImpl implements Position {
     private final static String ALL_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     private String letter;
 
-    public PositionImpl(final String letter) {
-        setLetter(letter);
+    public PositionImpl(final Scanner scanner) {
+        setLetter(scanner.nextLine());
     }
 
     public String getLetter() {
@@ -16,7 +17,7 @@ public class PositionImpl implements Position {
     }
 
     public void setLetter(final String letter) {
-        if (!letter.contains(" ") && letter.matches("[a-zA-Z]")) {
+        if (!letter.isEmpty() && letter.matches("[a-zA-Z]")) {
             this.letter = letter;
         } else {
             final Random rnd = new Random();
@@ -26,7 +27,7 @@ public class PositionImpl implements Position {
 
     @Override
     public int findPosition() {
-        int pos = 0;
+        int pos = -1;
         for (int i = 0; i < ALL_LETTERS.length(); i++) {
             if (String.valueOf(ALL_LETTERS.charAt(i)).equals(letter)) {
                 if ((Character.isUpperCase(ALL_LETTERS.charAt(i)))) {

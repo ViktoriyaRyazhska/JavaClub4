@@ -1,12 +1,14 @@
 package Tasks.String.ExclamationMarks;
 
+import java.util.Scanner;
+
 public class ExclamationMarksImpl implements ExclamationMarks {
     private String str;
     private int n;
 
-    public ExclamationMarksImpl(final String str, final int n) {
-        setStr(str);
-        setN(n);
+    public ExclamationMarksImpl(final Scanner scanner) {
+        setStr(scanner.nextLine());
+        setN(scanner.nextInt());
     }
 
     public String getStr() {
@@ -14,7 +16,7 @@ public class ExclamationMarksImpl implements ExclamationMarks {
     }
 
     public void setStr(final String str) {
-        if(str.matches("(.*)\\!(.*)")){
+        if(!str.isEmpty() && str.matches("(.*)!*(.*)")){
             this.str = str;
         }else{
             this.str = " !!Hi !";
@@ -31,20 +33,20 @@ public class ExclamationMarksImpl implements ExclamationMarks {
 
     @Override
     public String removeExclamationMarks() {
-        String newStr = "";
+        final StringBuilder newStr = new StringBuilder();
         int count = 0;
         for (int i = 0; i < getStr().length(); i++){
             if(getStr().charAt(i) == '!'){
                 count++;
-                if(count <= n){
+                if(count < n){
                     continue;
                 }else{
-                    newStr += String.valueOf(str.charAt(i));
+                    newStr.append(getStr().charAt(i));
                 }
             }else{
-                newStr += String.valueOf(str.charAt(i));
+                newStr.append(getStr().charAt(i));
             }
         }
-        return newStr;
+        return newStr.toString();
     }
 }

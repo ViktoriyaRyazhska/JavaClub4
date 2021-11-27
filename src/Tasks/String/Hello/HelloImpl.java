@@ -1,14 +1,16 @@
 package Tasks.String.Hello;
 
+import java.util.Scanner;
+
 public class HelloImpl implements Hello {
     private String name;
     private String city;
     private String state;
 
-    public HelloImpl(final String name, final String city, final String state) {
-        setName(name);
-        setCity(city);
-        setState(state);
+    public HelloImpl(final Scanner scanner) {
+        setName(scanner.nextLine());
+        setCity(scanner.nextLine());
+        setState(scanner.nextLine());
     }
 
     public String getName() {
@@ -16,7 +18,11 @@ public class HelloImpl implements Hello {
     }
 
     public void setName(final String name) {
-        this.name = name;
+        if (!name.isEmpty() && name.matches("(\\b([A-Z][a-z]*)\\b)*")) {
+            this.name = name;
+        } else {
+            this.name = "John";
+        }
     }
 
     public String getCity() {
@@ -24,7 +30,11 @@ public class HelloImpl implements Hello {
     }
 
     public void setCity(final String city) {
-        this.city = city;
+        if (!city.isEmpty() && city.matches("\\b([A-Z][a-z]*)\\b")) {
+            this.city = city;
+        } else {
+            this.city = "Phoenix";
+        }
     }
 
     public String getState() {
@@ -32,7 +42,11 @@ public class HelloImpl implements Hello {
     }
 
     public void setState(final String state) {
-        this.state = state;
+        if (!state.isEmpty() && state.matches("\\b([A-Z][a-z]*)\\b")) {
+            this.state = state;
+        } else {
+            this.state = "Arizona";
+        }
     }
 
     @Override

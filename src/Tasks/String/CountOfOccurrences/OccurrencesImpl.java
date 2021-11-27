@@ -1,12 +1,14 @@
 package Tasks.String.CountOfOccurrences;
 
+import java.util.Scanner;
+
 public class OccurrencesImpl implements Occurrences {
     private String word;
-    private String symbol;
+    private char symbol;
 
-    public OccurrencesImpl(final String word, final String symbol) {
-        this.word = word;
-        this.symbol = symbol;
+    public OccurrencesImpl(final Scanner scanner) {
+        this.word = scanner.nextLine();
+        this.symbol = scanner.next().charAt(0);
     }
 
     public String getWord() {
@@ -17,11 +19,11 @@ public class OccurrencesImpl implements Occurrences {
         this.word = word;
     }
 
-    public String getSymbol() {
+    public char getSymbol() {
         return symbol;
     }
 
-    public void setSymbol(final String symbol) {
+    public void setSymbol(final char symbol) {
         this.symbol = symbol;
     }
 
@@ -29,7 +31,7 @@ public class OccurrencesImpl implements Occurrences {
     public int countOfOccurrences() {
         int count = 0;
         for (int i = 0; i < getWord().length(); i++){
-            if(String.valueOf(getWord().charAt(i)).equals(getSymbol())){
+            if(getWord().charAt(i) == getSymbol()){
                 count++;
             }
         }

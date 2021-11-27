@@ -1,10 +1,12 @@
 package Tasks.String.Banjo;
 
+import java.util.Scanner;
+
 public class BanjoImpl implements Banjo {
     private String name;
 
-    public BanjoImpl(final String name) {
-        setName(name);
+    public BanjoImpl(final Scanner scanner) {
+        setName(scanner.nextLine());
     }
 
     public String getName() {
@@ -12,20 +14,19 @@ public class BanjoImpl implements Banjo {
     }
 
     public void setName(final String name) {
-        if(!name.isEmpty() && name.matches("[a-zA-Z][a-z]{2,14}")){
+        if (!name.isEmpty() && name.matches("\\b([A-Z][a-z]*)\\b")) {
             this.name = name;
-        }else{
+        } else {
             this.name = "Maksym";
         }
     }
 
     @Override
-    public String playingBanjo(){
-        String answer = "";
-        if(getName().charAt(0) == 'R' || getName().charAt(0) == 'r'){
-            return answer = name + " plays banjo";
-        }else{
-            return answer = name + " does not play banjo";
+    public String playingBanjo() {
+        if (getName().charAt(0) == 'R' || getName().charAt(0) == 'r') {
+            return getName() + " plays banjo";
+        } else {
+            return getName() + " does not play banjo";
         }
     }
 }

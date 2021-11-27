@@ -1,10 +1,12 @@
 package Tasks.String.RemoveSpaces;
 
+import java.util.Scanner;
+
 public class RemoveSpacesImpl implements RemoveSpaces {
     private String str;
 
-    public RemoveSpacesImpl(final String str) {
-       this.str = str;
+    public RemoveSpacesImpl(final Scanner scanner) {
+        setStr(scanner.nextLine());
     }
 
     public String getStr() {
@@ -12,7 +14,11 @@ public class RemoveSpacesImpl implements RemoveSpaces {
     }
 
     public void setStr(final String str) {
-        this.str = str;
+        if (!str.isEmpty() && str.matches("\s*")){
+            this.str = str;
+        }else{
+            this.str = "Re mo vi ng";
+        }
     }
 
     @Override

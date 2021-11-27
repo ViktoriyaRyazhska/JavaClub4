@@ -11,9 +11,9 @@ public class BetterThanImpl implements BetterThan{
         setN(scanner.nextInt() + 1);
         this.array = new int[getN()];
         for (int i = 0; i < getArray().length - 1; i++) {
-            this.array[i] = scanner.nextInt();
+            this.array[i] = enterValue(scanner);
         }
-        setPoint(scanner.nextInt());
+        setPoint(enterValue(scanner));
     }
 
     public void setArray(final int[] array) {
@@ -50,5 +50,15 @@ public class BetterThanImpl implements BetterThan{
         }
         final double average = 1.0 * sum / getArray().length;
         return average < array[getArray().length - 1];
+    }
+
+    @Override
+    public int enterValue(final Scanner scanner){
+        final int value = scanner.nextInt();
+        if( value >= 1 && value <= 12){
+            return value;
+        }else{
+            return (int) ((Math.random() * (100 - 1)) + 1);
+        }
     }
 }

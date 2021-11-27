@@ -1,10 +1,12 @@
 package Tasks.String.NumberIntoString;
 
+import java.util.Scanner;
+
 public class NumberIntoStringImpl implements NumberIntoString {
     private int number;
 
-    public NumberIntoStringImpl(final int number) {
-        this.number = number;
+    public NumberIntoStringImpl(final Scanner scanner) {
+        this.number = scanner.nextInt();
     }
 
     public int getNumber() {

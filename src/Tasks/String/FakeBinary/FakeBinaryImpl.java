@@ -1,10 +1,12 @@
 package Tasks.String.FakeBinary;
 
+import java.util.Scanner;
+
 public class FakeBinaryImpl implements FakeBinary {
     private String digits;
 
-    public FakeBinaryImpl(final String digits) {
-        setDigits(digits);
+    public FakeBinaryImpl(final Scanner scanner) {
+        setDigits(scanner.nextLine());
     }
 
     public String getDigits() {
@@ -12,7 +14,7 @@ public class FakeBinaryImpl implements FakeBinary {
     }
 
     public void setDigits(final String digits) {
-        if(!digits.contains(" ") && digits.matches("-*[1-9]\\d*|0")){
+        if(!digits.isEmpty() && digits.matches("\\b[0-9]*\\b")){
             this.digits = digits;
         }else{
             this.digits = "0123456789";

@@ -18,7 +18,7 @@ public class TwoFightersOneWinner {
     }
 
     public void setName(final String name) {
-        if(!name.isEmpty() && name.matches("\\b([A-Z][a-z]*)\\b")) {
+        if(!name.isEmpty() && name.matches("\\b[A-Z][a-z]*\\b")) {
             this.name = name;
         } else {
             this.name = "Viking";
@@ -45,11 +45,5 @@ public class TwoFightersOneWinner {
        this.damagePerAttack = damagePerAttack;
     }
 
-//    public static void main(String[] args) {
-//            TwoFightersOneWinner fighter1 = new TwoFightersOneWinner("Cossack", 8, 5);
-//            TwoFightersOneWinner fighter2 = new TwoFightersOneWinner("Viking", 10, 3);
-//            System.out.println(declareWinner(fighter1, fighter2, fighter1.name));
-//        }
-//    }
 }
 

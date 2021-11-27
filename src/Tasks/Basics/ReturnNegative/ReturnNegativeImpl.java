@@ -2,10 +2,6 @@ package Tasks.Basics.ReturnNegative;
 
 import java.util.Scanner;
 
-/**
- * In this simple assignment you are given a number and have to make it negative.
- * But maybe the number is already negative?
- */
 public class ReturnNegativeImpl implements ReturnNegative {
     private int number;
 
@@ -22,6 +18,6 @@ public class ReturnNegativeImpl implements ReturnNegative {
     }
 
     public int toNegative() {
-        return number > 0 ? -number : number;
+        return getNumber() > 0 ? -getNumber() : getNumber();
     }
 }

@@ -1,14 +1,16 @@
 package Tasks.String.TripleTrouble;
 
+import java.util.Scanner;
+
 public class TripleTroubleImpl implements TripleTrouble {
     private String a;
     private String b;
     private String c;
 
-    public TripleTroubleImpl(final String a, final String b, final String c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
+    public TripleTroubleImpl(final Scanner scanner) {
+        this.a = scanner.nextLine();
+        this.b = scanner.nextLine();
+        this.c = scanner.nextLine();
     }
 
     public String getA() {
@@ -38,7 +40,7 @@ public class TripleTroubleImpl implements TripleTrouble {
     @Override
     public String combineTriple() {
         String tmp, str = "";;
-        int size = Math.max(Math.max(a.length(), b.length()), c.length());
+        final int size = Math.max(Math.max(a.length(), b.length()), c.length());
         for (int i = 0; i < size; i++){
             tmp = i < a.length() ? String.valueOf(a.charAt(i)) : "";
             tmp += i < b.length() ? String.valueOf(b.charAt(i)) : "";

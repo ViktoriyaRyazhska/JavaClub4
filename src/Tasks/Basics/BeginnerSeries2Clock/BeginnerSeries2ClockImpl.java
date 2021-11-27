@@ -2,11 +2,6 @@ package Tasks.Basics.BeginnerSeries2Clock;
 
 import java.util.Scanner;
 
-/**
- * Clock shows h hours, m minutes and s seconds after midnight.
- * Your task is to write a function which returns the time since midnight in milliseconds.
- */
-
 public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock{
     private int hours;
     private int minutes;

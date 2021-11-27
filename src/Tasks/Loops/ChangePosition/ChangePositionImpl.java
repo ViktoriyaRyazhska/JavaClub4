@@ -3,7 +3,7 @@ package Tasks.Loops.ChangePosition;
 import java.util.Scanner;
 
 public class ChangePositionImpl implements ChangePosition{
-    private static String[] ARRAY = {"tail", "body", "head"};
+    private final static String[] ARRAY = {"tail", "body", "head"};
     private String[] array = new String[3];
     private String partOfBody;
 

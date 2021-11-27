@@ -1,13 +1,12 @@
 package Tasks.Basics.YouCantCode;
 
-/**
- * Code as fast as you can! You need to double the integer and return it.
- */
+import java.util.Scanner;
+
 public class YouCantCodeImpl implements YouCantCode{
     private int number;
 
-    public YouCantCodeImpl(final int number) {
-        this.number = number;
+    public YouCantCodeImpl(final Scanner scanner) {
+        this.number = scanner.nextInt();
     }
 
     public int getNumber() {
