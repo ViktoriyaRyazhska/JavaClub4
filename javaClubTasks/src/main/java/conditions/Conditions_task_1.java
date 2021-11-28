@@ -12,7 +12,12 @@ public class Conditions_task_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello there! This tasks makes the number which entered opposite");
         System.out.println("Please enter the integer number which you want to make opposite: ");
-        int value1 = scanner.nextInt();
+        int value1 ;
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        value1 = scanner.nextInt();
 
         System.out.println("And the opposite is: ");
         System.out.println("-----------");

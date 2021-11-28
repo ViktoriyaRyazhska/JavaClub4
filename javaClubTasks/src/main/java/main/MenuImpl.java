@@ -328,7 +328,6 @@ public class MenuImpl {
                     }
                     case 2: {
                         Loops_Task_2.solveTask();
-
                         chooseMenu();
                         break;
                     }

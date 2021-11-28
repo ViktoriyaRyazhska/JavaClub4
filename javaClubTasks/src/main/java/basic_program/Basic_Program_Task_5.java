@@ -12,9 +12,8 @@ public class Basic_Program_Task_5 {
 
     public static void solveTask(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name:\n Maybe you will get lucky and Jenny loves you");
+        System.out.println("Enter your name:\nMaybe you will get lucky and Jenny loves you");
         String value1 = scanner.nextLine();
-
 
         System.out.println("Result: ");
         System.out.println("-----------");

@@ -8,18 +8,14 @@ public class Collections_Task_1 {
 
     public static List<String> push(){
         List<String> items = new ArrayList<String>();
-        items.add("Hello World!");
+        items.add("an object");
         return items;
     }
 
     public static void solveTask(){
+
         System.out.println("This task shows you how to push something into ArrayList" +
-                "For example, let's push String value into list");
-        System.out.println("public static List<String> push(){\n" +
-                "        List<String> items = new ArrayList<String>();\n" +
-                "        items.add(\"an object\");\n" +
-                "        return items;\n" +
-                "    }");
+                "For example, let's push String \"an object\" value into list");
         System.out.println("To make sure if this String is in list let's just print list on the screen");
         System.out.println("Here it is: ");
         System.out.println("-----------");

@@ -34,9 +34,4 @@ public class OOP_Task_1 {
 
     }
 }
-class Human{
-}
-class Man extends Human{
-}
-class Woman extends Human{
-}
+

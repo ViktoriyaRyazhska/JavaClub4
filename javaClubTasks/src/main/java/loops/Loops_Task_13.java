@@ -17,7 +17,12 @@ public class Loops_Task_13 {
         System.out.println("Hello there! This program finds the summation of every number from 1 to number that you enter.\n" +
                 " The number will always be a positive integer greater than 0.\n" +
                 "Please enter the number:  ");
-        int number = scanner.nextInt();
+        int number;
+        while (!scanner.hasNextInt() || scanner.hasNext("(-[0-9]+)") || scanner.hasNext("0")) {
+            System.out.println("Number must be a positive integer greater than 0. Try again: ");
+            scanner.next();
+        }
+        number = scanner.nextInt();
 
         System.out.println("Result: ");
         System.out.println("-----------");

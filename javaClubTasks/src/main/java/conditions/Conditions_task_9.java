@@ -18,9 +18,14 @@ public class Conditions_task_9 {
         System.out.println("This program can convert boolean value to words YES or NO.\n");
         System.out.println("Press 1 if you want to enter true\n" +
                 "Press 0 if you want to enter false");
-        String choise = scanner.next();
+        int choise ;
+        while (!scanner.hasNext("[10]")) {
+            System.out.println("You entered something which is not equal to 0 or 1. Try again: ");
+            scanner.next();
+        }
+        choise = scanner.nextInt();
         boolean choose = false;
-        switch (isNumeric(choise)){
+        switch (choise){
             case 0 : {
                 choose = false;
                 break;
@@ -38,13 +43,5 @@ public class Conditions_task_9 {
 
     }
 
-    public static int isNumeric(String str) {
-        int value = 0;
-        try {
-            value = Integer.parseInt(str);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Please, enter 1 or 0");
-        }
-        return value;
-    }
+
 }

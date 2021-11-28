@@ -14,7 +14,12 @@ public class Basic_Program_Task_9 {
     public static void solveTask(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter single int");
-        int value1 = scanner.nextInt();
+        int value1 ;
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        value1 = scanner.nextInt();
 
 
         System.out.println("Now i will return you negative version of it\nResult: ");
