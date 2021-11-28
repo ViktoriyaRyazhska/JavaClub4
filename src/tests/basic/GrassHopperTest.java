@@ -11,28 +11,15 @@ public class GrassHopperTest {
     GrassHopper grassHopper = new GrassHopper();
     @Test
     void convertToCelsiusTest() {
-        try {
-            Method method = GrassHopper.class.getDeclaredMethod("convertToCelsius", int.class);
-            assertEquals(-6.666666666666667, method.invoke(grassHopper, 20), "temperature == 20" );
-            assertEquals(5.0, method.invoke(grassHopper, 41), "temperature == 41" );
-            assertEquals(-20.0, method.invoke(grassHopper, -4), "temperature == -4" );
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        assertEquals(-6.666666666666667, grassHopper.getConvertToCelsius(20), "temperature == 20" );
+        assertEquals(5.0, grassHopper.getConvertToCelsius(41), "temperature == 41" );
+        assertEquals(-20.0, grassHopper.getConvertToCelsius(-4), "temperature == -4" );
     }
 
     @Test
     void weatherInfoTest() {
-        try {
-            Method method = GrassHopper.class.getDeclaredMethod("weatherInfo", int.class);
-            assertEquals("5.0 is above freezing temperature", method.invoke(grassHopper, 41), "temperature == 41");
-            assertEquals("-20.0 is freezing temperature", method.invoke(grassHopper, -4), "temperature == -4");
-            assertEquals("0.0 is freezing temperature", method.invoke(grassHopper, 32), "temperature == 32");
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        assertEquals("5.0 is above freezing temperature", grassHopper.getWeatherInfo(41), "temperature == 41");
+        assertEquals("-20.0 is freezing temperature", grassHopper.getWeatherInfo(-4), "temperature == -4");
+        assertEquals("0.0 is freezing temperature", grassHopper.getWeatherInfo(32), "temperature == 32");
     }
 }

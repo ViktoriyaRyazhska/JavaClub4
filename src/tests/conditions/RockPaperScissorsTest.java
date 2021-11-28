@@ -14,7 +14,7 @@ class RockPaperScissorsTest {
     void gameTest() {
         try {
             Method method = RockPaperScissors.class.getDeclaredMethod("game", String.class, String.class);
-            assertEquals("Draw!", method.invoke(rockPaperScissors, "r", "r"), "rock and rock");
+            assertEquals("", method.invoke(rockPaperScissors, "r", "r"), "rock and rock");
             assertEquals("Draw!", method.invoke(rockPaperScissors, "s", "s"), "scissors and scissors");
             assertEquals("Draw!", method.invoke(rockPaperScissors, "p", "p"), "paper and paper");
 
