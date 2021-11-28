@@ -37,4 +37,15 @@ public class LoopsImpl {
         System.out.println("Сума позитивних чисел " + Positive.sum(arr));
         scanner.close();
     }
+
+    public static void gapInPr(){
+        System.out.println("gap-in-primes");
+        System.out.println("Вкажіть розрив(gap)");
+        Scanner scanner = new Scanner(System.in);
+        int gap = scanner.nextInt();
+        System.out.println("Вкажіть числа початку і кінця пошуку");
+        long start = scanner.nextLong();
+        long end = scanner.nextLong();
+        gap(gap, start, end);
+    }
 }

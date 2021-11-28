@@ -15,7 +15,7 @@ class GapInPrimes {
             }
             if (!flag) {
                 l[k] = m;
-                System.out.println(m);
+                //System.out.println(m);
                 k++;
             }
             m++;
