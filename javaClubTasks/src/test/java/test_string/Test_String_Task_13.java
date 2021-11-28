@@ -2,11 +2,10 @@ package test_string;
 
 
 import org.junit.Test;
+import string.String_Task_13;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.runners.JUnit4;
-import string.String_Task_13;
 
 public class Test_String_Task_13 {
 
@@ -19,3 +18,5 @@ public class Test_String_Task_13 {
         assertEquals("D.M", String_Task_13.abbrevName("David Mendieta"));
     }
 }
+
+

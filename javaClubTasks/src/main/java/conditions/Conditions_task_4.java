@@ -2,6 +2,7 @@ package conditions;
 
 import java.util.Scanner;
 
+
 public class Conditions_task_4 {
 
     public static String bonusTime(final int salary, final boolean bonus) {
@@ -25,27 +26,56 @@ public class Conditions_task_4 {
                 "If bonus is true, the salary should be multiplied by 10. If bonus is false, \n" +
                 "the fatcat did not make enough money and must receive only his stated salary.");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter salary:");
-        int value1 = scanner.nextInt();
-        System.out.println("Enter bonus: 'true' or 'false' :");
-        System.out.println("Enter 1 - True");
-        System.out.println("Enter 2 - False");
-        int value2 = scanner.nextInt();
 
-        boolean flag;
-        if (value2 == 1) {
-            flag = true;
-        } else if (value2 == 2) {
-            flag = false;
-        } else {
-            flag = false;
-            System.out.println("Incorrect data");
+        int valueIsNumers = 0;
+        int valueIsNumers2 = 0;
+        boolean flag = false;
+        boolean flag1 = true;
+        boolean flag2 = true;
+
+        while (flag1) {
+            System.out.println("Enter salary:");
+            String value1 = scanner.next();
+            try {
+                valueIsNumers = Integer.parseInt(value1);
+                if (valueIsNumers > 0) {
+                    flag1 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+        }
+
+        while (flag2) {
+            System.out.println("Enter bonus: 'true' or 'false' :");
+            System.out.println("Enter 1 - True");
+            System.out.println("Enter 2 - False");
+            String value = scanner.next();
+            try {
+                valueIsNumers2 = Integer.parseInt(value);
+                if (valueIsNumers2 == 0 || valueIsNumers2 == 1) {
+
+                    if (valueIsNumers2 == 1) {
+                        flag = true;
+                        flag2 = false;
+                    } else if (valueIsNumers2 == 2) {
+                        flag = false;
+                        flag2 = false;
+                    } else {
+                        System.out.println("Please enter a number 1 or 2");
+                    }
+                }
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
         }
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(bonusTime(value1, flag));
+        System.out.println(bonusTime(valueIsNumers, flag));
         System.out.println("-----------");
-
     }
+
 }

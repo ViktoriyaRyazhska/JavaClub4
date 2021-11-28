@@ -2,6 +2,8 @@ package conditions;
 
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class Conditions_task_12 {
     public static String switchItUp(int number) {
         String result = "";
@@ -38,6 +40,7 @@ public class Conditions_task_12 {
         if (number == 10) {
             result = "Ten";
         }
+
         return result;
     }
 
@@ -50,13 +53,33 @@ public class Conditions_task_12 {
     public static void solveTask() {
         System.out.println("When provided with a number between 0-9, return it in words.");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter number:");
-        int value1 = scanner.nextInt();
+
+        int valueNumber = 0;
+        boolean flag = true;
+
+        while (flag) {
+            System.out.println("Enter number:");
+            String valueString = scanner.next();
+
+            try {
+                valueNumber = Integer.parseInt(valueString);
+                if (valueNumber <= 10 && valueNumber >= 0) {
+                    flag = false;
+                } else {
+                    System.out.println("Please enter a number 0-10");
+                }
+
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+
+        }
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(switchItUp(value1));
+        System.out.println(switchItUp(valueNumber));
         System.out.println("-----------");
 
     }
+
 }

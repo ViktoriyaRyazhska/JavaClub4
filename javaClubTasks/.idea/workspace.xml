@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/collections/Collections_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_collections/Test_Collections_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaClubTasks.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaClubTasks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaClubTasks/META-INF/javaClubTasks.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/MenuImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/MenuImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_basic_program.Test_Basic_Program_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_basic_program.Test_Basic_Program_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_basic_program.Test_Basic_Program_Task_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_basic_program.Test_Basic_Program_Task_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_classes.Test_Classes_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_classes.Test_Classes_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_collections.Test_Collections_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_collections.Test_Collections_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_conditions.Test_Conditions_Task_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_loops.Test_Loops_Task_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_oop.Test_OOP_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_oop.Test_OOP_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-test_string.Test_String_Task_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_basic_program.Test_Basic_Program_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_basic_program.Test_Basic_Program_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_basic_program.Test_Basic_Program_Task_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_classes.Test_Classes_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_classes.Test_Classes_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_collections.Test_Collections_Task_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_conditions.Test_Conditions_Task_8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_loops.Test_Loops_Task_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_oop.Test_OOP_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_oop.Test_OOP_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test_string.Test_String_Task_8.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\38096\Desktop\softserve11\javaClubTasks\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="21E58T4YJ5hHeu0kVQAG7H9N0Ky" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\38096\Desktop\softserve tasks\JavaClub4\javaClubTasks\src\test\java\test_loops" />
+      <recent name="C:\Users\38096\Desktop\softserve tasks\JavaClub4\javaClubTasks\src\test\java\test_basic_program" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All tests">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="javaClubTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="String_Task_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.String_Task_4" />
+      <module name="javaClubTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All tests" type="JUnit" factoryName="JUnit">
+      <module name="javaClubTasks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_String_Task_12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaClubTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test_string" />
+      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_12" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_String_Task_13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaClubTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test_string" />
+      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_13" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_String_Task_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaClubTasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test_string" />
+      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_4" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.String_Task_4" />
+      <item itemvalue="JUnit.All tests" />
+      <item itemvalue="JUnit.Test_String_Task_4" />
+      <item itemvalue="JUnit.Test_String_Task_12" />
+      <item itemvalue="JUnit.Test_String_Task_13" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test_String_Task_13" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Test_String_Task_12" />
+        <item itemvalue="Application.String_Task_4" />
+        <item itemvalue="JUnit.Test_String_Task_4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="" />
+      <created>1637493246923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637493246923</updated>
+      <workItem from="1637771521737" duration="392000" />
+      <workItem from="1637847631640" duration="2770000" />
+      <workItem from="1637858431161" duration="880000" />
+      <workItem from="1637922958413" duration="4636000" />
+      <workItem from="1637951102506" duration="4401000" />
+      <workItem from="1637966864026" duration="601000" />
+      <workItem from="1637968425581" duration="10355000" />
+      <workItem from="1638123825253" duration="704000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

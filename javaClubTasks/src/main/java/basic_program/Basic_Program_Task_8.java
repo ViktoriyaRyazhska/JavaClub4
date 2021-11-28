@@ -3,6 +3,8 @@ package basic_program;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
+import static main.MenuImpl.chooseMenu;
+
 public class Basic_Program_Task_8 {
     public static boolean isDivisible(int wallLength, int pixelSize) {
         int result = wallLength % pixelSize;
@@ -23,15 +25,50 @@ public class Basic_Program_Task_8 {
         System.out.println("This method should take two arguments: the size of the wall in millimeters and the size of a pixel in millimeters. \n " +
                 "It should return True if you can fit an exact number of pixels on the wall, otherwise it should return False");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the wallLength:");
-        int value1 = scanner.nextInt();
-        System.out.println("Enter the pixelSize:");
-        int value2 = scanner.nextInt();
+
+        int valueIsNumers = 0;
+        int valueIsNumers2 = 0;
+        boolean flag1 = true;
+        boolean flag2 = true;
+
+        while (flag1) {
+            System.out.println("Enter the wallLength:");
+            String valueString = scanner.next();
+
+            try {
+                valueIsNumers = Integer.parseInt(valueString);
+                if (valueIsNumers > 0) {
+                    flag1 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+        }
+
+        while (flag2) {
+            System.out.println("Enter the pixelSize:");
+            String valueString = scanner.next();
+
+            try {
+                valueIsNumers2 = Integer.parseInt(valueString);
+                if (valueIsNumers2 > 0) {
+                    flag2 = false;
+                } else {
+                    System.out.println("The value cannot be less than 1");
+                }
+            } catch (NumberFormatException nfe) {
+                System.out.println("Incorrect Data, please enter a number!");
+            }
+
+        }
 
         System.out.println("Result: ");
         System.out.println("-----------");
-        System.out.println(isDivisible(value1, value2));
+        System.out.println(isDivisible(valueIsNumers, valueIsNumers2));
         System.out.println("-----------");
 
     }
+
 }
