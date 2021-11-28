@@ -17,14 +17,7 @@ public class ChoiceConditions extends Constants{
                 System.out.println("Sorry.. this option don`t exist");
                 break;
             case EXIT:
-                break;
-<<<<<<< HEAD
-            case Constants.BACK:
-              //  ChoiceList.choiceList();
-=======
-            case BACK:
-               // ChoiceList.choiceList(scanner);
->>>>>>> refs/remotes/origin/Team5
+                // ChoiceList.choiceList(scanner);
                 break;
             case 1:
               //  AgeDiff.task(scanner);
