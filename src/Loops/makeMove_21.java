@@ -1,9 +1,9 @@
-package loops;
+package Loops;
 
 import java.util.Scanner;
 
 
-public class Kata {
+public class MakeMove_21 {
   public static int makeMove(int sticks) {
     if(sticks == 3){
       return 3;

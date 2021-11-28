@@ -1,11 +1,11 @@
-package collections;
+package Collections;
 
 import java.util.Scanner;
 
 
 import java.util.List;
 
-public class Kata13December {
+public class FilterEvenNumbers {
     public static List<Integer> filterOddNumber(List<Integer> listOfNumbers)
     {
         for (int i = 0; i < listOfNumbers.size(); i++)

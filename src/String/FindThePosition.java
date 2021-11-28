@@ -1,3 +1,4 @@
+package String;
 
 public class FindThePosition {
     public static String position(char alphabet) {

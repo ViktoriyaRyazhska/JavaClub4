@@ -1,8 +1,8 @@
-package conditions;
+package Conditions;
 
 import java.util.Scanner;
 
-public class Kata {
+public class RentalCarCost {
     public static int rentalCarCost(int d) {
       if(d>=7){
           d=((d*40)-50);

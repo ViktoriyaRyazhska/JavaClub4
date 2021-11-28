@@ -1,3 +1,4 @@
+package String;
 
 public class FakeBinary {
     public static String fakeBin(String numberString) {

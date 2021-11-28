@@ -4,13 +4,13 @@ import java.util.Scanner;
 import Conditions.*;
 
 public class ConditionsImpl {
-    public static int oppositeNumber() {
+    public static void oppositeNumber() {
         System.out.println("opposite-number");
         System.out.println("Введіть число");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         scanner.close();
-        return OppositeNumber.opposite(number);
+        System.out.println("Протилежне число " + OppositeNumber.opposite(number));
     }
 
     public static void boolenToStr() {

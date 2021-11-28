@@ -1,8 +1,8 @@
-package loops;
+package Loops;
 
 import java.util.Scanner;
 
-public class WrongEndHead {
+public class FixTheMeerkat {
     public static String[] fixTheMeerkat(String[] arr) {
       String[] result = new String[arr.length];
       int j = 0;

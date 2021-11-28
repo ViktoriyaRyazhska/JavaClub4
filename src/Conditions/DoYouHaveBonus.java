@@ -1,4 +1,4 @@
-package Conditions;
+/*package Conditions;
 
 import java.util.Scanner;
 
@@ -12,4 +12,4 @@ public class DoYouHaveBonus{
         return("\u00A3"+salary)
       }
     }
-  }
+  }*/
