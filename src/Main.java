@@ -79,7 +79,7 @@ public class Main {
         System.out.println("2 ---- Multiplying-Two-Numbers");
         System.out.println("3 ---- Volume-Of-Cuboid");
         System.out.println("4 ---- Is wallLength divisible");
-        System.out.println("5 ---- Greet");
+        System.out.println("5 ---- Greeter");
         System.out.println("6 ---- Number in a binary format");
         System.out.println("7 ---- Time-After-Midnight");
         System.out.println("8 ---- Century-From-Year");
@@ -128,8 +128,8 @@ public class Main {
             case 5 -> {
                 System.out.println("Please enter your name: ");
                 String name = scanner.next();
-                Greet greet = new Greet();
-                greet.execute(name);
+                Greeter greeter = new Greeter();
+                greeter.execute(name);
             }
 
             case 6 -> {

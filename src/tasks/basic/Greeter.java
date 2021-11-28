@@ -1,11 +1,12 @@
 package tasks.basic;
 
-public class Greet {
+public class Greeter {
     public void execute (String name ){
 
         System.out.println(greet(name));
     }
-    private static String greet(String name) {
+    public static String greet(String name) {
+
         if(name.equals("Johnny")){
             return "Hello, my love!";
         }else{

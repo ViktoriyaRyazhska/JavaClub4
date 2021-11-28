@@ -5,7 +5,7 @@ public class IntegerToBinary{
     public void execute(int i) {
         System.out.println(toBinary(i));
     }
-    private static int toBinary(int n) {
+    public static int toBinary(int n) {
         return Integer.parseInt(Integer.toBinaryString(n));
     }
 }
