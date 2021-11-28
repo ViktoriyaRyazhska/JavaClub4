@@ -8,8 +8,6 @@ import static org.junit.Assert.assertNull;
 
 public class GreeterTest {
 
-
-    public class ExampleTest {
         @Test
         public void Test() {
             assertEquals( "Hello, Jim!", Greeter.greet("Jim"));
@@ -19,6 +17,5 @@ public class GreeterTest {
             assertEquals("Hello, my love!", Greeter.greet("Johnny"));
         }
 
-    }
 
 }

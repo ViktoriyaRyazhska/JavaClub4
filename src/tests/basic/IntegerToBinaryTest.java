@@ -9,14 +9,13 @@ import static org.junit.Assert.assertNull;
 public class IntegerToBinaryTest {
     @Test (expected = Exception.class)
     public void testToBinary() {
-        IntegerToBinary integerToBinary = new IntegerToBinary();
         Object object = null;
-        assertEquals(1, integerToBinary.toBinary(1));
-        assertEquals(0, integerToBinary.toBinary(0));
-        assertEquals(10, integerToBinary.toBinary(2));
-        assertEquals(11, integerToBinary.toBinary(3));
-        assertEquals(101, integerToBinary.toBinary(5));
-        assertNull( integerToBinary.toBinary((int)object));
+        assertEquals(1, IntegerToBinary.toBinary(1));
+        assertEquals(0, IntegerToBinary.toBinary(0));
+        assertEquals(10, IntegerToBinary.toBinary(2));
+        assertEquals(11, IntegerToBinary.toBinary(3));
+        assertEquals(101, IntegerToBinary.toBinary(5));
+        assertNull( IntegerToBinary.toBinary((int)object));
 
     }
 }
