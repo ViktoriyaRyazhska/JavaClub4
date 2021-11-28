@@ -122,7 +122,11 @@ public class Main {
                 int wallLength = scanner.nextInt();
                 int pixelSize = scanner.nextInt();
                 IsDivisible isDivisible = new IsDivisible();
-                isDivisible.execute(wallLength, pixelSize);
+                try {
+                    isDivisible.execute(wallLength, pixelSize);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
 
             case 5 -> {
