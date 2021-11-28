@@ -11,6 +11,11 @@ public class MultiplyTwoNumbersImpl implements MultiplyTwoNumbers {
         this.number2 = scanner.nextInt();
     }
 
+    public MultiplyTwoNumbersImpl(int number1, int number2) {
+        setNumber1(number1);
+        setNumber2(number2);
+    }
+
     public int getNumber1() {
         return number1;
     }

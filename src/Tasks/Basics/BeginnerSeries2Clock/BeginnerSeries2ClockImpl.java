@@ -13,6 +13,12 @@ public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock {
         setSeconds(scanner.nextInt());
     }
 
+    public BeginnerSeries2ClockImpl(int hours, int minutes, int seconds) {
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
+    }
+
     public int getHours() {
         return hours;
     }

@@ -9,6 +9,10 @@ public class ConvertToBinaryImpl implements ConvertToBinary {
         setN(scanner.nextInt());
     }
 
+    public ConvertToBinaryImpl(int n) {
+        setN(n);
+    }
+
     public int getN() {
         return n;
     }

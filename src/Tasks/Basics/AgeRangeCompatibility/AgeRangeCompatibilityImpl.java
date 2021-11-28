@@ -9,6 +9,10 @@ public class AgeRangeCompatibilityImpl implements AgeRangeCompatibility {
         setAge(scanner.nextInt());
     }
 
+    public AgeRangeCompatibilityImpl(int age) {
+        setAge(age);
+    }
+
     public int getAge() {
         return age;
     }
@@ -33,4 +37,5 @@ public class AgeRangeCompatibilityImpl implements AgeRangeCompatibility {
         }
         return "[" + min + "]" + "-" + "[" + max + "]";
     }
+
 }

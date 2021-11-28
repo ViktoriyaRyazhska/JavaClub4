@@ -9,6 +9,10 @@ public class DebugCelsiusConverterImpl implements DebugCelsiusConverter {
         setFahrenheit(scanner.nextDouble());
     }
 
+    public DebugCelsiusConverterImpl(double fahrenheit) {
+        setFahrenheit(fahrenheit);
+    }
+
     public double getFahrenheit() {
         return fahrenheit;
     }

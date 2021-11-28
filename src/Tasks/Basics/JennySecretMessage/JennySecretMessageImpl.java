@@ -9,6 +9,10 @@ public class JennySecretMessageImpl implements JennySecretMessage {
         setName(scanner.nextLine());
     }
 
+    public JennySecretMessageImpl(String name) {
+        setName(name);
+    }
+
     public String getName() {
         return name;
     }

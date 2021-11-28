@@ -9,6 +9,10 @@ public class ReturnNegativeImpl implements ReturnNegative {
         this.number = scanner.nextInt();
     }
 
+    public ReturnNegativeImpl(int number) {
+        setNumber(number);
+    }
+
     public int getNumber() {
         return number;
     }

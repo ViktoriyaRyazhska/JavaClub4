@@ -9,6 +9,10 @@ public class CenturyFromYearImpl implements CenturyFromYear {
         setNumber(scanner.nextInt());
     }
 
+    public CenturyFromYearImpl(int number) {
+        setNumber(number);
+    }
+
     public int getNumber() {
         return number;
     }
