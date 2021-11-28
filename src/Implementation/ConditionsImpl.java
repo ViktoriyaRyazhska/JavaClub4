@@ -41,4 +41,13 @@ public class ConditionsImpl {
         else
             System.out.println("Timmy і Sarah не закохані");
     }
+
+    public static void traffic(){
+        System.out.println("thinkful-logic-drills-traffic-light");
+        System.out.println("Введіть колір світлофора : green, yellow або red");
+        Scanner scanner = new Scanner(System.in);
+        String color = scanner.next();
+        System.out.println(TrafficLights.updateLight(color));
+        scanner.close();
+    }
 }
