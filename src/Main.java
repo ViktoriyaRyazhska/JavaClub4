@@ -118,6 +118,7 @@ public class Main {
                     case 7:
                         break;
                     case 8:
+                        ConditionsImpl.oppositesAttract();
                         break;
                     case 9:
                         break;

@@ -30,4 +30,15 @@ public class ConditionsImpl {
         scanner.close();
     }
 
+    public static void oppositesAttract(){
+        System.out.println("opposites-attract");
+        System.out.println("Введіть число пелюсток для квітки 1 і квітки 2");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int number2 = scanner.nextInt();
+        if (OppositesAttract.isLove(number, number2))
+            System.out.println("Timmy і Sarah закохані");
+        else
+            System.out.println("Timmy і Sarah не закохані");
+    }
 }
