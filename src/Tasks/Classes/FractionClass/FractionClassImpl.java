@@ -35,7 +35,7 @@ public class FractionClassImpl implements FractionClass {
 
     public void setFraction(final double fraction) {
         if (this.isPositive()) {
-            this.isPositive = fraction > 0;
+            this.isPositive = fraction >= 0;
         } else {
             this.isPositive = false;
         }
