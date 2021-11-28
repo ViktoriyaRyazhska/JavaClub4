@@ -30,11 +30,7 @@ public class TwoFightersOneWinner {
     }
 
     public void setHealth(final int health) {
-        if (health >= 10 && health <= 1000) {
-            this.health = health;
-        } else {
-            this.health = (int) ((Math.random() * (10000 - 10)) + 10);
-        }
+        this.health = health;
     }
 
     public int getDamagePerAttack() {
@@ -42,11 +38,7 @@ public class TwoFightersOneWinner {
     }
 
     public void setDamagePerAttack(final int damagePerAttack) {
-        if(damagePerAttack > 0 && damagePerAttack <= 100){
-            this.damagePerAttack = damagePerAttack;
-        } else{
-            this.damagePerAttack = (int) ((Math.random() * (100 - 1)) + 1);
-        }
+       this.damagePerAttack = damagePerAttack;
     }
 
 }
