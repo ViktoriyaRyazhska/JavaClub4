@@ -17,6 +17,10 @@ public class AgeDiff {
             return "Something went wrong:(";
     }
 
+    public String getCalculateAge(int birth, int yearTo) {
+        return calculateAge(birth, yearTo);
+    }
+
     public static void task(Scanner in) {
         System.out.print("Enter your date of birth:\n> ");
         int birth = in.nextInt();

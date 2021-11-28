@@ -10,6 +10,10 @@ public class DoIGetBonus {
             return String.valueOf(salary);
     }
 
+    public String getBonusTime(final int salary, final boolean bonus) {
+        return bonusTime(salary, bonus);
+    }
+
     public static void task(Scanner in) {
         System.out.print("Enter your salary:\n> ");
         int salary = in.nextInt();
