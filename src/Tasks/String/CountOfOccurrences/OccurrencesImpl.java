@@ -11,6 +11,11 @@ public class OccurrencesImpl implements Occurrences {
         this.symbol = scanner.next().charAt(0);
     }
 
+    public OccurrencesImpl(String word, char symbol) {
+        setWord(word);
+        setSymbol(symbol);
+    }
+
     public String getWord() {
         return word;
     }
