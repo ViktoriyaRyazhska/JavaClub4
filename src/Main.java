@@ -424,10 +424,7 @@ public class Main {
             }
 
             case 2 -> {
-                System.out.println("Please enter a number to add 100 to it: ");
-                int num = scanner.nextInt();
-                AdditionOf100ToNum additionOf100ToNum = new AdditionOf100ToNum();
-                additionOf100ToNum.execute(num);
+
 
 
             }

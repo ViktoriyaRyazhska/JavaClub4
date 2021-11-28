@@ -10,12 +10,10 @@ public class Grasshopper {
             return (c + " is freezing temperature");
     }
 
-    private static int convertToCelsius(int temperature) {
-        double a = (temperature - 32);
-        double b = 5.0 / 9.0;
-        return (int) ((int) a * b);
+    private static double convertToCelsius(int temperature) {
+        double celsius = (temperature - 32) * (5.0/9.0);
+        return celsius;
     }
-
     public void execute(int temp){
         System.out.println(weatherInfo(temp));
     }

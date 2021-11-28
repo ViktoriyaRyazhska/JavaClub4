@@ -48,7 +48,7 @@ public class Fraction implements Comparable<Fraction> {
         if (bottom == f2.bottom) {
             resultTop = top + f2.top;
             resultBottom = bottom;
-            return new Fraction(resultTop, resultBottom);
+            return reduceFraction(resultTop, resultBottom);
         } else
             resultTop = (top * f2.bottom) + (f2.top * bottom);
         resultBottom = bottom * f2.bottom;

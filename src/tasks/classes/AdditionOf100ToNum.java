@@ -2,13 +2,14 @@ package tasks.classes;
 
 public class AdditionOf100ToNum {
 
+    private static int ONE_HUNDRED = 100;
+
     public static final AdditionOf100ToNum INST = new AdditionOf100ToNum();
 
-    private  int ONE_HUNDRED = 100;
-
-    private static int value;
+     private static int value;
 
     public AdditionOf100ToNum() {
+
         value = ONE_HUNDRED;
     }
 
