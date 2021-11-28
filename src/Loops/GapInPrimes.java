@@ -1,13 +1,14 @@
 package Loops;
 
-class GapInPrimes {
+public class GapInPrimes {
+
     public static long[] gap(int g, long m, long n) {
         int size = (int) n - (int) m;
         long[] l = new long[size];
         int k = 0;
         while (m <= n) {
             boolean flag = false;
-            for (long i = 2; i > m / 2; i++) {
+            for (long i = 2; i <= m / 2; i++) {
                 if (m % i == 0) {
                     flag = true;
                     break;
@@ -15,7 +16,7 @@ class GapInPrimes {
             }
             if (!flag) {
                 l[k] = m;
-                //System.out.println(m);
+                System.out.println(m);
                 k++;
             }
             m++;
@@ -30,4 +31,5 @@ class GapInPrimes {
         }
         return null;
     }
+
 }

@@ -184,6 +184,7 @@ public class Main {
                     case 13:
                         break;
                     case 14:
+                        LoopsImpl.gapInPr();
                         break;
                     case 15:
                         break;
@@ -191,7 +192,22 @@ public class Main {
                 break;
             case 5:
                 System.out.println("-OOP-\n");
-                System.out.println("Виберіть задачу");
+                System.out.println("Виберіть задачу\n1.basic-subclasses-adam-and-eve" +
+                    "\n2.rotations-and-reflections-i" +
+                    "\n3.l3375p34k" +
+                    "\n4.tdd-area-calculations");
+                    choice = scanner.nextInt();
+                    switch (choice) {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            OopImpl.calcShape();
+                            break;
+                    }
                 break;
             case 6:
                 System.out.println("-String-\n");

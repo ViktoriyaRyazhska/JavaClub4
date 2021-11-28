@@ -40,38 +40,6 @@ public class Calculator {
     }
 }
 
-class Triangle {
-    double triangleBase;
-    double triangleHeight;
 
-    Triangle(double triangleBase, double triangleHeight) {
-        this.triangleBase = triangleBase;
-        this.triangleHeight = triangleHeight;
-    }
-}
 
-class Square {
-    double side;
 
-    Square(double side) {
-        this.side = side;
-    }
-}
-
-class Rectangle {
-    double height;
-    double width;
-
-    Rectangle(double height, double width) {
-        this.height = height;
-        this.width = width;
-    }
-}
-
-class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-}

@@ -2,6 +2,7 @@ package Implementation;
 
 import Loops.*;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LoopsImpl {
@@ -46,6 +47,7 @@ public class LoopsImpl {
         System.out.println("Вкажіть числа початку і кінця пошуку");
         long start = scanner.nextLong();
         long end = scanner.nextLong();
-        gap(gap, start, end);
+        System.out.println("Розрив між " + start + " і " + end + ": " + Arrays.toString(GapInPrimes.gap(gap, start, end)));
+        scanner.close();
     }
 }
