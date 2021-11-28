@@ -6,7 +6,7 @@ public class DoubleInteger {
         System.out.println(doubleInteger(num));
     }
 
-    private static int doubleInteger(int i) {
+    public static int doubleInteger(int i) {
         return i * 2;
     }
 }
