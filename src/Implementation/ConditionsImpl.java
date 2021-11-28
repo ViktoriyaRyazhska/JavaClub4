@@ -40,6 +40,7 @@ public class ConditionsImpl {
             System.out.println("Timmy і Sarah закохані");
         else
             System.out.println("Timmy і Sarah не закохані");
+        scanner.close();
     }
 
     public static void traffic(){
