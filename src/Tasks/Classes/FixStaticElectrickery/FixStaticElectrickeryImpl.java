@@ -12,6 +12,11 @@ public class FixStaticElectrickeryImpl implements FixStaticElectrickery {
         this.n = scanner.nextInt();
     }
 
+    public FixStaticElectrickeryImpl(int n) {
+        value = ONE_HUNDRED;
+        setN(n);
+    }
+
     public int getN() {
         return n;
     }

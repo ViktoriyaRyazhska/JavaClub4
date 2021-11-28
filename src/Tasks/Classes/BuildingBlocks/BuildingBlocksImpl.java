@@ -13,6 +13,12 @@ public class BuildingBlocksImpl implements BuildingBlocks {
         setHeight(scanner.nextInt());
     }
 
+    public BuildingBlocksImpl(int width, int length, int height) {
+        setWidth(width);
+        setLength(length);
+        setHeight(height);
+    }
+
     public int getWidth() {
         return width;
     }
