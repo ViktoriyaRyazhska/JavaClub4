@@ -1,7 +1,9 @@
 package String;
 
 public class SortAndStar {
+
     public static String twoSort(String[] s) {
+
         for (int i = 0; i < s.length - 1; i++) {
             for (int j = i + 1; j < s.length; j++) {
                 if (s[i].compareTo(s[j]) > 0) {
@@ -17,7 +19,6 @@ public class SortAndStar {
             res += arr[i] + "***";
         }
         res += arr[arr.length - 1];
-        System.out.println(res);
         return res;
     }
 }

@@ -193,29 +193,103 @@ public class Main {
             case 5:
                 System.out.println("-OOP-\n");
                 System.out.println("Виберіть задачу\n1.basic-subclasses-adam-and-eve" +
-                    "\n2.rotations-and-reflections-i" +
-                    "\n3.l3375p34k" +
-                    "\n4.tdd-area-calculations");
-                    choice = scanner.nextInt();
-                    switch (choice) {
-                        case 1:
-                            break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
-                        case 4:
-                            OopImpl.calcShape();
-                            break;
-                    }
+                        "\n2.rotations-and-reflections-i" +
+                        "\n3.l3375p34k" +
+                        "\n4.tdd-area-calculations");
+                choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        OopImpl.calcShape();
+                        break;
+                }
                 break;
             case 6:
                 System.out.println("-String-\n");
-                System.out.println("Виберіть задачу");
+                System.out.println("Виберіть задачу\n1.convert-a-number-to-a-string" +
+                        "\n2.reversed-strings" +
+                        "\n3.welcome-to-the-city" +
+                        "\n4.opposite-number" +
+                        "\n5.fixme-replace-all-dots" +
+                        "\n6.are-you-playing-banjo" +
+                        "\n7.remove-string-spaces" +
+                        "\n8.triple-trouble-2" +
+                        "\n9.find-the-position" +
+                        "\n10.fake-binary" +
+                        "\n11.parse-nice-int-from-char-problem" +
+                        "\n12.grasshopper-debug" +
+                        "\n13.abbreviate-a-two-word-name" +
+                        "\n14.all-star-code-challenge-number-18" +
+                        "\n15.sort-and-star" +
+                        "\n16.correct-the-mistakes-of-the-character-recognition-software" +
+                        "\n17.alternating-case" +
+                        "\n18.exclamation-marks-series-number-6-remove-n-exclamation-marks-in-the-sentence-from-left-to-right");
+                choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        StringImpl.replase();
+                        break;
+                    case 6:
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+                        break;
+                    case 9:
+                        break;
+                    case 10:
+                        StringImpl.fakeBinary();
+                        break;
+                    case 11:
+                        break;
+                    case 12:
+                        break;
+                    case 13:
+                        break;
+                    case 14:
+                        break;
+                    case 15:
+                        StringImpl.sortAndStar();
+                        break;
+                    case 16:
+                        break;
+                    case 17:
+                        break;
+                    case 18:
+                        break;
+                }
                 break;
             case 7:
                 System.out.println("-Collections-\n");
-                System.out.println("Виберіть задачу");
+                System.out.println("Виберіть задачу\n1.push-a-hash-slash-an-object-into-array" +
+                "\n2.unfinished-loop-bug-fixing-number-1" +
+                "\n3.filtering-even-numbers-bug-fixes" +
+                "n4.interactive-dictionary");
+                choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        break;
+                    case 2:
+                        CollectionsImpl.createL();
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                }
                 break;
         }
 
