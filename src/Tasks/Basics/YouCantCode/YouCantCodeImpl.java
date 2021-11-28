@@ -9,6 +9,10 @@ public class YouCantCodeImpl implements YouCantCode {
         this.number = scanner.nextInt();
     }
 
+    public YouCantCodeImpl(int number) {
+        setNumber(number);
+    }
+
     public int getNumber() {
         return number;
     }
