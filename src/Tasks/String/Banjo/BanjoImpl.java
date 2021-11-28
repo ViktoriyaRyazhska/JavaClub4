@@ -9,6 +9,10 @@ public class BanjoImpl implements Banjo {
         setName(scanner.nextLine());
     }
 
+    public BanjoImpl(String name) {
+        setName(name);
+    }
+
     public String getName() {
         return name;
     }
