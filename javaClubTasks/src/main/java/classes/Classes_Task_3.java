@@ -26,14 +26,27 @@ public class Classes_Task_3 {
         return top * ((Classes_Task_3) o).bottom == ((Classes_Task_3) o).top * bottom;
     }
     public static void solveTask(){
-        System.out.println("You are provided with a skeleton of the class 'Fraction', which accepts two arguments (numerator, denominator). This program makes this class string representable, and addable while keeping the result in the minimum representation possible");
+        System.out.println("You are provided with a skeleton of the class 'Fraction', which accepts two arguments (numerator, denominator)./+" +
+                " This program makes this class string representable, and addable while keeping the result in the minimum representation possible");
+
+
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter your numerator : ");
-        int value1 = scanner1.nextInt();
+        int value1 ;
+        while (!scanner1.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner1.next();
+        }
+        value1 = scanner1.nextInt();
+
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("Enter your denominator : ");
-        int value2 = scanner2.nextInt();
-
+        int value2 ;
+        while (!scanner2.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner2.next();
+        }
+        value2 = scanner2.nextInt();
 
         System.out.println("So, now it will return increased number\nResult: ");
         System.out.println("-----------");

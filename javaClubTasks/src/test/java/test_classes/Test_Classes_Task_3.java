@@ -33,5 +33,7 @@ public class Test_Classes_Task_3 {
         Assert.assertEquals("4/5", (new Classes_Task_3(2, 5).add(new Classes_Task_3(2, 5))).toString());
         Assert.assertEquals("5/6", (new Classes_Task_3(2, 4).add(new Classes_Task_3(1, 3))).toString());
         Assert.assertEquals("13/15", (new Classes_Task_3(1, 5).add(new Classes_Task_3(4, 6))).toString());
+        Assert.assertNotEquals("16/20", (new Classes_Task_3(1, 5).add(new Classes_Task_3(7, 9))).toString());
+        Assert.assertNotEquals("12/20", (new Classes_Task_3(1, 5).add(new Classes_Task_3(9, 8))).toString());
     }
 }
