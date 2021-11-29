@@ -36,40 +36,27 @@ public class StringImpl {
         scanner.close();
     }
 
-    public static void reverseString() {
-        System.out.println("reverse string");
-        System.out.println("Введіть стрічку");
-        Scanner scanner = new Scanner(System.in);
+    public static void OppositeNumber(Scanner scanner) {
+        System.out.println("Opposite number");
+        System.out.println("Enter value");
+        int number = scanner.nextInt();
+        System.out.println(OppositeNumber.opposite(number));
+    }
+
+    public static void FindThePosition (Scanner scanner) {
+        System.out.println("FindThePosition");
+        System.out.println("Enter value");
         String str = scanner.next();
-
-        System.out.println(Kata.solution(str));
-        scanner.close();
+        char ch = str.charAt(0);
+        System.out.println(FindThePosition.position(ch));
     }
-    public static void removeStringSpaces() {
-        System.out.println("removeStringSpaces");
-        System.out.println("Введіть стрічку");
-        Scanner scanner = new Scanner(System.in);
+
+    public static void AllStarCodeChallenge (Scanner scanner) {
+        System.out.println("All star codeChallenge");
+        System.out.println("Enter value");
         String str = scanner.next();
-
-        System.out.println(KataN.noSpace(str));
-        scanner.close();
-    }
-    public static void grassHopper() {
-        System.out.println("grass-hopper");
-        System.out.println("Введіть температуру");
-        Scanner scanner = new Scanner(System.in);
-        int temperature = scanner.nextInt();
-
-        System.out.println(GrassHopper.weatherInfo(temperature));
-        scanner.close();
-    }
-    public static void alternativeCase() {
-        System.out.println("alternative case");
-        System.out.println("Введіть стрічку");
-        Scanner scanner = new Scanner(System.in);
-        String string = scanner.next();
-
-        System.out.println(StringUtils.toAlternativeString(string));
-        scanner.close();
+        String let = scanner.next();
+        char letter = let.charAt(0);
+        System.out.println(AcceptsStringAndCountDoubles.strCount(str,letter));
     }
 }

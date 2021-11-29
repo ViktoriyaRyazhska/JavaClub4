@@ -2,7 +2,7 @@ package Loops;
 
 public class TwiceAsOld{
 
-    public static int twiceAsOld(int dadYears, int sonYears) {
+    public static int TwiceAsOld(int dadYears, int sonYears) {
         if (dadYears > sonYears * 2) {
             return dadYears - (sonYears * 2);
         } else {
