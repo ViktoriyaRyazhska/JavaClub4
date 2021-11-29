@@ -18,54 +18,46 @@ public class Main {
         switch (choice) {
             case 1:
                 System.out.println("-Basic program-\n");
-                System.out.println("Виберіть задачу" +
-                        "\n1.(Double integer)you-cant-code-under-pressure-number-1" +
-                        "\n2.function-3-multiplying-two-numbers" +
-                        "\n3.volume-of-a-cuboid" +
-                        "\n4.thinkful-number-drills-pixelart-planning" +
-                        "\n5.jennys-secret-message" +
-                        "\n6.convert-to-binary" +
-                        "\n7.beginner-series-number-2-clock" +
-                        "\n8.century-from-year" +
-                        "\n9.return-negative" +
-                        "\n10.age-range-compatibility-equation" +
-                        "\n11.celsius-converter");
+                System.out.println("Виберіть задачу\n1.you-cant-code-under-pressure-number-1" +
+                        "\n2.function-3-multiplying-two-numbers\n3.volume-of-a-cuboid" +
+                        "\n4.thinkful-number-drills-pixelart-planning\n5.jennys-secret-message" +
+                        "\n6.convert-to-binary\n7.beginner-series-number-2-clock\n7.century-from-year" +
+                        "\n8.return-negative\n9.age-range-compatibility-equation\n10.grasshopper-debug");
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-                        BasicImpl.DoubleInteger(scanner);
                         break;
                     case 2:
-                        BasicImpl.MultiplyingTwoNumbers(scanner);
+                        System.out.println("--function-3-multiplying-two-numbers--");
+                        System.out.println("Введіть числа для перемноження");
+                        int xMul, yMul;
+                        xMul = scanner.nextInt();
+                        yMul = scanner.nextInt();
+                        System.out.println(MultiplyingTwoNumbers.multiply(xMul, yMul));
                         break;
                     case 3:
-                        BasicImpl.VolumeOfACuboid(scanner);
+                        System.out.println("--volume-of-a-cuboid--");
+                        System.out.println("Введіть сторони кубоїда");
+                        int xCub, yCub, zCub;
+                        xCub = scanner.nextInt();
+                        yCub = scanner.nextInt();
+                        zCub = scanner.nextInt();
+                        System.out.println(VolumeOfACuboid.getVolumeOfCuboid(xCub, yCub, zCub));
                         break;
                     case 4:
-                        BasicImpl.ThinkfulNumberDrillsPixelartPlanning(scanner);
                         break;
                     case 5:
-                        BasicImpl.JennysSecretMessage(scanner);
                         break;
                     case 6:
-                        BasicImpl.ConvertToBinary(scanner);
                         break;
                     case 7:
-                        BasicImpl.Clock(scanner);
                         break;
                     case 8:
-                        BasicImpl.CenturyFromYear(scanner);
                         break;
                     case 9:
-                        BasicImpl.ReturnNegative(scanner);
                         break;
                     case 10:
-                        BasicImpl.AgeRangeCompatibilityEquation(scanner);
                         break;
-                    case 11:
-                        BasicImpl.CelsiusConverter(scanner);
-                        break;
-                    default: throw new IllegalArgumentException();
                 }
                 break;
             case 2:
