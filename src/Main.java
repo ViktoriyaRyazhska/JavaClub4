@@ -144,6 +144,12 @@ public class Main {
             }
 
             case 7 -> {
+                System.out.println("Please enter 3 numbers to returns the time since midnight in milliseconds: ");
+                int h = scanner.nextInt();
+                int m = scanner.nextInt();
+                int s = scanner.nextInt();
+                TimePastAfterMidnight timePastAfterMidnight = new TimePastAfterMidnight();
+                timePastAfterMidnight.execute( h,  m,  s);
             }
 
             case 8 -> {
@@ -158,6 +164,10 @@ public class Main {
             }
 
             case 9 -> {
+                System.out.println("Please enter your number to make it negative: ");
+                int number = scanner.nextInt();
+                NegativeNumber negativeNumber = new NegativeNumber();
+                negativeNumber.execute(number);
             }
 
             case 10 -> {

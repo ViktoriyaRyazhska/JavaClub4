@@ -5,12 +5,13 @@ public class NegativeNumber {
         System.out.println(negativeNumber(x));
 
     }
- private static int negativeNumber(int x){
-     if(x>0){
-         return -x;
-     }
-     else return x;
- }
+    public static int negativeNumber(int x){
+         if(x>0){
+          return -x;
+      } else{
+             return x;
+         }
+    }
 }
 
 
