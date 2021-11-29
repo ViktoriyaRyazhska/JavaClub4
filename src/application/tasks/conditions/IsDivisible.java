@@ -7,6 +7,10 @@ public class IsDivisible {
         return (n % x == 0) && (n % y == 0);
     }
 
+    public boolean getIsDivisible(long n, long x, long y) {
+        return isDivisible(n, x, y);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter the divided number and two divider:\n> ");
         long n = scanner.nextLong();

@@ -30,7 +30,11 @@ public class AgeRange {
     }
 
     private static String output(int age) {
-        return minAge(age) + " - " + maxAge(age);
+        return minAge(age) + "-" + maxAge(age);
+    }
+
+    public String getOutput(int age) {
+        return output(age);
     }
 
     public static void task(Scanner scanner) {
