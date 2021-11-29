@@ -6,7 +6,7 @@ import string.String_Task_11;
 import static org.junit.Assert.assertEquals;
 
 
-class Test_String_Task_11 {
+public class Test_String_Task_11 {
 
     @Test
     public void howOld() {
