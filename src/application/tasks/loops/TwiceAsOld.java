@@ -8,6 +8,7 @@ public class TwiceAsOld {
 
         return isTwice;
     }
+
     private static int onHowYears(int dadAge, int sonAge) {
         int years = 0;
         int currDadAge = dadAge;
@@ -43,16 +44,25 @@ public class TwiceAsOld {
     }
 
 
+    private static boolean validate(int dadAge, int sonAge) {
+        boolean flag = true;
+        if (dadAge <= 0 || dadAge < sonAge || sonAge < 0) {
+            flag = false;
+        }
+
+        return flag;
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter dad`s age:\n> ");
         int dadAge = scanner.nextInt();
         System.out.print("Enter son`s age:\n> ");
         int sonAge = scanner.nextInt();
-        if (dadAge <= 0 || dadAge < sonAge || sonAge < 0) {
+        if (validate(dadAge, sonAge)) {
+            System.out.println("Result: " + output(onHowYears(dadAge, sonAge)));
+        } else {
             System.out.println("Error.. invalid input");
             task(scanner);
-        } else {
-            System.out.println("Result: " + output(onHowYears(dadAge, sonAge)));
         }
     }
 }

@@ -50,4 +50,13 @@ public class SwitchItUp {
         else
             exit(0);
     }
+
+
+    public HashMap<Integer, String> getMap() {
+        return map();
+    }
+
+    public String getSwitchItUp(int number, HashMap<Integer, String> map) {
+        return switchItUp(number, map);
+    }
 }

@@ -17,6 +17,10 @@ public class SumOfPositive {
         }
         return sum;
     }
+    public int getSum(int[] arr){
+        return sum(arr);
+    }
+
     public static void task(Scanner in){
         System.out.print("Array size?: ");
         int arraySize = in.nextInt();

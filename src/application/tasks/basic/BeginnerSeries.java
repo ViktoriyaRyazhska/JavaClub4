@@ -1,32 +1,51 @@
 package application.tasks.basic;
+
 import java.util.Scanner;
 
     public class BeginnerSeries {
-        private static void task() {
-            int result;
-            Scanner h = new Scanner(System.in);
-            System.out.println("Enter hour");
-            int hour;
-            while ((hour = h.nextInt()) < 0 || hour > 23) {
+        public static void task(Scanner in) {
+
+            System.out.println("Enter hours: ");
+            int hours = in.nextInt();
+            int hoursInMili = hour(hours,in);
+            System.out.println("Enter minutes: ");
+            int minute = in.nextInt();
+            int minutesInMili = minute(minute,in);
+            System.out.println("Enter seconds: ");
+            int seconds = in.nextInt();
+            int secondsInMili = second(seconds,in);
+            add(hoursInMili,minutesInMili,secondsInMili);
+        }
+        public static void add(int hours, int minutes, int seconds){
+            System.out.println(hours + minutes + seconds);
+        }
+        public static int hour(int h,Scanner in){
+            while ((h < 0 || h > 23)) {
                 System.out.println("Enter hour again");
+                BeginnerSeries.task(in);
             }
-            hour *= 3_600_000;
-            Scanner m = new Scanner(System.in);
-            System.out.println("Enter minute");
-            int minute;
-            while ((minute = m.nextInt()) < 0 || minute >= 60) {
+            h *= 3_600_000;
+            return h;
+        }
+        public  static int minute(int m,Scanner in) {
+            while (m < 0 ||  m >= 60) {
                 System.out.println("Enter minute again");
+                BeginnerSeries.task(in);
             }
-            minute *= 60000;
-            Scanner s = new Scanner(System.in);
-            System.out.println("Enter second");
-            int second;
-            while ((second = s.nextInt()) < 0 || second >60) {
-                System.out.println("Enter second again");
+            m *= 60000;
+            return m;
+        }
+        public static int second(int s,Scanner in){
+            while (s < 0 ||  s >= 60) {
+                System.out.println("Enter minute again");
+                BeginnerSeries.task(in);
             }
-            second *= 1000;
-            result = (hour+minute+second);
-            System.out.println("Milliseconds: " + result);
+            s *= 1000;
+            return s;
         }
     }
+
+
+
+
 

@@ -12,40 +12,21 @@ class RockPaperScissorsTest {
     RockPaperScissors rockPaperScissors = new RockPaperScissors();
     @Test
     void gameTest() {
-        try {
-            Method method = RockPaperScissors.class.getDeclaredMethod("game", String.class, String.class);
-            assertEquals("", method.invoke(rockPaperScissors, "r", "r"), "rock and rock");
-            assertEquals("Draw!", method.invoke(rockPaperScissors, "s", "s"), "scissors and scissors");
-            assertEquals("Draw!", method.invoke(rockPaperScissors, "p", "p"), "paper and paper");
+        String result1 = "Draw!";
+        String result2 = "Player 1 wins!";
+        String result3 = "Player 2 wins!";
 
-            assertEquals("Player 1 wins!", method.invoke(rockPaperScissors, "r", "s"), "rock and scissors");
-            assertEquals("Player 1 wins!", method.invoke(rockPaperScissors, "s", "p"), "scissors and paper");
-            assertEquals("Player 1 wins!", method.invoke(rockPaperScissors, "p", "r"), "paper and rock");
+        assertEquals(result1, rockPaperScissors.getGame("r", "r"), "r, r");
+        assertEquals(result1, rockPaperScissors.getGame("p", "p"), "p, p");
+        assertEquals(result1, rockPaperScissors.getGame("s", "s"), "s, s");
 
-            assertEquals("Player 2 wins!", method.invoke(rockPaperScissors, "r", "p"), "rock and paper");
-            assertEquals("Player 2 wins!", method.invoke(rockPaperScissors, "p", "s"), "paper and scissors");
-            assertEquals("Player 2 wins!", method.invoke(rockPaperScissors, "s", "r"), "scissors and rock");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+        assertEquals(result2, rockPaperScissors.getGame("r", "s"), "r, s");
+        assertEquals(result2, rockPaperScissors.getGame("p", "r"), "p, r");
+        assertEquals(result2, rockPaperScissors.getGame("s", "p"), "s, p");
 
-    @Test
-    void validateTest() {
-        try {
-            Method method = RockPaperScissors.class.getDeclaredMethod("validate", String.class, String.class);
+        assertEquals(result3, rockPaperScissors.getGame("s", "r"), "s, r");
+        assertEquals(result3, rockPaperScissors.getGame("r", "p"), "r, p");
+        assertEquals(result3, rockPaperScissors.getGame("p", "s"), "p, s");
 
-            String result1 = "First player command is correct";
-            assertEquals(result1, method.invoke(rockPaperScissors, "s", "First player"), "s");
-            assertEquals(result1, method.invoke(rockPaperScissors, "r", "First player"), "r");
-            assertEquals(result1, method.invoke(rockPaperScissors, "p", "First player"), "p");
-
-            String result2 = "First player command is incorrect! Try again";
-            assertEquals(result2, method.invoke(rockPaperScissors, "papirus", "First player"), "papirus");
-            assertEquals(result2, method.invoke(rockPaperScissors, "cutter", "First player"), "cutter");
-            assertEquals(result2, method.invoke(rockPaperScissors, "stone", "First player"), "stone");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

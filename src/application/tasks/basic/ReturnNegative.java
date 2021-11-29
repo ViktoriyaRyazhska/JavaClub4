@@ -2,8 +2,7 @@ package application.tasks.basic;
 import java.util.Scanner;
 
 public class ReturnNegative {
-    private static void task(){
-        Scanner n = new Scanner(System.in);
+    public static void task(Scanner n){
         System.out.println("Enter number");
         int number;
         number = n.nextInt();
