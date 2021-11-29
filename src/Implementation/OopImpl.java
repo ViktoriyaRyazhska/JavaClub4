@@ -39,4 +39,12 @@ public class OopImpl {
         }
         scanner.close();
     }
+
+    public static void Leetspeak (Scanner scanner){
+        System.out.println("Leetspeak");
+        System.out.println("Введіть значення");
+        Leetspeak leetspeak = new Leetspeak();
+        String s = scanner.next();
+        System.out.println(leetspeak.encode(s));
+    }
 }

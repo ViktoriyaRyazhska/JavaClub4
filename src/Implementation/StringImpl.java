@@ -35,4 +35,28 @@ public class StringImpl {
         System.out.println(SortAndStar.twoSort(arr));
         scanner.close();
     }
+
+    public static void OppositeNumber(Scanner scanner) {
+        System.out.println("Opposite number");
+        System.out.println("Enter value");
+        int number = scanner.nextInt();
+        System.out.println(OppositeNumber.opposite(number));
+    }
+
+    public static void FindThePosition (Scanner scanner) {
+        System.out.println("FindThePosition");
+        System.out.println("Enter value");
+        String str = scanner.next();
+        char ch = str.charAt(0);
+        System.out.println(FindThePosition.position(ch));
+    }
+
+    public static void AllStarCodeChallenge (Scanner scanner) {
+        System.out.println("All star codeChallenge");
+        System.out.println("Enter value");
+        String str = scanner.next();
+        String let = scanner.next();
+        char letter = let.charAt(0);
+        System.out.println(AcceptsStringAndCountDoubles.strCount(str,letter));
+    }
 }

@@ -1,6 +1,5 @@
 package Basic;
 
-
 public class CenturyFromYear {
 	public static int Century(int year) {
 

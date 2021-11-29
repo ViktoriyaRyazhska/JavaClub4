@@ -1,6 +1,6 @@
 package String;
 
-public class AllStarCodeChallenge {
+public class AcceptsStringAndCountDoubles {
     public static int strCount(String str, char letter) {
         int counter = 0;
 

@@ -51,4 +51,29 @@ public class ConditionsImpl {
         System.out.println(TrafficLights.updateLight(color));
         scanner.close();
     }
+
+    public static void DivisibleByXAndY (Scanner scanner) {
+        System.out.println("Divisible by x and y");
+        System.out.println("Enter values");
+        long n = scanner.nextLong();
+        long x = scanner.nextLong();
+        long y = scanner.nextLong();
+        System.out.println("Result: " + DivisibleNb.isDivisible(n,x,y));
+    }
+
+    public static void  BasicOperations (Scanner scanner) {
+        System.out.println("Basic operations");
+        System.out.println("Enter values");
+        String s = scanner.next();
+        int v1 = scanner.nextInt();
+        int v2 = scanner.nextInt();
+        System.out.println(BasicOperations.basicMath(s,v1,v2));
+    }
+
+    public static void SwitchItUp (Scanner scanner){
+        System.out.println("Switch it up");
+        System.out.println("Enter values");
+        int number = scanner.nextInt();
+        System.out.println(SwitchItUp.switchItUp(number));
+    }
 }

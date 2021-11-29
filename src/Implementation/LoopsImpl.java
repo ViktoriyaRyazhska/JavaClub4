@@ -2,6 +2,7 @@ package Implementation;
 
 import Loops.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -49,5 +50,57 @@ public class LoopsImpl {
         long end = scanner.nextLong();
         System.out.println("Розрив між " + start + " і " + end + ": " + Arrays.toString(GapInPrimes.gap(gap, start, end)));
         scanner.close();
+    }
+
+    public static void MeanOfAnArray (Scanner scanner){
+        System.out.println("Mean of an array");
+        System.out.println("Введіть оцінки");
+
+        int grades;
+        ArrayList<Integer> list = new ArrayList<>();
+        System.out.println("Enter non integer to exit");
+        while (true){
+            if (scanner.hasNextInt()){
+                grades = scanner.nextInt();
+                list.add(grades);
+            } else {
+                break;
+            }
+        }
+        int[] arr = new int[list.size()];
+        for (int i = 0; i< arr.length; i++){
+            arr[i] = list.get(i);
+        }
+        System.out.println(MeanOfAnArray.getAverage(arr));
+    }
+
+    public static void ReduceButGrow (Scanner scanner) {
+        System.out.println("Reduce but grow");
+        System.out.println("Введіть значення");
+
+        int values;
+        ArrayList<Integer> list = new ArrayList<>();
+        System.out.println("Enter non integer to exit");
+        while (true){
+            if (scanner.hasNextInt()){
+                values = scanner.nextInt();
+                list.add(values);
+            } else {
+                break;
+            }
+        }
+        int[] arr = new int[list.size()];
+        for (int i = 0; i< arr.length; i++){
+            arr[i] = list.get(i);
+        }
+        System.out.println(ReduceButGrow.grow(arr));
+    }
+
+    public static void GrassHopper (Scanner scanner) {
+        System.out.println("Grass hopper");
+        System.out.println("Введіть значення");
+
+        int n = scanner.nextInt();
+        System.out.println(GrassHopper.summation(n));
     }
 }

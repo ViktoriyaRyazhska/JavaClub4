@@ -1,6 +1,6 @@
 package Conditions;
 
-public class switchItUp {
+public class SwitchItUp {
     public static String switchItUp(int number)
     {
         switch (number){

@@ -1,14 +1,18 @@
 
-import Basic.MultiplyingTwoNumbers;
-import Basic.VolumeOfACuboid;
 import Implementation.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("---Вирішення задач---");
-        System.out.println("---Виберіть тип задачі---\n1.Basic program" +
-                "\n2.Classes\n3.Conditions\n4.Loops\n5.OOP\n6.String\n7.Collections");
+        System.out.println("---Виберіть тип задачі---" +
+                "\n1.Basic program" +
+                "\n2.Classes" +
+                "\n3.Conditions" +
+                "\n4.Loops" +
+                "\n5.OOP" +
+                "\n6.String" +
+                "\n7.Collections");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
         switch (choice) {
@@ -66,7 +70,8 @@ public class Main {
                 break;
             case 2:
                 System.out.println("-Classes-\n");
-                System.out.println("Виберіть задачу\n1.lombok-encapsulation" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.lombok-encapsulation" +
                         "\n2.fixme-static-electrickery" +
                         "\n3.two-fighters-one-winner" +
                         "\n4.building-blocks" +
@@ -78,6 +83,7 @@ public class Main {
                         ClassesImpl.encapsulation();
                         break;
                     case 2:
+                        ClassesImpl.StaticElectrickery(scanner);
                         break;
                     case 3:
                         ClassesImpl.twoFighters();
@@ -93,7 +99,8 @@ public class Main {
                 break;
             case 3:
                 System.out.println("-Conditions-\n");
-                System.out.println("Виберіть задачу\n1.opposite-number" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.opposite-number" +
                         "\n2.is-n-divisible-by-x-and-y" +
                         "\n3.convert-a-boolean-to-a-string" +
                         "\n4.do-i-get-a-bonus" +
@@ -113,6 +120,7 @@ public class Main {
                         ConditionsImpl.oppositeNumber();
                         break;
                     case 2:
+                        ConditionsImpl.DivisibleByXAndY(scanner);
                         break;
                     case 3:
                         ConditionsImpl.boolenToStr();
@@ -124,6 +132,7 @@ public class Main {
                     case 6:
                         break;
                     case 7:
+                        ConditionsImpl.BasicOperations(scanner);
                         break;
                     case 8:
                         ConditionsImpl.oppositesAttract();
@@ -135,6 +144,7 @@ public class Main {
                     case 11:
                         break;
                     case 12:
+                        ConditionsImpl.SwitchItUp(scanner);
                         break;
                     case 13:
                         ConditionsImpl.traffic();
@@ -146,7 +156,8 @@ public class Main {
             case 4:
                 System.out.println("-Loops-\n");
                 System.out.println("Виберіть задачу");
-                System.out.println("Виберіть задачу\n1.string-repeat" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.string-repeat" +
                         "\n2.cat-years-dog-years" +
                         "\n3.get-the-mean-of-an-array" +
                         "\n4.beginner-lost-without-a-map" +
@@ -168,6 +179,7 @@ public class Main {
                     case 2:
                         break;
                     case 3:
+                        LoopsImpl.MeanOfAnArray(scanner);
                         break;
                     case 4:
                         LoopsImpl.maps();
@@ -179,6 +191,7 @@ public class Main {
                     case 7:
                         break;
                     case 8:
+                        LoopsImpl.ReduceButGrow(scanner);
                         break;
                     case 9:
                         LoopsImpl.sumOfPositive();
@@ -190,6 +203,7 @@ public class Main {
                     case 12:
                         break;
                     case 13:
+                        LoopsImpl.GrassHopper(scanner);
                         break;
                     case 14:
                         LoopsImpl.gapInPr();
@@ -200,9 +214,10 @@ public class Main {
                 break;
             case 5:
                 System.out.println("-OOP-\n");
-                System.out.println("Виберіть задачу\n1.basic-subclasses-adam-and-eve" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.basic-subclasses-adam-and-eve" +
                         "\n2.rotations-and-reflections-i" +
-                        "\n3.l3375p34k" +
+                        "\n3.Leetspeak" +
                         "\n4.tdd-area-calculations");
                 choice = scanner.nextInt();
                 switch (choice) {
@@ -211,6 +226,7 @@ public class Main {
                     case 2:
                         break;
                     case 3:
+                        OopImpl.Leetspeak(scanner);
                         break;
                     case 4:
                         OopImpl.calcShape();
@@ -219,7 +235,8 @@ public class Main {
                 break;
             case 6:
                 System.out.println("-String-\n");
-                System.out.println("Виберіть задачу\n1.convert-a-number-to-a-string" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.convert-a-number-to-a-string" +
                         "\n2.reversed-strings" +
                         "\n3.welcome-to-the-city" +
                         "\n4.opposite-number" +
@@ -232,7 +249,7 @@ public class Main {
                         "\n11.parse-nice-int-from-char-problem" +
                         "\n12.grasshopper-debug" +
                         "\n13.abbreviate-a-two-word-name" +
-                        "\n14.all-star-code-challenge-number-18" +
+                        "\n14.Accepts string and count doubles of letters" +
                         "\n15.sort-and-star" +
                         "\n16.correct-the-mistakes-of-the-character-recognition-software" +
                         "\n17.alternating-case" +
@@ -246,6 +263,7 @@ public class Main {
                     case 3:
                         break;
                     case 4:
+                        StringImpl.OppositeNumber(scanner);
                         break;
                     case 5:
                         StringImpl.replase();
@@ -257,6 +275,7 @@ public class Main {
                     case 8:
                         break;
                     case 9:
+                        StringImpl.FindThePosition(scanner);
                         break;
                     case 10:
                         StringImpl.fakeBinary();
@@ -268,6 +287,7 @@ public class Main {
                     case 13:
                         break;
                     case 14:
+                        StringImpl.AllStarCodeChallenge(scanner);
                         break;
                     case 15:
                         StringImpl.sortAndStar();
@@ -282,13 +302,15 @@ public class Main {
                 break;
             case 7:
                 System.out.println("-Collections-\n");
-                System.out.println("Виберіть задачу\n1.push-a-hash-slash-an-object-into-array" +
+                System.out.println("Виберіть задачу" +
+                        "\n1.push-a-hash-slash-an-object-into-array" +
                 "\n2.unfinished-loop-bug-fixing-number-1" +
                 "\n3.filtering-even-numbers-bug-fixes" +
                 "n4.interactive-dictionary");
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        CollectionsImpl.PushAnObjectIntoArray(scanner);
                         break;
                     case 2:
                         CollectionsImpl.createL();

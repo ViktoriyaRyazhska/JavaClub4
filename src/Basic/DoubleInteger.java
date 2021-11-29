@@ -1,6 +1,5 @@
 package Basic;
 
-
 public class DoubleInteger {
 
 	public static int doubleInteger(int number) {

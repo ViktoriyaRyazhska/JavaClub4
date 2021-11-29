@@ -1,5 +1,12 @@
 package OOP;
-
+/*
+a -> 4
+e -> 3
+l -> 1
+m -> /^^\
+o -> 0
+u -> (_)
+ */
 public class Leetspeak extends Encoder{
 
     public String encode(String source){
@@ -40,12 +47,6 @@ public class Leetspeak extends Encoder{
         }
         return eSource.toString();
     }
-
-//    public static void main(String[] args) {
-//        Leetspeak myEncoder = new Leetspeak();
-//        System.out.println(myEncoder.encode("aelmou"));
-//    }
-
 }
 
 abstract class Encoder{

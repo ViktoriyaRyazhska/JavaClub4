@@ -1,7 +1,5 @@
 package Basic;
 
-import java.util.Scanner;
-
 public class ThinkfulNumberDrillsPixelartPlanning {
 
 	public static boolean isDivisible(int wallLength, int pixelSize) {

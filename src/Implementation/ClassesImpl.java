@@ -56,5 +56,12 @@ public class ClassesImpl {
         System.out.println("Переміг " + Fighters.declareWinner(f1, f2, firstAttacker));
         scanner.close();
     }
+
+    public static void StaticElectrickery(Scanner scanner){
+        System.out.println("---Static electrickery---");
+        System.out.println("Enter value");
+        int n = scanner.nextInt();
+        System.out.println(Dinglemouse.INST.plus100(n));
+    }
 }
 

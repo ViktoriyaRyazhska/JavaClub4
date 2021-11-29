@@ -1,6 +1,5 @@
 package Basic;
 
-
 public class AgeRangeCompatibilityEquation {
 
     public static void CompatibilityEquation(int age) {
