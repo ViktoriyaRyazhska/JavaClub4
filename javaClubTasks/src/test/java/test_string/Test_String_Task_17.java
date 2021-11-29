@@ -21,4 +21,15 @@ public class Test_String_Task_17 {
         assertEquals("altERnaTIng cAsE", String_Task_17.toAlternativeString("ALTerNAtiNG CaSe"));
         assertEquals("ALTerNAtiNG CaSe <=> altERnaTIng cAsE", String_Task_17.toAlternativeString("altERnaTIng cAsE <=> ALTerNAtiNG CaSe"));
     }
+
+
+    // Unxpected Result
+    @Test
+    public void testUnxpectedResult() {
+        assertNotEquals("Alternating CaSe", String_Task_17.toAlternativeString("altERnaTIng cAsE"));
+        assertNotEquals("altERnaTIng case", String_Task_17.toAlternativeString("ALTerNAtiNG CaSe"));
+        assertNotEquals("HELLO world", String_Task_17.toAlternativeString("HELLO WORLD"));
+        assertNotEquals("123456", String_Task_17.toAlternativeString("12345"));
+    }
+
 }

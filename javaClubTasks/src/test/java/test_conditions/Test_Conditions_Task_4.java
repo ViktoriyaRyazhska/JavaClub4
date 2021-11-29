@@ -2,6 +2,8 @@ package test_conditions;
 import conditions.Conditions_task_4;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 import org.junit.runners.JUnit4;
 
 public class Test_Conditions_Task_4 {
@@ -22,4 +24,17 @@ public class Test_Conditions_Task_4 {
         System.out.println("if previous result was false or had ? symbol then perhaps you need to escape unicode due to misconfiguration");
         return "\u00A3".equalsIgnoreCase("£");
     }
+
+
+    // Unxpected Result
+    @Test
+    public void basicTestsUnxpectedResult() {
+        boolean wellConfigured=unicodeTest();
+
+        assertNotEquals((wellConfigured?"£":"\u00A3")+"12",Conditions_task_4.bonusTime(67890, true));
+        assertNotEquals((wellConfigured?"£":"\u00A3")+"8888",Conditions_task_4.bonusTime(2, true));
+        assertNotEquals((wellConfigured?"£":"\u00A3")+"985",Conditions_task_4.bonusTime(78, false));
+
+    }
+
 }

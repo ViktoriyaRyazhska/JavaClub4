@@ -2,6 +2,8 @@ package test_collections;
 import collections.Collections_Task_4;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 import org.junit.runners.JUnit4;
 
 public class Test_Collections_Task_4 {
@@ -21,5 +23,10 @@ public class Test_Collections_Task_4 {
 
         d.newEntry("soccer", "a sport");
         assertEquals("a sport", d.look("soccer"));
+
+
+        // Unxpected Result
+        assertNotEquals("A sport", d.look("Apple"));
+        assertNotEquals("A fruit", d.look("Soccer"));
     }
 }

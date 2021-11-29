@@ -15,4 +15,13 @@ public class Test_Loops_Task_14 {
         assertEquals("[359, 367]", Arrays.toString(Loops_Task_14.gap(8,300,400)));
         assertEquals("[337, 347]", Arrays.toString(Loops_Task_14.gap(10,300,400)));
     }
+
+    // Unxpected Result
+    @Test
+    public void testUnxpectedResult() {
+        assertNotEquals("[109, 1043]", Arrays.toString(Loops_Task_14.gap(2,100,110)));
+        assertNotEquals("[106, 101]", Arrays.toString(Loops_Task_14.gap(4,100,110)));
+        assertNotEquals(null,  Arrays.toString(Loops_Task_14.gap(4,100,110)));
+    }
+
 }
