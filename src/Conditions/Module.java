@@ -1,3 +1,4 @@
+package Conditions;
 
 public class Module {
 	public static int sequence(int n) {

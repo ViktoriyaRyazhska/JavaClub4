@@ -16,25 +16,25 @@ public class OopImpl {
             case 1:
                 System.out.println("Вкажіть розмір сторони квадрата");
                 double side = scanner.nextDouble();
-                System.out.println("Площа квадрата " + calculator.getTotalArea(new Square(side)));
+                System.out.println("Площа квадрата " + Calculator.getTotalArea(new Square(side)));
                 break;
             case 2:
                 System.out.println("Вкажіть висоту і ширину прямокутника");
                 double height = scanner.nextDouble();
                 double width = scanner.nextDouble();
-                System.out.println("Площа прямокутника " + calculator.getTotalArea(new Rectangle(height, width)));
+                System.out.println("Площа прямокутника " + Calculator.getTotalArea(new Rectangle(height, width)));
                 break;
             case 3:
                 System.out.println("Вкажіть радіус круга");
                 double radius = scanner.nextDouble();
-                System.out.println("Площа круга " + calculator.getTotalArea(new Circle(radius)));
+                System.out.println("Площа круга " + Calculator.getTotalArea(new Circle(radius)));
                 break;
             case 4:
                 System.out.println("Вкажіть основу і висоту трикутника");
                 double triangleBase = scanner.nextDouble();
                 double triangleHeight = scanner.nextDouble();
                 System.out.println(
-                        "Площа трикутника " + calculator.getTotalArea(new Triangle(triangleBase, triangleHeight)));
+                        "Площа трикутника " + Calculator.getTotalArea(new Triangle(triangleBase, triangleHeight)));
                 break;
         }
         scanner.close();

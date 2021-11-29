@@ -1,20 +1,21 @@
 package OOP;
 
+
 public class Calculator {
 
-    public double getTotalArea(Triangle t) {
+    public static double getTotalArea(Triangle t) {
         return t.triangleBase * t.triangleHeight / 2;
     }
 
-    public double getTotalArea(Square s) {
+    public static double getTotalArea(Square s) {
         return s.side * s.side;
     }
 
-    public double getTotalArea(Rectangle r) {
+    public static double getTotalArea(Rectangle r) {
         return r.height * r.width;
     }
 
-    public double getTotalArea(Circle c) {
+    public static double getTotalArea(Circle c) {
         double res = Math.round(c.radius * c.radius * Math.PI * 100.0) / 100.0;
         return res;
     }
@@ -33,10 +34,6 @@ public class Calculator {
         double area2 = r2.height * r2.width;
         double res = Math.round((area + area2) * 100.0) / 100.0;
         return res;
-    }
-
-    public double getTotalArea() {
-        return 0;
     }
 }
 
