@@ -76,6 +76,10 @@ public class OOP_Task_2 {
                 "7. REFLECT_HORIZONTAL \n" +
                 "8. REFLECT_REVERSE_DIAGONAL");
         int value1 = scanner.nextInt();
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         OOP_Task_2 val = IDENTITY;
         switch(value1){
             case 1 : {
@@ -111,14 +115,17 @@ public class OOP_Task_2 {
                 break;
             }
         }
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Pick the method : \n" +
                 "1. Is picked value a rotation? \n" +
                 "2. Is picked value a reflection? \n" +
                 "3. Than \n" +
                 "4. Inverse \n" +
                 "5. Equals ");
-        int value2 = scanner1.nextInt();
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value2 = scanner.nextInt();
         switch(value2){
             case 1 :{
                 System.out.println(val.is_rotation());
@@ -129,7 +136,6 @@ public class OOP_Task_2 {
                 break;
             }
             case 3 :{
-                Scanner scanner2 = new Scanner(System.in);
                 System.out.println("Pick second value : \n" +
                         "1. IDENTITY \n" +
                         "2. ROTATE_90_ANTICLOCKWISE \n" +
@@ -139,9 +145,13 @@ public class OOP_Task_2 {
                         "6. REFLECT_FORWARD_DIAGONAL \n" +
                         "7. REFLECT_HORIZONTAL \n" +
                         "8. REFLECT_REVERSE_DIAGONAL");
+                while (!scanner.hasNextInt()) {
+                    System.out.println("That's not an integer, enter integer type:");
+                    scanner.next();
+                }
                 int value3 = scanner.nextInt();
                 OOP_Task_2 val1 = IDENTITY;
-                switch(value1){
+                switch(value3){
                     case 1 : {
                         val1 = IDENTITY;
                         break;
@@ -176,12 +186,13 @@ public class OOP_Task_2 {
                     }
                 }
                 System.out.println(val.then(val1));
+                break;
             }
             case 4 :{
                 System.out.println(val.inv());
+                break;
             }
             case 5 :{
-                Scanner scanner3 = new Scanner(System.in);
                 System.out.println("Pick second value : \n" +
                         "1. IDENTITY \n" +
                         "2. ROTATE_90_ANTICLOCKWISE \n" +
@@ -191,9 +202,13 @@ public class OOP_Task_2 {
                         "6. REFLECT_FORWARD_DIAGONAL \n" +
                         "7. REFLECT_HORIZONTAL \n" +
                         "8. REFLECT_REVERSE_DIAGONAL");
+                while (!scanner.hasNextInt()) {
+                    System.out.println("That's not an integer, enter integer type:");
+                    scanner.next();
+                }
                 int value4 = scanner.nextInt();
                 OOP_Task_2 val1 = IDENTITY;
-                switch(value1){
+                switch(value4){
                     case 1 : {
                         val1 = IDENTITY;
                         break;
@@ -228,6 +243,7 @@ public class OOP_Task_2 {
                     }
                 }
                 System.out.println(val.equals(val1));
+                break;
             }
         }
     }

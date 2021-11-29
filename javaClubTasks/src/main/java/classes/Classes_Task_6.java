@@ -37,13 +37,23 @@ public class Classes_Task_6 {
                 "and returns surface area and volume\n");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter width:");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter length:");
-        int value2 = scanner1.nextInt();
-        Scanner scanner2 = new Scanner(System.in);
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value2 = scanner.nextInt();
         System.out.println("Enter height:");
-        int value3 = scanner2.nextInt();
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value3 = scanner.nextInt();
         int [] arr = {value1,value2,value3};
         Classes_Task_6 n = new Classes_Task_6(arr);
 

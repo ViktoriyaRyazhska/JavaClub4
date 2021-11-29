@@ -6,7 +6,5 @@ import org.junit.*;
 
 public class Test_Basic_Program_Task_1{
     @Test
-    public final void test_all() {
-        Assert.assertEquals( "Nope!" , 4, Basic_Program_Task_1.doubleInteger(2));
-    }
+    public final void test_all() {Assert.assertEquals( "Nope!" , 4, Basic_Program_Task_1.doubleInteger(2));}
 }
