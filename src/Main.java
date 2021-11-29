@@ -147,6 +147,14 @@ public class Main {
             }
 
             case 8 -> {
+                System.out.println("Please enter a year, for return the century it is in.: ");
+                int number = scanner.nextInt();
+               CenturyFromYear centuryFromYear = new CenturyFromYear();
+                try {
+                    centuryFromYear.execute(number);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
 
             case 9 -> {

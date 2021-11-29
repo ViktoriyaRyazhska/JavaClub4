@@ -5,7 +5,14 @@ public class CenturyFromYear {
         System.out.println(centuryFromYear(number));
 
     }
-    private static int centuryFromYear(int number){
+    public static int centuryFromYear(int number){
+        try {
+            if(number ==0){
+                System.out.println("Division for 0");
+            }
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
         if (number % 100 == 0) {
         number = number / 100;
     } else {
