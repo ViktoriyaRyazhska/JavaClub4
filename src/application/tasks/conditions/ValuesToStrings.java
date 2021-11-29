@@ -1,4 +1,4 @@
-package application.tasks.Conditions;
+package application.tasks.conditions;
 
 import java.util.Scanner;
 
@@ -13,7 +13,6 @@ public class ValuesToStrings {
             return Yes;
         }else
             return No;
-
     }
 }
 
