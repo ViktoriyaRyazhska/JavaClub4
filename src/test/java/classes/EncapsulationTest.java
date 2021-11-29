@@ -1,14 +1,17 @@
-package test.java.classes;
+package classes;
 
 import org.junit.Test;
+import tasks.classes.Encapsulation;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class EncapsulationTest {
     @Test
-    public void testSample() {
-        tasks.classes.Encapsulation ed = new tasks.classes.Encapsulation();
-        assertEquals(0,ed.getNumber());
+    public void encapsulationTest() {
+       Encapsulation ed = new Encapsulation();
+        assertEquals(0, ed.getNumber());
+        assertNotEquals(1, ed.getNumber());
 
     }
 }
