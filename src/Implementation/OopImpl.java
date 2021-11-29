@@ -47,7 +47,6 @@ public class OopImpl {
         Leetspeak leetspeak = new Leetspeak();
         String s = scanner.next();
         System.out.println(leetspeak.encode(s));
-<<<<<<< HEAD
     }
 <<<<<<< HEAD
 =======
@@ -62,8 +61,6 @@ public class OopImpl {
         Woman woman = (Woman) human[1];
 
         System.out.println("Created man and woman");
-=======
->>>>>>> b8607b9 (trying to save my work)
     }
 
 <<<<<<< HEAD
