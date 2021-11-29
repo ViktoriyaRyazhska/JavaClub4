@@ -6,7 +6,7 @@ public class TimePastAfterMidnight {
         System.out.println(timePastAfterMidnight(h, m, s));
     }
 
-    private static int timePastAfterMidnight(int h, int m, int s) {
+    public static int timePastAfterMidnight(int h, int m, int s) {
 
         return h * 3600000 + m * 60000 + s * 1000;
     }

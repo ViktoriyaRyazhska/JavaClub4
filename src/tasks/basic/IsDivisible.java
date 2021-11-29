@@ -9,8 +9,9 @@ public class IsDivisible {
     public static boolean isDivisible(int wallLength, int pixelSize)  {
         try {
             if(pixelSize ==0){
+                System.out.println("Division for 0");
             }
-        }catch (Exception e){
+        }catch (NullPointerException e){
             e.printStackTrace();
         }
         return wallLength % pixelSize == 0;
