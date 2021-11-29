@@ -17,6 +17,10 @@ public class Loops_Task_6 {
         System.out.println("This program returns an array of integers from n to 1 where n>0.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter n : ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
 
 

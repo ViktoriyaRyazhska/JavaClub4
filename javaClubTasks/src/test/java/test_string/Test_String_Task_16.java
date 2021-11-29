@@ -1,6 +1,8 @@
 package test_string;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 import org.junit.runners.JUnit4;
 import string.String_Task_16;
 
@@ -12,6 +14,15 @@ public class Test_String_Task_16 {
         assertEquals("RICHARD P. FEYNMAN - THE FEYNMAN LECTURES ON PHYSICS", String_Task_16.correct(String_Task_16.correct("R1CHARD P. FEYNMAN - THE FEYNMAN LECTURE5 0N PHY51C5")));
         assertEquals("RICHARD P. FEYNMAN - STATISTICAL MECHANICS", String_Task_16.correct(String_Task_16.correct("R1CHARD P. FEYNMAN - 5TAT15T1CAL MECHAN1C5")));
         assertEquals("STEPHEN HAWKING - A BRIEF HISTORY OF TIME", String_Task_16.correct(String_Task_16.correct("5TEPHEN HAWK1NG - A BR1EF H15T0RY 0F T1ME")));
-
     }
+
+
+    // Unxpected Result
+    @Test
+    public void testSomethingUnxpectedResult() {
+        assertNotEquals("1F-RUDYARD K1PL1NG", String_Task_16.correct(String_Task_16.correct("1F-RUDYARD K1PL1NG")));
+        assertNotEquals("R1CHARD P. FEYNMAN - THE FEYNMAN LECTURE5 0N PHY51C5", String_Task_16.correct(String_Task_16.correct("R1CHARD P. FEYNMAN - THE FEYNMAN LECTURE5 0N PHY51C5")));
+        assertNotEquals("R1CHARD P. FEYNMAN - 5TAT15T1CAL MECHAN1C5", String_Task_16.correct(String_Task_16.correct("R1CHARD P. FEYNMAN - 5TAT15T1CAL MECHAN1C5")));
+    }
+
 }

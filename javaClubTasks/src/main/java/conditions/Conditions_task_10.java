@@ -14,13 +14,23 @@ public class Conditions_task_10 {
                 "people that could not enter the bus if it is not");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter capacity of the bus : ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter number of people in the bus : ");
-        int value2 = scanner1.nextInt();
-        Scanner scanner2 = new Scanner(System.in);
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value2 = scanner.nextInt();
         System.out.println("Enter number of people waiting on the bus stop : ");
-        int value3 = scanner2.nextInt();
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value3 = scanner.nextInt();
 
         System.out.println("Result: ");
         System.out.println("-----------");

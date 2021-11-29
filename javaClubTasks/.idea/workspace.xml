@@ -7,38 +7,23 @@
     <list default="true" id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/collections/Collections_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collections/Collections_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/string/String_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/String_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_3.java" afterDir="false" />
+ 
+     
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/collections/Collections_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/collections/Collections_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conditions/Conditions_task_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops_Task_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_2.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +85,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
+
+    <configuration name="Basic_Program_Task_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basic_program.Basic_Program_Task_4" />
+
       <module name="javaClubTasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="basic_program.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="String_Task_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.String_Task_4" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="javaClubTasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="string.*" />
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_String_Task_13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_String_Task_16" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaClubTasks" />
       <extension name="coverage">
         <pattern>
@@ -174,13 +161,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test_string" />
-      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_13" />
+      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_16" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_String_Task_4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_String_Task_17" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaClubTasks" />
       <extension name="coverage">
         <pattern>
@@ -189,27 +176,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test_string" />
-      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_4" />
+      <option name="MAIN_CLASS_NAME" value="test_string.Test_String_Task_17" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.String_Task_4" />
       <item itemvalue="JUnit.All tests" />
-      <item itemvalue="JUnit.Test_String_Task_4" />
       <item itemvalue="JUnit.Test_String_Task_12" />
-      <item itemvalue="JUnit.Test_String_Task_13" />
+      <item itemvalue="JUnit.Test_String_Task_16" />
+      <item itemvalue="JUnit.Test_String_Task_17" />
+      <item itemvalue="Application.Basic_Program_Task_4" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.Test_String_Task_13" />
+
+        <item itemvalue="Application.Basic_Program_Task_4" />
+        <item itemvalue="JUnit.Test_String_Task_17" />
+        <item itemvalue="JUnit.Test_String_Task_16" />
+
         <item itemvalue="JUnit.Test_String_Task_12" />
-        <item itemvalue="Application.String_Task_4" />
-        <item itemvalue="JUnit.Test_String_Task_4" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +232,8 @@
       <workItem from="1637966864026" duration="601000" />
       <workItem from="1637968425581" duration="10355000" />
       <workItem from="1638123825253" duration="1432000" />
+      <workItem from="1638197546881" duration="3016000" />
+      <workItem from="1638208209917" duration="5139000" />
     </task>
     <servers />
   </component>
