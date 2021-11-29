@@ -25,6 +25,9 @@ public class RemoveExclamationMarks {
         //output
         return builder.toString();
     }
+    public String getRemove(String s, int n) {
+        return remove(s, n);
+    }
 
     public static void task(Scanner in) {
         System.out.println("Enter sentence  with \"!\":");
@@ -32,12 +35,5 @@ public class RemoveExclamationMarks {
         System.out.println("How  many \"!\" to remove:");
         int n = in.nextInt();
         System.out.println(remove(sentence, n));
-    }
-
-    public static void main(String[] args) {
-        // Scanner scanner = new Scanner(System.in);
-        // RemoveExclamationMarks.task(scanner);
-        //  System.out.println(RemoveExclamationMarks.remove("!HI!", 1));
-
     }
 }

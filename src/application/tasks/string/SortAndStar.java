@@ -29,6 +29,9 @@ public class SortAndStar {
         }
         return builder.toString();
     }
+    public String getTwoSort(String[] s) {
+        return twoSort(s);
+    }
 
     public static void task(Scanner in) {
 

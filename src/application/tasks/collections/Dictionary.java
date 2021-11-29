@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Dictionary {
     public HashMap<String, String> hashMap;
 
+    public Dictionary() {};
     public Dictionary(String key, String value) {
         this.hashMap = new HashMap<>() {{
             put(key, value);

@@ -20,6 +20,9 @@ public class CorrectTheMistakes {
         }
         return builder.toString();
     }
+    public String getCorrect(String string) {
+        return correct(string);
+    }
 
     private static void task(Scanner in) {
         System.out.println("Enter any first and last name, so each word starts with capital letter");

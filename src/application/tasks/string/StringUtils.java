@@ -18,6 +18,9 @@ public class StringUtils {
         }
         return builder.toString();
     }
+    public String getToAlternativeString(String string) {
+        return toAlternativeString(string);
+    }
 
     public static void task(Scanner in) {
         System.out.println("Enter sentence any sentence to see an ALTerNAtiNG CaSe:");
