@@ -4,6 +4,7 @@ import conditions.Conditions_Task_11;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 
 public class Test_Conditions_Task_11 {
@@ -22,5 +23,7 @@ public class Test_Conditions_Task_11 {
         assertEquals(1, Conditions_Task_11.sequence(5101394));
         assertEquals(1, Conditions_Task_11.sequence(163));
         assertEquals(1, Conditions_Task_11.sequence(90));
+        assertNotEquals(3, Conditions_Task_11.sequence(100));
+        assertNotEquals(4, Conditions_Task_11.sequence(2340));
     }
 }

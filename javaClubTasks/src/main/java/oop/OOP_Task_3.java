@@ -1,38 +1,37 @@
 package oop;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class OOP_Task_3 extends Encoder {
 
     public static String encode(String source) {
-        if(source == null) {return "";}
-        Map<Character, String> dictionary = new HashMap<>();
-        dictionary.put('a', "4");
-        dictionary.put('e', "3");
-        dictionary.put('l', "1");
-        dictionary.put('m', "/^^\\");
-        dictionary.put('o', "0");
-        dictionary.put('u', "(_)");
-        StringBuilder out = new StringBuilder();
-        for (char c : source.toCharArray()) {
-            String temp = dictionary.get(Character.toLowerCase(c));
-            if(temp == null) {
-                temp = Character.toString(c);
-            }
-            out.append(temp);
+        if (source == null || source == "") {
+            return "";
         }
-        System.out.println(out.toString());
-        return out.toString();
+
+        source = source.replaceAll("(?i)a", "4");
+        source = source.replaceAll("(?i)e", "3");
+        source = source.replaceAll("(?i)l", "1");
+        source = source.replaceAll("(?i)m", "/^^\\\\");
+        source = source.replaceAll("(?i)o", "0");
+        source = source.replaceAll("(?i)u", "(_)");
+
+        return source;
     }
 
-    public static void solveTask() {
 
+    public  static void solveTask() {
         System.out.println("This program provides some way to encode a string into its leetspeak version.");
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter your letter:");
-        String value1 = scanner1.nextLine();
+        String value1;
+
+        while (!scanner1.hasNext("[a-z]")) {
+            System.out.println("That's not an string, enter string type:");
+            scanner1.next();
+        }
+        value1 = scanner1.nextLine();
+
         System.out.println("Result: ");
         System.out.println("-----------");
         System.out.println(encode(value1));
@@ -40,10 +39,11 @@ public class OOP_Task_3 extends Encoder {
     }
 }
 
-abstract  class Encoder {
+abstract class Encoder {
     public static String encode(String source) {
         return null;
     }
-
-
 }
+
+
+

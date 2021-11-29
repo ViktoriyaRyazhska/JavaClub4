@@ -12,6 +12,8 @@ public class Test_Basic_Program_Task_3 {
     public void examples() {
         // assertEquals("expected", "actual");
         assertEquals(4, Basic_Program_Task_3.getVolumeOfCuboid(1, 2, 2), delta);
-        assertEquals(63, Basic_Program_Task_3.getVolumeOfCuboid(6.3, 2, 5), delta);
+        assertEquals(60, Basic_Program_Task_3.getVolumeOfCuboid(6, 2, 5), delta);
+        assertNotEquals(200, Basic_Program_Task_3.getVolumeOfCuboid(4, 6, 9), delta);
+        assertNotEquals(95, Basic_Program_Task_3.getVolumeOfCuboid(3, 6, 7), delta);
     }
 }

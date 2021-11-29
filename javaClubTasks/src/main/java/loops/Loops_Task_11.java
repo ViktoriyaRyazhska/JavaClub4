@@ -11,11 +11,21 @@ public class Loops_Task_11 {
 
         System.out.println("Please enter dad years: ");
         Scanner scanner1 = new Scanner(System.in);
-        int value1 = scanner1.nextInt();
+        int value1;
+        while (!scanner1.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner1.next();
+        }
+        value1 = scanner1.nextInt();
 
         System.out.println("Please enter son years: ");
         Scanner scanner2 = new Scanner(System.in);
-        int value2 = scanner2.nextInt();
+        int value2 ;
+        while (!scanner2.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner2.next();
+        }
+        value2 = scanner2.nextInt();
 
         System.out.println("Result: ");
         System.out.println("-----------");
