@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="String/|Conditions/|OOP/|Loops/" kind="src" path=""/>
+	<classpathentry kind="src" path="Conditions"/>
+	<classpathentry kind="src" path="Loops"/>
+	<classpathentry kind="src" path="OOP"/>
+	<classpathentry kind="src" path="String"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
