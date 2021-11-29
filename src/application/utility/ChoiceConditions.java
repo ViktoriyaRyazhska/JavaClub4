@@ -18,13 +18,8 @@ public class ChoiceConditions extends Constants{
                 break;
             case EXIT:
                 break;
-<<<<<<< HEAD
-            case Constants.BACK:
-              //  ChoiceList.choiceList();
-=======
             case BACK:
                // ChoiceList.choiceList(scanner);
->>>>>>> refs/remotes/origin/Team5
                 break;
             case 1:
               //  AgeDiff.task(scanner);

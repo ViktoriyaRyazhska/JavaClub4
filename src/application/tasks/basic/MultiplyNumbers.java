@@ -7,6 +7,10 @@ public class MultiplyNumbers {
         return number1 * number2;
     }
 
+    public int getMultiplied(int number1, int number2) {
+        return multiply(number1, number2);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter two numbers to multiply:\n> ");
         int number1 = scanner.nextInt();

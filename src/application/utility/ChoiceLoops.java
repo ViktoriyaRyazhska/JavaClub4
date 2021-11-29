@@ -17,11 +17,7 @@ public class ChoiceLoops extends Constants {
             case EXIT:
                 break;
             case BACK:
-<<<<<<< HEAD
-          //      ChoiceList.choiceList();
-=======
               /*  ChoiceList.choiceList(scanner);
->>>>>>> refs/remotes/origin/Team5
                 break;
             case 1:
                 BeginnerLost.task(scanner);

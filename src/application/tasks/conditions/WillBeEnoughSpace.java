@@ -11,6 +11,7 @@ public class WillBeEnoughSpace {
 
         return 0 - left;
     }
+
     private static String output(int waiting, int left) {
         String result = "Can`t fit " + left + " of the " + waiting + " passengers";
         if (left == 0) {
@@ -18,6 +19,11 @@ public class WillBeEnoughSpace {
         }
 
         return result;
+    }
+     //method for the test
+    public String getOutPut(int canHold, int onTheBus, int waiting) {
+        int left = enough(canHold, onTheBus, waiting);
+        return output(waiting,left);
     }
 
     public static void task(Scanner scanner) {
