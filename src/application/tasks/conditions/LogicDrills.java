@@ -1,4 +1,4 @@
-package application.tasks.Conditions;
+package application.tasks.conditions;
 
 public class LogicDrills {
 }
