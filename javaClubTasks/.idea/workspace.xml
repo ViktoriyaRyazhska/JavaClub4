@@ -6,25 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_5_Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classes/Classes_Task_5_Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_classes/Test_Classes_Task_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_collections/Test_Collections_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_collections/Test_Collections_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_conditions/Test_Conditions_Task_9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_loops/Test_Loops_Task_9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_oop/Test_OOP_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_13.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_string/Test_String_Task_9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +179,7 @@
       <workItem from="1637966864026" duration="601000" />
       <workItem from="1637968425581" duration="10355000" />
       <workItem from="1638123825253" duration="3168000" />
-      <workItem from="1638180057874" duration="6932000" />
+      <workItem from="1638180057874" duration="7802000" />
     </task>
     <servers />
   </component>
