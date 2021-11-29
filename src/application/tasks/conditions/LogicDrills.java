@@ -6,6 +6,7 @@ public class LogicDrills {
     public static String task(String current,Scanner in) {
         System.out.println("Enter your light ");
         current = updateLight(in);
+        System.out.println("Next light is " + current);
         return current;
     }
     public static String updateLight(Scanner in){
