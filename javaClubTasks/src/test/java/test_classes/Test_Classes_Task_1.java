@@ -6,6 +6,7 @@ import classes.Classes_Task_5;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.runners.JUnit4;
 
@@ -16,9 +17,7 @@ public class Test_Classes_Task_1 {
     @Test
     public void testSample() {
         Classes_Task_1 ed = new Classes_Task_1();
-        assertEquals(
-                0,
-                ed.getNumber()
-        );
+        assertEquals(0,ed.getNumber());
+        assertNotEquals(26,ed.getNumber());
     }
 }

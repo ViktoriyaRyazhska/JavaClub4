@@ -5,6 +5,7 @@ import conditions.Conditions_task_5;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.runners.JUnit4;
 
@@ -25,6 +26,8 @@ public class Test_Conditions_Task_5 {
         assertEquals("You will be born in 510 years.", age.CalculateAge(2010, 1500));
         assertEquals("You are 1 year old.", age.CalculateAge(2011, 2012));
         assertEquals("You will be born in 1 year.", age.CalculateAge(2000, 1999));
+        assertNotEquals("You will be born in 2 year.", age.CalculateAge(2000, 1999));
+        assertNotEquals("You will be born in 87 years.", age.CalculateAge(3400, 3400));
 
     }
 }

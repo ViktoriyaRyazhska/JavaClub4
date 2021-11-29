@@ -12,9 +12,15 @@ public class Loops_Task_7 {
     }
     public static void solveTask(){
         System.out.println("This program  informs you to know if you're better than the average student in your class");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your points : ");
-        int yourPoints = scanner.nextInt();
+        int yourPoints;
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        yourPoints = scanner.nextInt();
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter array length: ");

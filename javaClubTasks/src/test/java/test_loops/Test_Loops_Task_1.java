@@ -5,6 +5,7 @@ import loops.Loops_Task_1;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class Test_Loops_Task_1 {
     @Test
@@ -25,5 +26,10 @@ public class Test_Loops_Task_1 {
     @Test
     public void test0kata() {
         assertEquals("", Loops_Task_1.repeatStr(0, "kata"));
+    }
+
+    @Test
+    public void testBadData() {
+        assertNotEquals("kolakolakola", Loops_Task_1.repeatStr(1, "kola"));
     }
 }

@@ -11,9 +11,8 @@ public class Test_String_Task_3 {
     @Test
     public void testHello() {
         String_Task_3 h = new String_Task_3();
-        assertEquals(
-                "Hello, John Smith! Welcome to Phoenix, Arizona!",
-                h.sayHello("John Smith", "Phoenix", "Arizona")
-        );
+        String[] name = {"John", "Smith"};
+        assertEquals("Hello, John Smith! Welcome to Phoenix, Arizona!",
+                h.sayHello("John Smith", "Phoenix", "Arizona"));
     }
 }
