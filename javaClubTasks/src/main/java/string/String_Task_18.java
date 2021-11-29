@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class String_Task_18 {
     public static String remove(String s, int n){
-        char [] arr = s.toCharArray();
         String s1 = "";
         for (int i = 0; i < n; i++) {
             s1 = s.replaceFirst("!", "");
@@ -20,7 +19,12 @@ public class String_Task_18 {
         String value1 = scanner.nextLine();
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter number of '!' you want to delete :");
-        int value2 = scanner1.nextInt();
+        int value2;
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        value2 = scanner1.nextInt();
 
 
         System.out.println("Result: ");

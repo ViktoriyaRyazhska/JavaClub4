@@ -11,11 +11,12 @@ public class Basic_Program_Task_10 {
     public static void solveTask(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your age:");
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value1;
+        while (!scanner.hasNextInt() || scanner.hasNext("(-[100000-1]+)")) {
+            System.out.println("That's not an integer or it is less than 0, enter integer type:");
             scanner.next();
         }
-        int value1 = scanner.nextInt();
+        value1 = scanner.nextInt();
 
 
         System.out.println("So, now i will return range of years you may date\nResult: ");

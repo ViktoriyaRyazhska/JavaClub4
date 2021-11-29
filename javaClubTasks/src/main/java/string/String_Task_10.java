@@ -49,7 +49,12 @@ public class String_Task_10 {
                 "Returns the resulting string.");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your string:");
-        String value1 = scanner.nextLine();
+        String value1;
+        while (!scanner.hasNextInt()) {
+            System.out.println("Incorrect input. Please enter integer number: ");
+            scanner.nextLine();
+        }
+        value1 = scanner.nextLine();
 
 
         System.out.println("Result: ");

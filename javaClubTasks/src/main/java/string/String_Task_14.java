@@ -23,9 +23,13 @@ public class String_Task_14 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your word :");
         String value1 = scanner.nextLine();
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter your letter :");
-        String value2 = scanner1.next();
+        String value2;
+        while (!scanner.hasNext("[qwertyuiopasdfghjklzxcvbnm]")) {
+            System.out.println("You entered something which is not a letter. Try again: ");
+            scanner.nextLine();
+        }
+        value2 = scanner.nextLine();
         char value3 = value2.toCharArray()[0];
 
 

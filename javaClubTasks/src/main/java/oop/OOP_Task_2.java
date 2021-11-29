@@ -75,11 +75,12 @@ public class OOP_Task_2 {
                 "6. REFLECT_FORWARD_DIAGONAL \n" +
                 "7. REFLECT_HORIZONTAL \n" +
                 "8. REFLECT_REVERSE_DIAGONAL");
-        int value1 = scanner.nextInt();
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value1;
+        while (!scanner.hasNext("[12345678]")) {
+            System.out.println("You entered something which is not equal to 1, 2, 3, 4, 5, 6, 7 or 8. Try again: ");
             scanner.next();
         }
+        value1 = scanner.nextInt();
         OOP_Task_2 val = IDENTITY;
         switch(value1){
             case 1 : {
@@ -121,11 +122,12 @@ public class OOP_Task_2 {
                 "3. Than \n" +
                 "4. Inverse \n" +
                 "5. Equals ");
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value2;
+        while (!scanner.hasNext("[12345]")) {
+            System.out.println("You entered something which is not equal to 1, 2, 3, 4 or 5. Try again: ");
             scanner.next();
         }
-        int value2 = scanner.nextInt();
+        value2 = scanner.nextInt();
         switch(value2){
             case 1 :{
                 System.out.println(val.is_rotation());
@@ -145,11 +147,12 @@ public class OOP_Task_2 {
                         "6. REFLECT_FORWARD_DIAGONAL \n" +
                         "7. REFLECT_HORIZONTAL \n" +
                         "8. REFLECT_REVERSE_DIAGONAL");
-                while (!scanner.hasNextInt()) {
-                    System.out.println("That's not an integer, enter integer type:");
+                int value3;
+                while (!scanner.hasNext("[12345678]")) {
+                    System.out.println("You entered something which is not equal to 1, 2, 3, 4, 5, 6, 7 or 8. Try again: ");
                     scanner.next();
                 }
-                int value3 = scanner.nextInt();
+                value3 = scanner.nextInt();
                 OOP_Task_2 val1 = IDENTITY;
                 switch(value3){
                     case 1 : {
@@ -202,11 +205,12 @@ public class OOP_Task_2 {
                         "6. REFLECT_FORWARD_DIAGONAL \n" +
                         "7. REFLECT_HORIZONTAL \n" +
                         "8. REFLECT_REVERSE_DIAGONAL");
-                while (!scanner.hasNextInt()) {
-                    System.out.println("That's not an integer, enter integer type:");
+                int value4;
+                while (!scanner.hasNext("[12345678]")) {
+                    System.out.println("You entered something which is not equal to 1, 2, 3, 4, 5, 6, 7 or 8. Try again: ");
                     scanner.next();
                 }
-                int value4 = scanner.nextInt();
+                value4 = scanner.nextInt();
                 OOP_Task_2 val1 = IDENTITY;
                 switch(value4){
                     case 1 : {

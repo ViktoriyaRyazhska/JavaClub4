@@ -19,11 +19,12 @@ public class Conditions_task_6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Player's 1 turn. Enter 1. to pick 'scissors',2. 'paper' or 3. 'rock':");
         String p1 = "";
-        while (!scanner.hasNextInt() ) {
-            System.out.println("That's not an integer, enter integer type:");
-            scanner.next();
+        int value1;
+        while (!scanner.hasNext("[123]")) {
+             System.out.println("You entered something which is not equal to 1, 2 or 3. Try again: ");
+             scanner.next();
         }
-        int value1 = scanner.nextInt();
+        value1 = scanner.nextInt();
         switch(value1){
             case 1:{
                 p1 = "scissors";
@@ -40,11 +41,12 @@ public class Conditions_task_6 {
         }
         System.out.println("Player's 2 turn. Enter 1. to pick 'scissors',2. 'paper' or 3. 'rock':");
         String p2 = "";
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value2;
+        while (!scanner.hasNext("[123]")) {
+            System.out.println("You entered something which is not equal to 1, 2 or 3. Try again: ");
             scanner.next();
         }
-        int value2 = scanner.nextInt();
+        value2 = scanner.nextInt();
         switch(value2){
             case 1:{
                 p2 = "scissors";

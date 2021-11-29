@@ -37,23 +37,26 @@ public class Classes_Task_6 {
                 "and returns surface area and volume\n");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter width:");
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value1;
+        while (!scanner.hasNextInt() || scanner.hasNext("(-[100000-1]+)")) {
+            System.out.println("That's not an integer or it is less than 0, enter integer type:");
             scanner.next();
         }
-        int value1 = scanner.nextInt();
+        value1 = scanner.nextInt();
         System.out.println("Enter length:");
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value2;
+        while (!scanner.hasNextInt() || scanner.hasNext("(-[100000-1]+)")) {
+            System.out.println("That's not an integer or it is less than 0, enter integer type:");
             scanner.next();
         }
-        int value2 = scanner.nextInt();
+        value2 = scanner.nextInt();
         System.out.println("Enter height:");
-        while (!scanner.hasNextInt()) {
-            System.out.println("That's not an integer, enter integer type:");
+        int value3;
+        while (!scanner.hasNextInt() || scanner.hasNext("(-[100000-1]+)")) {
+            System.out.println("That's not an integer or it is less than 0, enter integer type:");
             scanner.next();
         }
-        int value3 = scanner.nextInt();
+        value3 = scanner.nextInt();
         int [] arr = {value1,value2,value3};
         Classes_Task_6 n = new Classes_Task_6(arr);
 

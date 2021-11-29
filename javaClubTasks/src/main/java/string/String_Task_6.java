@@ -14,7 +14,8 @@ public class String_Task_6 {
                 "If your name starts with the letter 'R' or lower case 'r', you are playing banjo!");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name:");
-        String value1 = scanner.nextLine();
+        String value1;
+        value1 = scanner.nextLine();
 
 
         System.out.println("Result: ");
