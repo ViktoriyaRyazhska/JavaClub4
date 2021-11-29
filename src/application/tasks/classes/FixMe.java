@@ -7,7 +7,7 @@ public class FixMe {
 
     private int value; // removed 'static'
 
-    private FixMe() {
+    public FixMe() {
         value = ONE_HUNDRED;
     }
 

@@ -38,6 +38,10 @@ public class TwiceAsOld {
 
         return result;
     }
+    public String  getOutPut(int dadAge, int sonAge){
+        return output(onHowYears(dadAge,sonAge));
+    }
+
 
     public static void task(Scanner scanner) {
         System.out.print("Enter dad`s age:\n> ");

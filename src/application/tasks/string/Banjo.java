@@ -12,6 +12,10 @@ public class Banjo {
         return name + result;
     }
 
+    public String getArePlaying(String name) {
+        return arePlaying(name);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter your name:\n> ");
         String name = scanner.nextLine();

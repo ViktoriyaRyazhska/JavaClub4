@@ -1,8 +1,9 @@
 package application.tasks.loops;
 
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class GapInPrimes {
     private static List<Integer> primes(int from, int to) {
@@ -22,6 +23,7 @@ public class GapInPrimes {
 
         return numbers;
     }
+
     private static List<Integer> findGap(int gap, List<Integer> numbers) {
         List<Integer> result = new ArrayList<Integer>();
         for (int i = 0; i < numbers.size() - 1; i++) {
@@ -34,6 +36,11 @@ public class GapInPrimes {
 
         return result;
     }
+
+    public List<Integer> getFindGap(int gap, int from, int to) {
+        return findGap(gap, primes(from, to));
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter from-number ( >= 2 )\n> ");
         int from = scanner.nextInt();

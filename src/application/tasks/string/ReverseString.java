@@ -7,11 +7,15 @@ public class ReverseString {
         List<String> list = new ArrayList<String>(Arrays.asList(str.split("")));
         Collections.reverse(list);
         String result = "";
-        for (String i: list) {
+        for (String i : list) {
             result += i;
         }
 
         return result;
+    }
+
+    public String getRevers(String str) {
+        return reverse(str);
     }
 
     public static void task(Scanner scanner) {
