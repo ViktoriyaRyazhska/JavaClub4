@@ -14,10 +14,15 @@ public class Conditions_Task_13 {
     }
     public static void solveTask(){
         System.out.println("This program controls your town's traffic lights");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter current state of the light");
-        String value1 = scanner.nextLine();
 
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Please, enter current state of the light:");
+        String value1;
+        while (!scanner1.hasNextLine()) {
+            System.out.println("That's not an string, enter string:");
+            scanner1.next();
+        }
+        value1 = scanner1.nextLine();
 
         System.out.println("Result: ");
         System.out.println("-----------");

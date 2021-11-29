@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aaf68af-9a05-4985-a3c1-7d7b97ad3acf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+ 
+     
       <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basic_program/Basic_Program_Task_6.java" afterDir="false" />
@@ -20,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/oop/OOP_Task_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_basic_program/Test_Basic_Program_Task_2.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,6 +60,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,10 +77,18 @@
       <recent name="C:\Users\38096\Desktop\softserve tasks\JavaClub4\javaClubTasks\src\test\java\test_loops" />
       <recent name="C:\Users\38096\Desktop\softserve tasks\JavaClub4\javaClubTasks\src\test\java\test_basic_program" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test_string" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+
     <configuration name="Basic_Program_Task_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basic_program.Basic_Program_Task_4" />
+
       <module name="javaClubTasks" />
       <extension name="coverage">
         <pattern>
@@ -94,6 +109,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,9 +204,11 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+
         <item itemvalue="Application.Basic_Program_Task_4" />
         <item itemvalue="JUnit.Test_String_Task_17" />
         <item itemvalue="JUnit.Test_String_Task_16" />
+
         <item itemvalue="JUnit.Test_String_Task_12" />
       </list>
     </recent_temporary>

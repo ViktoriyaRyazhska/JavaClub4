@@ -9,10 +9,15 @@ public class Conditions_Task_11 {
     }
     public static void solveTask(){
         System.out.println("This program  finds the nth number of the sequence");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter n:");
-        int value1 = scanner.nextInt();
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please, enter n:");
+        int value1;
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not integer value, enter integer value:");
+            scanner.next();
+        }
+        value1 = scanner.nextInt();
 
         System.out.println("Result: ");
         System.out.println("-----------");
