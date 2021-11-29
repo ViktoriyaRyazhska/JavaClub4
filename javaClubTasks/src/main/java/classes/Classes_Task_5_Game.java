@@ -82,7 +82,6 @@ public class Classes_Task_5_Game {
         }
         choise = scanner.nextInt();
 
-
         String firstAtacker = "";
         switch (choise) {
             case 0: {

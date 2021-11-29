@@ -5,6 +5,7 @@ import loops.Loops_Task_5;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.runners.JUnit4;
 
@@ -20,5 +21,6 @@ public class Test_Loops_Task_5 {
     @Test
     public void test() {
         assertEquals("There are 17 sheeps in total", 17, new Loops_Task_5().countSheeps(array1));
+        assertNotEquals( 29, new Loops_Task_5().countSheeps(array1));
     }
 }
