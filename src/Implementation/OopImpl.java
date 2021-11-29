@@ -47,4 +47,15 @@ public class OopImpl {
         String s = scanner.next();
         System.out.println(leetspeak.encode(s));
     }
+    public static void createHuman() {
+        System.out.println("God");
+
+        Human[] human = God.create();
+
+        Man man = (Man) human[0];
+        Woman woman = (Woman) human[1];
+
+        System.out.println("Created man and woman");
+    }
+
 }
