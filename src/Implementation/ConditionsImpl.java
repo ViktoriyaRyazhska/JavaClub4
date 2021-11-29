@@ -51,29 +51,27 @@ public class ConditionsImpl {
         System.out.println(TrafficLights.updateLight(color));
         scanner.close();
     }
+    public static void countAgeDiff(){
+        System.out.println("AgeDiff");
+        System.out.println("Введіть рік народження і час до");
+        Scanner scanner = new Scanner(System.in);
+        int birthYear = scanner.nextInt();
+        int year = scanner.nextInt();
 
-    public static void DivisibleByXAndY (Scanner scanner) {
-        System.out.println("Divisible by x and y");
-        System.out.println("Enter values");
-        long n = scanner.nextLong();
-        long x = scanner.nextLong();
-        long y = scanner.nextLong();
-        System.out.println("Result: " + DivisibleNb.isDivisible(n,x,y));
+        System.out.println(AgeDiff.calculateAge(birthYear, year));
+        scanner.close();
     }
 
-    public static void  BasicOperations (Scanner scanner) {
-        System.out.println("Basic operations");
-        System.out.println("Enter values");
-        String s = scanner.next();
-        int v1 = scanner.nextInt();
-        int v2 = scanner.nextInt();
-        System.out.println(BasicOperations.basicMath(s,v1,v2));
-    }
+    public static void isThereEnoughSpace(){
+        System.out.println("will-there-be-enough-space");
+        System.out.println("Введіть загальну к-ть місць, к-ть людей на автобусі і к-ть чекаючих");
 
-    public static void SwitchItUp (Scanner scanner){
-        System.out.println("Switch it up");
-        System.out.println("Enter values");
-        int number = scanner.nextInt();
-        System.out.println(SwitchItUp.switchItUp(number));
+        Scanner scanner = new Scanner(System.in);
+        int cap = scanner.nextInt();
+        int on = scanner.nextInt();
+        int wait = scanner.nextInt();
+
+        System.out.println(Bob.enough(cap, on, wait));
+        scanner.close();
     }
 }

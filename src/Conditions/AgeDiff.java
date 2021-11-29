@@ -1,7 +1,7 @@
 package Conditions;
 
 public class AgeDiff {
-    public static String CalculateAge(int birth, int yearTo) {
+    public static String calculateAge(int birth, int yearTo) {
         if (birth > yearTo) {
             String temp = "You will be born in " + (birth - yearTo) + " year";
             return  (birth - yearTo) > 1 ? temp + "s." : temp + ".";

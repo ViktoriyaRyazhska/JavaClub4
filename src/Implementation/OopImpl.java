@@ -8,7 +8,7 @@ public class OopImpl {
     public static void calcShape() {
         System.out.println("tdd-area-calculations");
         System.out.println("Вкажіть цифрою яку фігуру Ви бажаєте створити:");
-        System.out.println("1 = квадрат, 2 = прямокутник, 3 = коло, 4 = тикутник");
+        System.out.println("1 = квадрат, 2 = прямокутник, 3 = коло, 4 = трикутник");
         Scanner scanner = new Scanner(System.in);
         int shape = scanner.nextInt();
         Calculator calculator = new Calculator();
@@ -40,11 +40,14 @@ public class OopImpl {
         scanner.close();
     }
 
-    public static void Leetspeak (Scanner scanner){
-        System.out.println("Leetspeak");
-        System.out.println("Введіть значення");
-        Leetspeak leetspeak = new Leetspeak();
-        String s = scanner.next();
-        System.out.println(leetspeak.encode(s));
+    public static void createHuman() {
+        System.out.println("God");
+
+        Human[] human = God.create();
+
+        Man man = (Man) human[0];
+        Woman woman = (Woman) human[1];
+
+        System.out.println("Created man and woman");
     }
 }

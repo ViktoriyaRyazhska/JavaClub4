@@ -11,11 +11,4 @@ public class CollectionsImpl {
         System.out.println(CreateList.createList(l));
         scanner.close();
     }
-
-    public static void PushAnObjectIntoArray(Scanner scanner){
-        System.out.println("Push an object into array");
-        System.out.println("Enter values");
-        String s = scanner.next();
-        System.out.println(PushAnObjectIntoArray.push(s));
-    }
 }
