@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ChoiceList extends Constants {
     // функція для вибору списку тасків
     public static void choiceList(Scanner in) {
+        System.out.println(listOfLists());
         System.out.print("\nSelect a list of tasks:\n> ");
         int option = in.nextInt();
 

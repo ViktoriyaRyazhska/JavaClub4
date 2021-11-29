@@ -15,7 +15,7 @@ public class JennySecretMessage {
     }
 
     public static void task(Scanner in) {
-        System.out.print("Enter your name:\n> ");
+        System.out.print("Enter your name:> ");
         String name = in.nextLine();
         System.out.println(greet(name));
     }

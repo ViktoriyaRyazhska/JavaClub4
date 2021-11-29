@@ -26,11 +26,11 @@ public class ChoiceBasic {
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 2:
-               // BeginnerSeries.task(in);
+                BeginnerSeries.task(in);
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 3:
-              //  CenturyFromYear.task(in);
+                CenturyFromYear.task(in);
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 4:
@@ -58,7 +58,7 @@ public class ChoiceBasic {
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 10:
-               // ReturnNegative.task(in);
+                ReturnNegative.task(in);
                 ChoiceBasic.choiceBasic(in);
                 break;
             case 11:
@@ -72,7 +72,7 @@ public class ChoiceBasic {
         String basicOptions =
                 "\nList of basic tasks:\n" +
                 "1. AgeRange\n" +
-                "2. BooleanToString\n" +
+                "2. BeginnerSeries\n" +
                 "3. CenturyFromYear\n" +
                 "4. ConvertToBinary\n" +
                 "5. CuboidVolume\n" +
