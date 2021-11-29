@@ -1,4 +1,4 @@
-package tests.basic;
+package tests.tasks.basic;
 
 import application.tasks.basic.AgeRange;
 import org.junit.jupiter.api.Test;

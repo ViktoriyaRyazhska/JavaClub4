@@ -1,10 +1,8 @@
-package tests.basic;
+package tests.tasks.basic;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import application.tasks.basic.JennySecretMessage;
-
-import java.lang.reflect.Method;
 
 public class JennySecretMessageTest {
     JennySecretMessage jennySecretMessage = new JennySecretMessage();
