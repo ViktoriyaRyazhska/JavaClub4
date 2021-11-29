@@ -14,6 +14,10 @@ public class TheModuloSequence {
         return sequence[n - 1];
     }
 
+    public int getFindNth(int n) {
+        return findNth(n);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter the index of number to find:\n> ");
         int n = scanner.nextInt();

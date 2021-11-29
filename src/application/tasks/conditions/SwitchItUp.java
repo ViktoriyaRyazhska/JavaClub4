@@ -27,29 +27,36 @@ public class SwitchItUp {
         return map;
     }
 
-    private static void validate(int number) {
+    private static void validate(int number,Scanner in) {
         boolean isValid = false;
         while (!isValid) {
             if (!(number >= 0 && number <= 9)) {
                 System.out.println("Try again! Integer must be between 0 and 9");
-                SwitchItUp.task();
+                SwitchItUp.task(in);
             } else
                 isValid = true;
         }
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
-        Scanner in1 = new Scanner(System.in);
+    public static void task(Scanner in) {
         System.out.println("Enter an integer between 0-9\n > ");
         int number = in.nextInt();
-        validate(number);
+        validate(number, in);
         System.out.println(switchItUp(number, map()));
         System.out.println("Do you want to play again?(1-yes, any other key - no)");
-        String playAgain = in1.nextLine();
+        String playAgain = in.nextLine();
         if (playAgain.equals("1"))
-            SwitchItUp.task();
+            SwitchItUp.task(in);
         else
             exit(0);
+    }
+
+
+    public HashMap<Integer, String> getMap() {
+        return map();
+    }
+
+    public String getSwitchItUp(int number, HashMap<Integer, String> map) {
+        return switchItUp(number, map);
     }
 }

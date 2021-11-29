@@ -21,7 +21,11 @@ public class HowGoodAreYou {
             return false;
     }
 
-    private static void task(Scanner in) {
+    public boolean getBetterThanAverage(int[] classPoints, int yourPoints) {
+        return betterThanAverage(classPoints, yourPoints);
+    }
+
+    public static void task(Scanner in) {
         System.out.print("Array size?: ");
         int arraySize = in.nextInt();
         int array[] = new int[arraySize];

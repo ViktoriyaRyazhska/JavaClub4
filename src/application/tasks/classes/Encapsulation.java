@@ -5,7 +5,11 @@ public class Encapsulation {
     private String stringValue;
     private Object anObject;
 
-    Encapsulation() {};
+    public Encapsulation() {
+    }
+
+    ;
+
     Encapsulation(int number, String stringValue, Object anObject) {
         this.number = number;
         this.stringValue = stringValue;
@@ -34,6 +38,12 @@ public class Encapsulation {
 
     public void setAnObject(Object anObject) {
         this.anObject = anObject;
+    }
+
+    public int getSomething(int n) {
+        Encapsulation  encapsulation = new Encapsulation();
+        encapsulation.setNumber(n);
+        return encapsulation.getNumber();
     }
 
     public static void task() {

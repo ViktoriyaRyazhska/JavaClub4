@@ -9,7 +9,9 @@ public class ReduceButGrow {
             result *= array[i];
         }
         return result;
-
+    }
+    public int getGrow(int[] array) {
+        return grow(array);
     }
 
     public static void task(Scanner in) {

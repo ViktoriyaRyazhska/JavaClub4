@@ -38,7 +38,7 @@ public class RockPaperScissors {
         }
         return result;
     }
-    private static void validate(String player, String playerPosition) {
+    private static void validate(String player, String playerPosition,Scanner in) {
         boolean validated = false;
 
         while (!validated) {
@@ -48,31 +48,39 @@ public class RockPaperScissors {
                 break;
             } else {
                 System.out.println(playerPosition + " command is incorrect! Try again");
-                RockPaperScissors.task();
+                RockPaperScissors.task(in);
             }
         }
     }
 
-    public static void task() {
-        Scanner in = new Scanner(System.in);
+    public String getGame(String firstPlayer, String secondPlayer) {
+        return game(firstPlayer, secondPlayer);
+    }
+    public void getValidate(String player, String playerPosition) {
+        getValidate(player, playerPosition);
+    }
+
+
+    public static void task(Scanner in) {
+
         System.out.println("Here you can play Rock Paper Scissors with a friend.\n" +
                 "Game usage rules: r - stands for Rock, s - stands for Scissors and p - stands for Paper.");
 
         System.out.println("First Player choose:\n > ");
         String firstPlayer = in.next().toLowerCase(Locale.ROOT);
-        validate(firstPlayer, PLAYER1);
+        validate(firstPlayer, PLAYER1,in);
 
         System.out.println("Second Player choose:\n > ");
         String secondPlayer = in.next().toLowerCase(Locale.ROOT);
 
-        validate(secondPlayer, PLAYER2);
+        validate(secondPlayer, PLAYER2,in);
 
         System.out.println(game(firstPlayer, secondPlayer));
 
         System.out.println("Do you want to play again?(1-yes, any other key - no)");
         int playAgain = in.nextInt();
         if (playAgain == 1)
-            RockPaperScissors.task();
+            RockPaperScissors.task(in);
         else
             exit(0);
     }

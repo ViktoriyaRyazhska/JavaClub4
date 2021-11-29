@@ -11,6 +11,10 @@ public class BooleanToString {
         return result;
     }
 
+    public String getConverted(boolean flag) {
+        return convert(flag);
+    }
+
     private static boolean input(int option, Scanner scanner) {
         boolean flag = false;
         switch (option) {

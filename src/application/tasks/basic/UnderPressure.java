@@ -5,6 +5,10 @@ public class UnderPressure {
         return number * 2;
     }
 
+    public int getDoubleInteger(int number) {
+        return doubleInteger(number);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter the number to double:\n> ");
         int number = scanner.nextInt();

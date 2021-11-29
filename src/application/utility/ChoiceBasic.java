@@ -7,10 +7,9 @@ import java.util.Scanner;
 public class ChoiceBasic {
 
     // функція для вибору таски з списку basic
-    public static void choiceBasic() {
+    public static void choiceBasic(Scanner in) {
         System.out.println(listOfBasicOptions());
         System.out.print("Select an option:\n> ");
-        Scanner in = new Scanner(System.in);
         int option = in.nextInt();
 
         switch (option) {
@@ -20,43 +19,52 @@ public class ChoiceBasic {
             case 0:
                 break;
             case -1:
-                ChoiceList.choiceList();
+                ChoiceList.choiceList(in);
                 break;
             case 1:
-                AgeRange.task();
+                AgeRange.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 2:
-             //   BeginnerSeries.task();
+               // BeginnerSeries.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 3:
-              //  CenturyFromYear.task();
+              //  CenturyFromYear.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 4:
-                ConvertToBinary.task();
+                ConvertToBinary.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 5:
-                CuboidVolume.task();
+                CuboidVolume.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 6:
-                GrassHopper.task();
+                GrassHopper.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 7:
-                JennySecretMessage.task();
+                JennySecretMessage.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 8:
-                MultiplyNumbers.task();
+                MultiplyNumbers.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 9:
-                PixelArtPlanning.task();
+                PixelArtPlanning.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 10:
-             //   ReturnNegative.task();
+               // ReturnNegative.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
             case 11:
-                UnderPressure.task();
+                UnderPressure.task(in);
+                ChoiceBasic.choiceBasic(in);
                 break;
-
-
         }
     }
     // список basic
