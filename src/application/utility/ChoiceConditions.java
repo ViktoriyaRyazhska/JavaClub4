@@ -19,10 +19,10 @@ public class ChoiceConditions extends Constants{
             case EXIT:
                 break;
             case BACK:
-               // ChoiceList.choiceList(scanner);
+                ChoiceList.choiceList(scanner);
                 break;
             case 1:
-              //  AgeDiff.task(scanner);
+                AgeDiff.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 2:
@@ -30,7 +30,7 @@ public class ChoiceConditions extends Constants{
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 3:
-               // DoIGetBonus.task(scanner);
+                DoIGetBonus.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 4:
@@ -38,11 +38,11 @@ public class ChoiceConditions extends Constants{
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 5:
-              //  LogicDrills.task(scanner);
+                //LogicDrills.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 6:
-              //  MathematicalOperations.task(scanner);
+                //MathematicalOperations.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 7:
@@ -50,15 +50,15 @@ public class ChoiceConditions extends Constants{
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 8:
-              //  OppositesAttract.task(scanner);
+                //OppositesAttract.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 9:
-             //   RockPaperScissors.task(scanner);
+                RockPaperScissors.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 10:
-             //   SwitchItUp.task(scanner);
+                SwitchItUp.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 11:
@@ -66,11 +66,11 @@ public class ChoiceConditions extends Constants{
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 12:
-               // TransportationOnVacation.task(scanner);
+                //TransportationOnVacation.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 13:
-              //  ValuesToStrings.task(scanner);
+                //ValuesToStrings.task(scanner);
                 ChoiceConditions.choiceConditions(scanner);
                 break;
             case 14:

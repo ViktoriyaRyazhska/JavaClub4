@@ -17,18 +17,18 @@ public class ChoiceLoops extends Constants {
             case EXIT:
                 break;
             case BACK:
-              /*  ChoiceList.choiceList(scanner);
+                ChoiceList.choiceList(scanner);
                 break;
             case 1:
-                BeginnerLost.task(scanner);
+                //BeginnerLost.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 2:
-                CatYearsDogYears.task(scanner);
+                //CatYearsDogYears.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 3:
-                CountingSheep.task(scanner);
+                //CountingSheep.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 4:
@@ -36,7 +36,7 @@ public class ChoiceLoops extends Constants {
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 5:
-                GetTheMean.task(scanner);
+                //GetTheMean.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 6:
@@ -60,11 +60,11 @@ public class ChoiceLoops extends Constants {
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 11:
-              */  SticksGame.task(scanner);
+                SticksGame.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 12:
-              //  StringRepeat.task(scanner);
+                //StringRepeat.task(scanner);
                 ChoiceLoops.choiceLoops(scanner);
                 break;
             case 13:

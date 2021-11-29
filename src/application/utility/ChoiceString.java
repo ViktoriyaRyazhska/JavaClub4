@@ -16,10 +16,10 @@ public class ChoiceString extends Constants {
             case EXIT:
                 break;
             case BACK:
-              /*  ChoiceList.choiceList(scanner);
+                ChoiceList.choiceList(scanner);
                 break;
             case 1:
-                AbbreviateTwoWordName.task(scanner);
+                //AbbreviateTwoWordName.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 2:
@@ -31,23 +31,23 @@ public class ChoiceString extends Constants {
                 ChoiceString.choiceString(scanner);
                 break;
             case 4:
-                CorrectTheMistakes.task(scanner);
+                //CorrectTheMistakes.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 5:
-                FakeBinary.task(scanner);
+                //FakeBinary.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 6:
-                FindThePosition.task(scanner);
+                //FindThePosition.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 7:
-                GrasshopperDebug.task(scanner);
+                //GrasshopperDebug.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 8:
-                IntFromChar.task(scanner);
+                //IntFromChar.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 9:
@@ -59,7 +59,7 @@ public class ChoiceString extends Constants {
                 ChoiceString.choiceString(scanner);
                 break;
             case 11:
-                RemoveString.task(scanner);
+                //RemoveString.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 12:
@@ -79,9 +79,9 @@ public class ChoiceString extends Constants {
                 ChoiceString.choiceString(scanner);
                 break;
             case 16:
-                TripleTrouble.task(scanner);
+                //TripleTrouble.task(scanner);
                 ChoiceString.choiceString(scanner);
-               */ break;
+                break;
             case 17:
                 Welcome.task(scanner);
                 ChoiceString.choiceString(scanner);
