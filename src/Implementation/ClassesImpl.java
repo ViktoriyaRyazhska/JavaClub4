@@ -58,6 +58,7 @@ public class ClassesImpl {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     public static void doFraction() {
         System.out.println("doing fraction");
@@ -76,6 +77,14 @@ public class ClassesImpl {
         System.out.println("Результат " + f1.add(f2));
 
         scanner.close();
+=======
+
+    public static void StaticElectrickery(Scanner scanner){
+        System.out.println("---Static electrickery---");
+        System.out.println("Enter value");
+        int n = scanner.nextInt();
+        System.out.println(Dinglemouse.INST.plus100(n));
+>>>>>>> b8607b9 (trying to save my work)
     }
 >>>>>>> 044845917f57b98d5eba9279a06e45508285cf02
 
