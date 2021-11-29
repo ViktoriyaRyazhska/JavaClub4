@@ -57,6 +57,27 @@ public class ClassesImpl {
         scanner.close();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    public static void doFraction() {
+        System.out.println("doing fraction");
+        Scanner scanner = new Scanner(System.in);
+        int[] arr = new int[4];
+        System.out.println("Введіть чисельник першого дробу");
+        arr[0] = scanner.nextInt();
+        System.out.println("Введіть знаменник першого дробу");
+        arr[1] = scanner.nextInt();
+        System.out.println("Введіть чисельник другого дробу");
+        arr[2] = scanner.nextInt();
+        System.out.println("Введіть знаменник першого дробу");
+        arr[3] = scanner.nextInt();
+        Fraction f1 = new Fraction(arr[0], arr[1]);
+        Fraction f2 = new Fraction(arr[2], arr[3]);
+        System.out.println("Результат " + f1.add(f2));
+
+        scanner.close();
+    }
+>>>>>>> 044845917f57b98d5eba9279a06e45508285cf02
 
     public static void StaticElectrickery(Scanner scanner){
         System.out.println("---Static electrickery---");

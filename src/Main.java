@@ -310,7 +310,7 @@ public class Main {
                         "\n1.push-a-hash-slash-an-object-into-array" +
                 "\n2.unfinished-loop-bug-fixing-number-1" +
                 "\n3.filtering-even-numbers-bug-fixes" +
-                "n4.interactive-dictionary");
+                "n\4.interactive-dictionary");
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:

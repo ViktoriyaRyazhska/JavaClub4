@@ -16,25 +16,25 @@ public class OopImpl {
             case 1:
                 System.out.println("Вкажіть розмір сторони квадрата");
                 double side = scanner.nextDouble();
-                System.out.println("Площа квадрата " + calculator.getTotalArea(new Square(side)));
+                System.out.println("Площа квадрата " + Calculator.getTotalArea(new Square(side)));
                 break;
             case 2:
                 System.out.println("Вкажіть висоту і ширину прямокутника");
                 double height = scanner.nextDouble();
                 double width = scanner.nextDouble();
-                System.out.println("Площа прямокутника " + calculator.getTotalArea(new Rectangle(height, width)));
+                System.out.println("Площа прямокутника " + Calculator.getTotalArea(new Rectangle(height, width)));
                 break;
             case 3:
                 System.out.println("Вкажіть радіус круга");
                 double radius = scanner.nextDouble();
-                System.out.println("Площа круга " + calculator.getTotalArea(new Circle(radius)));
+                System.out.println("Площа круга " + Calculator.getTotalArea(new Circle(radius)));
                 break;
             case 4:
                 System.out.println("Вкажіть основу і висоту трикутника");
                 double triangleBase = scanner.nextDouble();
                 double triangleHeight = scanner.nextDouble();
                 System.out.println(
-                        "Площа трикутника " + calculator.getTotalArea(new Triangle(triangleBase, triangleHeight)));
+                        "Площа трикутника " + Calculator.getTotalArea(new Triangle(triangleBase, triangleHeight)));
                 break;
         }
         scanner.close();
@@ -48,7 +48,10 @@ public class OopImpl {
         String s = scanner.next();
         System.out.println(leetspeak.encode(s));
     }
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 044845917f57b98d5eba9279a06e45508285cf02
     public static void createHuman() {
         System.out.println("God");
 
@@ -60,5 +63,8 @@ public class OopImpl {
         System.out.println("Created man and woman");
     }
 
+<<<<<<< HEAD
 >>>>>>> ee0298bd7dfb1843b5e0df634480e0e78eae927b
+=======
+>>>>>>> 044845917f57b98d5eba9279a06e45508285cf02
 }

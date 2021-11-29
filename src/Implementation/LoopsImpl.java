@@ -2,7 +2,6 @@ package Implementation;
 
 import Loops.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -135,5 +134,36 @@ public class LoopsImpl {
         System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
         scanner.close();
 >>>>>>> ee0298bd7dfb1843b5e0df634480e0e78eae927b
+    }
+    public static void repeatString() {
+        System.out.println("string-repeat");
+        System.out.println("Вкажіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        System.out.println("Вкажіть кількість повторів");
+
+        int repeat = scanner.nextInt();
+        System.out.println(Solution.repeatStr(repeat, string));
+        scanner.close();
+    }
+
+    public static void doSequence() {
+        System.out.println("reversedSequence");
+        System.out.println("Вкажіть число");
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        System.out.println(Arrays.toString(Sequence.reverse(amount)));
+        scanner.close();
+    }
+    public static void twiceAsOld() {
+        System.out.println("twice-as-old");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть вік тата");
+        int fathersAge = scanner.nextInt();
+        System.out.println("Введіть вік сина");
+        int sonsAge = scanner.nextInt();
+
+        System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
+        scanner.close();
     }
 }
