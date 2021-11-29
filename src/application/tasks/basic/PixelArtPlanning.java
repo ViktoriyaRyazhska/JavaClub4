@@ -12,6 +12,10 @@ public class PixelArtPlanning {
             return false;
     }
 
+    public boolean getIsDivisible(int wallLength, int pixelSize) {
+        return isDivisible(wallLength, pixelSize);
+    }
+
     public static void task(Scanner in) {
 
         System.out.print("Enter the size of the wall in millimeters:\n> ");

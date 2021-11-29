@@ -3,8 +3,6 @@ package application.utility;
 import application.tasks.basic.*;
 import application.tasks.oop.AdamAndEve;
 import application.tasks.oop.TddAreaCalculations;
-
-
 import java.util.Scanner;
 
 public class ChoiceOOP {

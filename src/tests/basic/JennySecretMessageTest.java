@@ -10,14 +10,10 @@ public class JennySecretMessageTest {
     JennySecretMessage jennySecretMessage = new JennySecretMessage();
     @Test
     void greetTest() {
-        try {
-            Method method = JennySecretMessage.class.getDeclaredMethod("greet", String.class);
-            assertEquals("Hello, my love!", method.invoke(jennySecretMessage, "Johnny").toString(), "Johnny");
-            assertEquals("Hello, my love!", method.invoke(jennySecretMessage, "johnny").toString(), "johnny");
-            assertEquals("Hello, my love!", method.invoke(jennySecretMessage, "joHnny").toString(), "joHnny");
-            assertEquals("Hello, Tom!", method.invoke(jennySecretMessage, "Tom").toString(), "Tom");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        String result = "Hello, my love!";
+        assertEquals(result, jennySecretMessage.getGreet("Johnny"), "Johnny");
+        assertEquals(result, jennySecretMessage.getGreet("johnny"), "johnny");
+        assertEquals(result, jennySecretMessage.getGreet("joHnny"), "joHnny");
+        assertEquals("Hello, Tom!",jennySecretMessage.getGreet("Tom"), "Tom");
     }
 }

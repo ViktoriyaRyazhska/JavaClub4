@@ -11,15 +11,8 @@ class AgeDiffTest {
     AgeDiff ageDiff = new AgeDiff();
     @Test
     void calculateAgeTest() {
-        try {
-            Method method = AgeDiff.class.getDeclaredMethod("calculateAge", int.class, int.class);
-            assertEquals("You are 10 year(s) old", method.invoke(ageDiff, 2000, 2010), "birth == 2000, yearTo == 2010");
-            assertEquals("You will be born in 10 year(s)", method.invoke(ageDiff, 2000, 2010), "birth == 2010, yearTo == 2000");
-            assertEquals("You will be born 1 year(s)", method.invoke(ageDiff, 2000, 2010), "birth == 2021, yearTo == 2020");
-            assertEquals("You were born this very year!", method.invoke(ageDiff, 2000, 2010), "birth == 2000, yearTo == 2000");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        assertEquals("You are 10 year(s) old", ageDiff.getCalculateAge(2000, 2010), "birth == 2000, yearTo == 2010");
+        assertEquals("You will be born in 2030 and in 2045 you will be 15 year(s) old", ageDiff.getCalculateAge(2030, 2045), "birth == 2030, yearTo == 2045");
+        assertEquals("You were born this very year!", ageDiff.getCalculateAge(2000, 2000), "birth == 2000, yearTo == 2000");
     }
 }

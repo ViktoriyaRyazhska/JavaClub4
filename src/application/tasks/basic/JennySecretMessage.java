@@ -10,6 +10,10 @@ public class JennySecretMessage {
             return String.format("Hello, %s!", name);
     }
 
+    public String getGreet(String name) {
+        return greet(name);
+    }
+
     public static void task(Scanner in) {
         System.out.print("Enter your name:\n> ");
         String name = in.nextLine();
