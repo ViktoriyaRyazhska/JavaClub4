@@ -2,7 +2,7 @@ package tasks.basic;
 
 public class Grasshopper {
 
-    private static String weatherInfo(int temp) {
+    public static String weatherInfo(int temp) {
         double c = convertToCelsius(temp);
         if (c > 0)
             return (c + " is above freezing temperature");

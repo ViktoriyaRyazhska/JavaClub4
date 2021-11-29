@@ -2,7 +2,7 @@ package tasks.basic;
 
 public class AgeRangeCompatibility {
 
-    private static String datingRange(int age) {
+    public static String datingRange(int age) {
         double min;
         double max;
         if (age <= 14){

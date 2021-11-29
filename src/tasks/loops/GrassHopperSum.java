@@ -2,7 +2,7 @@ package tasks.loops;
 
 import java.util.Arrays;
 
-public class GrassHopper {
+public class GrassHopperSum {
 
     private static int summation(int n) {
         int sum = 0;

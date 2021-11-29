@@ -419,7 +419,7 @@ public class Main {
             case 13 -> {
                 System.out.println("Please enter a number : ");
                 int num = scanner.nextInt();
-                GrassHopper grassHopper = new GrassHopper();
+                GrassHopperSum grassHopper = new GrassHopperSum();
                 grassHopper.execute(num);
             }
         }
