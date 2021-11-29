@@ -39,6 +39,10 @@ public class TwiceAsOld {
 
         return result;
     }
+    public String  getOutPut(int dadAge, int sonAge){
+        return output(onHowYears(dadAge,sonAge));
+    }
+
 
     private static boolean validate(int dadAge, int sonAge) {
         boolean flag = true;

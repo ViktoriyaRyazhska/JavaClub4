@@ -7,6 +7,10 @@ public class ReplaceDots {
         return str.replace('.', '-');
     }
 
+    public String getReplacedDots(String str) {
+        return replace(str);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter text with dots:\n> ");
         String str = scanner.nextLine();

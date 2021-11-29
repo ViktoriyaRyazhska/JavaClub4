@@ -23,6 +23,9 @@ public class NearestSquare {
 
         return expectedNumber;
     }
+    public int getFindSquareNumber(int n){
+        return findSquareNumber(n);
+    }
 
     public static void task(Scanner scanner) {
         System.out.print("Enter the number to find nearest square number:\n> ");

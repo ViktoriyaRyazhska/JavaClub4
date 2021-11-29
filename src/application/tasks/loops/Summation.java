@@ -11,6 +11,9 @@ public class Summation {
 
         return result;
     }
+    public int getSummation(int n){
+        return summation(n);
+    }
 
     public static void task(Scanner scanner) {
         System.out.print("Enter amount of number to sum:\n> ");
