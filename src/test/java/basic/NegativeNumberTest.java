@@ -1,7 +1,6 @@
-package tests.basic;
+package basic;
 
 import org.junit.Test;
-import tasks.basic.IntegerToBinary;
 import tasks.basic.NegativeNumber;
 
 import static org.junit.Assert.*;

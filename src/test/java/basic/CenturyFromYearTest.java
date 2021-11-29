@@ -1,8 +1,7 @@
-package tests.basic;
+package basic;
 
 import org.junit.Test;
 import tasks.basic.CenturyFromYear;
-import tasks.basic.IntegerToBinary;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;

@@ -1,4 +1,4 @@
-package tests.basic;
+package basic;
 
 import org.junit.Test;
 import tasks.basic.TimePastAfterMidnight;

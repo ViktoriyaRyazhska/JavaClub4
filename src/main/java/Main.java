@@ -195,7 +195,7 @@ public class Main {
         System.out.println("1 ---- Encapsulation Test");
         System.out.println("2 ---- Addition of a 100 number to yours");
         System.out.println("3 ---- Add-Two-Fractions");
-        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("6 ---- Building-Blocks");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -237,9 +237,7 @@ public class Main {
             }
 
             case 6 -> {
-            }
-
-            case 7 -> {
+                System.out.println("Please enter width, length and height: ");
             }
         }
     }
@@ -345,6 +343,7 @@ public class Main {
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
         System.out.println("6 ---- Reversed sequence");
+        System.out.println("12 ---- Find-Nearest-Square-Number");
         System.out.println("13 ---- Grasshopper - Summation");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
@@ -415,6 +414,13 @@ public class Main {
             }
 
             case 7 -> {
+            }
+
+            case 12 -> {
+                System.out.println("Please enter a number to find nearest square to it: ");
+                int num = scanner.nextInt();
+                NearestSquareNum nearestSquareNum = new NearestSquareNum();
+                nearestSquareNum.execute(num);
             }
             case 13 -> {
                 System.out.println("Please enter a number : ");

@@ -1,10 +1,9 @@
-package tests.basic;
+package basic;
 
 import org.junit.Test;
 import tasks.basic.Greeter;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
 
 public class GreeterTest {
 
