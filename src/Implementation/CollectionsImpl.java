@@ -11,4 +11,5 @@ public class CollectionsImpl {
         System.out.println(CreateList.createList(l));
         scanner.close();
     }
+
 }

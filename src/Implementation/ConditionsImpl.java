@@ -51,4 +51,28 @@ public class ConditionsImpl {
         System.out.println(TrafficLights.updateLight(color));
         scanner.close();
     }
+
+    public static void countAgeDiff(){
+        System.out.println("AgeDiff");
+        System.out.println("Введіть рік народження і час до");
+        Scanner scanner = new Scanner(System.in);
+        int birthYear = scanner.nextInt();
+        int year = scanner.nextInt();
+
+        System.out.println(AgeDiff.calculateAge(birthYear, year));
+        scanner.close();
+    }
+
+    public static void isThereEnoughSpace(){
+        System.out.println("will-there-be-enough-space");
+        System.out.println("Введіть загальну к-ть місць, к-ть людей на автобусі і к-ть чекаючих");
+
+        Scanner scanner = new Scanner(System.in);
+        int cap = scanner.nextInt();
+        int on = scanner.nextInt();
+        int wait = scanner.nextInt();
+
+        System.out.println(Bob.enough(cap, on, wait));
+        scanner.close();
+    }
 }

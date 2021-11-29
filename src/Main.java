@@ -78,6 +78,7 @@ public class Main {
                         ClassesImpl.buildingBlocks();
                         break;
                     case 5:
+                        ClassesImpl.doFraction();
                         break;
                     case 6:
                         break;
@@ -112,6 +113,7 @@ public class Main {
                     case 4:
                         break;
                     case 5:
+                        ConditionsImpl.countAgeDiff();
                         break;
                     case 6:
                         break;
@@ -123,6 +125,7 @@ public class Main {
                     case 9:
                         break;
                     case 10:
+                        ConditionsImpl.isThereEnoughSpace();
                         break;
                     case 11:
                         break;
@@ -156,6 +159,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        LoopsImpl.repeatString();
                         break;
                     case 2:
                         break;
@@ -167,6 +171,7 @@ public class Main {
                     case 5:
                         break;
                     case 6:
+                        LoopsImpl.doSequence();
                         break;
                     case 7:
                         break;
@@ -178,6 +183,7 @@ public class Main {
                     case 10:
                         break;
                     case 11:
+                        LoopsImpl.twiceAsOld();
                         break;
                     case 12:
                         break;
@@ -199,6 +205,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        OopImpl.createHuman();
                         break;
                     case 2:
                         break;
@@ -234,6 +241,7 @@ public class Main {
                     case 1:
                         break;
                     case 2:
+                        StringImpl.reverseString();
                         break;
                     case 3:
                         break;
@@ -245,6 +253,7 @@ public class Main {
                     case 6:
                         break;
                     case 7:
+                        StringImpl.removeStringSpaces();
                         break;
                     case 8:
                         break;
@@ -256,6 +265,7 @@ public class Main {
                     case 11:
                         break;
                     case 12:
+                        StringImpl.grassHopper();
                         break;
                     case 13:
                         break;
@@ -267,6 +277,8 @@ public class Main {
                     case 16:
                         break;
                     case 17:
+                        StringImpl.alternativeCase();
+
                         break;
                     case 18:
                         break;

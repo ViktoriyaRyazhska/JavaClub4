@@ -50,4 +50,35 @@ public class LoopsImpl {
         System.out.println("Розрив між " + start + " і " + end + ": " + Arrays.toString(GapInPrimes.gap(gap, start, end)));
         scanner.close();
     }
+    public static void repeatString() {
+        System.out.println("string-repeat");
+        System.out.println("Вкажіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        System.out.println("Вкажіть кількість повторів");
+
+        int repeat = scanner.nextInt();
+        System.out.println(Solution.repeatStr(repeat, string));
+        scanner.close();
+    }
+
+    public static void doSequence() {
+        System.out.println("reversedSequence");
+        System.out.println("Вкажіть число");
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        System.out.println(Arrays.toString(Sequence.reverse(amount)));
+        scanner.close();
+    }
+    public static void twiceAsOld() {
+        System.out.println("twice-as-old");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть вік тата");
+        int fathersAge = scanner.nextInt();
+        System.out.println("Введіть вік сина");
+        int sonsAge = scanner.nextInt();
+
+        System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
+        scanner.close();
+    }
 }

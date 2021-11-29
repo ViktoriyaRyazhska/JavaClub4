@@ -35,4 +35,40 @@ public class StringImpl {
         System.out.println(SortAndStar.twoSort(arr));
         scanner.close();
     }
+    public static void reverseString() {
+        System.out.println("reverse string");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+
+        System.out.println(Kata.solution(str));
+        scanner.close();
+    }
+    public static void removeStringSpaces() {
+        System.out.println("removeStringSpaces");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+
+        System.out.println(KataN.noSpace(str));
+        scanner.close();
+    }
+    public static void grassHopper() {
+        System.out.println("grass-hopper");
+        System.out.println("Введіть температуру");
+        Scanner scanner = new Scanner(System.in);
+        int temperature = scanner.nextInt();
+
+        System.out.println(GrassHopper.weatherInfo(temperature));
+        scanner.close();
+    }
+    public static void alternativeCase() {
+        System.out.println("alternative case");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+
+        System.out.println(StringUtils.toAlternativeString(string));
+        scanner.close();
+    }
 }
