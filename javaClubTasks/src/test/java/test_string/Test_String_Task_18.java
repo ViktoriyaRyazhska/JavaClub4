@@ -1,7 +1,7 @@
 package test_string;
 import org.junit.Test;
 import string.String_Task_18;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class Test_String_Task_18 {
     @Test
@@ -18,5 +18,8 @@ public class Test_String_Task_18 {
         assertEquals("Hi !!hi!!! !hi", String_Task_18.remove("!!!Hi !!hi!!! !hi", 3));
         assertEquals("Hi hi!!! !hi", String_Task_18.remove("!!!Hi !!hi!!! !hi", 5));
         assertEquals("Hi hi hi", String_Task_18.remove("!!!Hi !!hi!!! !hi", 100));
+        assertNotEquals("Hi!", String_Task_18.remove("Hi!", 1));
+        assertNotEquals("Hi!!", String_Task_18.remove("Hi!", 100));
+        assertNotEquals("Hi!!!!", String_Task_18.remove("Hi!!!", 1));
     }
 }

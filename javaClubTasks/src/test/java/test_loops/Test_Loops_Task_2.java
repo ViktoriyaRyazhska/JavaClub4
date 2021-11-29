@@ -1,13 +1,11 @@
 package test_loops;
 import loops.Loops_Task_2;
 import org.junit.Test;
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.*;
 
 public class Test_Loops_Task_2 {
     @Test
-    public void one() {
-        assertArrayEquals(new int[]{1,15,15}, Loops_Task_2.humanYearsCatYearsDogYears(1));
-    }
+    public void one() {assertArrayEquals(new int[]{1,15,15}, Loops_Task_2.humanYearsCatYearsDogYears(1));}
 
     @Test
     public void two() {
