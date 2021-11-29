@@ -53,6 +53,14 @@ public class RockPaperScissors {
         }
     }
 
+    public String getGame(String firstPlayer, String secondPlayer) {
+        return game(firstPlayer, secondPlayer);
+    }
+    public void getValidate(String player, String playerPosition) {
+        getValidate(player, playerPosition);
+    }
+
+
     public static void task(Scanner in) {
 
         System.out.println("Here you can play Rock Paper Scissors with a friend.\n" +

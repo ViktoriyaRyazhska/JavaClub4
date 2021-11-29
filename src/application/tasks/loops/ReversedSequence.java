@@ -20,6 +20,10 @@ public class ReversedSequence {
         return array1;
     }
 
+    public int[] getReverse(int n) {
+        return reverse(n);
+    }
+
     public static void task(Scanner in) {
         System.out.println("Enter number to start with: ");
         int n = in.nextInt();

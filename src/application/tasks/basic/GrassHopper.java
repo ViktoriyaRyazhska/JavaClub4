@@ -16,13 +16,15 @@ public class GrassHopper {
         return celsius;
     }
 
+
     public String getWeatherInfo(int temp) {
         return weatherInfo(temp);
     }
-
     public double getConvertToCelsius(int temp) {
         return convertToCelsius(temp);
     }
+
+
     public static void task(Scanner in) {
 
         System.out.print("Enter temperature in the fahrenheit:\n> ");
