@@ -52,6 +52,7 @@ public class ConditionsImpl {
         scanner.close();
     }
 
+<<<<<<< HEAD
     public static void DivisibleByXAndY (Scanner scanner) {
         System.out.println("Divisible by x and y");
         System.out.println("Enter values");
@@ -75,5 +76,51 @@ public class ConditionsImpl {
         System.out.println("Enter values");
         int number = scanner.nextInt();
         System.out.println(SwitchItUp.switchItUp(number));
+=======
+    public static void CarCost() {
+        System.out.println("transportation-on-vacation");
+        System.out.println("Введіть кількість днів для оренди машини");
+        Scanner scanner = new Scanner(System.in);
+        int counts = scanner.nextInt();
+        System.out.println("Вартість оренди: " + RentalCarCost.rentalCarCost(counts));
+        scanner.close();
+    }
+
+    public static void getBonus(){
+        System.out.println("do-i-get-a-bonus/");
+        System.out.println("Введіть 1, якщо true або 0, якщо false");
+        Scanner scanner = new Scanner(System.in);
+        int number1 = scanner.nextInt();
+        System.out.println("Також введіть зарплату");
+        Scanner scanner = new Scanner(System.in);
+        int number2 = scanner.nextInt();
+        boolean bol;
+        if (number1 == 1) {
+            bol = true;
+            System.out.println(DoIGetBonus.bonusTime(number2,bol));
+
+        } else if (number1 == 0) {
+            bol = false;
+            System.out.println(DoIGetBonus.bonusTime(number2,bol));
+        }
+        scanner.close();
+    }
+
+    public static void YesOrNo(){
+        System.out.println("convert-boolean-values-to-strings-yes-or-no/");
+        System.out.println("Введіть 1, якщо true або 0, якщо false");
+        Scanner scanner = new Scanner(System.in);
+        int number1 = scanner.nextInt();
+        boolean bol;
+        if (number1 == 1) {
+            bol = true;
+            System.out.println(boolToWord.convert(bol));
+
+        } else if (number1 == 0) {
+            bol = false;
+            System.out.println(boolToWord.convert(bol));
+        }
+        scanner.close();
+>>>>>>> 2c2f424a925bfa41700928fb1cf1e704756e0a5a
     }
 }
