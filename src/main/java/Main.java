@@ -195,6 +195,7 @@ public class Main {
         System.out.println("1 ---- Encapsulation Test");
         System.out.println("2 ---- Addition of a 100 number to yours");
         System.out.println("3 ---- Add-Two-Fractions");
+        System.out.println("5 ---- Two Fighters one winner");
         System.out.println("6 ---- Building-Blocks");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
@@ -220,7 +221,7 @@ public class Main {
             }
 
             case 3 -> {
-                System.out.println("Please enter two fracions to add them: ");
+                System.out.println("Please enter two fractions to add them: ");
                 long top1 = scanner.nextInt();
                 long bot1 = scanner.nextInt();
                 long top2 = scanner.nextInt();
@@ -234,6 +235,28 @@ public class Main {
             }
 
             case 5 -> {
+                System.out.println("Please enter Fighters name, health and damagePerAttack: ");
+                System.out.println("Enter the name first Fighter: ");
+                String name1 = scanner.next();
+                System.out.println("Enter the health first Fighter: ");
+                int health1 = scanner.nextInt();
+                System.out.println("Enter the damagePerAttack first Fighter: ");
+                int damagePerAttack1 = scanner.nextInt();
+
+                System.out.println("Enter the name second Fighter: ");
+                String name2 = scanner.next();
+                System.out.println("Enter the health second Fighter: ");
+                int health2 = scanner.nextInt();
+                System.out.println("Enter the damagePerAttack second Fighter: ");
+                int damagePerAttack2 = scanner.nextInt();
+
+                Fighter fighter1 = new Fighter(name1, health1, damagePerAttack1);
+                Fighter fighter2 = new Fighter(name2, health2, damagePerAttack2);
+
+                System.out.println("Enter the name first Attacker: ");
+                String firstAttacker = scanner.next();
+
+                fighter1.execute(fighter1, fighter2, firstAttacker);
             }
 
             case 6 -> {
