@@ -52,6 +52,7 @@ public class ConditionsImpl {
         scanner.close();
     }
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     public static void CarCost() {
         System.out.println("transportation-on-vacation");
@@ -97,6 +98,8 @@ public class ConditionsImpl {
             System.out.println(boolToWord.convert(bol));
         }
 =======
+=======
+>>>>>>> Stashed changes
     public static void countAgeDiff(){
         System.out.println("AgeDiff");
         System.out.println("Введіть рік народження і час до");
@@ -118,7 +121,10 @@ public class ConditionsImpl {
         int wait = scanner.nextInt();
 
         System.out.println(Bob.enough(cap, on, wait));
+<<<<<<< Updated upstream
 >>>>>>> d0a15f677013065fd919193cd9e8f9dbfc192828
+=======
+>>>>>>> Stashed changes
         scanner.close();
     }
 }
