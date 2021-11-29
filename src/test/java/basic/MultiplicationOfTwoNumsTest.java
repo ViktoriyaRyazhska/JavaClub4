@@ -1,4 +1,4 @@
-package basic;
+package test.java.basic;
 
 import org.junit.Test;
 import tasks.basic.MultiplicationOfTwoNums;

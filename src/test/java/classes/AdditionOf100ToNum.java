@@ -1,4 +1,4 @@
-package classes;
+package test.java.classes;
 
 public class AdditionOf100ToNum {
 }
