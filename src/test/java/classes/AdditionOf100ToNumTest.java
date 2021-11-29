@@ -1,4 +1,4 @@
-package test.java.classes;
+package classes;
 
 import org.junit.Assert;
 import org.junit.Test;
