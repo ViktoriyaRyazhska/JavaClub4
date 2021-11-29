@@ -35,6 +35,7 @@ public class StringImpl {
         System.out.println(SortAndStar.twoSort(arr));
         scanner.close();
     }
+<<<<<<< HEAD
 
     public static void OppositeNumber(Scanner scanner) {
         System.out.println("Opposite number");
@@ -58,5 +59,42 @@ public class StringImpl {
         String let = scanner.next();
         char letter = let.charAt(0);
         System.out.println(AcceptsStringAndCountDoubles.strCount(str,letter));
+=======
+    public static void reverseString() {
+        System.out.println("reverse string");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+
+        System.out.println(Kata.solution(str));
+        scanner.close();
+    }
+    public static void removeStringSpaces() {
+        System.out.println("removeStringSpaces");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+
+        System.out.println(KataN.noSpace(str));
+        scanner.close();
+    }
+    public static void grassHopper() {
+        System.out.println("grass-hopper");
+        System.out.println("Введіть температуру");
+        Scanner scanner = new Scanner(System.in);
+        int temperature = scanner.nextInt();
+
+        System.out.println(GrassHopper.weatherInfo(temperature));
+        scanner.close();
+    }
+    public static void alternativeCase() {
+        System.out.println("alternative case");
+        System.out.println("Введіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+
+        System.out.println(StringUtils.toAlternativeString(string));
+        scanner.close();
+>>>>>>> ee0298bd7dfb1843b5e0df634480e0e78eae927b
     }
 }
