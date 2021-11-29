@@ -3,20 +3,19 @@ package application.tasks.conditions;
 import java.util.Scanner;
 
 public class MathematicalOperations {
-    public static double task(double var1, double var2, char operation){
-        operation = getOperation();
-        var1 = getNumber();
-        var2 = getNumber();
+    public static double task(double var1, double var2, char operation,Scanner in){
+        operation = getOperation(in);
+        var1 = getNumber(in);
+        var2 = getNumber(in);
         double result = solving(var1,var2,operation);
         System.out.println("Result is " + result);
         return result;
 
     }
-    private static char getOperation(){
-        Scanner op = new Scanner(System.in);
+    private static char getOperation(Scanner in){
         System.out.println("Enter your operation  1.+ ,2.- ,3.* ,4/");
 
-        switch (op.nextInt()){
+        switch (in.nextInt()){
             case 1:
                 return '+';
             case 2:
@@ -26,7 +25,7 @@ public class MathematicalOperations {
             case 4:
                 return  '/';
             default:
-                return getOperation();
+                return getOperation(in);
         }
 
     }
@@ -43,13 +42,12 @@ public class MathematicalOperations {
         return var1 / var2;
     }
 
-    private static double getNumber() {
-        Scanner num = new Scanner(System.in);
+    private static double getNumber(Scanner in) {
         System.out.println("Enter your number");
-        if (num.hasNextDouble()) {
-            return num.nextDouble();
+        if (in.hasNextDouble()) {
+            return in.nextDouble();
         } else
-            return getNumber();
+            return getNumber(in);
     }
     private static double solving(double var1, double var2, char operation){
         switch(operation){

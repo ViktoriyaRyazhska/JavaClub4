@@ -50,6 +50,7 @@ public class ChoiceCollections {
                         "2. PushAnObjectIntoArray\n" +
                         "3. UnfinishedLoop\n" +
                         "4. FilteringEven\n" +
+                        "-1. Back\n" +
                         "0. Exit\n";
 
         return collectionsOptions;

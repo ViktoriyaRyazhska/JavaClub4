@@ -1,6 +1,9 @@
 package application.tasks.string;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class Welcome {
     private static List<String> inputName(Scanner scanner) {
@@ -22,8 +25,15 @@ public class Welcome {
 
         return result;
     }
+
     private static String welcome(String hello, String city, String state) {
         return hello + " Welcome to " + city + ", " + state + "!";
+    }
+
+    public String getWelcome(String city, String state,List<String> name) {
+        String hello = printHello(name);
+        return welcome(hello, city, state);
+
     }
 
     public static void task(Scanner scanner) {

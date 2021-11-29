@@ -7,6 +7,10 @@ public class NumberToString {
         return number + "";
     }
 
+    public String getConvert(int number) {
+        return convert(number);
+    }
+
     public static void task(Scanner scanner) {
         System.out.print("Enter the number to convert:\n> ");
         int number = scanner.nextInt();
