@@ -1,20 +1,23 @@
-package com.company1;
+package Collections;
 import java.util.*;
 
 public class InteractiveDictionary {
 
-    public static class Dictionary {
-        private HashMap<String, String> map = new HashMap<>();
-        public Dictionary(){
-            // your code
+    public class Dictionary {
+        private Map<String, String> dict;
+
+        public Dictionary() {
+            dict = new HashMap<>();
         }
 
-        public void newEntry(String key, String value){
-            map.put(key, value);
+        public void newEntry(String key, String value) {
+            dict.put(key, value);
         }
 
-        public String look(String key){
-            return map.getOrDefault(key, "Cant find entry for " + key);
+        public String look(String key) {
+            if (dict.containsKey(key))
+                return dict.get(key);
+            return "Cant find entry for " + key;
         }
     }
 }

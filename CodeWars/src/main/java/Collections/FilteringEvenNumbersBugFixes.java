@@ -1,4 +1,4 @@
-package com.company1;
+package Collections;
 import java.util.*;
 public class FilteringEvenNumbersBugFixes {
     public static List<Integer> filterOddNumber(List<Integer> listOfNumbers)

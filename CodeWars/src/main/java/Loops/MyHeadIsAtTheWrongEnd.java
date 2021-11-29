@@ -1,4 +1,4 @@
-package com.company;
+package Loops;
 import java.util.*;
 
 public class MyHeadIsAtTheWrongEnd {
