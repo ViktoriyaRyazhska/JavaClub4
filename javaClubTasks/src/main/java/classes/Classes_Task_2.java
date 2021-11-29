@@ -24,6 +24,10 @@ public class Classes_Task_2 {
         System.out.println("This program takes one integer parameter and increases the number by 100");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your number : ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
 
 

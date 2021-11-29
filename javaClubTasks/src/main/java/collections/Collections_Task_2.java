@@ -21,6 +21,10 @@ public class Collections_Task_2 {
                 "filled with numbers from 1 to your number\n");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your number:");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
 
         System.out.println("Result: ");

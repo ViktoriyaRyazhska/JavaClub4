@@ -2,6 +2,7 @@ package test_basic_program;
 import basic_program.Basic_Program_Task_4;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 
 public class Test_Basic_Program_Task_4 {
@@ -12,5 +13,10 @@ public class Test_Basic_Program_Task_4 {
         assertEquals(17, Basic_Program_Task_4.century(1601));
         assertEquals(20, Basic_Program_Task_4.century(2000));
         assertEquals(1,  Basic_Program_Task_4.century(89));
+
+
+        // Unxpected Result
+        assertNotEquals(3,  Basic_Program_Task_4.century(89));
+        assertNotEquals(18,  Basic_Program_Task_4.century(2000));
     }
 }

@@ -12,31 +12,22 @@ public class Basic_Program_Task_2 {
     public static void solveTask() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number:");
-        String value1 = scanner.next();
-        int valueIsNumers = isNumeric(value1);
-
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value1 = scanner.nextInt();
         System.out.println("Enter second number:");
-        String value2 = scanner.next();
-        int valueIsNumers2 = isNumeric(value2);
-
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
+        int value2 = scanner.nextInt();
 
         System.out.println("So, now i will multiply this numbers\nResult: ");
         System.out.println("-----------");
-        System.out.println(multiply(valueIsNumers, valueIsNumers2));
+        System.out.println(multiply(value1, value2));
         System.out.println("-----------");
 
     }
-
-    public static int isNumeric(String str) {
-        int value = 0;
-        try {
-            value = Integer.parseInt(str);
-        } catch (NumberFormatException nfe) {
-            System.out.println("Incorrect Data, please enter a number!");
-            chooseMenu();
-        }
-        return value;
-    }
-
-
 }

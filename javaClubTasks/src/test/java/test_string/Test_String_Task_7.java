@@ -5,7 +5,7 @@ import string.String_Task_7;
 
 import static org.junit.Assert.assertEquals;
 
-class Test_String_Task_7 {
+public class Test_String_Task_7 {
 
     @Test
     public void noSpace() {

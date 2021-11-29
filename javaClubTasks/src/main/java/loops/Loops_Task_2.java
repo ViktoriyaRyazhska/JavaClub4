@@ -23,6 +23,10 @@ public class Loops_Task_2 {
                 " converts it into the cat years and dog years");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter human years : ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("That's not an integer, enter integer type:");
+            scanner.next();
+        }
         int value1 = scanner.nextInt();
 
 
