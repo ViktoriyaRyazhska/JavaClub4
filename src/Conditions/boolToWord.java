@@ -2,7 +2,7 @@
 //
 //import java.util.Scanner;
 //
-//public class BoolToWord {
+//public class boolToWord {
 //    public static String convert(boolean b){
 //      if(b) {
 //        return "Yes";
