@@ -8,7 +8,7 @@ public class ChoiceConditions extends Constants{
 
     public static void choiceConditions(Scanner scanner) {
         System.out.println(listOfConditionsOptions());
-        System.out.print("Select an option:\n> ");
+        System.out.print("\nSelect an option:\n> ");
 
         int option = scanner.nextInt();
 
