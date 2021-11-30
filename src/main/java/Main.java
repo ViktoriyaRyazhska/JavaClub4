@@ -397,7 +397,7 @@ public class Main {
         System.out.println("5 ---- Counting sheep...");
         System.out.println("6 ---- Reversed sequence");
         System.out.println("8 ---- Reduce but Grow");
-        System.out.println("9 ---- Reversed sequence");
+        System.out.println("9 ---- Sum of positive");
         System.out.println("12 ---- Find-Nearest-Square-Number");
         System.out.println("13 ---- Grasshopper - Summation");
         System.out.println("====================================");
@@ -481,6 +481,18 @@ public class Main {
                 }
                 System.out.println("Result of multiplying values together in order: " +
                         MultiplyingTogether.grow(arrayOfNumber));
+            }
+
+            case 9 -> {
+                System.out.print("Enter the number of elements you want to store: ");
+                int number = scanner.nextInt();
+                int[] arrayOfNumber = new int[number];
+                System.out.println("Enter the elements of the array: ");
+                for (int i = 0; i < number; i++) {
+                    arrayOfNumber[i] = scanner.nextInt();
+                }
+                System.out.println("Sum of all of the positives ones: " +
+                        SumOfPositives.sum(arrayOfNumber));
             }
 
             case 12 -> {
