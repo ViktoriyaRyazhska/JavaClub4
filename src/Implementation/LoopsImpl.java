@@ -6,8 +6,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LoopsImpl {
+import Loop.NearestSquareNum;
 
+public class LoopsImpl {
+    public static void humanYearsCatYearsDogYears() {
+		System.out.println("cat-years-dog-years");
+		System.out.println("Введіть вік щоб дізнатись вік кота або собаки: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		CatDogYears catDogYears = new CatDogYears();
+		catDogYears.execute(num);
+	}
+	
     public static void maps() {
         System.out.println("beginner-lost-without-a-map");
         System.out.println("Введіть кількість чисел");
@@ -74,7 +84,22 @@ public class LoopsImpl {
         }
         System.out.println("Mean of an array: " + MeanOfAnArray.getAverage(arr));
     }
-
+    
+    public static void getAverage() {
+		System.out.println("how-good-are-you-really");
+		System.out.println("Введіть свою оцінку: ");
+		System.out.println("Введіть загальну кількість оцінок: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		int[] array = new int[num];
+		System.out.println("Введіть оцінки: ");
+		for (int i = 0; i < num; i++) {
+			array[i] = scanner.nextInt();
+		}
+		Average averageMarks = new Average();
+		System.out.println(Average.getAverage(array));
+    }
+    
     public static void ReduceButGrow (Scanner scanner) {
         System.out.println("Reduce but grow");
         System.out.println("Return the result of multiplying the values together");
@@ -98,6 +123,15 @@ public class LoopsImpl {
         System.out.println("Result: " + ReduceButGrow.grow(arr));
     }
 
+    public static void nearestSq() {
+		System.out.println("find-nearest-square-number");
+		System.out.println("Введіть число щоб знайти найближчий квадрат: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		NearestSquareNum nearestSquareNum = new NearestSquareNum();
+		System.out.println(NearestSquareNum.nearestSq(num));
+	}
+
     public static void GrassHopper (Scanner scanner) {
         System.out.println("Grasshopper - Summation");
         System.out.println("Finds the summation of every number from 1 to num");
@@ -105,37 +139,5 @@ public class LoopsImpl {
 
         int n = scanner.nextInt();
         System.out.println("Summation: " + GrassHopper.summation(n));
-    }
-
-    public static void repeatString() {
-        System.out.println("string-repeat");
-        System.out.println("Вкажіть стрічку");
-        Scanner scanner = new Scanner(System.in);
-        String string = scanner.next();
-        System.out.println("Вкажіть кількість повторів");
-
-        int repeat = scanner.nextInt();
-        System.out.println(Solution.repeatStr(repeat, string));
-        scanner.close();
-    }
-
-    public static void doSequence() {
-        System.out.println("reversedSequence");
-        System.out.println("Вкажіть число");
-        Scanner scanner = new Scanner(System.in);
-        int amount = scanner.nextInt();
-        System.out.println(Arrays.toString(Sequence.reverse(amount)));
-        scanner.close();
-    }
-    public static void twiceAsOld() {
-        System.out.println("twice-as-old");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введіть вік тата");
-        int fathersAge = scanner.nextInt();
-        System.out.println("Введіть вік сина");
-        int sonsAge = scanner.nextInt();
-
-        System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
-        scanner.close();
     }
 }

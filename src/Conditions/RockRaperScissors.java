@@ -1,3 +1,4 @@
+package Conditions;
 
 public class RockRaperScissors {
 	public static String rps(String p1, String p2) {

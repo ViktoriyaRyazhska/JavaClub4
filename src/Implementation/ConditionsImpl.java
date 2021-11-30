@@ -1,6 +1,7 @@
 package Implementation;
 
 import java.util.Scanner;
+
 import Conditions.*;
 
 public class ConditionsImpl {
@@ -43,7 +44,16 @@ public class ConditionsImpl {
         scanner.close();
     }
 
-    public static void traffic(){
+	public static void rps() {
+		System.out.println("rock-paper-scissors");
+		System.out.println("Ведіть вибір гравця 1 і гравця 2, щоб зіграти у rock paper scissors: ");
+		Scanner scanner = new Scanner(System.in);
+		String p1 = scanner.next();
+		String p2 = scanner.next();
+		System.out.println(RockRaperScissors.rps(p1, p2));
+	}
+
+	public static void traffic(){
         System.out.println("thinkful-logic-drills-traffic-light");
         System.out.println("Введіть колір світлофора : green, yellow або red");
         Scanner scanner = new Scanner(System.in);
@@ -75,37 +85,22 @@ public class ConditionsImpl {
         int v2 = scanner.nextInt();
         System.out.println("Result: " + BasicOperations.basicMath(s,v1,v2));
     }
-
+    
+    public static void sequence() {
+    	System.out.println("the-modulo-3-sequence");
+    	System.out.println("Введіть цифру 1 і цифру 2, щоб ввисти суму: ");
+    	Scanner scanner = new Scanner(System.in);
+    	int x1 = scanner.nextInt();
+		int x2 = scanner.nextInt();
+		int n = scanner.nextInt();
+		System.out.println(ModuleSequence.sequence(n));
+}
+    
     public static void SwitchItUp (Scanner scanner){
         System.out.println("Switch it up");
         System.out.println("Return value in words");
         System.out.println("Enter int value 0-9 in integer");
         int number = scanner.nextInt();
         System.out.println("Result: " + SwitchItUp.switchItUp(number));
-    }
-
-
-    public static void countAgeDiff(){
-        System.out.println("AgeDiff");
-        System.out.println("Введіть рік народження і час до");
-        Scanner scanner = new Scanner(System.in);
-        int birthYear = scanner.nextInt();
-        int year = scanner.nextInt();
-
-        System.out.println(AgeDiff.calculateAge(birthYear, year));
-        scanner.close();
-    }
-
-    public static void isThereEnoughSpace(){
-        System.out.println("will-there-be-enough-space");
-        System.out.println("Введіть загальну к-ть місць, к-ть людей на автобусі і к-ть чекаючих");
-
-        Scanner scanner = new Scanner(System.in);
-        int cap = scanner.nextInt();
-        int on = scanner.nextInt();
-        int wait = scanner.nextInt();
-
-        System.out.println(Bob.enough(cap, on, wait));
-        scanner.close();
     }
 }

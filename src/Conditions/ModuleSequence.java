@@ -1,5 +1,6 @@
+package Conditions;
 
-public class Module {
+public class ModuleSequence {
 	public static int sequence(int n) {
 		int x1 = 0;
 		int x2 = 1;
