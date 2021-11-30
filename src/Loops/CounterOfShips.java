@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 
 public class CounterOfShips {
-  public int countSheeps(Boolean[] arrayOfSheeps) {
+  public static int countSheeps(boolean[] arrayOfSheeps) {
       int count = 0;
-      for(int i=0; i<arrayOfSheeps.length; i++){
-          if(arrayOfSheeps[i] == true){
+      for (boolean arrayOfSheep : arrayOfSheeps) {
+          if (arrayOfSheep) {
               count++;
           }
       }

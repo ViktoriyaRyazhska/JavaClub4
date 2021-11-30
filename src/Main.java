@@ -128,6 +128,7 @@ public class Main {
                         ConditionsImpl.boolenToStr();
                         break;
                     case 4:
+                        ConditionsImpl.getBonus();
                         break;
                     case 5:
                         ConditionsImpl.countAgeDiff();
@@ -141,6 +142,7 @@ public class Main {
                         ConditionsImpl.oppositesAttract();
                         break;
                     case 9:
+                        ConditionsImpl.YesOrNo();
                         break;
                     case 10:
                         ConditionsImpl.isThereEnoughSpace();
@@ -154,6 +156,7 @@ public class Main {
                         ConditionsImpl.traffic();
                         break;
                     case 14:
+                        ConditionsImpl.CarCost();
                         break;
                     default: throw new IllegalArgumentException("Incorrect value!");
                 }
@@ -191,6 +194,7 @@ public class Main {
                         LoopsImpl.maps();
                         break;
                     case 5:
+                        LoopsImpl.Sheeps();
                         break;
                     case 6:
                         LoopsImpl.doSequence();
@@ -204,6 +208,7 @@ public class Main {
                         LoopsImpl.sumOfPositive();
                         break;
                     case 10:
+                        LoopsImpl.TailToHead();
                         break;
                     case 11:
                         LoopsImpl.twiceAsOld();
@@ -217,6 +222,7 @@ public class Main {
                         LoopsImpl.gapInPr();
                         break;
                     case 15:
+                        LoopsImpl.TheGame();
                         break;
                     default: throw new IllegalArgumentException("Incorrect value!");
                 }
@@ -268,6 +274,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        StringImpl.ConvertANumber();
                         break;
                     case 2:
                         StringImpl.reverseString();
@@ -281,6 +288,7 @@ public class Main {
                         StringImpl.replase();
                         break;
                     case 6:
+                        StringImpl.PlaysBanjo();
                         break;
                     case 7:
                         StringImpl.removeStringSpaces();
@@ -294,6 +302,7 @@ public class Main {
                         StringImpl.fakeBinary();
                         break;
                     case 11:
+                        StringImpl.OldShe();
                         break;
                     case 12:
                         StringImpl.grassHopper();
@@ -307,6 +316,7 @@ public class Main {
                         StringImpl.sortAndStar();
                         break;
                     case 16:
+                        StringImpl.NiceString();
                         break;
                     case 17:
                         StringImpl.alternativeCase();
@@ -332,6 +342,7 @@ public class Main {
                         CollectionsImpl.createL();
                         break;
                     case 3:
+                        CollectionsImpl.FixTheBug();
                         break;
                     case 4:
                         break;

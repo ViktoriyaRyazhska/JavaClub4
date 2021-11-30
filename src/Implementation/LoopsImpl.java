@@ -138,4 +138,44 @@ public class LoopsImpl {
         System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
         scanner.close();
     }
+    public static void Sheeps(){
+        System.out.println("counting-sheep-dot-dot-dot");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        boolean[] sheps = new boolean[l];
+        for (int i = 0; i < sheps.length; i++) {
+            System.out.println("Введіть 1, якщо true або 0, якщо false");
+            int a = scanner.nextInt();
+            if(a == 1){
+                sheps[i] = true;
+            }
+            else if (a == 0){
+                sheps[i] = false;
+            }
+        }
+        System.out.println("Кількість овець: " + CounterOfShips.countSheeps(sheps));
+        scanner.close();
+    }
+    public static void TailToHead(){
+        System.out.println("my-head-is-at-the-wrong-end");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        String[] sheps = new String[l];
+        System.out.println("Введіть елементи, кіклькість яких: " + l );
+        for (int i = 0; i < sheps.length; i++) {
+            sheps[i] = scanner.next();
+        }
+        System.out.println("Нова стрічка: " + Arrays.toString(WrongEndHead.fixTheMeerkat(sheps)));
+        scanner.close();
+    }
+    public static void TheGame(){
+        System.out.println("21-sticks");
+        System.out.println("Введіть кількість паличко(від 1 до 3)");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        System.out.println("Нова стрічка: " + TheGame21.makeMove(l));
+        scanner.close();
+    }
 }

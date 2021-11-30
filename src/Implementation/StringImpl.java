@@ -102,4 +102,40 @@ public class StringImpl {
         System.out.println(StringUtils.toAlternativeString(string));
         scanner.close();
     }
+
+    public static void ConvertANumber() {
+        System.out.println("convert-a-number-to-a-string");
+        System.out.println("Введіть число");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        System.out.println(IntToString.numberToString(l));
+        scanner.close();
+    }
+
+    public static void PlaysBanjo() {
+        System.out.println("are-you-playing-banjo");
+        System.out.println("Введіть ім'я ");
+        Scanner scanner = new Scanner(System.in);
+        String l = scanner.next();
+        System.out.println(Banjo.areYouPlayingBanjo(l));
+        scanner.close();
+    }
+
+    public static void OldShe() {
+        System.out.println("parse-nice-int-from-char-problem");
+        System.out.println("Введіть стрічку з віком ");
+        Scanner scanner = new Scanner(System.in);
+        final String l = scanner.next();
+        System.out.println(HowOldShe.howOld(l));
+        scanner.close();
+    }
+
+    public static void NiceString() {
+        System.out.println("correct-the-mistakes-of-the-character-recognition-software");
+        System.out.println("Введіть стрічку з цифрами ");
+        Scanner scanner = new Scanner(System.in);
+        String l = scanner.next();
+        System.out.println(CorrectTheString.correct(l));
+        scanner.close();
+    }
 }
