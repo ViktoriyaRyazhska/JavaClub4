@@ -25,8 +25,9 @@ public class CorrectTheMistakes {
         }
         return builder.toString();
     }
-    public String getCorrect(String str){
-        return correct(str);
+
+    public String getCorrect(String string) {
+        return correct(string);
     }
 
     public static void task(Scanner in) {
