@@ -556,7 +556,9 @@ public class Main {
         System.out.println("7 ---- Remove String Spaces");
         System.out.println("8 ---- Triple Trouble");
         System.out.println("9 ---- Find the position!");
-
+        System.out.println("10 ---- Fake Binary");
+        System.out.println("11 ---- Find the position!");
+        System.out.println("12 ---- Find the position!");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -632,6 +634,13 @@ public class Main {
                 System.out.println("Please enter a letter for returning its position in the alphabet: ");
                 Character letter = scanner.next().charAt(0);
                 System.out.println(FindLetterPosition.findLetterPosition(letter));
+            }
+            case 10 -> {
+                System.out.println("Please enter a string of digits to replace " +
+                        "any digit below 5 with '0' and any digit 5 and above with '1': ");
+                String stringDigits = scanner.next();
+                System.out.println("" +
+                        FakeBinary.fakeBin(stringDigits));
             }
         }
     }
