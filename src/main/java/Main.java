@@ -155,9 +155,8 @@ public class Main {
             case 8 -> {
                 System.out.println("Please enter a year, for return the century it is in.: ");
                 int number = scanner.nextInt();
-               CenturyFromYear centuryFromYear = new CenturyFromYear();
                 try {
-                    centuryFromYear.execute(number);
+                    CenturyFromYear.execute(number);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -166,8 +165,7 @@ public class Main {
             case 9 -> {
                 System.out.println("Please enter your number to make it negative: ");
                 int number = scanner.nextInt();
-                NegativeNumber negativeNumber = new NegativeNumber();
-                negativeNumber.execute(number);
+                NegativeNumber.execute(number);
             }
 
             case 10 -> {
@@ -484,15 +482,6 @@ public class Main {
             }
 
             case 4 -> {
-            }
-
-            case 5 -> {
-            }
-
-            case 6 -> {
-            }
-
-            case 7 -> {
             }
         }
     }

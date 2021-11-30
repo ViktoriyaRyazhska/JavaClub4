@@ -42,7 +42,7 @@ public class Fraction implements Comparable<Fraction> {
     }
 
 
-    private Fraction add(Fraction f2) {
+    public Fraction add(Fraction f2) {
         long resultTop;
         long resultBottom;
         if (bottom == f2.bottom) {
