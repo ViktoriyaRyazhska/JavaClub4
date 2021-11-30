@@ -139,8 +139,6 @@ public class LoopsImpl {
         int n = scanner.nextInt();
         System.out.println("Summation: " + GrassHopper.summation(n));
     }
-<<<<<<< HEAD
-=======
 
     public static void repeatString() {
         System.out.println("string-repeat");

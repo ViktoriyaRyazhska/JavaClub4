@@ -89,7 +89,9 @@ public class ConditionsImpl {
     	System.out.println("the-modulo-3-sequence");
     	System.out.println("Введіть цифру 1 і цифру 2, щоб ввисти суму: ");
     	Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
+    	int x1 = scanner.nextInt();
+        int x2 = scanner.nextInt();
+        int n = scanner.nextInt();
 		System.out.println(ModuleSequence.sequence(n));
 }
     
