@@ -1,5 +1,8 @@
 package application.tasks.conditions;
 
+import java.util.Scanner;
+
+
 public class OppositesAttract {
     public static boolean task(final int flower1, final int flower2) {
             boolean point =false;

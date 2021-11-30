@@ -3,11 +3,11 @@ package application.tasks.conditions;
 import java.util.Scanner;
 
 public class MathematicalOperations {
-    public static double task(double var1, double var2, char operation,Scanner in){
-        operation = getOperation(in);
-        var1 = getNumber(in);
-        var2 = getNumber(in);
-        double result = solving(var1,var2,operation);
+    public static double task(Scanner in){
+        double var1 = getNumber(in);
+        char operation = getOperation(in);
+        double var2 = getNumber(in);
+        double result = solving(var1, var2, operation);
         System.out.println("Result is " + result);
         return result;
 

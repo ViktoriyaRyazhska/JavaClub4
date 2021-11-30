@@ -2,12 +2,12 @@ package application.tasks.basic;
 import java.util.Scanner;
 
 public class CenturyFromYear {
-    public static void task(Scanner y) {
+    public static void task(Scanner scanner) {
         System.out.println("Enter your year");
-        int years = y.nextInt();
-        getCentury(years,y);
+        int years = scanner.nextInt();
+        getCentury(years);
     }
-        public static int getCentury(int years , Scanner y){
+        public static int getCentury(int years){
             if (years % 10 != 0) {
                 years = (years / 100) + 1;
                 System.out.println("Your century is " + years + "th");
@@ -19,8 +19,8 @@ public class CenturyFromYear {
             } else {
                 System.out.println("Enter year again");
             }
-                CenturyFromYear.task(y);
-            return 0;
+                CenturyFromYear.getCentury(years);
+            return years;
 
     }
 }

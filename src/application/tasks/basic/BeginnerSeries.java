@@ -7,38 +7,38 @@ import java.util.Scanner;
 
             System.out.println("Enter hours: ");
             int hours = in.nextInt();
-            int hoursInMili = hour(hours,in);
+            int hoursInMili = hour(hours);
             System.out.println("Enter minutes: ");
             int minute = in.nextInt();
-            int minutesInMili = minute(minute,in);
+            int minutesInMili = minute(minute);
             System.out.println("Enter seconds: ");
             int seconds = in.nextInt();
-            int secondsInMili = second(seconds,in);
+            int secondsInMili = second(seconds);
             add(hoursInMili,minutesInMili,secondsInMili);
         }
         public static void add(int hours, int minutes, int seconds){
             System.out.println(hours + minutes + seconds);
         }
-        public static int hour(int h,Scanner in){
+        public static int hour(int h){
             while ((h < 0 || h > 23)) {
                 System.out.println("Enter hour again");
-                BeginnerSeries.task(in);
+                BeginnerSeries.hour(h);
             }
             h *= 3_600_000;
             return h;
         }
-        public  static int minute(int m,Scanner in) {
+        public  static int minute(int m) {
             while (m < 0 ||  m >= 60) {
                 System.out.println("Enter minute again");
-                BeginnerSeries.task(in);
+                BeginnerSeries.minute(m);
             }
             m *= 60000;
             return m;
         }
-        public static int second(int s,Scanner in){
+        public static int second(int s){
             while (s < 0 ||  s >= 60) {
                 System.out.println("Enter minute again");
-                BeginnerSeries.task(in);
+                BeginnerSeries.second(s);
             }
             s *= 1000;
             return s;
