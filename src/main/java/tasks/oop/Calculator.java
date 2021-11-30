@@ -13,8 +13,6 @@ public class Calculator {
         }
         return Math.round(shapeSum * 100.0) / 100.0;
     }
-
-
 }
 
 

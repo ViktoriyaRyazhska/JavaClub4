@@ -7,6 +7,7 @@ import tasks.conditions.OppositeNumber;
 import tasks.loops.*;
 import tasks.oop.AdamAndEve;
 import tasks.string.*;
+import tasks.сollections.InteractiveDictionary;
 import tasks.сollections.PushObjectIntoArray;
 import tasks.сollections.UnfinishedLoop;
 
@@ -578,7 +579,7 @@ public class Main {
         System.out.println("1 ---- Push-Object-Into-List");
         System.out.println("2 ---- Unfinished Loop");
         System.out.println("3 ---- Volume-Of-Cuboid");
-        System.out.println("7 ---- Time-After-Midnight");
+        System.out.println("4 ---- Interactive-Dictionary");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -607,6 +608,12 @@ public class Main {
             }
 
             case 4 -> {
+                System.out.println("Please enter a word as a key, and text that you want to print if key will be found: ");
+                InteractiveDictionary interactiveDictionary = new InteractiveDictionary();
+                String key = scanner.next();
+                String value = scanner.next();
+                interactiveDictionary.newEntry(key, value);
+                System.out.println(interactiveDictionary.look(key));
             }
         }
     }
