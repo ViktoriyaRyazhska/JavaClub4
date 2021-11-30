@@ -11,7 +11,7 @@ public class ThinkfulNumberImpl implements ThinkfulNumber {
         setPixelSize(scanner.nextInt());
     }
 
-    public ThinkfulNumberImpl(int wallSize, int pixelSize) {
+    public ThinkfulNumberImpl(final int wallSize, final int pixelSize) {
         setWallSize(wallSize);
         setPixelSize(pixelSize);
     }

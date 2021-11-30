@@ -38,7 +38,7 @@ public class BasicsSwitch implements Switch {
             case 3 -> {
                 System.out.println("Enter a year: ");
                 final CenturyFromYear centuryFromYear = new CenturyFromYearImpl(scanner);
-                System.out.println("It is what century is now: " + centuryFromYear.century());
+                System.out.println("It is what century is now: " + centuryFromYear.getCentury());
             }
             case 4 -> {
                 System.out.println("Enter a number: ");
@@ -58,7 +58,7 @@ public class BasicsSwitch implements Switch {
             case 7 -> {
                 System.out.println("Enter two numbers: ");
                 final MultiplyTwoNumbers multiplyTwoNumbers = new MultiplyTwoNumbersImpl(scanner);
-                System.out.println("It is a product of two numbers: " + multiplyTwoNumbers.multiply());
+                System.out.println("It is a product of two numbers: " + multiplyTwoNumbers.product());
             }
             case 8 -> {
                 System.out.println("Enter a number: ");

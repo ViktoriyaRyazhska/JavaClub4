@@ -3,37 +3,37 @@ package Tasks.Basics.MultiplyTwoNumbers;
 import java.util.Scanner;
 
 public class MultiplyTwoNumbersImpl implements MultiplyTwoNumbers {
-    private int number1;
-    private int number2;
+    private int a;
+    private int b;
 
     public MultiplyTwoNumbersImpl(final Scanner scanner) {
-        this.number1 = scanner.nextInt();
-        this.number2 = scanner.nextInt();
+        this.a = scanner.nextInt();
+        this.b = scanner.nextInt();
     }
 
-    public MultiplyTwoNumbersImpl(int number1, int number2) {
-        setNumber1(number1);
-        setNumber2(number2);
+    public MultiplyTwoNumbersImpl(final int a, final int b) {
+        this.a = a;
+        this.b = b;
     }
 
-    public int getNumber1() {
-        return number1;
+    public int getA() {
+        return a;
     }
 
-    public void setNumber1(final int number1) {
-        this.number1 = number1;
+    public void setA(final int a) {
+        this.a = a;
     }
 
-    public int getNumber2() {
-        return number2;
+    public int getB() {
+        return b;
     }
 
-    public void setNumber2(final int number2) {
-        this.number2 = number2;
+    public void setB(final int b) {
+        this.b = b;
     }
 
     @Override
-    public int multiply() {
-        return getNumber1() * getNumber2();
+    public int product() {
+        return getA() * getB();
     }
 }

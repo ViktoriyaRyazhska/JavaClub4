@@ -9,7 +9,7 @@ public class YouCantCodeImpl implements YouCantCode {
         this.number = scanner.nextInt();
     }
 
-    public YouCantCodeImpl(int number) {
+    public YouCantCodeImpl(final int number) {
         setNumber(number);
     }
 

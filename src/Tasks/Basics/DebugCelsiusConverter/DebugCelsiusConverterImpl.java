@@ -9,7 +9,7 @@ public class DebugCelsiusConverterImpl implements DebugCelsiusConverter {
         setFahrenheit(scanner.nextDouble());
     }
 
-    public DebugCelsiusConverterImpl(double fahrenheit) {
+    public DebugCelsiusConverterImpl(final double fahrenheit) {
         setFahrenheit(fahrenheit);
     }
 
@@ -21,14 +21,14 @@ public class DebugCelsiusConverterImpl implements DebugCelsiusConverter {
         if (fahrenheit >= -459.67 && fahrenheit <= 1000) {
             this.fahrenheit = fahrenheit;
         } else {
-            this.fahrenheit = Math.random() * ((1000 - (-459.67)) + 1) + (-459.67);
+            this.fahrenheit = Math.random() * (1000 - (-459.67)) + (-459.67);
         }
     }
 
     @Override
     public String weatherInfo() {
         final double c = convertToCelsius();
-        if (c >= -30 && c <= -10)
+        if (c <= -10)
             return c + " is a very cold temperature";
         else if (c > -10 && c <= 10)
             return c + " is a cold temperature";

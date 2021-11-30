@@ -9,7 +9,7 @@ public class JennySecretMessageImpl implements JennySecretMessage {
         setName(scanner.nextLine());
     }
 
-    public JennySecretMessageImpl(String name) {
+    public JennySecretMessageImpl(final String name) {
         setName(name);
     }
 
@@ -18,10 +18,10 @@ public class JennySecretMessageImpl implements JennySecretMessage {
     }
 
     public void setName(final String name) {
-        if (!name.isEmpty() && name.matches("\\b([A-Z][a-z]*)\\b")) {
+        if (name != null && name.matches("\\b([A-Z][a-z]*)\\b")) {
             this.name = name;
         } else {
-            this.name = "Mark";
+            this.name = "Michael";
         }
     }
 

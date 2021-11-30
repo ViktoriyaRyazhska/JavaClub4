@@ -3,26 +3,26 @@ package Tasks.Basics.CenturyFromYear;
 import java.util.Scanner;
 
 public class CenturyFromYearImpl implements CenturyFromYear {
-    private int number;
+    private int year;
 
     public CenturyFromYearImpl(final Scanner scanner) {
-        setNumber(scanner.nextInt());
+        setYear(scanner.nextInt());
     }
 
-    public CenturyFromYearImpl(int number) {
-        setNumber(number);
+    public CenturyFromYearImpl(final int number) {
+        setYear(number);
     }
 
-    public int getNumber() {
-        return number;
+    public int getYear() {
+        return year;
     }
 
-    public void setNumber(final int number) {
-        this.number = Math.max(number, 1);
+    public void setYear(final int year) {
+        this.year = Math.max(year, 1);
     }
 
     @Override
-    public int century() {
-        return getNumber() % 100 == 0 ? getNumber() / 100 : (getNumber() / 100) + 1;
+    public int getCentury() {
+        return getYear() % 100 == 0 ? getYear() / 100 : (getYear() / 100) + 1;
     }
 }

@@ -13,7 +13,7 @@ public class VolumeOfACuboidImpl implements VolumeOfACuboid {
         setHeight(scanner.nextInt());
     }
 
-    public VolumeOfACuboidImpl(int length, int width, int height) {
+    public VolumeOfACuboidImpl(final int length, final int width, final int height) {
         setLength(length);
         setWidth(width);
         setHeight(height);

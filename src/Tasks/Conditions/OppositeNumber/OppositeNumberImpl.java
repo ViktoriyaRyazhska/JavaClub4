@@ -9,6 +9,10 @@ public class OppositeNumberImpl implements OppositeNumber {
         this.number = scanner.nextInt();
     }
 
+    public OppositeNumberImpl(final int number) {
+        this.number = number;
+    }
+
     public int getNumber() {
         return number;
     }

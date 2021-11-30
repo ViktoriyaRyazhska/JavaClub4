@@ -9,7 +9,7 @@ public class AgeRangeCompatibilityImpl implements AgeRangeCompatibility {
         setAge(scanner.nextInt());
     }
 
-    public AgeRangeCompatibilityImpl(int age) {
+    public AgeRangeCompatibilityImpl(final int age) {
         setAge(age);
     }
 

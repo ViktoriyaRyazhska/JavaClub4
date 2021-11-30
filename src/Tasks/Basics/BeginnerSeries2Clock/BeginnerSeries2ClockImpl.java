@@ -13,7 +13,7 @@ public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock {
         setSeconds(scanner.nextInt());
     }
 
-    public BeginnerSeries2ClockImpl(int hours, int minutes, int seconds) {
+    public BeginnerSeries2ClockImpl(final int hours, final int minutes, final int seconds) {
         setHours(hours);
         setMinutes(minutes);
         setSeconds(seconds);
@@ -36,10 +36,14 @@ public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock {
     }
 
     public void setMinutes(final int minutes) {
-        if (minutes >= 0 && minutes <= 60) {
-            this.minutes = minutes;
-        } else {
-            this.minutes = (int) ((Math.random() * (60)) + 0);
+        if(getHours() != 12) {
+            if (minutes >= 0 && minutes <= 59) {
+                this.minutes = minutes;
+            } else {
+                this.minutes = (int) ((Math.random() * (59)) + 0);
+            }
+        }else{
+            this.minutes = 0;
         }
     }
 
@@ -48,10 +52,14 @@ public class BeginnerSeries2ClockImpl implements BegginerSeries2Clock {
     }
 
     public void setSeconds(final int seconds) {
-        if (seconds >= 0 && seconds <= 60) {
-            this.seconds = seconds;
-        } else {
-            this.seconds = (int) ((Math.random() * (60)) + 0);
+        if(getHours() != 12){
+            if (seconds >= 0 && seconds <= 59) {
+                this.seconds = seconds;
+            } else {
+                this.seconds = (int) ((Math.random() * (59)) + 0);
+            }
+        }else{
+            this.seconds = 0;
         }
     }
 

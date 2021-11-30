@@ -14,7 +14,7 @@ public class BanjoImpl implements Banjo {
     }
 
     public void setName(final String name) {
-        if (!name.isEmpty() && name.matches("\\b([A-Z][a-z]*)\\b")) {
+        if (!name.isBlank() && name.matches("\\b([A-Z][a-z]*)\\b")) {
             this.name = name;
         } else {
             this.name = "Maksym";
