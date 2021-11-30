@@ -1,6 +1,6 @@
 package Classes;
 
-public class Fraction {
+public class Fraction implements Comparable<Fraction>{
     private final long top;
     private final long bottom;
 
@@ -43,11 +43,16 @@ public class Fraction {
     }
 
     @Override
+    public int hashCode() { return 17 * Long.hashCode(top) + Long.hashCode(bottom); }
+    @Override
+    public boolean equals(Object o) { return compareTo((Fraction)o) == 0; }
+    @Override
+    public int compareTo(Fraction f2){ return Long.compare(top * f2.bottom, f2.top * bottom); }
+
+    @Override
     public String toString() {
         return top + "/" +bottom;
     }
 
-    public static void main(String[] args) {
-        new Fraction(1, 8).add(new Fraction(4, 5));
-    }
+
 }
