@@ -1,11 +1,8 @@
-package tests.basic;
+package tests.tasks.basic;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import application.tasks.basic.GrassHopper;
-
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
 
 public class GrassHopperTest {
     GrassHopper grassHopper = new GrassHopper();

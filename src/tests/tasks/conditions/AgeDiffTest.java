@@ -1,9 +1,7 @@
-package tests.conditions;
+package tests.tasks.conditions;
 
 import application.tasks.conditions.AgeDiff;
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Method;
 
 import static org.junit.jupiter.api.Assertions.*;
 

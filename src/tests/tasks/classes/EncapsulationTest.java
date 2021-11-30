@@ -1,4 +1,4 @@
-package tests.classes;
+package tests.tasks.classes;
 
 import application.tasks.classes.Encapsulation;
 import org.junit.jupiter.api.Test;

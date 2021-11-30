@@ -1,4 +1,4 @@
-package tests.conditions;
+package tests.tasks.conditions;
 
 import application.tasks.conditions.BooleanToString;
 import org.junit.jupiter.api.Test;

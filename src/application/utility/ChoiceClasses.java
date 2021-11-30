@@ -37,7 +37,7 @@ public class ChoiceClasses extends Constants{
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 5:
-                // BuildingBlocks.task(scanner);
+                //BuildingBlocks.task(scanner);
                 ChoiceClasses.choiceClasses(scanner);
                 break;
             case 6:

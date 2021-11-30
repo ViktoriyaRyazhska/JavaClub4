@@ -1,10 +1,8 @@
-package tests.conditions;
+package tests.tasks.conditions;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import application.tasks.conditions.DoIGetBonus;
-
-import java.lang.reflect.Method;
 
 public class DoIGetBonusTest {
     DoIGetBonus doIGetBonus = new DoIGetBonus();

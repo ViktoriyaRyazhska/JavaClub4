@@ -66,6 +66,7 @@ public class SticksGame {
     }
     public static void task(Scanner scanner) {
         System.out.println("You can take 1, 2 or 3 sticks. The last who take stick(s) win");
+       // int
         game(scanner);
     }
 }

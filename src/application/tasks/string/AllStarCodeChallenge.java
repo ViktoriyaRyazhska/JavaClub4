@@ -12,6 +12,9 @@ public class AllStarCodeChallenge {
         }
         return count;
     }
+    public int getStrCount(String str, char letter) {
+        return strCount(str, letter);
+    }
 
     public static void task(Scanner in) {
         System.out.println("Enter any word:");

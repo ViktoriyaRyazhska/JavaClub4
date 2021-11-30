@@ -1,11 +1,8 @@
-package tests.basic;
+package tests.tasks.basic;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import application.tasks.basic.ConvertToBinary;
-
-import java.lang.reflect.Method;
-import java.util.Scanner;
 
 public class ConvertToBinaryTest {
     ConvertToBinary convertToBinary = new ConvertToBinary();
