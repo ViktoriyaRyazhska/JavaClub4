@@ -48,10 +48,11 @@ public class OopImpl {
                 "\nl -> 1" +
                 "\nm -> /^^\\" +
                 "\no -> 0" +
-                "\nu -> (_) ");
+                "\nu -> (_) +" +
+                "\nexample: abcdef");
         System.out.println("Введіть значення");
         Leetspeak leetspeak = new Leetspeak();
         String s = scanner.next();
-        System.out.println(leetspeak.encode(s));
+        System.out.println("Result: " + leetspeak.encode(s));
     }
 }

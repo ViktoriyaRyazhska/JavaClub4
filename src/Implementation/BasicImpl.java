@@ -46,8 +46,9 @@ public class BasicImpl {
                 " \nthe size of the wall in millimeters and the size of a pixel in millimeters." +
                 " \nIt should return True if you can fit an exact number of pixels on the wall," +
                 " \notherwise it should return False.");
-        System.out.println("Введіть довжину стіни та розмір пікселя");
+        System.out.println("Введіть довжину стіни");
         int wallLength = scanner.nextInt();
+        System.out.println("Введіть розмір пікселя");
         int pixelSize = scanner.nextInt();
         System.out.println("Your result is: " + ThinkfulNumberDrillsPixelartPlanning.isDivisible(wallLength, pixelSize));
     }

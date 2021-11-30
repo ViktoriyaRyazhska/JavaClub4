@@ -72,7 +72,7 @@ public class LoopsImpl {
         for (int i = 0; i< arr.length; i++){
             arr[i] = list.get(i);
         }
-        System.out.println(MeanOfAnArray.getAverage(arr));
+        System.out.println("Mean of an array: " + MeanOfAnArray.getAverage(arr));
     }
 
     public static void ReduceButGrow (Scanner scanner) {
@@ -95,7 +95,7 @@ public class LoopsImpl {
         for (int i = 0; i< arr.length; i++){
             arr[i] = list.get(i);
         }
-        System.out.println(ReduceButGrow.grow(arr));
+        System.out.println("Result: " + ReduceButGrow.grow(arr));
     }
 
     public static void GrassHopper (Scanner scanner) {
@@ -104,6 +104,6 @@ public class LoopsImpl {
         System.out.println("Введіть значення");
 
         int n = scanner.nextInt();
-        System.out.println(GrassHopper.summation(n));
+        System.out.println("Summation: " + GrassHopper.summation(n));
     }
 }
