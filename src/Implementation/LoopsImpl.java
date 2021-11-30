@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import Loop.NearestSquareNum;
 
 public class LoopsImpl {
     public static void humanYearsCatYearsDogYears() {

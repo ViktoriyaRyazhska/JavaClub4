@@ -102,8 +102,6 @@ public class ConditionsImpl {
         int number = scanner.nextInt();
         System.out.println("Result: " + SwitchItUp.switchItUp(number));
     }
-<<<<<<< HEAD
-=======
 
 
     public static void countAgeDiff(){
@@ -174,5 +172,4 @@ public class ConditionsImpl {
         }
         scanner.close();
     }
-
 }
