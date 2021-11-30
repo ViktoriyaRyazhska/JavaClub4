@@ -287,6 +287,8 @@ public class Main {
         System.out.println("7 ---- Basic-mathematical-operations");
         System.out.println("8 ---- Opposites-attract");
         System.out.println("9 ---- YesOrNo");
+        System.out.println("10 ---- Switch it Up!");
+        System.out.println("11 ---- Traffic light");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -361,6 +363,17 @@ public class Main {
                 boolean b = scanner.nextBoolean();
                 YesOrNo yesOrNo = new YesOrNo();
                 yesOrNo.execute(b);
+            }
+            case 10 -> {
+                System.out.println("Please enter a number between 0-9 and program return it in words: ");
+                int number = scanner.nextInt();
+                System.out.println(SwitchItUp.switchItUp(number));
+            }
+            case 11 -> {
+                System.out.println("Please enter an argument representing the current state of the light: ");
+                String light = scanner.next();
+                System.out.println("The light should change to. " +
+                        TrafficLight.updateLight(light));
             }
         }
     }
