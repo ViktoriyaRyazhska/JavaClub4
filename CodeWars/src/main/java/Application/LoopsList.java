@@ -29,6 +29,7 @@ public class LoopsList {
     }
 
     public static void choiceLoops() {
+        System.out.print("Your choice : ");
         Scanner scanner = new Scanner(System.in);
         int num = NotANumber.CheckInt(scanner);
         try {

@@ -1,9 +1,9 @@
-package com.company;
+package Loops;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Sticks21 implements Executable{
+public class Sticks21 {
     public static int makeMove(int sticks) {
         return sticks % 4;
     }

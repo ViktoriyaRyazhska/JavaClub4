@@ -27,6 +27,7 @@ public class ConditionsList {
 
     public static void choiceConditions() {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Your choice : ");
         int num = NotANumber.CheckInt(scanner);
         try {
             switch (num) {

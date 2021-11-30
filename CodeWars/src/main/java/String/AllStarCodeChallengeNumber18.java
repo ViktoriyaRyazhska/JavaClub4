@@ -1,4 +1,4 @@
-package com.company1;
+package String;
 
 public class AllStarCodeChallengeNumber18 {
     public static int strCount(String str, char letter) {

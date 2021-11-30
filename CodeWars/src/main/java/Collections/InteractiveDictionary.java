@@ -10,6 +10,10 @@ public class InteractiveDictionary {
             dict = new HashMap<>();
         }
 
+        public Dictionary() {
+
+        }
+
         public static Object newEntry(String key, String value) {
             dict.put(key, value);
             return dict;
