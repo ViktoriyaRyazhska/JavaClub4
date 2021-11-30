@@ -1,4 +1,4 @@
-package test.ConditionsTest;
+package test.CollecrionTest;
 
 import Collections.CreateList;
 import org.junit.jupiter.api.Test;
