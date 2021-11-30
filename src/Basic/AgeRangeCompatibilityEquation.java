@@ -3,15 +3,18 @@ package Basic;
 public class AgeRangeCompatibilityEquation {
 
     public static String CompatibilityEquation(int age) {
-
-        int minAge = (age / 2) + 7;
-        int maxAge = (age - 7) * 2;
-        if (age > 14 && age < 100) {
-            String minA = String.valueOf(minAge);
-            String maxA = String.valueOf(maxAge);
-            return (minA + "-" + maxA);
+        int minAge;
+        int maxAge;
+        String minA, maxA;
+        if (age > 14 && age <= 100) {
+            minAge = (age / 2) + 7;
+            maxAge = (age - 7) * 2;
         } else {
-            return "Your age is not in the range";
+            minAge = (int) (age - 0.10 * age);
+            maxAge = (int) (age + 0.10 * age);
         }
+        minA = String.valueOf(minAge);
+        maxA = String.valueOf(maxAge);
+        return minA + "-" + maxA;
     }
 }
