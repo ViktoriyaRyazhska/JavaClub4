@@ -286,10 +286,12 @@ public class Main {
         System.out.println("6 ---- Rock-Paper-Scissors");
         System.out.println("7 ---- Basic-mathematical-operations");
         System.out.println("8 ---- Opposites-attract");
-        System.out.println("9 ---- YesOrNo");
-        System.out.println("10 ---- Switch it Up!");
-        System.out.println("11 ---- Traffic light");
-        System.out.println("12 ---- Transportation on vacation");
+        System.out.println("9 ---- Yes-Or-No");
+        System.out.println("10 ---- Enough-Space");
+        System.out.println("11 ---- Modulo-Sequence");
+        System.out.println("12 ---- Switch-it-Up!");
+        System.out.println("13 ---- Traffic-light");
+        System.out.println("14 ---- Transportation on vacation");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -365,18 +367,25 @@ public class Main {
                 YesOrNo yesOrNo = new YesOrNo();
                 yesOrNo.execute(b);
             }
+
             case 10 -> {
+            }
+
+            case 11 -> {
+            }
+
+            case 12 -> {
                 System.out.println("Please enter a number between 0-9 and program return it in words: ");
                 int number = scanner.nextInt();
                 System.out.println(SwitchItUp.switchItUp(number));
             }
-            case 11 -> {
+            case 13 -> {
                 System.out.println("Please enter an argument representing the current state of the light: ");
                 String light = scanner.next();
                 System.out.println("The light should change to. " +
                         TrafficLight.updateLight(light));
             }
-            case 12 -> {
+            case 14 -> {
                 System.out.println("Please enter total days of your vocation: ");
                 int day = scanner.nextInt();
                 System.out.println("The total amount for car rent of " +
@@ -396,10 +405,14 @@ public class Main {
         System.out.println("4 ---- Beginner - Lost Without a Map");
         System.out.println("5 ---- Counting sheep...");
         System.out.println("6 ---- Reversed sequence");
-        System.out.println("8 ---- Reduce but Grow");
-        System.out.println("9 ---- Sum of positive");
+        System.out.println("8 ---- Reduce-but-Grow");
+        System.out.println("9 ---- Sum-of-positive");
+        System.out.println("10 ---- Wrong-End");
+        System.out.println("11 ---- Twice-as-old");
         System.out.println("12 ---- Find-Nearest-Square-Number");
         System.out.println("13 ---- Grasshopper - Summation");
+        System.out.println("14 ---- Gap-In-Primes");
+        System.out.println("15 ---- 21-Sticks");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
