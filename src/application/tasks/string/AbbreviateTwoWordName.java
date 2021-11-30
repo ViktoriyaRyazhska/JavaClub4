@@ -24,6 +24,9 @@ public class AbbreviateTwoWordName {
         }
         return builder.toString();
     }
+    public String getCorrect(String string) {
+        return correct(string);
+    }
 
     public static void task(Scanner in) {
         in.nextLine();

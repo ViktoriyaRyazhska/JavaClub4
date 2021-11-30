@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ChoiceString extends Constants {
     public static void choiceString(Scanner scanner) {
         System.out.println(listOfString());
-        System.out.print("Select an option:\n> ");
+        System.out.print("\nSelect an option:\n> ");
         int option = scanner.nextInt();
         switch (option) {
             default:

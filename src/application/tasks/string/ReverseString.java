@@ -20,6 +20,7 @@ public class ReverseString {
 
     public static void task(Scanner scanner) {
         System.out.print("Enter some word:\n> ");
+        scanner.nextLine();
         String str = scanner.nextLine();
         System.out.println("Result: " + reverse(str));
     }

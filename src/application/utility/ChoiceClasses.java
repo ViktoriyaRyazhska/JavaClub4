@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ChoiceClasses extends Constants{
     public static void choiceClasses(Scanner scanner) {
         System.out.println(listOfClasses());
-        System.out.print("Select an option:\n> ");
+        System.out.print("\nSelect an option:\n> ");
         int option = scanner.nextInt();
 
         switch (option) {

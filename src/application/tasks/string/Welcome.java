@@ -37,6 +37,7 @@ public class Welcome {
     }
 
     public static void task(Scanner scanner) {
+        scanner.nextLine();
         System.out.print("Enter your fullname:\n> ");
         String hello = printHello(inputName(scanner));
         System.out.print("Enter the city:\n> ");

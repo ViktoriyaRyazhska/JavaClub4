@@ -18,6 +18,7 @@ public class Banjo {
 
     public static void task(Scanner scanner) {
         System.out.print("Enter your name:\n> ");
+        scanner.nextLine();
         String name = scanner.nextLine();
         System.out.println("Result: " + arePlaying(name));
     }

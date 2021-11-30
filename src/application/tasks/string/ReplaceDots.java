@@ -13,6 +13,7 @@ public class ReplaceDots {
 
     public static void task(Scanner scanner) {
         System.out.print("Enter text with dots:\n> ");
+        scanner.nextLine();
         String str = scanner.nextLine();
         System.out.println("Result: " + replace(str));
     }

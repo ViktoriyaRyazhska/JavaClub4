@@ -3,15 +3,15 @@ package application.tasks.conditions;
 import java.util.Scanner;
 
 public class LogicDrills {
-    public static String task(String current,Scanner in) {
+    public static void task(Scanner in) {
         System.out.println("Enter your light ");
-        current = updateLight(in);
-        System.out.println("Next light is " + current);
-        return current;
+        String current = in.nextLine();
+        updateLight(current);
+        System.out.println("Next light is " + updateLight(current));
+
     }
-    public static String updateLight(Scanner in){
-        String light = in.nextLine();
-        switch (light){
+    public static String updateLight(String current){
+        switch (current){
             case "Green":
                 return "Yellow";
             case "Yellow":
@@ -19,7 +19,7 @@ public class LogicDrills {
             case "Red":
                 return "Green";
             default:
-                return updateLight(in);
+                return updateLight(current);
         }
     }
 }

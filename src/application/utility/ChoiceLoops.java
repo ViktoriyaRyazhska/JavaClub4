@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ChoiceLoops extends Constants {
     public static void choiceLoops(Scanner scanner) {
         System.out.println(listOfLoops());
-        System.out.print("Select an option:\n> ");
+        System.out.print("\nSelect an option:\n> ");
         int option = scanner.nextInt();
 
         switch (option) {
