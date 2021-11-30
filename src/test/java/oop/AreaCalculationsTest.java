@@ -1,37 +1,16 @@
-package tasks.oop;
+package oop;
 
-public class AreaCalculations {
+import org.junit.Test;
+import tasks.oop.*;
+import tasks.oop.calculator.Circle;
+import tasks.oop.calculator.Rectangle;
+import tasks.oop.calculator.Square;
+import tasks.oop.calculator.Triangle;
 
-}
+import static org.junit.Assert.assertEquals;
 
-class Rectangle {
+public class AreaCalculationsTest {
 
-    private double
-}
-
-class Triangle extends Rectangle{
-
-    private double height;
-    private double width;
-
-    public Triangle(double height, double width){
-
-        this.height = height;
-        this.width = width;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-public class AreaCalculationTests
-{
     private Calculator sut = new Calculator();
 
     @Test
@@ -86,3 +65,4 @@ public class AreaCalculationTests
         assertEquals(0, sut.getTotalArea(), .0001);
     }
 }
+
