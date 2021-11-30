@@ -559,6 +559,7 @@ public class Main {
         System.out.println("10 ---- Fake Binary");
         System.out.println("11 ---- Parse nice int from char problem");
         System.out.println("12 ---- altERnaTIng cAsE <=> ALTerNAtiNG CaSe");
+        System.out.println("13 ---- Exclamation marks");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -656,6 +657,15 @@ public class Main {
                 System.out.println("Lowercase letter becomes uppercase and " +
                         "each uppercase letter becomes lowercase: " +
                         AlternativeString.toAlternativeString(value));
+            }
+            case 13 -> {
+                System.out.println("Please enter a string like \"Hi!!!\" : ");
+                String value1 = scanner.next();
+                System.out.println("Please enter a value of exclamation marks " +
+                        "what need remove: ");
+                int value2 = scanner.nextInt();
+                System.out.println("After removing from the sentence: " +
+                        ExclamationMarks.remove(value1, value2));
             }
         }
     }
