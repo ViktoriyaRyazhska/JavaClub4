@@ -231,9 +231,6 @@ public class Main {
             }
 
             case 4 -> {
-            }
-
-            case 5 -> {
                 System.out.println("Please enter Fighters name, health and damagePerAttack: ");
                 System.out.println("Enter the name first Fighter: ");
                 String name1 = scanner.next();
@@ -256,6 +253,19 @@ public class Main {
                 String firstAttacker = scanner.next();
 
                 fighter1.execute(fighter1, fighter2, firstAttacker);
+            }
+
+            case 5 -> {
+                System.out.println("Please enter width, length and height for creating a Block: ");
+                System.out.println("Enter the width value: ");
+                int width = scanner.nextInt();
+                System.out.println("Enter the length value: ");
+                int length = scanner.nextInt();
+                System.out.println("Enter the height value: ");
+                int height = scanner.nextInt();
+                int[] params = {width, length, height};
+                Block block = new Block(params);
+                block.execute();
             }
 
             case 6 -> {
