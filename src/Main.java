@@ -65,7 +65,7 @@ public class Main {
                     case 11:
                         BasicImpl.CelsiusConverter(scanner);
                         break;
-                    default: throw new IllegalArgumentException();
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 2:
@@ -96,6 +96,7 @@ public class Main {
                         break;
                     case 6:
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 3:
@@ -154,6 +155,7 @@ public class Main {
                         break;
                     case 14:
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 4:
@@ -216,6 +218,7 @@ public class Main {
                         break;
                     case 15:
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 5:
@@ -238,6 +241,7 @@ public class Main {
                     case 4:
                         OopImpl.calcShape();
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 6:
@@ -309,6 +313,7 @@ public class Main {
                         break;
                     case 18:
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
             case 7:
@@ -330,9 +335,10 @@ public class Main {
                         break;
                     case 4:
                         break;
+                    default: throw new IllegalArgumentException("Incorrect value!");
                 }
                 break;
+            default: throw new IllegalArgumentException("Incorrect value!");
         }
-
     }
 }
