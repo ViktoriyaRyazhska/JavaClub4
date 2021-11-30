@@ -101,7 +101,7 @@ public class BasicImpl {
         System.out.println("Convert fahrenheit to celsius");
         System.out.println("Enter temperature");
         int temp = scanner.nextInt();
-        CelsiusConverter.weatherInfo(temp);
+        System.out.println(CelsiusConverter.weatherInfo(temp));
     }
 
 }
