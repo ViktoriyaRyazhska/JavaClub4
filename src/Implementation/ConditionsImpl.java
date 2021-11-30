@@ -54,26 +54,33 @@ public class ConditionsImpl {
 
     public static void DivisibleByXAndY (Scanner scanner) {
         System.out.println("Divisible by x and y");
-        System.out.println("Enter values");
+        System.out.println("Function that checks if a first number is divisible by two next numbers");
+        System.out.println("Enter number");
         long n = scanner.nextLong();
+        System.out.println("Enter fist divisible");
         long x = scanner.nextLong();
+        System.out.println("Enter second divisible");
         long y = scanner.nextLong();
         System.out.println("Result: " + DivisibleNb.isDivisible(n,x,y));
     }
 
     public static void  BasicOperations (Scanner scanner) {
         System.out.println("Basic operations");
-        System.out.println("Enter values");
+        System.out.println("Function return result of numbers after applying the chosen operation");
+        System.out.println("Enter operation(String)");
         String s = scanner.next();
+        System.out.println("Enter first number(int)");
         int v1 = scanner.nextInt();
+        System.out.println("Enter second number(int)");
         int v2 = scanner.nextInt();
-        System.out.println(BasicOperations.basicMath(s,v1,v2));
+        System.out.println("Result: " + BasicOperations.basicMath(s,v1,v2));
     }
 
     public static void SwitchItUp (Scanner scanner){
         System.out.println("Switch it up");
-        System.out.println("Enter values");
+        System.out.println("Return value in words");
+        System.out.println("Enter int value 0-9 in integer");
         int number = scanner.nextInt();
-        System.out.println(SwitchItUp.switchItUp(number));
+        System.out.println("Result: " + SwitchItUp.switchItUp(number));
     }
 }

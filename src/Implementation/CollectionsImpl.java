@@ -13,9 +13,9 @@ public class CollectionsImpl {
     }
 
     public static void PushAnObjectIntoArray(Scanner scanner){
-        System.out.println("Push an object into array");
-        System.out.println("Enter values");
+        System.out.println("Push an object into array (solved fix)");
+        System.out.println("Enter string");
         String s = scanner.next();
-        System.out.println(PushAnObjectIntoArray.push(s));
+        System.out.println("Returned object" + PushAnObjectIntoArray.push(s));
     }
 }

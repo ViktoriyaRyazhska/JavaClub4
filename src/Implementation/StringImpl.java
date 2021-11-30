@@ -38,23 +38,29 @@ public class StringImpl {
 
     public static void OppositeNumber(Scanner scanner) {
         System.out.println("Opposite number");
-        System.out.println("Enter value");
+        System.out.println("Given a number, find its opposite");
+        System.out.println("Enter number");
         int number = scanner.nextInt();
         System.out.println(OppositeNumber.opposite(number));
     }
 
     public static void FindThePosition (Scanner scanner) {
         System.out.println("FindThePosition");
-        System.out.println("Enter value");
+        System.out.println("When provided with a letter, return its position in the alphabet");
+        System.out.println("Enter char");
         String str = scanner.next();
         char ch = str.charAt(0);
         System.out.println(FindThePosition.position(ch));
     }
 
     public static void AllStarCodeChallenge (Scanner scanner) {
-        System.out.println("All star codeChallenge");
-        System.out.println("Enter value");
+        System.out.println("All star code challenge (counts the same letters in the word)");
+        System.out.println("Function that accepts 2 string arguments" +
+                "\n and returns an integer of the count of occurrences" +
+                "\n the 2nd argument is found in the first one");
+        System.out.println("Enter string");
         String str = scanner.next();
+        System.out.println("Enter char");
         String let = scanner.next();
         char letter = let.charAt(0);
         System.out.println(AcceptsStringAndCountDoubles.strCount(str,letter));

@@ -54,6 +54,7 @@ public class LoopsImpl {
 
     public static void MeanOfAnArray (Scanner scanner){
         System.out.println("Mean of an array");
+        System.out.println("Return the average of the given array rounded down to its nearest integer");
         System.out.println("Введіть оцінки");
 
         int grades;
@@ -76,6 +77,7 @@ public class LoopsImpl {
 
     public static void ReduceButGrow (Scanner scanner) {
         System.out.println("Reduce but grow");
+        System.out.println("Return the result of multiplying the values together");
         System.out.println("Введіть значення");
 
         int values;
@@ -97,7 +99,8 @@ public class LoopsImpl {
     }
 
     public static void GrassHopper (Scanner scanner) {
-        System.out.println("Grass hopper");
+        System.out.println("Grasshopper - Summation");
+        System.out.println("Finds the summation of every number from 1 to num");
         System.out.println("Введіть значення");
 
         int n = scanner.nextInt();

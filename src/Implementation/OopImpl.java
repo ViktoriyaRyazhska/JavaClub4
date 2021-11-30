@@ -42,6 +42,13 @@ public class OopImpl {
 
     public static void Leetspeak (Scanner scanner){
         System.out.println("Leetspeak");
+        System.out.println("function to encode a string into its leetspeak version" +
+                "\na -> 4" +
+                "\ne -> 3" +
+                "\nl -> 1" +
+                "\nm -> /^^\\" +
+                "\no -> 0" +
+                "\nu -> (_) ");
         System.out.println("Введіть значення");
         Leetspeak leetspeak = new Leetspeak();
         String s = scanner.next();

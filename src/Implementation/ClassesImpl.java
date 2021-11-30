@@ -58,10 +58,10 @@ public class ClassesImpl {
     }
 
     public static void StaticElectrickery(Scanner scanner){
-        System.out.println("---Static electrickery---");
+        System.out.println("Static electrickery");
         System.out.println("Enter value");
         int n = scanner.nextInt();
-        System.out.println(Dinglemouse.INST.plus100(n));
+        System.out.println("value + 100:" + Dinglemouse.INST.plus100(n));
     }
 }
 
