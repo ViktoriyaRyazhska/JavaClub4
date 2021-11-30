@@ -4,7 +4,7 @@ import java.util.Scanner;
 import String.*;
 
 public class StringImpl {
-<<<<<<< HEAD
+
 	public static void replase() {
 		System.out.println("fixme-replace-all-dots");
 		System.out.println("Введіть стрічку з крапками");

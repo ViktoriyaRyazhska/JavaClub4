@@ -214,8 +214,4 @@ public class LoopsImpl {
         System.out.println("Нова стрічка: " + TheGame21.makeMove(l));
         scanner.close();
     }
-<<<<<<< HEAD
->>>>>>> 66d21e89c59577507f47fe7c8c3eb4edef01ebda
-=======
->>>>>>> 751196568197e5ff18e3715f98838ab06973c15e
 }
