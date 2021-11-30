@@ -1,7 +1,7 @@
 package tasks.loops;
 public class Sequence{
 
-    private static int[] reverse(int n){
+    public static int[] reverse(int n){
         int [] array = new int[n];
         for(int i = 0; i <array.length; i++){
             array[i] =n;

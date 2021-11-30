@@ -419,7 +419,7 @@ public class Main {
             case 5 -> {
                 System.out.print("Enter the number of elements you want to store: ");
                 int num = scanner.nextInt();
-                boolean[] array = new boolean[num];
+                Boolean[] array = new Boolean[num];
                 System.out.println("Enter true or false for all elements of array: ");
                 for (int i = 0; i < num; i++) {
                     array[i] = scanner.nextBoolean();

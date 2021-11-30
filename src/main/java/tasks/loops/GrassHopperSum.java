@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class GrassHopperSum {
 
-    private static int summation(int n) {
+    public static int summation(int n) {
         int sum = 0;
         for(int i = 0; i < n+1; i++){
             sum += i;

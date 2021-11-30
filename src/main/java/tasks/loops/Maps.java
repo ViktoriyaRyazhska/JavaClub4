@@ -3,7 +3,7 @@ package tasks.loops;
 import java.util.Arrays;
 
 public class Maps {
-    private static int[] map(int[] arr) {
+    public static int[] map(int[] arr) {
         for(int i = 0; i<arr.length; i++){
             arr[i] *=2;
         }

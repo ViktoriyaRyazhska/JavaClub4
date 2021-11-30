@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CatDogYears {
 
-    private static int[] humanYearsCatYearsDogYears(final int humanYears) {
+    public static int[] humanYearsCatYearsDogYears(final int humanYears) {
         int dogYears = 0;
         int catYears = 0;
 

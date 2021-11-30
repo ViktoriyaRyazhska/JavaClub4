@@ -2,7 +2,7 @@ package tasks.loops;
 
 public class AverageMarks {
 
-    private static int getAverage(int[] marks){
+    public static int getAverage(int[] marks){
         int result = 0;
 
         for (int mark : marks) {
