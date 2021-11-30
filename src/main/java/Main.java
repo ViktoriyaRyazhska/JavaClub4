@@ -194,8 +194,8 @@ public class Main {
         System.out.println("1 ---- Encapsulation Test");
         System.out.println("2 ---- Addition of a 100 number to yours");
         System.out.println("3 ---- Add-Two-Fractions");
-        System.out.println("5 ---- Two Fighters one winner");
-        System.out.println("6 ---- Building-Blocks");
+        System.out.println("4 ---- Two Fighters one winner");
+        System.out.println("5 ---- Building-Blocks");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 

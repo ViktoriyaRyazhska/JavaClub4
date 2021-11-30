@@ -2,7 +2,7 @@ package tasks.conditions;
 
 public class OppositeNumber {
 
-    private static int opposite(int number)
+    public static int opposite(int number)
     {
         return number / -1;
     }

@@ -1,22 +1,22 @@
 package tasks.conditions;
 
 public class BasicOperations{
-    private static Integer basicMath(String op, int v1, int v2){
-        int rezult = 0;
+    public static Integer basicMath(String op, int v1, int v2){
+        int result = 0;
         switch (op) {
             case ("+"):
-                rezult = v1 + v2;
+                result = v1 + v2;
                 break;
             case ("-"):
-                rezult = v1 - v2;
+                result = v1 - v2;
                 break;
             case ("*"):
-                rezult = v1 * v1;
+                result = v1 * v2;
                 break;
             case ("/"):
-                rezult = v1 / v2;
+                result = v1 / v2;
         }
-        return  rezult;
+        return  result;
     }
 
     public void execute(String op, int v1, int v2){

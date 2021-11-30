@@ -1,7 +1,7 @@
 package tasks.conditions;
 
 public class YearOfBirth {
-    private static String calculateAge(int birth, int yearTo) {
+    public static String calculateAge(int birth, int yearTo) {
         int resultYears;
         if (birth < yearTo) {
             resultYears = yearTo - birth;

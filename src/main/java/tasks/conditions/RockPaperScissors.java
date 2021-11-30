@@ -2,7 +2,7 @@ package tasks.conditions;
 
 public class RockPaperScissors {
 
-    private static String rps(String p1, String p2) {
+    public static String rps(String p1, String p2) {
         if (p1.equals("rock") && p2.equals("scissors")) {
             return "Player 1 won!";
         } else if (p1.equals("scissors") && p2.equals("rock")) {

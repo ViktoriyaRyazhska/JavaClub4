@@ -2,7 +2,7 @@ package tasks.conditions;
 
 public class BooleanToString {
 
-    private static String convert(boolean b){
+    public static String convert(boolean b){
         if(b) {
             return "true";
         } else {
