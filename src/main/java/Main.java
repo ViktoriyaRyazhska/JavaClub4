@@ -558,7 +558,7 @@ public class Main {
         System.out.println("9 ---- Find the position!");
         System.out.println("10 ---- Fake Binary");
         System.out.println("11 ---- Parse nice int from char problem");
-        System.out.println("12 ---- Find the position!");
+        System.out.println("12 ---- altERnaTIng cAsE <=> ALTerNAtiNG CaSe");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -649,6 +649,13 @@ public class Main {
                 String value = scanner.next();
                 System.out.println("Her old is: " +
                         CharProblem.howOld(value));
+            }
+            case 12 -> {
+                System.out.println("Please enter a string like \"altERnaTIng cAsE\" : ");
+                String value = scanner.next();
+                System.out.println("Lowercase letter becomes uppercase and " +
+                        "each uppercase letter becomes lowercase: " +
+                        AlternativeString.toAlternativeString(value));
             }
         }
     }
