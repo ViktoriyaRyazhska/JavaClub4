@@ -555,6 +555,8 @@ public class Main {
         System.out.println("6 ---- Are You Playing Banjo?");
         System.out.println("7 ---- Remove String Spaces");
         System.out.println("8 ---- Triple Trouble");
+        System.out.println("9 ---- Find the position!");
+
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -625,6 +627,11 @@ public class Main {
                 String three = scanner.nextLine();
                 TripleTrouble tripleTrouble = new TripleTrouble();
                 tripleTrouble.execute(one, two, three);
+            }
+            case 9 -> {
+                System.out.println("Please enter a letter for returning its position in the alphabet: ");
+                Character letter = scanner.next().charAt(0);
+                System.out.println(FindLetterPosition.findLetterPosition(letter));
             }
         }
     }
