@@ -39,13 +39,16 @@ public class MyHeadIsAtTheWrongEnd {
 
         String array[] = new String[3];
 
+        in.nextLine();
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Enter " + (i + 1) + " part of  the animal like head, tail or body");
+            System.out.println("Enter " + (i + 1) + " part of the animal like  \"head\", \"tail\" or \"body\"");
             array[i] = in.nextLine();
         }
+
         String array1[] = fixAnimals(array);
+        System.out.print("Fixed: ");
         for (String part:array1) {
-            System.out.println(part);
+            System.out.print(part+" ");
         }
     }
 }

@@ -1,5 +1,7 @@
 package application.tasks.conditions;
 
+import application.utility.ChoiceConditions;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -44,11 +46,12 @@ public class SwitchItUp {
         validate(number, in);
         System.out.println(switchItUp(number, map()));
         System.out.println("Do you want to play again?(1-yes, any other key - no)");
+        in.nextLine();
         String playAgain = in.nextLine();
         if (playAgain.equals("1"))
             SwitchItUp.task(in);
         else
-            exit(0);
+            ChoiceConditions.choiceConditions(in);
     }
 
 

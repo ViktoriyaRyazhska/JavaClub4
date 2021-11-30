@@ -1,4 +1,4 @@
-package tests.string;
+package tests.tasks.string;
 
 import application.tasks.string.Banjo;
 import org.junit.jupiter.api.Test;

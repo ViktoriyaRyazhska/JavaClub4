@@ -1,4 +1,4 @@
-package tests.loops;
+package tests.tasks.loops;
 
 import application.tasks.loops.SticksGame;
 import org.junit.jupiter.api.Test;
@@ -10,6 +10,6 @@ class SticksGameTest {
 
     @Test
     void sticksGameTest() {
-       // assertEquals();
+        assertEquals(18,sticksGame.getSticksLeft(sticksGame,3));
     }
 }

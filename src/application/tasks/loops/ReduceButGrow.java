@@ -23,6 +23,6 @@ public class ReduceButGrow {
             System.out.println("Enter " + (i + 1) + " number in the array:");
             array[i] = in.nextInt();
         }
-        System.out.println(grow(array));
+        System.out.println("Total: "+grow(array));
     }
 }

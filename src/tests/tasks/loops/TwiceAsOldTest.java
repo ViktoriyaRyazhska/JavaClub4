@@ -1,4 +1,4 @@
-package tests.loops;
+package tests.tasks.loops;
 
 import application.tasks.loops.TwiceAsOld;
 import org.junit.jupiter.api.Test;

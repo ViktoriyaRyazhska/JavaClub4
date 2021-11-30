@@ -29,6 +29,7 @@ public class SortAndStar {
         }
         return builder.toString();
     }
+
     public String getTwoSort(String[] s) {
         return twoSort(s);
     }
@@ -38,13 +39,14 @@ public class SortAndStar {
         int n;
         System.out.println("Enter the number of elements ");
         n = in.nextInt();
-
+        in.nextLine();
         String s[] = new String[n];
 
-        System.out.println("Enter the String: ");
+
         for (int i = 0; i < n; i++) {
+            System.out.println("Enter the String: ");
             s[i] = in.nextLine();
         }
-        twoSort(s);
+        System.out.println("The very first word: "+twoSort(s));
     }
 }

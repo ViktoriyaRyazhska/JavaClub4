@@ -1,4 +1,4 @@
-package tests.classes;
+package tests.tasks.classes;
 
 import application.tasks.classes.FixMe;
 import org.junit.jupiter.api.Test;

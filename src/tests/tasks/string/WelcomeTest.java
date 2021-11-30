@@ -1,4 +1,4 @@
-package tests.string;
+package tests.tasks.string;
 
 import application.tasks.string.Welcome;
 import org.junit.jupiter.api.Test;

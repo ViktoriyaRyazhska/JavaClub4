@@ -30,6 +30,7 @@ public class RemoveExclamationMarks {
     }
 
     public static void task(Scanner in) {
+        in.nextLine();
         System.out.println("Enter sentence  with \"!\":");
         String sentence = in.nextLine();
         System.out.println("How  many \"!\" to remove:");

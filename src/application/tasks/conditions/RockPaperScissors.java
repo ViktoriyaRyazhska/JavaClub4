@@ -1,5 +1,7 @@
 package application.tasks.conditions;
 
+import application.utility.ChoiceConditions;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -66,11 +68,11 @@ public class RockPaperScissors {
         System.out.println("Here you can play Rock Paper Scissors with a friend.\n" +
                 "Game usage rules: r - stands for Rock, s - stands for Scissors and p - stands for Paper.");
 
-        System.out.println("First Player choose:\n > ");
+        System.out.print("First Player choose:\n > ");
         String firstPlayer = in.next().toLowerCase(Locale.ROOT);
         validate(firstPlayer, PLAYER1,in);
 
-        System.out.println("Second Player choose:\n > ");
+        System.out.print("Second Player choose:\n > ");
         String secondPlayer = in.next().toLowerCase(Locale.ROOT);
 
         validate(secondPlayer, PLAYER2,in);
@@ -78,10 +80,11 @@ public class RockPaperScissors {
         System.out.println(game(firstPlayer, secondPlayer));
 
         System.out.println("Do you want to play again?(1-yes, any other key - no)");
-        int playAgain = in.nextInt();
-        if (playAgain == 1)
-            RockPaperScissors.task(in);
+        in.nextLine();
+        String playAgain = in.nextLine();
+        if (playAgain.equals("1"))
+            SwitchItUp.task(in);
         else
-            exit(0);
+            ChoiceConditions.choiceConditions(in);
     }
 }

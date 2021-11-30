@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class AbbreviateTwoWordName {
     public static String abbrevName(String name) {
-    return name;
-}
+        return name;
+    }
+
     public static String correct(String string) {
         StringBuilder builder = new StringBuilder();
         String array[] = string.split("");
@@ -24,9 +25,10 @@ public class AbbreviateTwoWordName {
         return builder.toString();
     }
 
-    private static void task(Scanner in) {
-        System.out.println("Enter any first and last name, so each word starts with capital letter");
+    public static void task(Scanner in) {
+        in.nextLine();
+        System.out.println("Enter any first and last name, each word starts with capital letter");
         String name = in.nextLine();
-        correct(name);
+        System.out.println("Abbreviation for the " + name + " is: " + correct(name));
     }
 }

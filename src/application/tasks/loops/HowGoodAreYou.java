@@ -38,6 +38,9 @@ public class HowGoodAreYou {
         System.out.println("Enter your score: ");
         int yourScore = in.nextInt();
 
-        System.out.println(betterThanAverage(array, yourScore));
+        if (betterThanAverage(array, yourScore))
+            System.out.println("Your score is above the average");
+        else
+            System.out.println("Your score is below of equals the average");
     }
 }

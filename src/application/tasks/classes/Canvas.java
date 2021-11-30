@@ -110,18 +110,18 @@ public class Canvas {
     }
 
     private String drawCanvas() {
-            // upper border
+        // upper border
         System.out.print(" - ");
         for (int i = 0; i < canvas.length; i++) {
             System.out.print("- ");
         }
         System.out.println();
-            //drawing canvas
+        //drawing canvas
         for (String[] row : canvas) {
             //separating each cell
             System.out.println("| " + Arrays.stream(row).collect(Collectors.joining(" ")) + " |");
         }
-            // lower border
+        // lower border
         System.out.print(" - ");
         for (int i = 0; i < canvas.length; i++) {
             System.out.print("- ");
@@ -147,16 +147,35 @@ public class Canvas {
 
         System.out.print("For Lines press 1 and rectangle press any digit:\n> ");
         int choice = in.nextInt();
+
         if (choice == 1) {
             System.out.print("Coordinates of line 1 :\n ");
             System.out.print("X1:\n> ");
             int x1 = in.nextInt();
+            if (x1 >= canvas.canvas.length) {
+                System.out.println("Try again,your x1 value is out of the boundary!");
+                Canvas.task(in);
+            }
+
             System.out.print("Y1:\n> ");
             int y1 = in.nextInt();
+            if (y1 >= canvas.canvas.length) {
+                System.out.println("Try again,your y1 value is out of the boundary!");
+                Canvas.task(in);
+            }
+
             System.out.print("X2\n> ");
             int x2 = in.nextInt();
+            if (x2 >= canvas.canvas.length) {
+                System.out.println("Try again,your x2 value is out of the boundary!");
+                Canvas.task(in);
+            }
             System.out.print("Y2:\n> ");
             int y2 = in.nextInt();
+            if (y2 >= canvas.canvas.length) {
+                System.out.println("Try again,your y2 value is out of the boundary!");
+                Canvas.task(in);
+            }
 
             canvas.fillCanvas();
             canvas.draw(x1, y1, x2, y2);
@@ -164,23 +183,58 @@ public class Canvas {
             System.out.print("Coordinates of line 2 :\n");
             System.out.print("X1:\n> ");
             int x1l2 = in.nextInt();
+            if (x1l2 >= canvas.canvas.length) {
+                System.out.println("Try again,your x1 value is out of the boundary!");
+                Canvas.task(in);
+            }
+
             System.out.print("Y1:\n> ");
             int y1l2 = in.nextInt();
+            if (y1l2 >= canvas.canvas.length) {
+                System.out.println("Try again,your y1 value is out of the boundary!");
+                Canvas.task(in);
+            }
             System.out.print("X2\n> ");
             int x2l2 = in.nextInt();
+            if (x2l2 >= canvas.canvas.length) {
+                System.out.println("Try again,your x2 value is out of the boundary!");
+                Canvas.task(in);
+            }
+
             System.out.print("Y2:\n> ");
             int y2l2 = in.nextInt();
+            if (y2l2 >= canvas.canvas.length) {
+                System.out.println("Try again,your y2 value is out of the boundary!");
+                Canvas.task(in);
+            }
+
             canvas.draw(x1l2, y1l2, x2l2, y2l2);
         } else {
             System.out.print("Coordinates of the rectangle(1 point - top left corner of the rectangle, 2 point - bottom right corner of the rectangle:\n ");
             System.out.print("X1:\n> ");
             int x1 = in.nextInt();
+            if (x1 >= canvas.canvas.length) {
+                System.out.println("Try again,your x1 value is out of the boundary!");
+                Canvas.task(in);
+            }
             System.out.print("Y1:\n> ");
             int y1 = in.nextInt();
+            if (y1 >= canvas.canvas.length) {
+                System.out.println("Try again,your y1 value is out of the boundary!");
+                Canvas.task(in);
+            }
             System.out.print("X2\n> ");
             int x2 = in.nextInt();
+            if (x2 >= canvas.canvas.length) {
+                System.out.println("Try again,your x2 value is out of the boundary!");
+                Canvas.task(in);
+            }
             System.out.print("Y2:\n> ");
             int y2 = in.nextInt();
+            if (y2 >= canvas.canvas.length) {
+                System.out.println("Try again,your y2 value is out of the boundary!");
+                Canvas.task(in);
+            }
 
             canvas.fillCanvas();
             canvas.draw(x1, y1, x2, y2);

@@ -19,7 +19,7 @@ public class ChoiceString extends Constants {
                 ChoiceList.choiceList(scanner);
                 break;
             case 1:
-                //AbbreviateTwoWordName.task(scanner);
+                AbbreviateTwoWordName.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 2:
@@ -31,7 +31,7 @@ public class ChoiceString extends Constants {
                 ChoiceString.choiceString(scanner);
                 break;
             case 4:
-                //CorrectTheMistakes.task(scanner);
+                CorrectTheMistakes.task(scanner);
                 ChoiceString.choiceString(scanner);
                 break;
             case 5:

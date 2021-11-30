@@ -6,7 +6,11 @@ import java.util.Scanner;
 public class Dictionary {
     public HashMap<String, String> hashMap;
 
-    public Dictionary() {};
+    public Dictionary() {
+    }
+
+    ;
+
     public Dictionary(String key, String value) {
         this.hashMap = new HashMap<>() {{
             put(key, value);
@@ -25,13 +29,13 @@ public class Dictionary {
     }
 
     public static void task(Scanner in) {
-
+        in.nextLine();
         System.out.println("Add word to the dictionary: ");
         String key = in.nextLine();
         System.out.println("Add definition of the word: ");
         String value = in.nextLine();
 
-        Dictionary dictionary = new Dictionary(key,value);
+        Dictionary dictionary = new Dictionary(key, value);
         dictionary.newEntry(key, value);
         System.out.println(dictionary.look(key));
     }

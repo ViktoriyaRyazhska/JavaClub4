@@ -23,6 +23,7 @@ public class StringUtils {
     }
 
     public static void task(Scanner in) {
+        in.nextLine();
         System.out.println("Enter sentence any sentence to see an ALTerNAtiNG CaSe:");
         String sentence = in.nextLine();
         System.out.println(toAlternativeString(sentence));

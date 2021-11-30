@@ -59,14 +59,15 @@ public class SticksGame {
                 break;
             }
         }
-    }//ToDo  finish
-    public int getGameResult(SticksGame game,Scanner scanner){
-       // return game(scanner);
-        return 0;
+    }
+    public int getSticksLeft(SticksGame game,int sticksTaken){
+       //sticks left after move
+       makeMove(game,sticksTaken);
+       return game.amountOfSticks;
+
     }
     public static void task(Scanner scanner) {
         System.out.println("You can take 1, 2 or 3 sticks. The last who take stick(s) win");
-       // int
         game(scanner);
     }
 }

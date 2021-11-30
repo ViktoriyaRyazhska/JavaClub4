@@ -1,4 +1,4 @@
-package tests.collections;
+package tests.tasks.collections;
 
 import application.tasks.collections.UnfinishedLoop;
 import org.junit.jupiter.api.Test;
