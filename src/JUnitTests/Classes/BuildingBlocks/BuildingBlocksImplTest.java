@@ -16,7 +16,7 @@ class BuildingBlocksImplTest {
     })
     void Should_CheckWidthSetter_If(final int width, final int length, final int height){
         final BuildingBlocksImpl buildingBlocks = new BuildingBlocksImpl(width, length, height);
-        assertEquals(width, buildingBlocks.getWidth());
+        assertEquals(width, buildingBlocks.getWidth);
     }
 
     @ParameterizedTest

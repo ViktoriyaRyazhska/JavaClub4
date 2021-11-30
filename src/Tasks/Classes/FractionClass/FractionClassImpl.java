@@ -19,6 +19,12 @@ public class FractionClassImpl implements FractionClass {
         setFraction(scanner.nextDouble());
     }
 
+    public FractionClassImpl(int integer, double fraction, boolean isPositive) {
+        setInteger(integer);
+        setFraction(fraction);
+        setIsPositive(isPositive);
+    }
+
     public int getInteger() {
         return integer;
     }

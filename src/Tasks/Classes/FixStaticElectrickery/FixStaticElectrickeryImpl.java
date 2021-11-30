@@ -12,9 +12,15 @@ public class FixStaticElectrickeryImpl implements FixStaticElectrickery {
         this.n = scanner.nextInt();
     }
 
+<<<<<<< HEAD
     public FixStaticElectrickeryImpl(final int n) {
         value = ONE_HUNDRED;
         this.n = n;
+=======
+    public FixStaticElectrickeryImpl(int n) {
+        value = ONE_HUNDRED;
+        setN(n);
+>>>>>>> 875559889636b5d43aaab4ffc1a281f0429ac6c8
     }
 
     public int getN() {
