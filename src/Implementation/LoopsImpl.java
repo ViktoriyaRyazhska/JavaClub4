@@ -140,4 +140,79 @@ public class LoopsImpl {
         int n = scanner.nextInt();
         System.out.println("Summation: " + GrassHopper.summation(n));
     }
+<<<<<<< HEAD
+=======
+
+    public static void repeatString() {
+        System.out.println("string-repeat");
+        System.out.println("Вкажіть стрічку");
+        Scanner scanner = new Scanner(System.in);
+        String string = scanner.next();
+        System.out.println("Вкажіть кількість повторів");
+
+        int repeat = scanner.nextInt();
+        System.out.println(Solution.repeatStr(repeat, string));
+        scanner.close();
+    }
+
+    public static void doSequence() {
+        System.out.println("reversedSequence");
+        System.out.println("Вкажіть число");
+        Scanner scanner = new Scanner(System.in);
+        int amount = scanner.nextInt();
+        System.out.println(Arrays.toString(Sequence.reverse(amount)));
+        scanner.close();
+    }
+    public static void twiceAsOld() {
+        System.out.println("twice-as-old");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введіть вік тата");
+        int fathersAge = scanner.nextInt();
+        System.out.println("Введіть вік сина");
+        int sonsAge = scanner.nextInt();
+
+        System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
+        scanner.close();
+    }
+    public static void Sheeps(){
+        System.out.println("counting-sheep-dot-dot-dot");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        boolean[] sheps = new boolean[l];
+        for (int i = 0; i < sheps.length; i++) {
+            System.out.println("Введіть 1, якщо true або 0, якщо false");
+            int a = scanner.nextInt();
+            if(a == 1){
+                sheps[i] = true;
+            }
+            else if (a == 0){
+                sheps[i] = false;
+            }
+        }
+        System.out.println("Кількість овець: " + CounterOfShips.countSheeps(sheps));
+        scanner.close();
+    }
+    public static void TailToHead(){
+        System.out.println("my-head-is-at-the-wrong-end");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        String[] sheps = new String[l];
+        System.out.println("Введіть елементи, кіклькість яких: " + l );
+        for (int i = 0; i < sheps.length; i++) {
+            sheps[i] = scanner.next();
+        }
+        System.out.println("Нова стрічка: " + Arrays.toString(WrongEndHead.fixTheMeerkat(sheps)));
+        scanner.close();
+    }
+    public static void TheGame(){
+        System.out.println("21-sticks");
+        System.out.println("Введіть кількість паличко(від 1 до 3)");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        System.out.println("Нова стрічка: " + TheGame21.makeMove(l));
+        scanner.close();
+    }
+>>>>>>> 66d21e89c59577507f47fe7c8c3eb4edef01ebda
 }

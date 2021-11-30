@@ -1,6 +1,4 @@
-/*package Conditions;
-
-import java.util.Scanner;
+package Conditions;
 
 public class DoIGetBonus{
     public static String bonusTime(final int salary, final boolean bonus) {
@@ -12,4 +10,4 @@ public class DoIGetBonus{
         return("\u00A3"+salary);
       }
     }
-  }*/
+  }

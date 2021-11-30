@@ -1,5 +1,9 @@
 package Implementation;
 import Collections.*;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CollectionsImpl {
@@ -17,5 +21,19 @@ public class CollectionsImpl {
         System.out.println("Enter string");
         String s = scanner.next();
         System.out.println("Returned object" + PushAnObjectIntoArray.push(s));
+    }
+    public static void FixTheBug(){
+        System.out.println("filtering-even-numbers-bug-fixe");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Введіть кількість чисел");
+        int l = scanner.nextInt();
+        List<Integer> list_new = new ArrayList<>(l);
+        for(int i = 0; i<l; i++){
+            int m = scanner.nextInt();
+            list_new.add(i, m);
+        }
+        System.out.println(EvenBugFix.filterOddNumber(list_new));
+        scanner.close();
     }
 }
