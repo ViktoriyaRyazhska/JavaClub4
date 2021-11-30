@@ -1,5 +1,7 @@
 package Application;
 
+import Errors.NotANumber;
+
 import java.util.Scanner;
 
 public class ListOfPackages {
@@ -18,7 +20,7 @@ public class ListOfPackages {
     public static void choice() {
         System.out.print("Choose which one u want to : ");
         Scanner in = new Scanner(System.in);
-        int num = in.nextInt();
+        int num = NotANumber.CheckInt(in);
         switch (num) {
             default -> {
                 System.out.println("There is no such Package!");

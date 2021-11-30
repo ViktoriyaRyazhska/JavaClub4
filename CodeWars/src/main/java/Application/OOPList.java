@@ -1,5 +1,6 @@
 package Application;
 
+import Errors.NotANumber;
 import OOP.AdamAndEve;
 
 import java.util.Scanner;
@@ -18,7 +19,7 @@ public class OOPList {
     public static void choiceOOP() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Your choice : ");
-        int num = scanner.nextInt();
+        int num = NotANumber.CheckInt(scanner);
         try {
             switch (num) {
                 default -> System.out.println("The is no such a task");
@@ -26,13 +27,12 @@ public class OOPList {
                     System.out.println(AdamAndEve.create());
                 }
                 case 2 -> {
-                    break;
                 }
                 case 3 -> {
                     break;
                 }
                 case 4 -> {
-                    break;
+
                 }
             }
         } finally {

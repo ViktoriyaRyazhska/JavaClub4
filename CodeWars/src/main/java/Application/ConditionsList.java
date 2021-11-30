@@ -1,6 +1,7 @@
 package Application;
 
 import Conditions.*;
+import Errors.NotANumber;
 
 import java.util.Scanner;
 
@@ -26,7 +27,7 @@ public class ConditionsList {
 
     public static void choiceConditions() {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = NotANumber.CheckInt(scanner);
         try {
             switch (num) {
                 default -> System.out.println("The is no such a task");
@@ -35,7 +36,7 @@ public class ConditionsList {
                     System.out.println(OppositeNumber.opposite(n));
                 }
                 case 2 -> {
-
+                    System.out.println(IsNDivisible.isDivisible(scanner.nextLong(), scanner.nextLong(), scanner.nextLong()));
                 }
                 case 3 -> {
                     Boolean b = scanner.nextBoolean();
@@ -68,6 +69,7 @@ public class ConditionsList {
                     System.out.println(OppositeAttract.isLove(fl1, fl2));
                 }
                 case 9 -> {
+                    System.out.println(scanner.nextBoolean());
                 }
                 case 10 -> {
                     int cap = scanner.nextInt();
@@ -76,7 +78,7 @@ public class ConditionsList {
                     System.out.println(WillBeEnoughSpace.enough(cap, in, wait));
                 }
                 case 11 -> {
-                    break;
+                    System.out.println(TheModuloThreeSequence.sequence(scanner.nextInt()));
                 }
                 case 12 -> {
                     int numm = scanner.nextInt();
@@ -91,7 +93,7 @@ public class ConditionsList {
                     System.out.println(TransportationVacation.rentalCarCost(days));
                 }
             }
-        }finally {
+        } finally {
             FinallyMethod.finallyMethod(scanner);
         }
     }

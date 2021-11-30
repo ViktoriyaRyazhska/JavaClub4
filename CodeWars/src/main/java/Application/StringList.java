@@ -1,5 +1,7 @@
 package Application;
 
+import Errors.NotANumber;
+
 import java.util.Scanner;
 
 public class StringList {
@@ -28,11 +30,11 @@ public class StringList {
 
     public static void choiceString() {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = NotANumber.CheckInt(scanner);
         switch (num) {
             default -> System.out.println("The is no such a task");
             case 1 -> {
-                int n = scanner.nextInt();
+                int n = NotANumber.CheckInt(scanner);
 
             }
             case 2 -> {

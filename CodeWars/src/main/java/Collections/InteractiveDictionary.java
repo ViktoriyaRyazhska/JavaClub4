@@ -3,18 +3,19 @@ import java.util.*;
 
 public class InteractiveDictionary {
 
-    public class Dictionary {
-        private Map<String, String> dict;
+    public static class Dictionary {
+        private static Map<String, String> dict;
 
-        public Dictionary() {
+        public Dictionary(Map map) {
             dict = new HashMap<>();
         }
 
-        public void newEntry(String key, String value) {
+        public static Object newEntry(String key, String value) {
             dict.put(key, value);
+            return dict;
         }
 
-        public String look(String key) {
+        public static String look(String key) {
             if (dict.containsKey(key))
                 return dict.get(key);
             return "Cant find entry for " + key;

@@ -3,6 +3,7 @@ package Application;
 import Classes.BuildingBlocks;
 import Classes.Lombok;
 import Classes.TwoFighters;
+import Errors.NotANumber;
 
 import java.util.Scanner;
 
@@ -21,7 +22,7 @@ public class ClassesList {
 
     public static void choiceClasses() {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = NotANumber.CheckInt(scanner);
         try {
             switch (num) {
                 default -> System.out.println("The is no such a task");

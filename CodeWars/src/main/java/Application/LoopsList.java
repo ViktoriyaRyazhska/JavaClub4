@@ -1,5 +1,7 @@
 package Application;
 
+import Errors.NotANumber;
+import Errors.NotAString;
 import Loops.*;
 
 import java.util.Arrays;
@@ -28,42 +30,42 @@ public class LoopsList {
 
     public static void choiceLoops() {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int num = NotANumber.CheckInt(scanner);
         try {
             switch (num) {
                 default -> {
                     System.out.println("The is no such a task");
                 }
                 case 1 -> {
-                    int repeat = scanner.nextInt();
-                    String string = scanner.next();
+                    int repeat = NotANumber.CheckInt(scanner);
+                    String string = NotAString.CheckString(scanner);
                     System.out.println(StringRepeat.repeatStr(repeat, string));
                 }
                 case 2 -> {
                     System.out.println("How old are u?");
-                    int age = scanner.nextInt();
+                    int age = NotANumber.CheckInt(scanner);
                     CatYearsDog.humanYearsCatYearsDogYears(age);
                 }
                 case 3 -> {
-                    int arrayNumber = scanner.nextInt();
+                    int arrayNumber = NotANumber.CheckInt(scanner);
                     int[] marks = new int[arrayNumber];
                     for (int i = 0; i < arrayNumber; i++) {
-                        marks[i] = scanner.nextInt();
+                        marks[i] = NotANumber.CheckInt(scanner);
                     }
                     System.out.println(GetTheMeanOfAnArray.getAverage(marks));
                 }
                 case 4 -> {
-                    int arrayNumber = scanner.nextInt();
+                    int arrayNumber = NotANumber.CheckInt(scanner);
                     int[] map = new int[arrayNumber];
                     for (int i = 0; i < arrayNumber; i++) {
-                        map[i] = scanner.nextInt();
+                        map[i] = NotANumber.CheckInt(scanner);
                     }
                     System.out.println(Arrays.toString(LostWithoutMap.map(map)));
                 }
                 case 5 -> {
                     CountingSheep countingSheep = new CountingSheep();
-                    int countTrue = scanner.nextInt();
-                    int countFalse = scanner.nextInt();
+                    int countTrue = NotANumber.CheckInt(scanner);
+                    int countFalse = NotANumber.CheckInt(scanner);
                     Boolean[] b = new Boolean[countFalse + countTrue];
                     for (int i = 0; i < b.length; i++) {
                         if (i < countTrue) {
@@ -75,58 +77,58 @@ public class LoopsList {
                     System.out.println(countingSheep.countSheeps(b));
                 }
                 case 6 -> {
-                    int Number = scanner.nextInt();
+                    int Number = NotANumber.CheckInt(scanner);
                     System.out.println(Arrays.toString(ReversedSequence.reverse(Number)));
                 }
                 case 7 -> {
-                    int UrPoint = scanner.nextInt();
-                    int numOfMarks = scanner.nextInt();
+                    int UrPoint = NotANumber.CheckInt(scanner);
+                    int numOfMarks = NotANumber.CheckInt(scanner);
                     int[] marks = new int[numOfMarks];
                     for (int i = 0; i < numOfMarks; i++) {
-                        marks[i] = scanner.nextInt();
+                        marks[i] = NotANumber.CheckInt(scanner);
                     }
                     System.out.println(HowGoodAreU.betterThanAverage(marks, UrPoint));
                 }
                 case 8 -> {
-                    int arrNum = scanner.nextInt();
+                    int arrNum = NotANumber.CheckInt(scanner);
                     int[] s = new int[arrNum];
                     for (int i = 0; i < s.length; i++) {
-                        s[i] = scanner.nextInt();
+                        s[i] = NotANumber.CheckInt(scanner);
                     }
                     System.out.println(ReduceButGrow.grow(s));
                 }
                 case 9 -> {
-                    int arrNum = scanner.nextInt();
+                    int arrNum = NotANumber.CheckInt(scanner);
                     int[] s = new int[arrNum];
                     for (int i = 0; i < s.length; i++) {
-                        s[i] = scanner.nextInt();
+                        s[i] = NotANumber.CheckInt(scanner);
                     }
                     System.out.println(SumOfPositive.sum(s));
                 }
                 case 10 -> {
-                    int arrNum = scanner.nextInt();
+                    int arrNum = NotANumber.CheckInt(scanner);
                     String[] s = new String[arrNum];
                     for (int i = 0; i < s.length; i++) {
-                        s[i] = scanner.next();
+                        s[i] = NotAString.CheckString(scanner);
                     }
                     System.out.println(Arrays.toString(MyHeadIsAtTheWrongEnd.fixTheMeerkat(s)));
                 }
                 case 11 -> {
-                    int dadYears = scanner.nextInt();
-                    int sonYears = scanner.nextInt();
+                    int dadYears = NotANumber.CheckInt(scanner);
+                    int sonYears = NotANumber.CheckInt(scanner);
                     System.out.println(TwiceAsOld.TwiceAsOld(dadYears, sonYears));
                     break;
                 }
                 case 12 -> {
-                    int n = scanner.nextInt();
+                    int n = NotANumber.CheckInt(scanner);
                     System.out.println(FindNearestSquare.nearestSq(n));
                 }
                 case 13 -> {
-                    int n = scanner.nextInt();
+                    int n = NotANumber.CheckInt(scanner);
                     System.out.println(Summation.summation(n));
                 }
                 case 14 -> {
-                    int n = scanner.nextInt();
+                    int n = NotANumber.CheckInt(scanner);
                     long l = scanner.nextLong();
                     long i = scanner.nextLong();
                     GapInPrimes.gap(n, l, i);
