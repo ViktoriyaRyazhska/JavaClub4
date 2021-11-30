@@ -470,7 +470,7 @@ public class Main {
 
             case 1 -> {
                 AdamAndEve adamAndEve = new AdamAndEve();
-                adamAndEve.execute();
+
             }
 
             case 2 -> {

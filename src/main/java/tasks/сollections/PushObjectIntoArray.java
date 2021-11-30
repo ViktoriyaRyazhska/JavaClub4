@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PushObjectIntoArray {
 
-    private static List<String> push(String str){
+    public static List<String> push(String str){
         List<String> items = new ArrayList<>();
         items.add(str);
         return items;
