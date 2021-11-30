@@ -94,7 +94,7 @@ public class BasicImpl {
         System.out.println("Give a result using \"dating rule\"");
         System.out.println("Enter age");
         int age = scanner.nextInt();
-        AgeRangeCompatibilityEquation.CompatibilityEquation(age);
+        System.out.println(AgeRangeCompatibilityEquation.CompatibilityEquation(age));
     }
     public static void CelsiusConverter (Scanner scanner){
         System.out.println("Celsius converter");

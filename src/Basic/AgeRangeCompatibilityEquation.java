@@ -2,14 +2,16 @@ package Basic;
 
 public class AgeRangeCompatibilityEquation {
 
-    public static void CompatibilityEquation(int age) {
+    public static String CompatibilityEquation(int age) {
 
         int minAge = (age / 2) + 7;
         int maxAge = (age - 7) * 2;
         if (age > 14 && age < 100) {
-            System.out.printf("Your recommended age range is from %d to %d", minAge, maxAge);
+            String minA = String.valueOf(minAge);
+            String maxA = String.valueOf(maxAge);
+            return (minA + "-" + maxA);
         } else {
-            System.out.println("Your age is not in the range");
+            return "Your age is not in the range";
         }
     }
 }
