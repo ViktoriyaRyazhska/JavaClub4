@@ -289,6 +289,7 @@ public class Main {
         System.out.println("9 ---- YesOrNo");
         System.out.println("10 ---- Switch it Up!");
         System.out.println("11 ---- Traffic light");
+        System.out.println("12 ---- Transportation on vacation");
         System.out.println("====================================");
         System.out.println("Please select number of task: ");
 
@@ -374,6 +375,13 @@ public class Main {
                 String light = scanner.next();
                 System.out.println("The light should change to. " +
                         TrafficLight.updateLight(light));
+            }
+            case 12 -> {
+                System.out.println("Please enter total days of your vocation: ");
+                int day = scanner.nextInt();
+                System.out.println("The total amount for car rent of " +
+                        day + " days is: " +
+                        TransportationOnVacation.rentalCarCost(day));
             }
         }
     }
