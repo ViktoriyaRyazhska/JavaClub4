@@ -92,6 +92,7 @@ public class Main {
                         ClassesImpl.buildingBlocks();
                         break;
                     case 5:
+                        ClassesImpl.doFraction();
                         break;
                     case 6:
                         break;
@@ -130,6 +131,7 @@ public class Main {
                         ConditionsImpl.getBonus();
                         break;
                     case 5:
+                        ConditionsImpl.countAgeDiff();
                         break;
                     case 6:
                     	ConditionsImpl.rps();
@@ -144,6 +146,7 @@ public class Main {
                         ConditionsImpl.YesOrNo();
                         break;
                     case 10:
+                        ConditionsImpl.isThereEnoughSpace();
                         break;
                     case 11:
                     	ConditionsImpl.sequence();
@@ -182,6 +185,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        LoopsImpl.repeatString();
                         break;
                     case 2:
                     	LoopsImpl.humanYearsCatYearsDogYears();
@@ -196,6 +200,7 @@ public class Main {
                         LoopsImpl.Sheeps();
                         break;
                     case 6:
+                        LoopsImpl.doSequence();
                         break;
                     case 7:
                     	LoopsImpl.getAverage();
@@ -210,6 +215,7 @@ public class Main {
                         LoopsImpl.TailToHead();
                         break;
                     case 11:
+                        LoopsImpl.twiceAsOld();
                         break;
                     case 12:
                     	LoopsImpl.nearestSq();
@@ -236,6 +242,7 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        OopImpl.createHuman();
                         break;
                     case 2:
                         break;
@@ -275,6 +282,7 @@ public class Main {
                         StringImpl.ConvertANumber();
                         break;
                     case 2:
+                        StringImpl.reverseString();
                         break;
                     case 3:
                     	 StringImpl.sayHello();
@@ -289,6 +297,7 @@ public class Main {
                         StringImpl.PlaysBanjo();
                         break;
                     case 7:
+                        StringImpl.removeStringSpaces();
                         break;
                     case 8:
                     	 StringImpl.tripleTrouble();
@@ -303,6 +312,7 @@ public class Main {
                         StringImpl.OldShe();
                         break;
                     case 12:
+                        StringImpl.grassHopper();
                         break;
                     case 13:
                     	 StringImpl.abbrevName();
@@ -317,6 +327,7 @@ public class Main {
                         StringImpl.NiceString();
                         break;
                     case 17:
+                        StringImpl.alternativeCase();
                         break;
                     case 18:
                     	 StringImpl.remove();
