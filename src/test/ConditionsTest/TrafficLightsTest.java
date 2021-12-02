@@ -9,17 +9,18 @@ class TrafficLightsTest {
 
     @Test
     public void lightGreen() {
-            assertEquals("Наступний колір буде: green", TrafficLights.updateLight("red"));
+            assertEquals("green", TrafficLights.updateLight("red"));
     }
 
     @Test
     public void lightYellow() {
-        assertEquals("Наступний колір буде: yellow", TrafficLights.updateLight("green"));
+
+        assertEquals("yellow", TrafficLights.updateLight("green"));
     }
 
     @Test
     public void lightRed() {
-        assertEquals("Наступний колір буде: red", TrafficLights.updateLight("yellow"));
+        assertEquals("red", TrafficLights.updateLight("yellow"));
     }
 
     @Test

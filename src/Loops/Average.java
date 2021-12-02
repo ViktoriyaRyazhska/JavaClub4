@@ -1,17 +1,13 @@
 package Loops;
 
 public class Average {
-	public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
-		int sum = 0;
+	 public static int getAverage(int[] marks){
+	        int result = 0;
 
-		for (int num : classPoints) {
-			sum += num;
-		}
-		int res = sum / classPoints.length;
-		if (res > yourPoints) {
-			return false;
-		} else {
-			return true;
-		}
+	        for (int mark : marks) {
+	            result += mark;
+
+	        }
+	        return result / marks.length;
+	    }
 	}
-}

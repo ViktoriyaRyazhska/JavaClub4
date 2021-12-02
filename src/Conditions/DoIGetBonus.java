@@ -1,7 +1,5 @@
 package Conditions;
 
-import java.util.Scanner;
-
 public class DoIGetBonus{
     public static String bonusTime(final int salary, final boolean bonus) {
       if(bonus){

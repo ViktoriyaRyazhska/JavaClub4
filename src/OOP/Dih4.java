@@ -1,3 +1,5 @@
+package OOP;
+
 
 public class Dih4 {
 	  public static final Dih4 IDENTITY = new Dih4(0);

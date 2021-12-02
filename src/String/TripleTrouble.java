@@ -1,3 +1,4 @@
+package String;
 
 public class TripleTrouble {
 	  public static String tripleTrouble(String one, String two, String three) {

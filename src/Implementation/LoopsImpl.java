@@ -6,8 +6,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LoopsImpl {
 
+public class LoopsImpl {
+    public static void humanYearsCatYearsDogYears() {
+		System.out.println("cat-years-dog-years");
+		System.out.println("Введіть вік щоб дізнатись вік кота або собаки: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		CatDogYears catDogYears = new CatDogYears();
+		catDogYears.execute(num);
+	}
+	
     public static void maps() {
         System.out.println("beginner-lost-without-a-map");
         System.out.println("Введіть кількість чисел");
@@ -74,7 +83,22 @@ public class LoopsImpl {
         }
         System.out.println("Mean of an array: " + MeanOfAnArray.getAverage(arr));
     }
-
+    
+    public static void getAverage() {
+		System.out.println("how-good-are-you-really");
+		System.out.println("Введіть свою оцінку: ");
+		System.out.println("Введіть загальну кількість оцінок: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		int[] array = new int[num];
+		System.out.println("Введіть оцінки: ");
+		for (int i = 0; i < num; i++) {
+			array[i] = scanner.nextInt();
+		}
+		Average averageMarks = new Average();
+		System.out.println(Average.getAverage(array));
+    }
+    
     public static void ReduceButGrow (Scanner scanner) {
         System.out.println("Reduce but grow");
         System.out.println("Return the result of multiplying the values together");
@@ -97,6 +121,15 @@ public class LoopsImpl {
         }
         System.out.println("Result: " + ReduceButGrow.grow(arr));
     }
+
+    public static void nearestSq() {
+		System.out.println("find-nearest-square-number");
+		System.out.println("Введіть число щоб знайти найближчий квадрат: ");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		NearestSquareNum nearestSquareNum = new NearestSquareNum();
+		System.out.println(NearestSquareNum.nearestSq(num));
+	}
 
     public static void GrassHopper (Scanner scanner) {
         System.out.println("Grasshopper - Summation");
@@ -136,6 +169,46 @@ public class LoopsImpl {
         int sonsAge = scanner.nextInt();
 
         System.out.println(TwiceAsOld.twiceAsOld(fathersAge,sonsAge));
+        scanner.close();
+    }
+    public static void Sheeps(){
+        System.out.println("counting-sheep-dot-dot-dot");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        boolean[] sheps = new boolean[l];
+        for (int i = 0; i < sheps.length; i++) {
+            System.out.println("Введіть 1, якщо true або 0, якщо false");
+            int a = scanner.nextInt();
+            if(a == 1){
+                sheps[i] = true;
+            }
+            else if (a == 0){
+                sheps[i] = false;
+            }
+        }
+        System.out.println("Кількість овець: " + CounterOfShips.countSheeps(sheps));
+        scanner.close();
+    }
+    public static void TailToHead(){
+        System.out.println("my-head-is-at-the-wrong-end");
+        System.out.println("Введіть кількість елементів");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        String[] sheps = new String[l];
+        System.out.println("Введіть елементи, кіклькість яких: " + l );
+        for (int i = 0; i < sheps.length; i++) {
+            sheps[i] = scanner.next();
+        }
+        System.out.println("Нова стрічка: " + Arrays.toString(WrongEndHead.fixTheMeerkat(sheps)));
+        scanner.close();
+    }
+    public static void TheGame(){
+        System.out.println("21-sticks");
+        System.out.println("Введіть кількість паличко(від 1 до 3)");
+        Scanner scanner = new Scanner(System.in);
+        int l = scanner.nextInt();
+        System.out.println("Нова стрічка: " + TheGame21.makeMove(l));
         scanner.close();
     }
 }

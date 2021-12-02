@@ -92,7 +92,6 @@ public class Main {
                         ClassesImpl.buildingBlocks();
                         break;
                     case 5:
-                        ClassesImpl.doFraction();
                         break;
                     case 6:
                         break;
@@ -128,11 +127,12 @@ public class Main {
                         ConditionsImpl.boolenToStr();
                         break;
                     case 4:
+                        ConditionsImpl.getBonus();
                         break;
                     case 5:
-                        ConditionsImpl.countAgeDiff();
                         break;
                     case 6:
+                    	ConditionsImpl.rps();
                         break;
                     case 7:
                         ConditionsImpl.BasicOperations(scanner);
@@ -141,11 +141,12 @@ public class Main {
                         ConditionsImpl.oppositesAttract();
                         break;
                     case 9:
+                        ConditionsImpl.YesOrNo();
                         break;
                     case 10:
-                        ConditionsImpl.isThereEnoughSpace();
                         break;
                     case 11:
+                    	ConditionsImpl.sequence();
                         break;
                     case 12:
                         ConditionsImpl.SwitchItUp(scanner);
@@ -154,6 +155,7 @@ public class Main {
                         ConditionsImpl.traffic();
                         break;
                     case 14:
+                        ConditionsImpl.CarCost();
                         break;
                     default: throw new IllegalArgumentException("Incorrect value!");
                 }
@@ -180,9 +182,9 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-                        LoopsImpl.repeatString();
                         break;
                     case 2:
+                    	LoopsImpl.humanYearsCatYearsDogYears();
                         break;
                     case 3:
                         LoopsImpl.MeanOfAnArray(scanner);
@@ -191,11 +193,12 @@ public class Main {
                         LoopsImpl.maps();
                         break;
                     case 5:
+                        LoopsImpl.Sheeps();
                         break;
                     case 6:
-                        LoopsImpl.doSequence();
                         break;
                     case 7:
+                    	LoopsImpl.getAverage();
                         break;
                     case 8:
                         LoopsImpl.ReduceButGrow(scanner);
@@ -204,11 +207,12 @@ public class Main {
                         LoopsImpl.sumOfPositive();
                         break;
                     case 10:
+                        LoopsImpl.TailToHead();
                         break;
                     case 11:
-                        LoopsImpl.twiceAsOld();
                         break;
                     case 12:
+                    	LoopsImpl.nearestSq();
                         break;
                     case 13:
                         LoopsImpl.GrassHopper(scanner);
@@ -217,6 +221,7 @@ public class Main {
                         LoopsImpl.gapInPr();
                         break;
                     case 15:
+                        LoopsImpl.TheGame();
                         break;
                     default: throw new IllegalArgumentException("Incorrect value!");
                 }
@@ -231,7 +236,6 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-                        OopImpl.createHuman();
                         break;
                     case 2:
                         break;
@@ -268,11 +272,12 @@ public class Main {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        StringImpl.ConvertANumber();
                         break;
                     case 2:
-                        StringImpl.reverseString();
                         break;
                     case 3:
+                    	 StringImpl.sayHello();
                         break;
                     case 4:
                         StringImpl.OppositeNumber(scanner);
@@ -281,11 +286,12 @@ public class Main {
                         StringImpl.replase();
                         break;
                     case 6:
+                        StringImpl.PlaysBanjo();
                         break;
                     case 7:
-                        StringImpl.removeStringSpaces();
                         break;
                     case 8:
+                    	 StringImpl.tripleTrouble();
                         break;
                     case 9:
                         StringImpl.FindThePosition(scanner);
@@ -294,11 +300,12 @@ public class Main {
                         StringImpl.fakeBinary();
                         break;
                     case 11:
+                        StringImpl.OldShe();
                         break;
                     case 12:
-                        StringImpl.grassHopper();
                         break;
                     case 13:
+                    	 StringImpl.abbrevName();
                         break;
                     case 14:
                         StringImpl.AllStarCodeChallenge(scanner);
@@ -307,11 +314,12 @@ public class Main {
                         StringImpl.sortAndStar();
                         break;
                     case 16:
+                        StringImpl.NiceString();
                         break;
                     case 17:
-                        StringImpl.alternativeCase();
                         break;
                     case 18:
+                    	 StringImpl.remove();
                         break;
                     default: throw new IllegalArgumentException("Incorrect value!");
                 }
@@ -332,6 +340,7 @@ public class Main {
                         CollectionsImpl.createL();
                         break;
                     case 3:
+                        CollectionsImpl.FixTheBug();
                         break;
                     case 4:
                         break;

@@ -6,5 +6,4 @@ public class Square {
     public Square(double side) {
         this.side = side;
     }
-
 }
