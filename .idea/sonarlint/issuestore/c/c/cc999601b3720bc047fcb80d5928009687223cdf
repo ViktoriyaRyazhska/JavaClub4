@@ -1,0 +1,25 @@
+
+t
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Ýöð
+V	java:S125"<This block of commented-out lines of code should be removed.(…”îûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ñÊ½ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+4
+java:S2178!"Correct this "&" to "&&".(Ô¼ÏÀþÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ñÊ½ýÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+P
+java:S1172/"5Remove these unused method parameters "x", "y", "ch".(›µ»—üÿÿÿÿ
+R
+java:S1854F"7Remove this useless assignment to local variable "rez".(˜íøÛþÿÿÿÿ
+C
+java:S14815"(Remove this unused "rez" local variable.(ƒÒàÈýÿÿÿÿ
+4
+java:S21789"Correct this "|" to "||".(ô¿ùšúÿÿÿÿ
+4
+java:S2178<"Correct this "|" to "||".(íŽÞ¨þÿÿÿÿ
+I
+java:S1121F".Extract the assignment out of this expression.(˜íøÛþÿÿÿÿ

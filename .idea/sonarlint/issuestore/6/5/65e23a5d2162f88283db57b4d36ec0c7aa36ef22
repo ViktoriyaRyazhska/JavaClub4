@@ -1,0 +1,6 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(øû²Î
+^
+java:S2184"HCast one of the operands of this multiplication operation to a "double".(ŸÍ×ƒ
+
+java:S2681"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(ŸÍ×ƒ

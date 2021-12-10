@@ -1,0 +1,5 @@
+
+:
+java:S2097"Add a type test to this method.(Ý¢êÍýÿÿÿÿ
+h	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïø¨…üÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(Âû„¶ùÿÿÿÿ
