@@ -27,14 +27,14 @@ public class Author {
     @Column(name = "age")
     private int age;
 
-    @ManyToOne
-    @JoinTable(
-            name = "book_author",
-            joinColumns = @JoinColumn(name = "book_id"),
-            inverseJoinColumns = @JoinColumn(name = "author_id"),
-            @Column(name = "is_coauthor") private boolean is_coauthor;)
-
-    Set<Book> likedCourses = new HashSet<>();;
+//    @ManyToOne
+//    @JoinTable(
+//            name = "book_author",
+//            joinColumns = @JoinColumn(name = "book_id"),
+//            inverseJoinColumns = @JoinColumn(name = "author_id"),
+//            @Column(name = "is_coauthor") private boolean is_coauthor;)
+//
+//    Set<Book> likedCourses = new HashSet<>();;
 
     public Author() {
     }
