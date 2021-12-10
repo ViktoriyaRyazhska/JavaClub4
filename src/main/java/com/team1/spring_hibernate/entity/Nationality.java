@@ -7,6 +7,7 @@ import javax.persistence.*;
 @Table(name = "nationality")
 public class Nationality {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -20,6 +21,7 @@ public class Nationality {
         this.id = id;
         this.nationality = nationality;
     }
+
 
     public int getId() {
         return id;

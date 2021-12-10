@@ -27,12 +27,13 @@ public class Author {
     @Column(name = "age")
     private int age;
 
-    @ManyToOne
+    @ManyToMany
     @JoinTable(
             name = "book_author",
             joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "author_id"),
-            @Column(name = "is_coauthor") private boolean is_coauthor;)
+            @Column(name = "is_coauthor")
+            private boolean is_coauthor;)
 
     Set<Book> likedCourses = new HashSet<>();;
 
