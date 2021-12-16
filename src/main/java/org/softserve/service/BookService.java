@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface BookService {
 
-    Book create(Book book);
+    Book addBook(Book book);
 
     Book readById(int id);
 
