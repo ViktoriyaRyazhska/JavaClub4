@@ -21,8 +21,8 @@ public class AuthorRepositoryImpl implements AuthorRepository {
     public void create(Author author) {
         Transaction transaction = null;
         Session session = HibernateUtil.
-                          getSessionFactory().
-                          openSession();
+                getSessionFactory().
+                openSession();
         transaction = session.beginTransaction();
         session.save(author);
         transaction.commit();

@@ -1,7 +1,7 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Member;
-import org.softserve.repository.impl.MemberRepositoryImpl;
+import org.softserve.repository.MemberRepository;
 import org.softserve.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,8 +9,13 @@ import java.util.List;
 
 public class MemberServiceImpl implements MemberService {
 
+
+    private final MemberRepository memberRepository;
+
     @Autowired
-    private MemberRepositoryImpl memberRepository;
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public Member create(Member member) {

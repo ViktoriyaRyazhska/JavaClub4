@@ -1,7 +1,7 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.MemberStatus;
-import org.softserve.repository.impl.MemberStatusRepositoryImpl;
+import org.softserve.repository.MemberStatusRepository;
 import org.softserve.service.MemberStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,8 +9,12 @@ import java.util.List;
 
 public class MemberStatusServiceImpl implements MemberStatusService {
 
+    private MemberStatusRepository memberStatusRepository;
+
     @Autowired
-    private MemberStatusRepositoryImpl memberStatusRepository;
+    public MemberStatusServiceImpl(MemberStatusRepository memberStatusRepository) {
+        this.memberStatusRepository = memberStatusRepository;
+    }
 
 
     @Override

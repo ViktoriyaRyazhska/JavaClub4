@@ -1,7 +1,7 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.ReservationStatus;
-import org.softserve.repository.impl.ReservationStatusRepositoryImpl;
+import org.softserve.repository.ReservationStatusRepository;
 import org.softserve.service.ReservationStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,8 +9,12 @@ import java.util.List;
 
 public class ReservationStatusServiceImpl implements ReservationStatusService {
 
+    private ReservationStatusRepository reservationStatusRepository;
+
     @Autowired
-    private ReservationStatusRepositoryImpl reservationStatusRepository;
+    public ReservationStatusServiceImpl(ReservationStatusRepository reservationStatusRepository) {
+        this.reservationStatusRepository = reservationStatusRepository;
+    }
 
     @Override
     public ReservationStatus create(ReservationStatus reservationStatus) {
