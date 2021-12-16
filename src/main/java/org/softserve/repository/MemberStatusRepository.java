@@ -6,9 +6,9 @@ import org.softserve.model.MemberStatus;
 public interface MemberStatusRepository {
     MemberStatus create(MemberStatus memberStatus);
 
-    void read(int id);
+    MemberStatus read(int id);
 
     void update(MemberStatus memberStatus);
 
-    void delete(int id);
+    void delete(MemberStatus memberStatus);
 }
