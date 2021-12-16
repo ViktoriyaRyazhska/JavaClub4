@@ -1,6 +1,7 @@
 package org.softserve.repository.impl;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Author;
@@ -9,9 +10,22 @@ import org.softserve.repository.AuthorRepository;
 import java.util.List;
 
 public class AuthorRepositoryImpl implements AuthorRepository {
+
+    private SessionFactory sessionFactory;
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
     @Override
-    public Author create(Author author) {
-        return null;
+    public void create(Author author) {
+        Transaction transaction = null;
+        Session session = HibernateUtil.
+                          getSessionFactory().
+                          openSession();
+        transaction = session.beginTransaction();
+        session.save(author);
+        transaction.commit();
     }
 
     @Override

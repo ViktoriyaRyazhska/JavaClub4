@@ -4,12 +4,10 @@ import org.softserve.model.Author;
 import org.softserve.model.Book;
 import org.softserve.repository.impl.AuthorRepositoryImpl;
 import org.softserve.service.AuthorService;
-import org.softserve.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class AuthorServiceImpl implements AuthorService {
@@ -20,8 +18,8 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public Author create(Author author) {
-        return authorRepository.create(author);
+    public void create(Author author) {
+        authorRepository.create(author);
     }
 
     @Override

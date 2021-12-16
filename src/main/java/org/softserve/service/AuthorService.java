@@ -5,7 +5,7 @@ import org.softserve.model.Author;
 import java.util.List;
 
 public interface AuthorService {
-    Author create(Author author);
+    void create(Author author);
 
     Author readById(int id);
 
