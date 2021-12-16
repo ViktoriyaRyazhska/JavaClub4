@@ -5,9 +5,9 @@ import org.softserve.model.ReservationStatus;
 public interface ReservationStatusRepository {
     ReservationStatus create(ReservationStatus reservationStatus);
 
-    void read(int id);
+    ReservationStatus read(int id);
 
     void update(ReservationStatus reservationStatus);
 
-    void delete(int id);
+    void delete(ReservationStatus reservationStatus);
 }

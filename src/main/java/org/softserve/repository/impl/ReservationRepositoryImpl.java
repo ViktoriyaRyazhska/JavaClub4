@@ -1,6 +1,9 @@
 package org.softserve.repository.impl;
 
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.softserve.HibernateUtil;
 import org.softserve.model.Reservation;
 import org.softserve.repository.ReservationRepository;
 
@@ -11,17 +14,25 @@ public class ReservationRepositoryImpl implements ReservationRepository {
     }
 
     @Override
-    public void read(int id) {
-
+    public Reservation read(int id) {
+    return HibernateUtil.getSessionFactory().openSession().get(Reservation.class, id);
     }
 
     @Override
     public void update(Reservation reservation) {
-
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t1 = session.beginTransaction();
+        session.update(reservation);
+        t1.commit();
+        session.close();
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(Reservation reservation) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction t1 = session.beginTransaction();
+        session.update(reservation);
+        t1.commit();
+        session.close();
     }
 }
