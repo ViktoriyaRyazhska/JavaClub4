@@ -5,28 +5,23 @@ import String.*;
 
 public class StringImpl {
 
-	public static void replase() {
+	public static void replase(Scanner scanner) {
 		System.out.println("fixme-replace-all-dots");
 		System.out.println("Введіть стрічку з крапками");
-		Scanner scanner = new Scanner(System.in);
 		String str = scanner.next();
 		System.out.println(Dinglemouse.replaceDots(str));
-		scanner.close();
 	}
 
-	public static void fakeBinary() {
+	public static void fakeBinary(Scanner scanner) {
 		System.out.println("fake-binary");
 		System.out.println("Введіть стрічку з цифрами");
-		Scanner scanner = new Scanner(System.in);
 		String str = scanner.next();
 		System.out.println(FakeBinary.fakeBin(str));
-		scanner.close();
 	}
 
-	public static void sortAndStar() {
+	public static void sortAndStar(Scanner scanner) {
 		System.out.println("sort-and-star");
 		System.out.println("Введіть довжину масиву слів");
-		Scanner scanner = new Scanner(System.in);
 		int l = scanner.nextInt();
 		String[] arr = new String[l];
 		System.out.println("Введіть стрічку");
@@ -34,7 +29,6 @@ public class StringImpl {
 			arr[i] = scanner.next();
 		}
 		System.out.println(SortAndStar.twoSort(arr));
-		scanner.close();
 	}
 
 	public static void OppositeNumber(Scanner scanner) {
@@ -67,50 +61,41 @@ public class StringImpl {
 		System.out.println("Count of occurrences: " + AcceptsStringAndCountDoubles.strCount(str, letter));
 	}
 
-	public static void reverseString() {
+	public static void reverseString(Scanner scanner) {
 		System.out.println("reverse string");
 		System.out.println("Введіть стрічку");
-		Scanner scanner = new Scanner(System.in);
 		String str = scanner.next();
 
 		System.out.println(Kata.solution(str));
-		scanner.close();
 	}
 
-	public static void removeStringSpaces() {
+	public static void removeStringSpaces(Scanner scanner) {
 		System.out.println("removeStringSpaces");
 		System.out.println("Введіть стрічку");
-		Scanner scanner = new Scanner(System.in);
 		String str = scanner.next();
 
 		System.out.println(KataN.noSpace(str));
-		scanner.close();
 	}
 
-	public static void grassHopper() {
+	public static void grassHopper(Scanner scanner) {
 		System.out.println("grass-hopper");
 		System.out.println("Введіть температуру");
-		Scanner scanner = new Scanner(System.in);
 		int temperature = scanner.nextInt();
 
 		System.out.println(GrassHopper.weatherInfo(temperature));
-		scanner.close();
 	}
 
-	public static void alternativeCase() {
+	public static void alternativeCase(Scanner scanner) {
 		System.out.println("alternative case");
 		System.out.println("Введіть стрічку");
-		Scanner scanner = new Scanner(System.in);
 		String string = scanner.next();
 
 		System.out.println(StringUtils.toAlternativeString(string));
-		scanner.close();
 	}
 
-	public static void sayHello() {
+	public static void sayHello(Scanner scanner) {
 		System.out.println("welcome-to-the-city");
 		System.out.println("Введіть ім'я, місто та штат, щоб побачити привітання: ");
-		Scanner scanner = new Scanner(System.in);
 		String name = scanner.next();
 		String city = scanner.next();
 		String state = scanner.next();
@@ -118,10 +103,9 @@ public class StringImpl {
 		System.out.println(WelcomeToTheCity.sayHello(name, city, state));
 	}
 
-	public static void tripleTrouble() {
+	public static void tripleTrouble(Scanner scanner) {
 		System.out.println("triple-trouble-2");
 		System.out.println("Введіть три слова: ");
-		Scanner scanner = new Scanner(System.in);
 		String one = scanner.nextLine();
 		String two = scanner.nextLine();
 		String three = scanner.nextLine();
@@ -129,57 +113,47 @@ public class StringImpl {
 		System.out.println(TripleTrouble.tripleTrouble(one, two, three));
 	}
 
-	public static void abbrevName() {
+	public static void abbrevName(Scanner scanner) {
 		System.out.println("abbreviate-a-two-word-name");
 		System.out.println("Введіть ім'я та прізвище: ");
-		Scanner scanner = new Scanner(System.in);
 		String name = scanner.next();
 		AbbTwoWords twoWordName = new AbbTwoWords();
 		System.out.println("Ваші ініціали " + AbbTwoWords.abbrevName(name));
 	}
-	public static void remove() {
+	public static void remove(Scanner scanner) {
 		System.out.println("exclamation-marks-series-number-6-remove-n-exclamation-marks-in-the-sentence-from-left-to-right");
 		System.out.println("Введіть слово та цифру: ");
-		Scanner scanner = new Scanner(System.in);
 		String s = scanner.next();
 		int n = scanner.nextInt();
 		ExclamationMarks remove = new ExclamationMarks();
 		System.out.println(ExclamationMarks.remove(s, n));
 	}
 
-    public static void ConvertANumber() {
+    public static void ConvertANumber(Scanner scanner) {
         System.out.println("convert-a-number-to-a-string");
         System.out.println("Введіть число");
-        Scanner scanner = new Scanner(System.in);
         int l = scanner.nextInt();
         System.out.println(IntToString.numberToString(l));
-        scanner.close();
     }
 
-    public static void PlaysBanjo() {
+    public static void PlaysBanjo(Scanner scanner) {
         System.out.println("are-you-playing-banjo");
         System.out.println("Введіть ім'я ");
-        Scanner scanner = new Scanner(System.in);
         String l = scanner.next();
         System.out.println(Banjo.areYouPlayingBanjo(l));
-        scanner.close();
     }
 
-    public static void OldShe() {
+    public static void OldShe(Scanner scanner) {
         System.out.println("parse-nice-int-from-char-problem");
         System.out.println("Введіть стрічку з віком ");
-        Scanner scanner = new Scanner(System.in);
         final String l = scanner.next();
         System.out.println(HowOldShe.howOld(l));
-        scanner.close();
     }
 
-    public static void NiceString() {
+    public static void NiceString(Scanner scanner) {
         System.out.println("correct-the-mistakes-of-the-character-recognition-software");
         System.out.println("Введіть стрічку з цифрами ");
-        Scanner scanner = new Scanner(System.in);
         String l = scanner.next();
         System.out.println(CorrectTheString.correct(l));
-        scanner.close();
     }
 }

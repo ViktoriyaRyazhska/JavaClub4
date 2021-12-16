@@ -4,19 +4,16 @@ import java.util.Scanner;
 
 import Conditions.*;
 public class ConditionsImpl {
-    public static void oppositeNumber() {
+    public static void oppositeNumber(Scanner scanner) {
         System.out.println("opposite-number");
         System.out.println("Введіть число");
-        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        scanner.close();
         System.out.println("Протилежне число " + OppositeNumber.opposite(number));
     }
 
-    public static void boolenToStr() {
+    public static void boolenToStr(Scanner scanner) {
         System.out.println("convert-a-boolean-to-a-string");
         System.out.println("Введіть 1, якщо true або 0, якщо false");
-        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         boolean b;
         if (number == 1) {
@@ -27,38 +24,32 @@ public class ConditionsImpl {
             b = false;
             System.out.println("Ви ввели : " + BooleanToString.convert(b));
         }
-        scanner.close();
     }
 
-    public static void oppositesAttract(){
+    public static void oppositesAttract(Scanner scanner){
         System.out.println("opposites-attract");
         System.out.println("Введіть число пелюсток для квітки 1 і квітки 2");
-        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int number2 = scanner.nextInt();
         if (OppositesAttract.isLove(number, number2))
             System.out.println("Timmy і Sarah закохані");
         else
             System.out.println("Timmy і Sarah не закохані");
-        scanner.close();
     }
 
-	public static void rps() {
+	public static void rps(Scanner scanner) {
 		System.out.println("rock-paper-scissors");
 		System.out.println("Ведіть вибір гравця 1 і гравця 2, щоб зіграти у rock paper scissors: ");
-		Scanner scanner = new Scanner(System.in);
 		String p1 = scanner.next();
 		String p2 = scanner.next();
 		System.out.println(RockRaperScissors.rps(p1, p2));
 	}
 
-	public static void traffic(){
+	public static void traffic(Scanner scanner){
         System.out.println("thinkful-logic-drills-traffic-light");
         System.out.println("Введіть колір світлофора : green, yellow або red");
-        Scanner scanner = new Scanner(System.in);
         String color = scanner.next();
         System.out.println(TrafficLights.updateLight(color));
-        scanner.close();
     }
 
     public static void DivisibleByXAndY (Scanner scanner) {
@@ -85,10 +76,9 @@ public class ConditionsImpl {
         System.out.println("Result: " + BasicOperations.basicMath(s,v1,v2));
     }
     
-    public static void sequence() {
+    public static void sequence(Scanner scanner) {
     	System.out.println("the-modulo-3-sequence");
     	System.out.println("Введіть цифру 1 і цифру 2, щоб ввисти суму: ");
-    	Scanner scanner = new Scanner(System.in);
     	int x1 = scanner.nextInt();
         int x2 = scanner.nextInt();
         int n = scanner.nextInt();
@@ -104,43 +94,36 @@ public class ConditionsImpl {
     }
 
 
-    public static void countAgeDiff(){
+    public static void countAgeDiff(Scanner scanner){
         System.out.println("AgeDiff");
         System.out.println("Введіть рік народження і час до");
-        Scanner scanner = new Scanner(System.in);
         int birthYear = scanner.nextInt();
         int year = scanner.nextInt();
 
         System.out.println(AgeDiff.calculateAge(birthYear, year));
-        scanner.close();
     }
 
-    public static void isThereEnoughSpace(){
+    public static void isThereEnoughSpace(Scanner scanner){
         System.out.println("will-there-be-enough-space");
         System.out.println("Введіть загальну к-ть місць, к-ть людей на автобусі і к-ть чекаючих");
 
-        Scanner scanner = new Scanner(System.in);
         int cap = scanner.nextInt();
         int on = scanner.nextInt();
         int wait = scanner.nextInt();
 
         System.out.println(Bob.enough(cap, on, wait));
-        scanner.close();
     }
 
-    public static void CarCost() {
+    public static void CarCost(Scanner scanner) {
         System.out.println("transportation-on-vacation");
         System.out.println("Введіть кількість днів для оренди машини");
-        Scanner scanner = new Scanner(System.in);
         int counts = scanner.nextInt();
         System.out.println("Вартість оренди: " + RentalCarCost.rentalCarCost(counts));
-        scanner.close();
     }
 
-    public static void getBonus(){
+    public static void getBonus(Scanner scanner){
         System.out.println("do-i-get-a-bonus/");
         System.out.println("Введіть 1, якщо true або 0, якщо false");
-        Scanner scanner = new Scanner(System.in);
         int number1 = scanner.nextInt();
         System.out.println("Також введіть зарплату");
         int number2 = scanner.nextInt();
@@ -153,13 +136,11 @@ public class ConditionsImpl {
             bol = false;
             System.out.println(DoIGetBonus.bonusTime(number2,bol));
         }
-        scanner.close();
     }
 
-    public static void YesOrNo(){
+    public static void YesOrNo(Scanner scanner){
         System.out.println("convert-boolean-values-to-strings-yes-or-no/");
         System.out.println("Введіть 1, якщо true або 0, якщо false");
-        Scanner scanner = new Scanner(System.in);
         int number1 = scanner.nextInt();
         boolean bol;
         if (number1 == 1) {
@@ -170,6 +151,5 @@ public class ConditionsImpl {
             bol = false;
             System.out.println(boolToWord.convert(bol));
         }
-        scanner.close();
     }
 }

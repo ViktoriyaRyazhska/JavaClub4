@@ -5,6 +5,8 @@ import com.sun.security.jgss.GSSUtil;
 import java.util.Scanner;
 
 public class BasicImpl {
+    boolean flagToBack = false;
+
 
     public static void  JennysSecretMessage(Scanner scanner){
         System.out.println("Jennys secret message");
@@ -42,10 +44,11 @@ public class BasicImpl {
 
     public static void ThinkfulNumberDrillsPixelartPlanning (Scanner scanner){
         System.out.println("Thinkful number drills pixelart planning");
-        System.out.println("Function should take two arguments:" +
-                " \nthe size of the wall in millimeters and the size of a pixel in millimeters." +
-                " \nIt should return True if you can fit an exact number of pixels on the wall," +
-                " \notherwise it should return False.");
+        System.out.println("""
+                Function should take two arguments:\s
+                the size of the wall in millimeters and the size of a pixel in millimeters.\s
+                It should return True if you can fit an exact number of pixels on the wall,\s
+                otherwise it should return False.""");
         System.out.println("Введіть довжину стіни");
         int wallLength = scanner.nextInt();
         System.out.println("Введіть розмір пікселя");
