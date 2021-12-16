@@ -5,7 +5,8 @@ import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Book;
 import org.softserve.repository.BookRepository;
-public class BookRepositoryImpl implements BookRepository{
+
+public class BookRepositoryImpl implements BookRepository {
     @Override
     public Book create(Book book) {
         return null;
