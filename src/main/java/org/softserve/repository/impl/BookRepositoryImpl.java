@@ -19,7 +19,7 @@ public class BookRepositoryImpl implements BookRepository{
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(Book book) {
 
     }
 }
