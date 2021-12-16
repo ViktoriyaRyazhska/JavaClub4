@@ -1,33 +1,39 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Member;
+import org.softserve.repository.impl.MemberRepositoryImpl;
 import org.softserve.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class MemberServiceImpl implements MemberService {
+
+    @Autowired
+    private MemberRepositoryImpl memberRepository;
+
     @Override
     public Member create(Member member) {
-        return null;
+        return memberRepository.create(member);
     }
 
     @Override
     public Member readById(int id) {
-        return null;
+        return memberRepository.read(id);
     }
 
     @Override
-    public Member update(Member member) {
-        return null;
+    public void update(Member member) {
+        memberRepository.update(member);
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(Member member) {
+        memberRepository.delete(member);
     }
 
     @Override
     public List<Member> getAll() {
-        return null;
+        return memberRepository.findAll();
     }
 }

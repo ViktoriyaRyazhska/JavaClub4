@@ -10,9 +10,9 @@ public interface MemberService {
 
     Member readById(int id);
 
-    Member update(Member member);
+    void update(Member member);
 
-    void delete(int id);
+    void delete(Member member);
 
     List<Member> getAll();
 }

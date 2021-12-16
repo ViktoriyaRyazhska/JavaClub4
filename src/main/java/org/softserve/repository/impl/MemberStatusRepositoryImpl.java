@@ -8,7 +8,7 @@ import org.softserve.repository.MemberStatusRepository;
 
 import java.util.List;
 
-public class MemberStatusImpl implements MemberStatusRepository {
+public class MemberStatusRepositoryImpl implements MemberStatusRepository {
     @Override
     public MemberStatus create(MemberStatus memberStatus) {
         return null;
