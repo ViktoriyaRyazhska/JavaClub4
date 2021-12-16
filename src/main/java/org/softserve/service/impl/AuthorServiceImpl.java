@@ -1,8 +1,7 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Author;
-import org.softserve.model.Book;
-import org.softserve.repository.impl.AuthorRepositoryImpl;
+import org.softserve.repository.AuthorRepository;
 import org.softserve.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,10 +10,12 @@ import java.util.List;
 
 @Service
 public class AuthorServiceImpl implements AuthorService {
+
+    private AuthorRepository authorRepository;
+
     @Autowired
-    private AuthorRepositoryImpl authorRepository;
-    
-    public AuthorServiceImpl(){
+    public AuthorServiceImpl(AuthorRepository authorRepository){
+        this.authorRepository = authorRepository;
     }
 
     @Override

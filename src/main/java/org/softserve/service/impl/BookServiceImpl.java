@@ -1,18 +1,21 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Book;
-import org.softserve.repository.impl.BookRepositoryImpl;
+import org.softserve.repository.BookRepository;
 import org.softserve.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BookServiceImpl implements BookService {
+
+    private BookRepository bookRepository;
+
     @Autowired
-    private BookRepositoryImpl bookRepository;
-
-    public BookServiceImpl() {
-
+    public BookServiceImpl(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
     }
 
     @Override

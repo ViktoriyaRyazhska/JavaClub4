@@ -1,15 +1,22 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Category;
-import org.softserve.repository.impl.CategoryRepositoryImpl;
+import org.softserve.repository.CategoryRepository;
 import org.softserve.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CategoryServiceImpl implements CategoryService {
+
+    private CategoryRepository categoryRepository;
+
     @Autowired
-    private CategoryRepositoryImpl categoryRepository;
+    public CategoryServiceImpl (CategoryRepository categoryRepository){
+        this.categoryRepository = categoryRepository;
+    }
 
     @Override
     public Category create(Category category) {
