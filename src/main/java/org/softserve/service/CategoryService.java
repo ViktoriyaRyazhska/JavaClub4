@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface CategoryService {
 
-    Category addCategory(Category category);
+    Category create(Category category);
 
     Category readById(int id);
 
-    Category update(Category category);
+    void update(Category category);
 
     void delete(int id);
 

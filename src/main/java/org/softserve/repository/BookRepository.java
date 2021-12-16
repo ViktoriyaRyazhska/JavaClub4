@@ -2,6 +2,8 @@ package org.softserve.repository;
 
 import org.softserve.model.Book;
 
+import java.util.List;
+
 public interface BookRepository {
     Book create(Book book);
 
@@ -10,4 +12,6 @@ public interface BookRepository {
     void update(Book book);
 
     void delete(Book book);
+
+    List<Book> findAll();
 }

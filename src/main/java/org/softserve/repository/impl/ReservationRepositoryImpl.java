@@ -7,6 +7,8 @@ import org.softserve.HibernateUtil;
 import org.softserve.model.Reservation;
 import org.softserve.repository.ReservationRepository;
 
+import java.util.List;
+
 public class ReservationRepositoryImpl implements ReservationRepository {
     @Override
     public Reservation create(Reservation reservation) {
@@ -34,5 +36,11 @@ public class ReservationRepositoryImpl implements ReservationRepository {
         session.update(reservation);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<Reservation> findAll() {
+        List<Reservation> reservations = (List<Reservation>) HibernateUtil.getSessionFactory().openSession().createQuery("From Reservation").list();
+        return reservations;
     }
 }

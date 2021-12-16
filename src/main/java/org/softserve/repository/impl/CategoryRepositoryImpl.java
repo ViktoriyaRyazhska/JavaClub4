@@ -6,6 +6,8 @@ import org.softserve.HibernateUtil;
 import org.softserve.model.Category;
 import org.softserve.repository.CategoryRepository;
 
+import java.util.List;
+
 public class CategoryRepositoryImpl implements CategoryRepository {
     @Override
     public Category create(Category category) {
@@ -33,6 +35,12 @@ public class CategoryRepositoryImpl implements CategoryRepository {
         session.delete(category);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<Category> findAll() {
+        List<Category> categories = (List<Category>) HibernateUtil.getSessionFactory().openSession().createQuery("From Category ").list();
+        return categories;
     }
 
 }

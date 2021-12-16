@@ -3,8 +3,11 @@ package org.softserve.repository.impl;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
+import org.softserve.model.Category;
 import org.softserve.model.Member;
 import org.softserve.repository.MemberRepository;
+
+import java.util.List;
 
 public class MemberRepositoryImpl implements MemberRepository {
     @Override
@@ -33,5 +36,11 @@ public class MemberRepositoryImpl implements MemberRepository {
         session.delete(member);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<Member> findAll() {
+        List<Member> members = (List<Member>) HibernateUtil.getSessionFactory().openSession().createQuery("From Member").list();
+        return members;
     }
 }

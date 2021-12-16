@@ -13,16 +13,15 @@ import java.util.Set;
 
 @Service
 public class AuthorServiceImpl implements AuthorService {
-
-    private AuthorRepositoryImpl authorRepository = new AuthorRepositoryImpl();
-
     @Autowired
+    private AuthorRepositoryImpl authorRepository;
+    
     public AuthorServiceImpl(){
     }
 
     @Override
-    public Author create(Author author, Book book) {
-        return null;
+    public Author create(Author author) {
+        return authorRepository.create(author);
     }
 
     @Override

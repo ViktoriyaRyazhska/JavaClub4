@@ -2,6 +2,8 @@ package org.softserve.repository;
 
 import org.softserve.model.ReservationStatus;
 
+import java.util.List;
+
 public interface ReservationStatusRepository {
     ReservationStatus create(ReservationStatus reservationStatus);
 
@@ -10,4 +12,6 @@ public interface ReservationStatusRepository {
     void update(ReservationStatus reservationStatus);
 
     void delete(ReservationStatus reservationStatus);
+
+    List<ReservationStatus> findAll();
 }

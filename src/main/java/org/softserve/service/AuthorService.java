@@ -1,12 +1,11 @@
 package org.softserve.service;
 
 import org.softserve.model.Author;
-import org.softserve.model.Book;
 
 import java.util.List;
 
 public interface AuthorService {
-    Author create(Author author, Book book);
+    Author create(Author author);
 
     Author readById(int id);
 

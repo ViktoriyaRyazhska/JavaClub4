@@ -2,6 +2,8 @@ package org.softserve.repository;
 
 import org.softserve.model.Category;
 
+import java.util.List;
+
 public interface CategoryRepository {
     Category create(Category category);
 
@@ -10,4 +12,6 @@ public interface CategoryRepository {
     void update(Category category);
 
     void delete(Category category);
+
+    List<Category> findAll();
 }

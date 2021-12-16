@@ -6,6 +6,8 @@ import org.softserve.HibernateUtil;
 import org.softserve.model.MemberStatus;
 import org.softserve.repository.MemberStatusRepository;
 
+import java.util.List;
+
 public class MemberStatusImpl implements MemberStatusRepository {
     @Override
     public MemberStatus create(MemberStatus memberStatus) {
@@ -14,7 +16,7 @@ public class MemberStatusImpl implements MemberStatusRepository {
 
     @Override
     public MemberStatus read(int id) {
-    return HibernateUtil.getSessionFactory().openSession().get(MemberStatus.class, id);
+        return HibernateUtil.getSessionFactory().openSession().get(MemberStatus.class, id);
     }
 
     @Override
@@ -33,5 +35,11 @@ public class MemberStatusImpl implements MemberStatusRepository {
         session.delete(memberStatus);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<MemberStatus> findAll() {
+        List<MemberStatus> memberStatuses = (List<MemberStatus>) HibernateUtil.getSessionFactory().openSession().createQuery("From MemberStatus").list();
+        return memberStatuses;
     }
 }

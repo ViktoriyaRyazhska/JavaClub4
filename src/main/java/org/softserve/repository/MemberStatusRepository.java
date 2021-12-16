@@ -3,6 +3,8 @@ package org.softserve.repository;
 
 import org.softserve.model.MemberStatus;
 
+import java.util.List;
+
 public interface MemberStatusRepository {
     MemberStatus create(MemberStatus memberStatus);
 
@@ -11,4 +13,6 @@ public interface MemberStatusRepository {
     void update(MemberStatus memberStatus);
 
     void delete(MemberStatus memberStatus);
+
+    List<MemberStatus> findAll();
 }

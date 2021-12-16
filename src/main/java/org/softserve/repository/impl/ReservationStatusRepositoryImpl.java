@@ -6,6 +6,8 @@ import org.softserve.HibernateUtil;
 import org.softserve.model.ReservationStatus;
 import org.softserve.repository.ReservationStatusRepository;
 
+import java.util.List;
+
 public class ReservationStatusRepositoryImpl implements ReservationStatusRepository {
     @Override
     public ReservationStatus create(ReservationStatus reservationStatus) {
@@ -33,6 +35,12 @@ public class ReservationStatusRepositoryImpl implements ReservationStatusReposit
         session.delete(reservationStatus);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<ReservationStatus> findAll() {
+        List<ReservationStatus> reservationStatuses = (List<ReservationStatus>) HibernateUtil.getSessionFactory().openSession().createQuery("From ReservationStatus").list();
+        return reservationStatuses;
     }
 
 }
