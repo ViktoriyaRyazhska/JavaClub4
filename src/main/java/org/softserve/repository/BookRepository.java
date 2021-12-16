@@ -5,7 +5,7 @@ import org.softserve.model.Book;
 public interface BookRepository {
     Book create(Book book);
 
-    void read(int id);
+    Book read(int id);
 
     void update(Book book);
 
