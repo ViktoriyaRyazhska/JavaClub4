@@ -10,9 +10,9 @@ public interface AuthorService {
 
     Author readById(int id);
 
-    Author update(Author author);
+    void update(Author author);
 
-    void delete(int id);
+    void delete(Author author);
 
     List<Author> getAll();
 }

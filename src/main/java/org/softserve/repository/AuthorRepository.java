@@ -2,6 +2,8 @@ package org.softserve.repository;
 
 import org.softserve.model.Author;
 
+import java.util.List;
+
 public interface AuthorRepository {
     Author create(Author author);
 
@@ -10,6 +12,8 @@ public interface AuthorRepository {
     void update(Author author);
 
     void delete(Author author);
+
+    List<Author> findAll();
 }
 
 //    @Query(value = "SELECT ",

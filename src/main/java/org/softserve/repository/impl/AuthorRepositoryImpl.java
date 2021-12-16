@@ -6,6 +6,8 @@ import org.softserve.HibernateUtil;
 import org.softserve.model.Author;
 import org.softserve.repository.AuthorRepository;
 
+import java.util.List;
+
 public class AuthorRepositoryImpl implements AuthorRepository {
     @Override
     public Author create(Author author) {
@@ -33,5 +35,11 @@ public class AuthorRepositoryImpl implements AuthorRepository {
         session.delete(author);
         t1.commit();
         session.close();
+    }
+
+    @Override
+    public List<Author> findAll() {
+        List<Author> authors = (List<Author>) HibernateUtil.getSessionFactory().openSession().createQuery("From Author").list();
+        return authors;
     }
 }

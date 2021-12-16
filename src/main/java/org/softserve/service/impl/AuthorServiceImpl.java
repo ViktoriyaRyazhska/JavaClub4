@@ -2,6 +2,7 @@ package org.softserve.service.impl;
 
 import org.softserve.model.Author;
 import org.softserve.model.Book;
+import org.softserve.repository.impl.AuthorRepositoryImpl;
 import org.softserve.service.AuthorService;
 import org.softserve.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +14,10 @@ import java.util.Set;
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
-    private BookService bookService;
+    private AuthorRepositoryImpl authorRepository = new AuthorRepositoryImpl();
 
     @Autowired
-    public AuthorServiceImpl(BookService bookService){
-        this.bookService = bookService;
+    public AuthorServiceImpl(){
     }
 
     @Override
@@ -27,21 +27,21 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Override
     public Author readById(int id) {
-        return null;
+        return authorRepository.read(id);
     }
 
     @Override
-    public Author update(Author author) {
-        return null;
+    public void update(Author author) {
+        authorRepository.update(author);
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(Author author) {
+    authorRepository.delete(author);
     }
 
     @Override
     public List<Author> getAll() {
-        return null;
+        return authorRepository.findAll();
     }
 }
