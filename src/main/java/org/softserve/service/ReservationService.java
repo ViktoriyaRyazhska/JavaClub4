@@ -10,9 +10,9 @@ public interface ReservationService {
 
     Reservation readById(int id);
 
-    Reservation update(Reservation reservation);
+    void update(Reservation reservation);
 
-    void delete(int id);
+    void delete(Reservation reservation);
 
     List<Reservation> getAll();
 }

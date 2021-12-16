@@ -1,33 +1,39 @@
 package org.softserve.service.impl;
 
 import org.softserve.model.Reservation;
+import org.softserve.repository.impl.ReservationRepositoryImpl;
 import org.softserve.service.ReservationService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 public class ReservationServiceImpl implements ReservationService {
+
+    @Autowired
+    private ReservationRepositoryImpl reservationRepository;
+
     @Override
     public Reservation create(Reservation reservation) {
-        return null;
+        return reservationRepository.create(reservation);
     }
 
     @Override
     public Reservation readById(int id) {
-        return null;
+        return reservationRepository.read(id);
     }
 
     @Override
-    public Reservation update(Reservation reservation) {
-        return null;
+    public void update(Reservation reservation) {
+        reservationRepository.update(reservation);
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(Reservation reservation) {
+        reservationRepository.delete(reservation);
     }
 
     @Override
     public List<Reservation> getAll() {
-        return null;
+        return reservationRepository.findAll();
     }
 }

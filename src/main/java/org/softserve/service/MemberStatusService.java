@@ -10,9 +10,9 @@ public interface MemberStatusService {
 
     MemberStatus readById(int id);
 
-    MemberStatus update(MemberStatus memberStatus);
+    void update(MemberStatus memberStatus);
 
-    void delete(int id);
+    void delete(MemberStatus memberStatus);
 
     List<MemberStatus> getAll();
 }

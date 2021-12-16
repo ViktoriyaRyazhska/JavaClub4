@@ -34,12 +34,12 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public void delete(int id) {
-
+    public void delete(Category category) {
+        categoryRepository.delete(category);
     }
 
     @Override
     public List<Category> getAll() {
-        return null;
+        return categoryRepository.findAll();
     }
 }
