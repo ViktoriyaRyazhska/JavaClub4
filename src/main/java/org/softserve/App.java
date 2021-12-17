@@ -1,6 +1,8 @@
 package org.softserve;
 
 import org.hibernate.Session;
+import org.softserve.repository.AuthorRepository;
+import org.softserve.repository.impl.AuthorRepositoryImpl;
 
 /**
  * Hello world!
@@ -15,4 +17,7 @@ public class App
 
 
     }
+
+    AuthorRepository authorRepository = new AuthorRepositoryImpl();
+
 }
