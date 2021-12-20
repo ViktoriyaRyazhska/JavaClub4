@@ -44,9 +44,9 @@ public class HibernateUtil {
 
                 Properties settings = new Properties();
                 settings.put(Environment.DRIVER, "org.postgresql.Driver");
-                settings.put(Environment.URL, "jdbc:postgresql://localhost:5432/Labrary");
+                settings.put(Environment.URL, "jdbc:postgresql://localhost:5432/library");
                 settings.put(Environment.USER, "postgres");
-                settings.put(Environment.PASS, "root");
+                settings.put(Environment.PASS, "12345");
                 settings.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
 
                 settings.put(Environment.SHOW_SQL, "true");
