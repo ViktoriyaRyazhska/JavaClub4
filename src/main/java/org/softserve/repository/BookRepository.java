@@ -16,7 +16,6 @@ public interface BookRepository {
 
     List<Book> findAll();
 
-    List<Book> findBook();
     List<Book> checkBook();
 
 

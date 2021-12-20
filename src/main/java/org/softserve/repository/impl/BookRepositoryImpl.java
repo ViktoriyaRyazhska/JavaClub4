@@ -43,11 +43,7 @@ public class BookRepositoryImpl implements BookRepository {
         List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery("From Book ").list();
         return books;
     }
-    @Override
-    public List<Book> findBook() {
-        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery(" from  Book");
-        return books;
-    }
+
 
     @Override
     public List<Book> checkBook(){
