@@ -3,7 +3,6 @@ package org.softserve.repository.impl;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
-import org.softserve.model.Category;
 import org.softserve.model.Member;
 import org.softserve.repository.MemberRepository;
 
@@ -42,5 +41,10 @@ public class MemberRepositoryImpl implements MemberRepository {
     public List<Member> findAll() {
         List<Member> members = (List<Member>) HibernateUtil.getSessionFactory().openSession().createQuery("From Member").list();
         return members;
+    }
+
+    private Member requestNeededBook() {
+        return (Member) HibernateUtil.getSessionFactory().openSession().createQuery(
+                "select title, first_name, last_name from  book as c inner join book_author ba on c.id=ba.book_id");
     }
 }

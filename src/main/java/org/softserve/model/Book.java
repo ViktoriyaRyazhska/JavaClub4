@@ -38,6 +38,14 @@ public class Book {
     public Book() {
     }
 
+    public Book(String title, Category category, LocalDateTime publication_date, int copies_owned) {
+        this.title = title;
+        this.category = category;
+        this.publication_date = publication_date;
+        this.copies_owned = copies_owned;
+        authors = new HashSet<>();
+    }
+
     public int getId() {
         return id;
     }
