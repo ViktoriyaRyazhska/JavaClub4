@@ -1,5 +1,6 @@
 package org.softserve.repository;
 
+import org.hibernate.query.Query;
 import org.softserve.model.Book;
 
 import java.util.List;
@@ -14,4 +15,10 @@ public interface BookRepository {
     void delete(Book book);
 
     List<Book> findAll();
+
+    List<Book> findBook();
+    List<Book> checkBook();
+
+
+    Query findById(int id);
 }

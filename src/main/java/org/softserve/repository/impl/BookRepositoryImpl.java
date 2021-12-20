@@ -2,8 +2,8 @@ package org.softserve.repository.impl;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import org.softserve.HibernateUtil;
-import org.softserve.model.Author;
 import org.softserve.model.Book;
 import org.softserve.repository.BookRepository;
 
@@ -40,7 +40,24 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public List<Book> findAll() {
-        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createQuery("From Book ").list();
+        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery("From Book ").list();
         return books;
     }
+    @Override
+    public List<Book> findBook() {
+        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery(" from  Book");
+        return books;
+    }
+
+    @Override
+    public List<Book> checkBook(){
+        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery("select title from Book where title='Тореодори з Васюківки' and copies_owned>0").list();
+        return books;
+    }
+    @Override
+    public Query findById(int id){
+       return  HibernateUtil.getSessionFactory().openSession().createNativeQuery("select title from Book where id = id");
+
+    }
+
 }
