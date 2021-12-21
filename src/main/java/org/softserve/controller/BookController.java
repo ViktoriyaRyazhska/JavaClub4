@@ -26,12 +26,7 @@ public class BookController {
         return "create-book";
     }
 
-    @PostMapping("/create/todos/{todo_id}")
-    public String create(@PathVariable("todo_id") long todoId, Model model,
-                         @ModelAttribute("task") TaskDto taskDto) {
 
-        return "redirect:/todos/" + todoId + "/tasks";
-    }
 
     @GetMapping("/{task_id}/update/todos/{todo_id}")
     public String update(@PathVariable("task_id") long taskId, @PathVariable("todo_id") long todoId, Model model) {
@@ -40,6 +35,3 @@ public class BookController {
     }
 }
 
-
-
-}

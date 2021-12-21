@@ -49,7 +49,7 @@ public class Book {
     }
 
     public Book(String title, Category category, LocalDateTime publication, Integer copies) {
-        this.
+
     }
 
     public int getId() {
@@ -98,6 +98,4 @@ public class Book {
                 ", authors=" + authors +
                 '}';
     }
-
-    Session
 }

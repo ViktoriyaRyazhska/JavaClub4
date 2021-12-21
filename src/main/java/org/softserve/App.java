@@ -4,10 +4,7 @@ import org.hibernate.Session;
 import org.softserve.repository.AuthorRepository;
 import org.softserve.repository.impl.AuthorRepositoryImpl;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
@@ -18,6 +15,6 @@ public class App
 
     }
 
-    AuthorRepository authorRepository = new AuthorRepositoryImpl();
+    //AuthorRepository authorRepository = new AuthorRepositoryImpl();
 
 }

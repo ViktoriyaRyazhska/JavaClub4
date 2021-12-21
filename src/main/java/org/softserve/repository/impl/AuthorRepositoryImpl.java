@@ -30,7 +30,7 @@ public class AuthorRepositoryImpl implements AuthorRepository {
 
     @Override
     public Author saveAuthor(Author author) {
-        if (author.getId() == null) {
+        if (author.getId() == 0) {
             session.persist(author);
         } else author = (Author) session.merge(author);
         return author;
