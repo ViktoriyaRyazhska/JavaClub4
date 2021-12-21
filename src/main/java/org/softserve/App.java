@@ -12,9 +12,9 @@ public class App
 
         Session session = HibernateUtil.getSessionFactory().openSession();
 
-
+        AuthorRepository authorRepository = new AuthorRepositoryImpl(session.getSessionFactory(), session);
     }
 
-    //AuthorRepository authorRepository = new AuthorRepositoryImpl();
+
 
 }
