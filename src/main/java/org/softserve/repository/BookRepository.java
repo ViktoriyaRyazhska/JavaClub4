@@ -20,4 +20,35 @@ public interface BookRepository {
 
 
     Query findById(int id);
+
+    List<Book> findByTime();
+    void updateBookInformation();
+
+    void updateBookInformantion();
+
+    void insertBookInformation();
+
+    void updateBookCopies();
+
+    void deleteById();
+
+    void GiveBookToReader();
+
+    void setTitleOfBookAndShow();
+
+    void GetStatisticByReader();
+
+    void statisticByReturnedBook();
+
+    void getStatisticByBook();
+
+    void getStatisticByReader();
+
+    void getListOfUnreturnedBooks();
+
+    void HowManyBookGivenInPeriod();
+
+    void popularBookPeriod();
+
+    void returnBook();
 }

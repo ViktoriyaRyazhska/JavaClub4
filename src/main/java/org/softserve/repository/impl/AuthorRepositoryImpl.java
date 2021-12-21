@@ -56,6 +56,4 @@ public class AuthorRepositoryImpl implements AuthorRepository {
         List<Author> authors = (List<Author>) HibernateUtil.getSessionFactory().openSession().createQuery("From Author").list();
         return authors;
     }
-
-    @Query
 }
