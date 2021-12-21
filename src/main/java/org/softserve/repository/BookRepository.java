@@ -3,6 +3,7 @@ package org.softserve.repository;
 import org.hibernate.query.Query;
 import org.softserve.model.Book;
 
+import javax.persistence.QueryHint;
 import java.util.List;
 
 public interface BookRepository {

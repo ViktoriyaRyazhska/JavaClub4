@@ -11,21 +11,29 @@ import java.util.List;
 
 public class AuthorRepositoryImpl implements AuthorRepository {
 
-    private SessionFactory sessionFactory;
+    private final Session session;
 
-    public void setSessionFactory(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
+    public AuthorRepositoryImpl(SessionFactory sessionFactory, Session session) {
+        this.session = session;
     }
 
+//    @Override
+//    public void savetAuthor(Author author) {
+////        Transaction transaction = null;
+////        Session session = HibernateUtil.
+////                getSessionFactory().
+////                openSession();
+////        transaction = session.beginTransaction();
+////        session.save(author);
+////        transaction.commit();
+//    }
+
     @Override
-    public void create(Author author) {
-        Transaction transaction = null;
-        Session session = HibernateUtil.
-                getSessionFactory().
-                openSession();
-        transaction = session.beginTransaction();
-        session.save(author);
-        transaction.commit();
+    public Author saveAuthor(Author author) {
+        if (author.getId() == null) {
+            session.persist(author);
+        } else author = (Author) session.merge(author);
+        return author;
     }
 
     @Override

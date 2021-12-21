@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/template}"
+      lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info about Member</title>
+</head>
+<body>
+    <div layout:fragment="content" style="margin: 0 auto; width: max-content">
+        <h2>Info about Member</h2>
+        <table>
+            <tr>
+                <td>Id: </td>
+                <td>
+                    <b th:text="${member.id}"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td>
+                    <b th:text="${member.firstName}"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td>
+                    <b th:text="${member.lastName}"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td>
+                    <b th:text="${member.email}"></b>
+                </td>
+            </tr>
+            <tr>
+                <td>Status: </td>
+                <td>
+                    <b th:text="${member.status.name}"></b>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

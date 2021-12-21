@@ -1,6 +1,8 @@
 package org.softserve.model;
 
 
+import org.hibernate.Session;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -44,6 +46,10 @@ public class Book {
         this.publication_date = publication_date;
         this.copies_owned = copies_owned;
         authors = new HashSet<>();
+    }
+
+    public Book(String title, Category category, LocalDateTime publication, Integer copies) {
+        this.
     }
 
     public int getId() {
@@ -92,4 +98,6 @@ public class Book {
                 ", authors=" + authors +
                 '}';
     }
+
+    Session
 }

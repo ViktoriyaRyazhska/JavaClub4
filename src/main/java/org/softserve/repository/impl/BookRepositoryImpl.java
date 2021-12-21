@@ -6,10 +6,13 @@ import org.hibernate.query.Query;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Book;
 import org.softserve.repository.BookRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 public class BookRepositoryImpl implements BookRepository {
+
     @Override
     public Book create(Book book) {
         return null;
