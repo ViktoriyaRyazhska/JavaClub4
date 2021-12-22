@@ -32,8 +32,8 @@ public class ReservationStatusServiceImpl implements ReservationStatusService {
     }
 
     @Override
-    public void delete(ReservationStatus reservationStatus) {
-        reservationStatusRepository.delete(reservationStatus);
+    public void delete(int id) {
+        reservationStatusRepository.delete(id);
     }
 
     @Override

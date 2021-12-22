@@ -11,7 +11,7 @@ public interface AuthorRepository {
 
     void update(Author author);
 
-    void delete(Author author);
+    void delete(int id);
 
     List<Author> findAll();
 }

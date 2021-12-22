@@ -12,7 +12,7 @@ public interface ReservationStatusService {
 
     void update(ReservationStatus reservationStatus);
 
-    void delete(ReservationStatus reservationStatus);
+    void delete(int id);
 
     List<ReservationStatus> getAll();
 }

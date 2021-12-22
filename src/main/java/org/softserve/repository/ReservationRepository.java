@@ -11,7 +11,7 @@ public interface ReservationRepository {
 
     void update(Reservation reservation);
 
-    void delete(Reservation  reservation);
+    void delete(int id);
 
     List<Reservation> findAll();
 }

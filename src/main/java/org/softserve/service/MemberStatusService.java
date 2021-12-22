@@ -12,7 +12,7 @@ public interface MemberStatusService {
 
     void update(MemberStatus memberStatus);
 
-    void delete(MemberStatus memberStatus);
+    void delete(int id);
 
     List<MemberStatus> getAll();
 }
