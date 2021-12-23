@@ -5,11 +5,11 @@ import org.softserve.model.Author;
 import java.util.List;
 
 public interface AuthorService {
-    void create(Author author);
+    Author create(Author author);
 
     Author readById(int id);
 
-    void update(Author author);
+    Author update(Author author);
 
     void delete(int id);
 

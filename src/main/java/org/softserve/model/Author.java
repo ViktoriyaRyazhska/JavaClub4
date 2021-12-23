@@ -22,6 +22,10 @@ public class Author {
     private String last_name;
 
     @ManyToMany(mappedBy = "authors")
+    @JoinTable(
+            name = "book_author", joinColumns = {@JoinColumn(name = "author_id")},
+            inverseJoinColumns = {@JoinColumn(name = "book_id")}
+    )
     private Set<Book> books = new HashSet<>();
 
     public Author() {

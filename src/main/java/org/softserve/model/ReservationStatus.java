@@ -11,4 +11,16 @@ public class ReservationStatus {
 
     @Column(name = "status_value")
     private String status_value;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getStatus_value() {
+        return status_value;
+    }
+
+    public void setStatus_value(String status_value) {
+        this.status_value = status_value;
+    }
 }

@@ -11,16 +11,17 @@ import java.util.List;
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
+
     private final AuthorRepository authorRepository;
 
     @Autowired
-    public AuthorServiceImpl(AuthorRepository authorRepository){
+    public AuthorServiceImpl(AuthorRepository authorRepository) {
         this.authorRepository = authorRepository;
     }
 
     @Override
-    public void create(Author author) {
-        authorRepository.saveAuthor(author);
+    public Author create(Author author) {
+        return authorRepository.saveAuthor(author);
     }
 
     @Override
@@ -29,13 +30,13 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public void update(Author author) {
-        authorRepository.update(author);
+    public Author update(Author author) {
+        return authorRepository.update(author);
     }
 
     @Override
     public void delete(int id) {
-    authorRepository.delete(id);
+        authorRepository.delete(id);
     }
 
     @Override

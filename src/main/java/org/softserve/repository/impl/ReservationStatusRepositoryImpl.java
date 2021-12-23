@@ -29,10 +29,10 @@ public class ReservationStatusRepositoryImpl implements ReservationStatusReposit
     }
 
     @Override
-    public void delete(ReservationStatus reservationStatus) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.delete(reservationStatus);
+        session.delete(id);
         t1.commit();
         session.close();
     }

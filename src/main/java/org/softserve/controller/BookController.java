@@ -62,7 +62,7 @@ public class BookController {
         return "redirect:/books/";
     }
 
-    @GetMapping("/all")
+    @GetMapping("books/all")
     public String getAll(Model model) {
         model.addAttribute("books", bookService.getAll());
         return "books-list";

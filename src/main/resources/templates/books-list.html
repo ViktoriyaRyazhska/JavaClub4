@@ -25,6 +25,7 @@
             <th scope="col">Id</th>
             <th scope="col">Title</th>
             <th scope="col">Authors</th>
+            <th scope="col">Reservation Status</th>
             <th scope="col" colspan="2">Operations</th>
         </tr>
         </thead>
@@ -33,6 +34,7 @@
             <td th:text="${counter.count}"></td>
             <td th:text="${book.getId()}"></td>
             <td th:text="${book.getTitle()}" th:href="@{/books/{bookId}/update(bookId=${book.id})}"></td>
+            <td th:text="${book.getAuthors()}"></td>
             <td th:text="${book.getAuthors()}"></td>
             <td>
                 <a th:href="@{/books/{bookId}/update(bookId=${book.getId()})}">Edit</a>

@@ -6,16 +6,19 @@ import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Author;
 import org.softserve.repository.AuthorRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
+@Repository
 public class AuthorRepositoryImpl implements AuthorRepository {
 
-    private final Session session;
+    @PersistenceContext
+    private EntityManager entityManager;
 
-    public AuthorRepositoryImpl(SessionFactory sessionFactory, Session session) {
-        this.session = session;
-    }
 
 //    @Override
 //    public void savetAuthor(Author author) {
@@ -28,11 +31,12 @@ public class AuthorRepositoryImpl implements AuthorRepository {
 ////        transaction.commit();
 //    }
 
+    @Transactional
     @Override
     public Author saveAuthor(Author author) {
         if (author.getId() == 0) {
-            session.persist(author);
-        } else author = (Author) session.merge(author);
+            entityManager.persist(author);
+        } else author = (Author) entityManager.merge(author);
         return author;
     }
 
@@ -42,19 +46,20 @@ public class AuthorRepositoryImpl implements AuthorRepository {
     }
 
     @Override
-    public void update(Author author) {
+    public Author update(Author author) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
         session.update(author);
         t1.commit();
         session.close();
+        return author;
     }
 
     @Override
-    public void delete(Author author) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.delete(author);
+        session.delete(id);
         t1.commit();
         session.close();
     }

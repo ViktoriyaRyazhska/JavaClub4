@@ -29,10 +29,10 @@ public class MemberStatusRepositoryImpl implements MemberStatusRepository {
     }
 
     @Override
-    public void delete(MemberStatus memberStatus) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.delete(memberStatus);
+        session.delete(id);
         t1.commit();
         session.close();
     }

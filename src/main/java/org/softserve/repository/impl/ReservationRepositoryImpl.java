@@ -6,9 +6,11 @@ import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Reservation;
 import org.softserve.repository.ReservationRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class ReservationRepositoryImpl implements ReservationRepository {
     @Override
     public Reservation create(Reservation reservation) {
@@ -30,10 +32,10 @@ public class ReservationRepositoryImpl implements ReservationRepository {
     }
 
     @Override
-    public void delete(Reservation reservation) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.update(reservation);
+        session.update(id);
         t1.commit();
         session.close();
     }

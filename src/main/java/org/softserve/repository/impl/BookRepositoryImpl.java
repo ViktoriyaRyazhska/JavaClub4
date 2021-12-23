@@ -6,12 +6,19 @@ import org.hibernate.query.Query;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Book;
 import org.softserve.repository.BookRepository;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
-@Transactional
+@Repository
 public class BookRepositoryImpl implements BookRepository {
+
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Override
     public Book create(Book book) {
@@ -33,18 +40,19 @@ public class BookRepositoryImpl implements BookRepository {
     }
 
     @Override
-    public void delete(Book book) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.delete(book);
+        session.delete(id);
         t1.commit();
         session.close();
     }
 
+    @Transactional
     @Override
     public List<Book> findAll() {
-        List<Book> books = (List<Book>) HibernateUtil.getSessionFactory().openSession().createNativeQuery("From Book ").list();
-        return books;
+        TypedQuery<Book> query = entityManager.createQuery("from Book", Book.class);
+        return query.getResultList();
     }
 
 
@@ -94,12 +102,14 @@ public class BookRepositoryImpl implements BookRepository {
                 "\tSET copies_owned = copies_owned - 1\n" +
                 "\tWHERE id = ?");
     }
+
     @Override
     public void deleteById() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("DELETE FROM public.book\n" +
                 "WHERE id = ?\n" +
                 "RETURNING *");
     }
+
     @Override
     public void GiveBookToReader() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("INSERT INTO public.reservation(\n" +
@@ -123,6 +133,7 @@ public class BookRepositoryImpl implements BookRepository {
                 "FROM book \n" +
                 "WHERE title LIKE '%перекон%';");
     }
+
     @Override
     public void GetStatisticByReader() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("SELECT m.first_name || ' ' || m.last_name AS full_name,\n" +
@@ -136,6 +147,7 @@ public class BookRepositoryImpl implements BookRepository {
                 "WHERE m.id = 1 AND r.reservation_status_id = 1\n" +
                 "GROUP BY m.id, r.reservation_status_id");
     }
+
     @Override
     public void statisticByReturnedBook() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("SELECT m.first_name || ' ' || m.last_name AS full_name,\n" +
@@ -169,6 +181,7 @@ public class BookRepositoryImpl implements BookRepository {
                 "ON b.id = r.book_id\n" +
                 "GROUP BY b.title, b.copies_owned, first_name, last_name\n");
     }
+
     @Override
     public void getStatisticByReader() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("SELECT first_name || ' ' || last_name AS full_name, email,\n" +
@@ -182,6 +195,7 @@ public class BookRepositoryImpl implements BookRepository {
                 "GROUP BY first_name, last_name, email, birth_date, joined_date\n" +
                 "ORDER BY age");
     }
+
     @Override
     public void getListOfUnreturnedBooks() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("SELECT m.first_name || ' ' || m.last_name AS full_name, m.email,\n" +
@@ -196,12 +210,14 @@ public class BookRepositoryImpl implements BookRepository {
                 "\tON m.active_status_id = s.id\n" +
                 "WHERE (r.returned_date - r.reservation_date) > 35\t");
     }
+
     @Override
     public void HowManyBookGivenInPeriod() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("SELECT COUNT(id) AS total_giving_books\n" +
                 "FROM reservation\n" +
                 "WHERE reservation_date BETWEEN DATE '2021-09-01' AND DATE '2021-12-01'");
     }
+
     @Override
     public void popularBookPeriod() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("select title, count(*) as count_books from book\n" +
@@ -210,11 +226,20 @@ public class BookRepositoryImpl implements BookRepository {
                 "  and returned_date > date('2021-12-05')\n" +
                 "group by title order by count_books desc");
     }
+
     @Override
     public void returnBook() {
         HibernateUtil.getSessionFactory().openSession().createNativeQuery("update reservation\n" +
                 "set returned_date    = current_date,\n" +
                 "    reservation_status_id = 2\n" +
                 "where id = 1;");
+    }
+
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 }

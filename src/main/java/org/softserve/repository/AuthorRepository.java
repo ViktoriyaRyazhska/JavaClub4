@@ -1,6 +1,7 @@
 package org.softserve.repository;
 
 import org.softserve.model.Author;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface AuthorRepository {
 
     Author read(int id);
 
-    void update(Author author);
+    Author update(Author author);
 
     void delete(int id);
 

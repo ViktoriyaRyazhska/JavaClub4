@@ -5,9 +5,11 @@ import org.hibernate.Transaction;
 import org.softserve.HibernateUtil;
 import org.softserve.model.Category;
 import org.softserve.repository.CategoryRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class CategoryRepositoryImpl implements CategoryRepository {
     @Override
     public Category create(Category category) {
@@ -29,10 +31,10 @@ public class CategoryRepositoryImpl implements CategoryRepository {
     }
 
     @Override
-    public void delete(Category category) {
+    public void delete(int id) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction t1 = session.beginTransaction();
-        session.delete(category);
+        session.delete(id);
         t1.commit();
         session.close();
     }

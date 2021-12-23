@@ -29,11 +29,7 @@ public class Book {
     @Column(name = "copies_owned")
     private int copies_owned;
 
-    @ManyToMany
-    @JoinTable(
-            name = "book_author", joinColumns = {@JoinColumn(name = "book_id")},
-            inverseJoinColumns = {@JoinColumn(name = "author_id")}
-    )
+    @ManyToMany(mappedBy = "books")
     Set<Author> authors = new HashSet<>();
 
 
